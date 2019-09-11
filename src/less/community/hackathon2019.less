@@ -525,7 +525,7 @@
       position: relative;
 
       .qr-tooltiptext {
-        width: 220px;
+        width: 180px;
         background-color: #3351ff;
         color: white;
         text-align: right;
@@ -535,14 +535,18 @@
         font-size: 12px;
         line-height: 1.7;
         border-radius: 5px 5px 5px 0;
-        right: -240px;
+        right: -200px;
         top: -100%;
         opacity: 1;
         -webkit-transition: opacity 0.3s;
         transition: opacity 0.3s;
 
         .tidb-robot-qrCode {
-          padding: 20px 30px;
+          padding: 10px;
+
+          p {
+            padding: 0 10px;
+          }
 
           img {
             width: 100%;
@@ -629,14 +633,18 @@
 @media (max-width: 1025px) {
   .participant-section {
     .contact-us-hack19 .qr-tooltiptext {
-      width: 200px !important;
+      width: 150px !important;
       right: auto !important;
       font-size: 10px !important;
       top: 4rem !important;
-      left: -9rem !important;
+      left: -6rem !important;
 
       .tidb-robot-qrCode {
-        padding: 20px !important;
+        padding: 10px !important;
+      }
+
+      p {
+        padding: 0 10px;
       }
 
       &::after {
