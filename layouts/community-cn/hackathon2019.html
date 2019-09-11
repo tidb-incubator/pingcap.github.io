@@ -14,7 +14,7 @@
 {{- define "main" -}}
 <div class="hackathon-2019">
     <section class="banner__section hackathon2019-banner">
-        <a href="http://nc9hsk15y2xczuor.mikecrm.com/PiwBPaL" target="_blank"><button class="banner-btn">立即报名</button></a>
+        <a href="http://nc9hsk15y2xczuor.mikecrm.com/PiwBPaL" target="_blank"><button class="banner-btn" style="display: none;">立即报名</button></a>
     </section>
     <section class="about-hackathon19">
         <h2 class="section-title">TiDB Hackathon 2019</h2>
@@ -25,7 +25,7 @@
             最酷的 TiDB 开发者的狂欢，TiDB Hackathon 重磅回归！
         </p>
         <p class="hackathon-sub-intro">
-            今年的主题为「 Improve」，
+            今年的主题为「Improve」，
         </p>
         <p class="hackathon-sub-intro">
             选手可以在项目中为 TiDB 性能、稳定性、易用性等各方面做出提升，
@@ -216,6 +216,31 @@
 {{- end -}}
 
 {{- define "footJS" -}}
+<script type="text/javascript">
+    function calcBtnOnHack19Banner() {
+        var bannerW = $(window).width()
+        var bannerH, ratioL, ratioT
+
+        if (window.matchMedia('(max-width: 600px)').matches) {
+            bannerH = bannerW / 1.6
+            ratioL = 0.11
+            ratioT = 0.47
+        } else {
+            bannerH = bannerW / 2.66
+            ratioL = 0.22
+            ratioT = 0.52
+        }
+
+        $('.banner-btn').css('left', ratioL * bannerW)
+        $('.banner-btn').css('top', ratioT * bannerH)
+    }
+    $(document).ready(function () {
+        calcBtnOnHack19Banner()
+        $('.banner-btn').css('display', 'block')
+        $(window).resize(calcBtnOnHack19Banner)
+    });
+</script>
+
 <script type="text/javascript" src="/js/vendor/lazyload.min.js"></script>
 <script type="text/javascript">
     $('.lazy').lazyload({

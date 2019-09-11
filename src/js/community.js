@@ -11,23 +11,23 @@ function createEventListConsole(eventTitles, eventLinks) {
   }
 }
 
-function calcBtnOnHack19Banner() {
-  var bannerW = $(window).width()
-  var bannerH, ratioL, ratioT
-  if (window.matchMedia('(max-width: 600px)').matches) {
-    bannerH = bannerW / 1.6
-    ratioL = 0.11
-    ratioT = 0.47
-  } else {
-    bannerH = bannerW / 2.66
-    ratioL = 0.22
-    ratioT = 0.52
-  }
-  
+// function calcBtnOnHack19Banner() {
+//   var bannerW = $(window).width()
+//   var bannerH, ratioL, ratioT
 
-  $('.banner-btn').css('left', ratioL * bannerW)
-  $('.banner-btn').css('top', ratioT * bannerH)
-}
+//   if (window.matchMedia('(max-width: 600px)').matches) {
+//       bannerH = bannerW / 1.6
+//       ratioL = 0.11
+//       ratioT = 0.47
+//   } else {
+//       bannerH = bannerW / 2.66
+//       ratioL = 0.22
+//       ratioT = 0.52
+//   }
+
+//   $('.banner-btn').css('left', ratioL * bannerW)
+//   $('.banner-btn').css('top', ratioT * bannerH)
+// }
 
 const _ = require('lodash')
 
@@ -284,7 +284,7 @@ $(document).ready(function() {
     )
   })
 
-  $('.hackathon2019-banner').on('load', calcBtnOnHack19Banner())
+  // calcBtnOnHack19Banner()
 
-  $(window).resize(calcBtnOnHack19Banner)
+  // $(window).resize(calcBtnOnHack19Banner)
 })
