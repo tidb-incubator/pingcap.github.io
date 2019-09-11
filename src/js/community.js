@@ -12,7 +12,7 @@ function createEventListConsole(eventTitles, eventLinks) {
 }
 
 function calcBtnOnHack19Banner() {
-  var bannerW = $('.banner__section').width()
+  var bannerW = $(window).width()
   var bannerH, ratioL, ratioT
   if (window.matchMedia('(max-width: 600px)').matches) {
     bannerH = bannerW / 1.6
