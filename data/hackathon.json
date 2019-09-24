@@ -188,13 +188,27 @@
       "name": "申砾",
       "title": "PingCAP | Engineering VP",
       "avatar": "https://download.pingcap.com/images/instructors/shenli.jpg",
-      "judge": true,
+      "judge": false,
+      "tba": false
+    },
+    {
+      "name": "唐刘",
+      "title": "PingCAP | 首席架构师",
+      "avatar": "https://download.pingcap.com/images/instructors/tangliu.jpg",
+      "judge": false,
       "tba": false
     },
     {
       "name": "姚维",
       "title": "PingCAP | TiDB SQL Infra Team Tech Lead",
       "avatar": "https://download.pingcap.com/images/instructors/yaowei.jpg",
+      "judge": false,
+      "tba": false
+    },
+    {
+      "name": "陈霜",
+      "title": "PingCAP | TiDB 研发工程师",
+      "avatar": "https://download.pingcap.com/images/instructors/chenshuang.jpg",
       "judge": false,
       "tba": false
     },
