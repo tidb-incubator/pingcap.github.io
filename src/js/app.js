@@ -48,14 +48,33 @@ function initialSearch(lang) {
     debug: false, // Set debug to true if you want to inspect the dropdown
     transformData: function(hits) {
       // filter 404 results
-      function is404(h) {
-        var pattern = /404/gi
-        return h && h.lvl1 && pattern.exec(h.lvl1)
-      }
-      var filteredHits = hits.filter(function(hit) {
-        return !is404(hit.hierarchy)
+      // function is404(h) {
+      //   var pattern = /404/gi
+      //   return h && h.lvl1 && pattern.exec(h.lvl1)
+      // }
+      // var filteredHits = hits.filter(function(hit) {
+      //   return !is404(hit.hierarchy)
+      // })
+      // return filteredHits
+
+      hits.forEach((hit, idx) => {
+        var preKey
+        for (var key in hit.hierarchy) {
+
+          if(idx == 6 && hit.hierarchy[key] != null) {
+            let newAnchor = hit.hierarchy[key].replace(/\s+/g, '-').replace(/[^-\w\u4E00-\u9FFF]*/g, '').toLowerCase()
+            hits[idx].anchor = newAnchor
+            hits[idx].url = hits[idx].url.replace(/\#.*$/g, '#' + newAnchor)
+          } else if(hit.hierarchy[key] == null) {
+            let newAnchor = hit.hierarchy[preKey].replace(/\s+/g, '-').replace(/[^-\w\u4E00-\u9FFF]*/g, '').toLowerCase()
+            hits[idx].anchor = newAnchor
+            hits[idx].url = hits[idx].url.replace(/\#.*$/g, '#' + newAnchor)
+            continue
+          }
+          
+          preKey = key
+        }
       })
-      return filteredHits
     },
   })
 }
