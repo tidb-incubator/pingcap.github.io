@@ -60,18 +60,16 @@ function initialSearch(lang) {
       hits.forEach((hit, idx) => {
         var preKey
         for (var key in hit.hierarchy) {
-
           if(idx == 6 && hit.hierarchy[key] != null) {
             let newAnchor = hit.hierarchy[key].replace(/\s+/g, '-').replace(/[^-\w\u4E00-\u9FFF]*/g, '').toLowerCase()
             hits[idx].anchor = newAnchor
             hits[idx].url = hits[idx].url.replace(/\#.*$/g, '#' + newAnchor)
-          } else if(hit.hierarchy[key] == null) {
+          } else if(hit.hierarchy[key] == null && hit.hierarchy[preKey] != null) {
             let newAnchor = hit.hierarchy[preKey].replace(/\s+/g, '-').replace(/[^-\w\u4E00-\u9FFF]*/g, '').toLowerCase()
             hits[idx].anchor = newAnchor
             hits[idx].url = hits[idx].url.replace(/\#.*$/g, '#' + newAnchor)
-            continue
+            break
           }
-          
           preKey = key
         }
       })
