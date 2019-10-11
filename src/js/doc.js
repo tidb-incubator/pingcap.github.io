@@ -49,15 +49,17 @@ function processStickyTree() {
   ]
 
   if ($('#list_page').length == 0 && !banned_path_arr.includes(pathname)) {
-    $('.sticky-sidebar').animate(
-      {
-        scrollTop:
-          $('li.leaf-child.active').offset().top -
-          $('.sticky-sidebar').offset().top -
-          200,
-      },
-      1000
-    )
+    if($('li.leaf-child.active').length > 0) {
+      $('.sticky-sidebar').animate(
+        {
+          scrollTop:
+            $('li.leaf-child.active').offset().top -
+            $('.sticky-sidebar').offset().top -
+            200,
+        },
+        1000
+      )
+    }
   }
 
   // Open the first item in docs/docs-cn/weekly/recruit list page
