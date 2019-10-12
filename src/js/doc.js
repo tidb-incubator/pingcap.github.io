@@ -43,7 +43,7 @@ function processStickyTree() {
 
   var pathname = window.location.pathname
 
-  if ($('#list_page').length == 0 && !banned_path_arr.includes(pathname)) {
+  if ($('#list_page').length == 0) {
     if($('li.leaf-child.active').length > 0) {
       $('.sticky-sidebar').animate(
         {
