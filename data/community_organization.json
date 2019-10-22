@@ -2,7 +2,7 @@
     "developer_members": {
         "maintainer": [
             {
-                "avatar": "/images/community/organization/sunxiaoguang.jpeg",
+                "avatar": "https://download.pingcap.com/images/community/organization/sunxiaoguang.jpeg",
                 "link": "https://github.com/sunxiaoguang",
                 "name": "孙晓光",
                 "title": "知乎 | 技术平台负责人",
@@ -73,7 +73,7 @@
     "user_members": {
         "leader": [
             {
-                "avatar": "/images/community/organization/sunxiaoguang.jpeg",
+                "avatar": "https://download.pingcap.com/images/community/organization/sunxiaoguang.jpeg",
                 "link": "https://github.com/sunxiaoguang",
                 "name": "孙晓光 - TUG （北京区） Leader",
                 "title": "知乎 | 技术平台负责人",
