@@ -497,6 +497,14 @@ button.branchBtn.userBtn.orgBtn.tr {
   font-size: 12px;
   border-radius: 2px;
   margin-left: 20px;
+
+  @media (max-width: 768px) {
+    margin-left: 5px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 3px 7px;
+  }
 }
 
 .tag-tidb {
@@ -817,6 +825,25 @@ button.branchBtn.userBtn.orgBtn.tr {
     top: 6rem !important;
     left: -57px;
   }
+
+  .contributor-info {
+    .name {
+      left: 5%;
+    }
+
+    img {
+      margin-left: 23%;
+      width: 15px !important;
+    }
+
+    .githubID {
+      padding: 13px 13px 13px 6px !important;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 405px) {
@@ -871,25 +898,6 @@ button.branchBtn.userBtn.orgBtn.tr {
 
     .member .member-info {
       width: 60%;
-    }
-
-    .contributor-info {
-      .name {
-        left: 5%;
-      }
-
-      img {
-        margin-left: 23%;
-        width: 15px;
-      }
-
-      .githubID {
-        padding: 13px 13px 13px 6px;
-      }
-
-      p {
-        font-size: 14px;
-      }
     }
   }
 
