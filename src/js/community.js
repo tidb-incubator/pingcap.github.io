@@ -270,6 +270,12 @@ $(document).ready(function() {
       }
       $(this).toggleClass('thumbnail-text-click')
     })
+  } else {
+    $('.j-thumbnailText-click').hover(function() {
+      $(this).addClass('thumbnail-text-click')
+    }, function() {
+      $(this).removeClass('thumbnail-text-click')
+    })
   }
 
   $('.modal-overlay').on('click', function(e) {
