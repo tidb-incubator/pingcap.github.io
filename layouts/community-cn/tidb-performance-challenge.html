@@ -6,7 +6,7 @@ TiDB Performance Challenge
 {{- define "headTpl" -}}
 {{ $.Scratch.Set "nav_active" "community" }}
 {{ $.Scratch.Set "data_i18_cn" true }}
-{{ $.Scratch.Set "data_i18_link" "/community/organization" }}
+{{ $.Scratch.Set "data_i18_link" "/community/tidb-performance-challenge" }}
 {{- partial "head/preload-css" (dict "href" "/css/community/tidb-performance-challenge.css") -}}
 <link
   rel="stylesheet"
@@ -218,7 +218,7 @@ TiDB Performance Challenge
     <div id="tpc-ranking-switch">
       <div class="first">赛季积分</div>
       <div class="second">历史积分</div>
-      <div class="slider"></div>
+      <div class="slider" data-lang="cn"></div>
     </div>
     <div id="ranking-list"></div>
   </div>
