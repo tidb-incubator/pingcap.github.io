@@ -23,6 +23,10 @@
   }
 }
 
+.title-en {
+  font-size: 2.4rem !important;
+}
+
 .tpc-arrow-button {
   transition: 0.5s;
 
@@ -225,6 +229,14 @@
   }
 
   .card-content {
+    .card-en-desc {
+      text-align: left;
+
+      @media only screen and (max-width: 375px) {
+        padding: 0 !important;
+      }
+    }
+
     p {
       padding: 1rem 0;
       font-size: 0.8rem;
@@ -232,7 +244,7 @@
     }
 
     .subtitle {
-      margin-top: 1rem;
+      margin: 1rem 0 !important;
       color: @purple;
       font-size: 0.8rem;
     }
