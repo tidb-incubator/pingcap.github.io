@@ -9,14 +9,6 @@
             "newTab": false
         },
         {
-            "link": "/about-cn/recruit/join/#campus",
-            "gaTrackEventClass": "20CampusRecruit_view",
-            "gaTrackEventLabel": "homepage-20CampusRecruit-banner",
-            "img": "https://download.pingcap.com/images/recruit-carousel-img.jpg",
-            "alt": "Recruit banner",
-            "newTab": false
-        },
-        {
             "link": "https://university.pingcap.com/",
             "gaTrackEventClass": "pingcap-university_view",
             "gaTrackEventLabel": "homepage-university-banner",
