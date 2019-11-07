@@ -43,7 +43,7 @@ function initialSearch(lang) {
   let urlParams = new URLSearchParams(window.location.search)
   let url = window.location.href
   
-  var re = new RegExp("(v\\d+\\.\\d+|dev)")
+  var re = new RegExp("(v\\d+\\.\\d+|dev|stable)")
   var version
   var newHitArray = []
 
