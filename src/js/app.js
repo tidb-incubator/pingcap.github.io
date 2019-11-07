@@ -54,7 +54,8 @@ function initialSearch(lang) {
   
   if (urlParams.has('q')) {
     $('#search-input').val(urlParams.get('q'))
-    const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
+    // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
+    const client = algoliasearch('2N81NWJ6CR', '98d2e757b08fb5b7b0d30d89d0c855f2');
     const index = client.initIndex('pingcap');
 
     index.search(
@@ -68,6 +69,7 @@ function initialSearch(lang) {
         if(err) throw err;
         var categoryArr = []
 
+        console.log('client', client)
         console.log('hit', hits)
 
         // selects the first result of each category and puts into the new hit array
