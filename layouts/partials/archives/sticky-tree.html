@@ -2,7 +2,7 @@
     <div class="sticky-sidebar {{ if .type }}docs-sticky-sidebar{{ end }}">
         <div class="title"> {{ .title }} </div>
         {{- if .type -}}
-            {{ partial "archives/version-switcher.html" (dict "stable_version" .stable_version "total_versions" .total_versions "current_version" .current_version "doesnot_exist_ver" .doesnot_exist_ver "trimed_URL" .trimed_URL "type" .type) }}
+            {{ partial "archives/version-switcher.html" (dict "global" . "permalink" .permalink "content_file_path" .content_file_path "sv" .sv "tv" .tv "cv" .cv) }}
         {{- end -}}
         <div class="st_tree nav-toc {{ if .type }}docs-nav-toc{{ end }}">
         {{- partial "navs/tree-nav.html" (dict "tree" .tree "global" .) -}}
