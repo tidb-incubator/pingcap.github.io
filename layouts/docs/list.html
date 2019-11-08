@@ -28,9 +28,9 @@
         </div>
 
         <div class="sidebar-page sticky-sidebar">
-            {{ $current_page := printf "%s%s%s" "docs-cn/" $current_version "/overview.md" }}
+            {{ $current_page := printf "%s%s%s" "docs/" $current_version "/overview.md" }}
             {{ with .Site.GetPage "page" $current_page }}
-                {{- partial "archives/request-docs-changes.html" (dict "repo" "docs" "global" . "link" .Permalink "prefixRepo" "docs/") -}}
+                {{- partial "archives/request-docs-changes.html" (dict "repo" "docs" "global" . "link" .Permalink "prefixRepo" "docs/" "sv" $stable_version) -}}
             {{ end }}
             {{ $download_pdf := cond (eq $current_version "stable") $stable_version $current_version }}
             {{ partial "archives/download-pdf.html" (dict "version" $download_pdf) }}
