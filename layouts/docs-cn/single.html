@@ -26,7 +26,7 @@
                 {{ .Content }}
             </div>
             <div class="article-toc"></div>
-            {{- partial "archives/git-info.html" (dict "repo" "docs-cn" "isCn" "true" "global" .) -}}
+            {{- partial "archives/git-info.html" (dict "repo" "docs-cn" "isCn" "true" "global" . "sv" $stable_version) -}}
         </div>
 
         <div class="sidebar-page sticky-sidebar">
