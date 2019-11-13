@@ -42,7 +42,7 @@ function processHash() {
 function initialSearch(lang) {
   let urlParams = new URLSearchParams(window.location.search)
   let url = window.location.href
-  
+
   var re = new RegExp("(v\\d+\\.\\d+|dev|stable)")
   var version
   var newHitArray = []
@@ -51,11 +51,11 @@ function initialSearch(lang) {
   if (url.match(re)) {
     version = url.match(re)[0]
   }
-  
+
   if (urlParams.has('q')) {
     $('#search-input').val(urlParams.get('q'))
-    // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
-    const client = algoliasearch('2N81NWJ6CR', '98d2e757b08fb5b7b0d30d89d0c855f2');
+    const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
+    // const client = algoliasearch('2N81NWJ6CR', '98d2e757b08fb5b7b0d30d89d0c855f2');
     const index = client.initIndex('pingcap');
 
     index.search(
