@@ -8,7 +8,6 @@ old_versions=(v2.1 dev)
 consolidate_duplicate_urls() {
     local doc_temp_path=$1
     local doc_version=$2
-    echo "executing..."
 
     if [ -d $doc_temp_path ]; then
         for html in $doc_temp_path/*
@@ -20,10 +19,7 @@ consolidate_duplicate_urls() {
 
                 if [ -f $file_path_in_stable ]; then
                     path=$(dirname ${file_path_in_stable#*/})
-                    echo $html
                     sed -i "s@<\/head>@<link rel=\"canonical\" href=\"https:\/\/pingcap.com\/$path\" \/><\/head>@g" $html
-                    cat $html | grep "</head>"
-                    ls $doc_temp_path
                 fi
             fi
         done
@@ -35,5 +31,3 @@ do
     consolidate_duplicate_urls dist/docs-cn/$v $v
     consolidate_duplicate_urls dist/docs/$v $v
 done
-
-# consolidate_duplicate_urls dist/docs-cn/v2.1/how-to/get-started/explore-sql v2.1
