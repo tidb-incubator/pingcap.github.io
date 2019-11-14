@@ -48,9 +48,9 @@ jobs:
 
       - run: npm run build
 
-      # - run:
-      #    name: consolidate duplicate URLs
-      #    command: bash ./scripts/consolidate-duplicate-urls.sh
+      - run:
+         name: consolidate duplicate URLs
+         command: bash ./scripts/consolidate-duplicate-urls.sh
 
       - deploy:
           name: 'Publish Website'
