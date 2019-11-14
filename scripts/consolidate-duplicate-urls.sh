@@ -20,7 +20,7 @@ consolidate_duplicate_urls() {
                 if [ -f $file_path_in_stable ]; then
                     path=$(dirname ${file_path_in_stable#*/})
                     echo $html
-                    sed -i "s@<\/head>@<link rel=\"canonical\" href=\"https:\/\/pingcap.com\/$path\" \/><\/head>@g" $html
+                    sed -i .bak "s@<\/head>@<link rel=\"canonical\" href=\"https:\/\/pingcap.com\/$path\" \/><\/head>@g" $html
                 fi
             fi
         done
