@@ -1,7 +1,7 @@
 ---
 title: 资深互联网架构师
 tags:
-  - Business
+  - User Ecosystem
 location: 北京，上海，杭州
 avatar: business
 position: true

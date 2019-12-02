@@ -1,7 +1,7 @@
 ---
 title: 用户生态技术运营
 tags:
-  - Business
+  - User Ecosystem
 location: 北京，上海
 avatar: marketing
 position: true
