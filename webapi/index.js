@@ -62,12 +62,11 @@ fs.stat(`${__dirname}/../data/tidb_contributors.json`, (err, stats) => {
 })
 
 server.get('/api/contributors', (req, res) => {
-  console.log('in get function....')
   if (contributorsData) res.json({ code: 200, data: contributorsData })
   else res.json({ code: 500, data: null })
 })
 
-server.get('/api/tidb_contributors', (req, res) => {
+server.get('/api/tidb-contributors', (req, res) => {
   console.log('getting tidb contributors...')
   if (tidbContributorData) res.json({ code: 200, data: tidbContributorData })
   else res.json({ code: 500, data: null })
