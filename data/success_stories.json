@@ -18,7 +18,6 @@
         "link": "https://pingcap.com/success-stories/tidb-in-bookmyshow/",
         "logo": "/images/customers/bookmyshow-logo.png",
         "scale": "50 million users in 650 cities",
-        "isCarousel": true,
         "isShow": true,
         "summary": "As India's largest e-commerce site for booking entertainment tickets online, BookMyShow has deployed TiDB in the production environment. With TiDB, BookMyShow has experienced increased uptime and availability. Meanwhile, operational and maintenance cost has been reduced by 30% and no engineer needs to be fully dedicated to database operations anymore."
       },
@@ -28,7 +27,6 @@
         "websiteLink": "https://en.wikipedia.org/wiki/Shopee",
         "link": "https://pingcap.com/success-stories/tidb-in-shopee/",
         "logo": "/images/customers/shopee-logo.png",
-        "isCarousel": true,
         "scale": "millions of users in 7 regions",
         "isShow": true,
         "summary": "As the leading e-commerce platform in Southeast Asia and Taiwan, Shopee has deployed two TiDB clusters totalling 60 nodes in the risk control and audit log systems."
@@ -48,7 +46,6 @@
         "websiteLink": "https://en.wikipedia.org/wiki/Meituan-Dianping",
         "link": "https://www.pingcap.com/success-stories/tidb-in-meituan-dianping/",
         "logo": "/images/customers/meituan-dianping-logo.png",
-        "isCarousel": true,
         "summary": "As China's largest group-buying website, serving 290 million monthly users, Meituan-Dianping has deployed 10 TiDB clusters in the production environment, with nearly 200 physical nodes."
       },
       {
@@ -57,7 +54,6 @@
         "websiteLink": "https://en.wikipedia.org/wiki/IQiyi",
         "link": "https://www.pingcap.com/success-stories/tidb-in-iqiyi/",
         "logo": "/images/customers/iqiyi-logo.jpg",
-        "isCarousel": true,
         "summary": "As China's largest online video-on-demand platform, iQiyi has deployed TiDB in the internal system of its database cloud team."
       },
       {
