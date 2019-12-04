@@ -3,12 +3,21 @@
     "name": "Internet",
     "children": [ 
       {
+        "name": "NetEase Games",
+        "industry": "Gaming",
+        "websiteLink": "https://www.neteasegames.com/",
+        "link": "https://pingcap.com/success-stories/why-we-chose-a-distributed-sql-database-alongside-mysql-to-break-down-data-silos/",
+        "logo": "/images/customers/netease-games-logo.png",
+        "scale": "280+ games with millions of DAU",
+        "isShow": true,
+        "summary": "As one of the biggest players in China's online gaming market, NetEase Games has deployed TiDB in the production environment to serve billing applications. With TiDB, NetEase Games is able to gain insights from data and create value for its users. They also plan to move more services to TiDB in the future."
+      },
+      {
         "name": "Xiaomi",
         "industry": "Consumer Electronics",
         "websiteLink": "https://en.wikipedia.org/wiki/Xiaomi",
         "link": "https://pingcap.com/success-stories/tidb-in-xiaomi/",
         "logo": "/images/customers/xiaomi-logo.png",
-        "isCarousel": true,
         "summary": "As a leading consumer electronics and software company and the fourth-largest smartphone manufacturer in the world, Xiaomi has deployed TiDB in the production environment to service two applications: instant delivery and the third party ad network. These two workloads generate about 100 million read and write queries daily. They also have plans to migrate additional workloads to TiDB in the future."
       },
       {
