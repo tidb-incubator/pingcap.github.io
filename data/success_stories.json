@@ -27,7 +27,6 @@
         "link": "https://pingcap.com/success-stories/tidb-in-bookmyshow/",
         "logo": "/images/customers/bookmyshow-logo.png",
         "scale": "50 million users in 650 cities",
-        "isShow": true,
         "summary": "As India's largest e-commerce site for booking entertainment tickets online, BookMyShow has deployed TiDB in the production environment. With TiDB, BookMyShow has experienced increased uptime and availability. Meanwhile, operational and maintenance cost has been reduced by 30% and no engineer needs to be fully dedicated to database operations anymore."
       },
       {
