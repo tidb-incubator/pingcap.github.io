@@ -21,6 +21,7 @@
         {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_" "cv" $current_version "sv" $stable_version "tv" $total_versions) }}
         <div class="archive">
             <div class="content markdown-body">
+                {{ partial "archives/math.html" . }}
                 {{- .Content -}}
             </div>
             <div class="article-toc"></div>
