@@ -6,22 +6,19 @@
         <div class="container">
             <div class="release-banner__inner">
                 <div class="release-banner__copy">
+                    {{ if not $data_i18_cn }}
                     <div class="party">
-                      {{ if $data_i18_cn }}
-                          <span>🔥</span>
-                      {{ else }}
                           <span>🎉</span>
-                      {{ end }}
                     </div>
+                    {{ end }}
                     <div>
                         {{ if $data_i18_cn }}
-                            <a href="{{ $release.link.cn }}" target="_blank"
-                              onclick="trackViews('university-release-banner', 'university_signup_form_view')">报名 TiDB DBA 线下商业培训</a>
-                              {{ $release.announcement.cn }}
+                            <a href="{{ $release.link.cn }}" target="_blank" class="hover-underline"
+                              onclick="trackViews('university-release-banner', 'university_signup_form_view')">{{ $release.announcement.cn }}</a>
                         {{ else }}
                             <!-- {{ $release.announcement.en }}
                             <a href="{{ $release.link.en }}">Check it out</a> -->
-                            {{ $release.announcement.en_part1 }} <a href="{{ $release.link.en }}">HERE</a> {{ $release.announcement.en_part2 }}
+                            {{ $release.announcement.en_part1 }} <a href="{{ $release.link.en }}" class="partial-underline">HERE</a> {{ $release.announcement.en_part2 }}
                         {{ end }}
                     </div>
                 </div>
