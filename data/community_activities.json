@@ -104,5 +104,73 @@
       "review_link": "",
       "external_link": true
     }
+  ],
+
+  "learning_materials": [
+    {
+      "title": "源码阅读系列",
+      "brief": "我们希望通过这一系列文章自顶向下，由浅入深，为大家解析 TiDB 的技术原理以及实现细节。",
+      "tags": [
+        {
+          "tag": "TiDB",
+          "color": "#EB5757",
+          "link": "/blog-cn/#TiDB-源码阅读"
+        },
+        {
+          "tag": "TiKV",
+          "color": "#1477ED",
+          "link": "/blog-cn/#TiKV-源码解析"
+        },
+        {
+          "tag": "TiDB Binlog",
+          "color": "#E4B613",
+          "link": "/blog-cn/#TiDB-Binlog-源码阅读"
+        },
+        {
+          "tag": "DM",
+          "color": "#1EB5D7",
+          "link": "/blog-cn/#DM-源码阅读"
+        },
+        {
+          "tag": "TiDB Ecosystem Tools",
+          "color": "#9ECA22",
+          "link": "/blog-cn/#TiDB-Ecosystem-Tools"
+        }
+      ],
+      "thumb_img": "https://download.pingcap.com/images/community/thumb-source-code.png",
+      "link": "/blog-cn/",
+      "bg_color": "#7D3F98"
+    },
+    {
+      "title": "新手指南",
+      "brief": "加入 TiDB Contributor Club，无门槛参与开源项目，改变世界从这里开始吧。",
+      "link": "/blog-cn/#Contributor",
+      "thumb_img": "https://download.pingcap.com/images/community/thumb-guide.png",
+      "bg_color": "#9ECA22"
+    },
+    {
+      "title": "Talent Plan",
+      "brief": "PingCAP Talent Plan 是 PingCAP 为 TiDB 开源社区小伙伴提供的进阶式学习计划，从语言层面开始，到数据库、分布式系统基础知识，再到 TiDB/TiKV 架构原理和源码，层层递进，最后让小伙伴们在操作实战中加深理解，掌握实操技能。",
+      "link": "https://university.pingcap.com/talent-plan/",
+      "external_link": true,
+      "thumb_img": "https://download.pingcap.com/images/community/thumb-talent-plan.png",
+      "bg_color": "#333333"
+    },
+    {
+      "title": "PingCAP University",
+      "brief": "PingCAP University 是 PingCAP 官方面向企业和个人，致力于培养开发、管理和应用分布式关系型数据库系统的一流人才而设立的培训和认证机构。",
+      "link": "https://university.pingcap.com/",
+      "external_link": true,
+      "thumb_img": "https://download.pingcap.com/images/community/thumb-pu.png",
+      "bg_color": "#172D72"
+    },
+    {
+      "title": "AskTUG",
+      "brief": "AskTUG (asktug.com) 技术问答社区汇集了 TiDB 用户的集体智慧，可解答大家在 TiDB 使用和学习过程中的问题，同时沉淀 TiDB 优质技术内容，促进用户之间的分享交流。",
+      "link": "https://asktug.com/",
+      "external_link": true,
+      "thumb_img": "https://download.pingcap.com/images/community/thumb-asktug.png",
+      "bg_color": "#E49413"
+    }
   ]
 }

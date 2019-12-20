@@ -15,9 +15,9 @@
                     </div>
                     <div>
                         {{ if $data_i18_cn }}
-                            {{ $release.announcement.cn }}
-                            <a href="{{ $release.link.cn }}"
-                              onclick="trackViews('university-release-banner', 'university_signup_form_view')">报名火热开启</a>！
+                            <a href="{{ $release.link.cn }}" target="_blank"
+                              onclick="trackViews('university-release-banner', 'university_signup_form_view')">报名 TiDB DBA 线下商业培训</a>
+                              {{ $release.announcement.cn }}
                         {{ else }}
                             <!-- {{ $release.announcement.en }}
                             <a href="{{ $release.link.en }}">Check it out</a> -->

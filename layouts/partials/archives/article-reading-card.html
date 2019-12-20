@@ -6,7 +6,6 @@
     {{- range .posts -}}
     <a href="{{ .RelPermalink }}">
       <div class="blog__article" data-category="{{ range .Params.categories }}{{ replace . " " "-" }} {{ end }}">
-          <!-- {{ printf "%#v" $listType }} -->
           {{- if ne $listType "blog" -}}
               <div class="logo">
                 {{- if .Params.image}}
