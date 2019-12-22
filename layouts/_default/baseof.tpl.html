@@ -37,7 +37,7 @@
 <body {{ if $homepage }}class="homepage"{{ end }}>
     <!-- {{- partial "loaders/page-loader.html" -}} -->
 
-    <div id="page-content" style="display: none;">
+    <div id="page-content">
         {{- $data_i18_cn := $.Scratch.Get "data_i18_cn" -}}
 
         {{- if $homepage -}}
