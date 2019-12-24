@@ -44,7 +44,7 @@ function processStickyTree() {
   var pathname = window.location.pathname
 
   if ($('#list_page').length == 0) {
-    if($('li.leaf-child.active').length > 0) {
+    if ($('li.leaf-child.active').length > 0) {
       $('.docs-nav-toc').animate(
         {
           scrollTop:
@@ -95,7 +95,11 @@ function processTags(showMoreList) {
     $(`.nav-tags .tag[data-tag="${hash.slice(1)}"]`).addClass('sel')
     $('.article-list .article').each(function() {
       const $this = $(this)
-      if ($this.data('tag').includes(hash.slice(1))) {
+      var tagsArr = $this
+        .data('tag')
+        .slice(0, -1)
+        .split(' ')
+      if (tagsArr.includes(hash.slice(1))) {
         $this.show()
       } else {
         $this.hide()
@@ -217,7 +221,6 @@ $(document).ready(function() {
     const isInlineTag = $this.hasClass('anchor-tag')
     const isAll = $this.hasClass('all')
     const filter = isInlineTag ? $this.text().trim() : $this.data('tag')
-
     $('.nav-tags .tag').removeClass('sel')
     $(`.nav-tags .tag[data-tag="${filter}"]`).addClass('sel')
     $('.nav-tags .category').removeClass('catesel')
@@ -254,10 +257,15 @@ $(document).ready(function() {
         // filter articles if the list type is blog-cn list
         $('.article-list .article').each(function() {
           const $this = $(this)
+
           if (isAll) {
             $this.show()
           } else {
-            if ($this.data('tag').includes(filter)) {
+            var tagsArr = $this
+              .data('tag')
+              .slice(0, -1)
+              .split(' ')
+            if (tagsArr.includes(filter)) {
               $this.show()
             } else {
               $this.hide()
@@ -277,15 +285,15 @@ $(document).ready(function() {
   if ($('.doc').length > 0) {
     if ($('.copyable-code-block').length) {
       $('.copyable-code-block').each(function() {
-        if($(this).next('div.highlight')[0]) {
+        if ($(this).next('div.highlight')[0]) {
           var preTag = $(this).next('div.highlight')[0].childNodes[0]
           var $preTag = $(preTag)
           $preTag.css('position', 'relative')
-  
+
           var codeTag = $(this).next('div.highlight')[0].childNodes[0]
             .childNodes[0]
           var $codeTag = $(codeTag)
-  
+
           if ($(this).hasClass('shell-root')) {
             $codeTag.addClass('shell-root-mark')
             $codeTag.addClass('cmd-mark')
@@ -296,7 +304,7 @@ $(document).ready(function() {
             $codeTag.addClass('sql-mark')
             $codeTag.addClass('cmd-mark')
           }
-  
+
           addCopy($(this).next('div.highlight')[0])
         }
       })
@@ -345,7 +353,7 @@ $(document).ready(function() {
     })
 
     // add code block to tree-nav
-    if($('.has-code').length > 0) {
+    if ($('.has-code').length > 0) {
       $('.has-code').each(function() {
         var re = /`.*?`/g
         let innerText = $(this)[0].innerText
@@ -353,12 +361,15 @@ $(document).ready(function() {
         matchedArr.forEach(i => {
           let len = i.length
           let trimedText = i.substr(1, len - 2)
-          innerText = innerText.replace(i, '<span class="sidebar-code">' + trimedText + '</span>')
+          innerText = innerText.replace(
+            i,
+            '<span class="sidebar-code">' + trimedText + '</span>'
+          )
         })
 
         $(this)[0].innerText = ''
         $(this).append(innerText)
-      }) 
+      })
     }
   }
 
