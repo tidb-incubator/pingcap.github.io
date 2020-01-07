@@ -50,6 +50,52 @@
                 "title": "Samsung Electronics | Cloud Database Engineering",
                 "githubID": "dbjoa",
                 "tag": "TiDB"
+            },
+            {
+                "avatar": "https://download.pingcap.com/images/community/organization/niedianhui.png",
+                "link": "https://github.com/niedhui",
+                "name": "聂殿辉",
+                "title": "连尚网络 | 高级工程师",
+                "githubID": "niedhui",
+                "tag": "TiKV"
+            }
+        ],
+        "reviewer": [
+            {
+                "name": "高海涛",
+                "githubID": "tsthght",
+                "link": "https://github.com/tsthght",
+                "tag": "TiDB"
+            },
+            {
+                "name": "白砷",
+                "githubID": "b41sh",
+                "link": "https://github.com/b41sh",
+                "tag": "TiDB"
+            },
+            {
+                "name": "唐伟志",
+                "githubID": "tangwz",
+                "link": "https://github.com/tangwz",
+                "tag": "TiDB"
+            },
+            {
+                "name": "马钰杰",
+                "githubID": "mmyj",
+                "link": "https://github.com/mmyh",
+                "tag": "TiDB"
+            },
+            {
+                "name": "庄天翼",
+                "githubID": "TennyZhuang",
+                "link": "https://github.com/TennyZhuang",
+                "tag": "TiKV"
+            },
+            {
+                "name": "陈付",
+                "githubID": "fredchenbj",
+                "link": "https://github.com/fredchenbj",
+                "tag": "TiKV"
             }
         ],
         "active_contributor": [
@@ -76,6 +122,90 @@
                 "githubID": "mathspanda",
                 "link": "https://github.com/mathspanda",
                 "tag": "TiDB Operator"
+            },
+            {
+                "name": "陈之豪",
+                "githubID": "jacklightChen",
+                "link": "https://github.com/jacklightChen",
+                "tag": "TiDB"
+            },
+            {
+                "name": "王亮",
+                "githubID": "hey-kong",
+                "link": "https://github.com/hey-kong",
+                "tag": "TiDB"
+            },
+            {
+                "name": "刘洪根",
+                "githubID": "lauhg",
+                "link": "https://github.com/lauhg",
+                "tag": "TiDB"
+            },
+            {
+                "name": "史鸿志",
+                "githubID": "shihongzhi",
+                "link": "https://github.com/shihongzhi",
+                "tag": "TiDB"
+            },
+            {
+                "name": "张之逸",
+                "githubID": "js00070",
+                "link": "https://github.com/js00070",
+                "tag": "TiDB"
+            },
+            {
+                "name": "Eugene Kalinin",
+                "githubID": "ekalinin",
+                "link": "https://github.com/ekalinin",
+                "tag": "TiDB"
+            },
+            {
+                "name": "王冲",
+                "githubID": "icditwang",
+                "link": "https://github.com/icditwang",
+                "tag": "TiDB"
+            },
+            {
+                "name": "pingyu",
+                "githubID": "pingyu",
+                "link": "https://github.com/pingyu",
+                "tag": "TiDB"
+            },
+            {
+                "name": "潘迪",
+                "githubID": "AndrewDi",
+                "link": "https://github.com/AndrewDi",
+                "tag": "TiDB"
+            },
+            {
+                "name": "Aerys",
+                "githubID": "AerysNan",
+                "link": "https://github.com/AerysNan",
+                "tag": "TiDB"
+            },
+            {
+                "name": "Ye Kuang",
+                "githubID": "k-ye",
+                "link": "https://github.com/k-ye",
+                "tag": "TiDB"
+            },
+            {
+                "name": "王维真",
+                "githubID": "hawkingrei",
+                "link": "https://github.com/hawkingrei",
+                "tag": "TiKV"
+            },
+            {
+                "name": "陈钦轩",
+                "githubID": "koushiro",
+                "link": "https://github.com/koushiro",
+                "tag": "TiKV"
+            },
+            {
+                "name": "朱梓豪",
+                "githubID": "cireu",
+                "link": "https://github.com/cireu",
+                "tag": "TiKV"
             }
         ],
         "maintainer_en": [

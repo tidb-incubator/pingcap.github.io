@@ -55,13 +55,8 @@ const elem =
 
 export function dynamicAddSubscribeForm() {
   if (window.matchMedia('(max-width: 879px)').matches) {
-    console.log(
-      'on mobile device, add mc_embed_signup element in sidebar',
-      $('#mc_embed_signup')
-    )
     $(elem).appendTo('#subscribe-mobile')
   } else {
-    console.log('on pc device, remove subscribe element in mobile sidebar')
     $(elem).appendTo('#subscribe-pc')
   }
 

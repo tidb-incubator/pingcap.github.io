@@ -5,9 +5,6 @@ const octokit = require('@octokit/rest')()
 const key = process.env.GITHUB_OAUTH_CLIENT_ID
 const secret = process.env.GITHUB_OAUTH_CLIENT_SECRET
 
-console.log(key)
-console.log(secret)
-
 if(key && secret)
   octokit.authenticate({
     type: 'oauth',

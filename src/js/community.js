@@ -78,15 +78,12 @@ $(document).ready(function() {
   }
   if (hash) {
     if (hash == '#activities') {
-      console.log('activities', extraH_arch)
       $('html, body').animate(
         {
           scrollTop: $('.activity__section').offset().top - extraH_arch,
         },
         1000
       )
-    } else if (hash.slice(-9) == '-schedule') {
-      console.log('schedule')
     }
   }
   // displays events in this selected day
@@ -114,7 +111,6 @@ $(document).ready(function() {
   $('#' + contentTabID).show()
   $('input').on('click', function() {
     contentTabID = $('input:checked').val()
-    console.log('contentID: ', contentTabID)
     $('.schedules').hide()
     $('#' + contentTabID).show()
     $('.city').removeClass('schedule-btn-checked')

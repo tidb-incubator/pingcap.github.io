@@ -22,7 +22,6 @@
   // otherwise, stay at welcome page
     if(location.href.search('#access_token') == -1 && location.pathname == '/tidb-academy/' &&
         localStorage.getItem('access_token')) {
-        console.log('1')
         window.location.pathname = '/tidb-academy/mysql_dbas/introduction/course-overview/'
     }
 </script>

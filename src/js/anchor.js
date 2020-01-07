@@ -1,12 +1,9 @@
 ;(function() {
   const ids = $('.content.markdown-body').find('h1, h2, h3, h4, h5, h6')
-  // console.log('ids', ids)
   let idsText = ids.toArray().map(id => {
     return id.textContent
   })
   const idsMap = new Map()
-
-  // console.log('ids text: ', idsText)
 
   idsText = idsText.map(id => {
     if (idsMap.has(id)) {
@@ -18,8 +15,6 @@
       return id
     }
   })
-
-  // console.log('ids text: ', idsMap, idsText)
 
   ids.each(function(index) {
     const that = $(this)

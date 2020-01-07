@@ -4,7 +4,6 @@ function handleWebsiteNavDisplay() {
     h = $('header').height()
 
   if (scrollVal > 0 && $('.devcon-nav').length != 0) {
-    // console.log('scrolling...')
     $('header').hide()
     $('.devcon-nav').css('top', '0')
     $('.devCon').css('padding-top', h)
@@ -247,7 +246,6 @@ $(document).ready(function() {
   }
   if (hash) {
     if (hash == '#contributor') {
-      console.log('contributor', extraH_contributor)
       $('html, body').animate(
         {
           scrollTop:
@@ -256,7 +254,6 @@ $(document).ready(function() {
         1000
       )
     } else if (hash == '#committer') {
-      console.log('committer', extraH_contributor)
       $('html, body').animate(
         {
           scrollTop: $('.committer__detail').offset().top - extraH_contributor,
@@ -264,7 +261,6 @@ $(document).ready(function() {
         1000
       )
     } else if (hash == '#architecture') {
-      console.log('architecture', extraH_arch)
       $('html, body').animate(
         {
           scrollTop:

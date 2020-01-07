@@ -128,6 +128,17 @@
                   </div>
                 {{- end -}}
               </div>
+              <div class="member-type">Reviewer</div>
+              <div class="flex-lists divider members contributor">
+                  {{- range $idx, $i := .Site.Data.community_organization.developer_members.reviewer -}}
+                  <a href="{{ $i.link }}" target="_blank" class="contributor-info member flex-lists">
+                      <p class="name">{{ $i.name }}</p>
+                      <img src="/images/github.svg">
+                      <p class="githubID">{{ $i.githubID }}</p>
+                      {{ if $i.tag }}<div class="contribution-tag tag-{{ lower (replace $i.tag " " "-") }}">{{ $i.tag }}</div>{{ end }}
+                  </a>
+                  {{- end -}}
+              </div>
               <div class="member-type">Active Contributor</div>
               <div class="flex-lists divider members contributor">
                   {{- range $idx, $i := .Site.Data.community_organization.developer_members.active_contributor -}}
@@ -137,7 +148,7 @@
                       <p class="githubID">{{ $i.githubID }}</p>
                       {{ if $i.tag }}<div class="contribution-tag tag-{{ lower (replace $i.tag " " "-") }}">{{ $i.tag }}</div>{{ end }}
                   </a>
-                {{- end -}}
+                  {{- end -}}
               </div>
               <div class="member-type">Contributor</div>
               <div class="flex-lists members contributor">

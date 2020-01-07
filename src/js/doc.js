@@ -235,7 +235,6 @@ $(document).ready(function() {
     } else {
       // filter articles if the list type is blog list
       if (pageType === 'blog-list') {
-        console.log('blog list')
         var listIdx = 0
         $('#showMore').css('display', 'none')
         $('.article-list .article').each(function() {

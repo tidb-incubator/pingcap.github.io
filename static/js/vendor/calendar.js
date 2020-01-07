@@ -3,10 +3,6 @@
   Version: 0.1.0;
   (◠‿◠✿)
 */
-function clickMe() {
-  console.log('click1')
-}
-
 var Calendar = function(model, options, date){
   // Default Values
   this.Options = {

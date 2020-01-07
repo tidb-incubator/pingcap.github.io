@@ -32,8 +32,8 @@ fs.stat(`${__dirname}/../data/contributors.json`, (err, stats) => {
       curr,
       prev
     ) {
-      console.log('the current mtime is: ' + curr.mtime)
-      console.log('the previous mtime was: ' + prev.mtime)
+      // console.log('the current mtime is: ' + curr.mtime)
+      // console.log('the previous mtime was: ' + prev.mtime)
       contributorsData = JSON.parse(
         fs.readFileSync(`${__dirname}/../data/contributors.json`, 'utf8')
       )
@@ -52,8 +52,8 @@ fs.stat(`${__dirname}/../data/tidb_contributors.json`, (err, stats) => {
       curr,
       prev
     ) {
-      console.log('the current mtime is: ' + curr.mtime)
-      console.log('the previous mtime was: ' + prev.mtime)
+      // console.log('the current mtime is: ' + curr.mtime)
+      // console.log('the previous mtime was: ' + prev.mtime)
       tidbContributorData = JSON.parse(
         fs.readFileSync(`${__dirname}/../data/tidb_contributors.json`, 'utf8')
       )
@@ -67,7 +67,7 @@ server.get('/api/contributors', (req, res) => {
 })
 
 server.get('/api/tidb-contributors', (req, res) => {
-  console.log('getting tidb contributors...')
+  // console.log('getting tidb contributors...')
   if (tidbContributorData) res.json({ code: 200, data: tidbContributorData })
   else res.json({ code: 500, data: null })
 })
