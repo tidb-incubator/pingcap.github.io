@@ -7,9 +7,6 @@
 [submodule "content/weekly"]
 	path = content/weekly
 	url = https://github.com/pingcap/weekly.git
-[submodule "content/blog"]
-	path = content/blog
-	url = https://github.com/pingcap/blog.git
 [submodule "content/tidb-academy"]
 	path = content/tidb-academy
 	url = git@github.com:pingcap/private-tidb-academy.git
