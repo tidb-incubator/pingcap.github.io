@@ -272,27 +272,27 @@
                 <div class="user-case">
                     <div class="datas">
                         <div class="data">
-                            <p class="num num1"><span>10000+</span><span>台</span></p>
-                            <p class="desc">集群规模</p>
+                            <p class="num num1"><span>20000+</span></p>
+                            <p class="desc">节点规模</p>
                         </div>
                         <div class="data">
-                            <p class="num num2"><span>1000+</span><span>个</span></p>
-                            <p class="desc">物理节点</p>
+                            <p class="num num2"><span>20000+</span><span>亿</span></p>
+                            <p class="desc">单表最大数据规模</p>
                         </div>
                         <div class="data">
-                            <p class="num num3"><span>110</span><span>T</span></p>
-                            <p class="desc">数据量</p>
+                            <p class="num num3"><span>200+</span></p>
+                            <p class="desc">单集群最大节点规模</p>
                         </div>
                         <div class="data">
-                            <p class="num num4"><span>20000</span><span>亿</span></p>
-                            <p class="desc">单表的典型数据量规模</p>
+                            <p class="num num4"><span>700+</span></p>
+                            <p class="desc">单公司最大集群规模</p>
                         </div>
                     </div>
                     <div class="intro">
                         <p>2019 年</p>
-                        <p>TiDB 被应用于互联网、游戏、银行、保险、证券、航空、电信等多个领域</p>
-                        <p>经受住了近 1000 家企业用户的上线环境打磨</p>
-                        <p>护航 XX+ 电商及金融机构应对 6.18、11.11 大促流量高峰</p></br>
+                        <p>TiDB 被广泛应用于海内外互联网、银行、保险、证券、支付、物流、制造业、快消、电信等多个行业</p>
+                        <p>经受住了近 1000 家企业的线上环境打磨</p>
+                        <p>护航数十家电商、物流及金融机构应对 6.18、11.11 等大促流量高峰</p></br>
                 
                         <p>TiDB 过硬的产品实力背后，有社区开发者持续贡献的支撑</p>
                         <p>也有一线用户在实操中对其的不断打磨</p>
@@ -325,27 +325,27 @@
 <div class="user-case pc-user-case">
     <div class="datas">
         <div class="data">
-            <p class="num num1"><span>10000+</span><span>台</span></p>
-            <p class="desc">集群规模</p>
+            <p class="num num1"><span>20000+</span></p>
+            <p class="desc">节点规模</p>
         </div>
         <div class="data">
-            <p class="num num2"><span>1000+</span><span>个</span></p>
-            <p class="desc">物理节点</p>
+            <p class="num num2"><span>20000+</span><span>亿</span></p>
+            <p class="desc">单表最大数据规模</p>
         </div>
         <div class="data">
-            <p class="num num3"><span>110</span><span>T</span></p>
-            <p class="desc">数据量</p>
+            <p class="num num3"><span>200+</span></p>
+            <p class="desc">单集群最大节点规模</p>
         </div>
         <div class="data">
-            <p class="num num4"><span>20000</span><span>亿</span></p>
-            <p class="desc">单表的典型数据量规模</p>
+            <p class="num num4"><span>700+</span></p>
+            <p class="desc">单公司最大集群规模</p>
         </div>
     </div>
     <div class="intro">
         <p>2019 年</p>
-        <p>TiDB 被应用于互联网、游戏、银行、保险、证券、航空、电信等多个领域</p>
-        <p>经受住了近 1000 家企业用户的上线环境打磨</p>
-        <p>护航 XX+ 电商及金融机构应对 6.18、11.11 大促流量高峰</p></br>
+        <p>TiDB 被广泛应用于海内外互联网、银行、保险、证券、支付、物流、制造业、快消、电信等多个行业</p>
+        <p>经受住了近 1000 家企业的线上环境打磨</p>
+        <p>护航数十家电商、物流及金融机构应对 6.18、11.11 等大促流量高峰</p></br>
 
         <p>TiDB 过硬的产品实力背后，有社区开发者持续贡献的支撑</p>
         <p>也有一线用户在实操中对其的不断打磨</p>
@@ -366,7 +366,7 @@
     var slides_per_view, slides_per_group, pagination_one, pagination_two, pagination_three
 
 
-    if (window.matchMedia('(max-width: 768px)').matches) {
+    if (window.matchMedia('(max-width: 600px)').matches) {
         slides_per_view = 1
         slides_per_group = 1
     } else {
@@ -383,7 +383,7 @@
             el: '.pagination-one',
             clickable: true,
         },
-        slidesPerView: 3,
+        slidesPerView: slides_per_view,
         spaceBetween: 20,
         loop: false,
         navigation: {

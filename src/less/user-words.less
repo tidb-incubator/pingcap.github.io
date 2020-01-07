@@ -297,6 +297,7 @@
         height: 100px;
         display: flex;
         align-items: center;
+        justify-content: center;
         .section-bg;
 
         span:nth-child(1) {
@@ -475,6 +476,7 @@
         .read-more {
           font-size: @size-8;
           display: block;
+          padding: 0 0.5rem;
         }
 
         .quote {
@@ -565,12 +567,12 @@
   .mobile-container {
     .panel {
       .swiper-container {
-        height: 300px;
+        height: 380px;
         margin-top: 3rem;
       }
 
       .swiper-slide {
-        height: 250px;
+        height: 330px;
       }
 
       .swiper-pagination {
@@ -583,7 +585,7 @@
 
       .card {
         .words {
-          height: 100px;
+          height: 180px;
         }
 
         .words,
@@ -620,7 +622,40 @@
 }
 
 @media only screen and (max-width: 320px) {
-  .user-case .intro {
-    padding: 0 1rem 0;
+  .user-case {
+    .datas {
+      padding: 4.5rem 0 0;
+    }
+
+    .intro {
+      padding: 1rem 1rem 0;
+      font-size: @size-9;
+    }
+  }
+
+  .mobile-container {
+    .panel {
+      .swiper-container {
+        height: 300px;
+      }
+
+      .swiper-slide {
+        height: 250px;
+      }
+
+      .swiper-pagination {
+        bottom: 10%;
+      }
+
+      .down-arrow {
+        bottom: 5%;
+      }
+
+      .card {
+        .words {
+          height: 100px;
+        }
+      }
+    }
   }
 }

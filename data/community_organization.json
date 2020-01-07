@@ -100,12 +100,6 @@
         ],
         "active_contributor": [
             {
-                "name": "聂殿辉",
-                "githubID": "niedhui",
-                "link": "https://github.com/niedhui",
-                "tag": "TiKV"
-            },
-            {
                 "name": "杨文",
                 "githubID": "yangwenmai",
                 "link": "https://github.com/yangwenmai",
