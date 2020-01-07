@@ -16,3 +16,6 @@
 [submodule "content/docs"]
 	path = content/docs
 	url = https://github.com/pingcap/docs.git
+[submodule "content/blog"]
+	path = content/blog
+	url = https://github.com/pingcap/blog
