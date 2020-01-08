@@ -96,6 +96,51 @@
   }
 }
 
+#slider-control {
+  position: fixed;
+  opacity: 0;
+  padding: 3px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 4px;
+  margin: 0 10px;
+  height: 30px;
+  border-radius: 30px;
+  background: white;
+  border: 1px solid #fff;
+}
+
+#slider-control .active .dot {
+  background-color: transparent;
+  width: 20px;
+  height: 35px;
+  margin-left: 2px;
+  background-image: url('https://download.pingcap.com/images/user-words/control-down.png');
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: auto;
+  animation: background-move 2s linear infinite;
+}
+
+@keyframes background-move {
+  0% {
+    background-position: top;
+  }
+
+  100% {
+    background-position: bottom;
+  }
+}
+
 .panel {
   height: 750px;
   width: 100%;
@@ -337,7 +382,7 @@
   .intro {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem 3rem;
     text-align: center;
     font-size: @size-7;
     line-height: 2;
@@ -428,7 +473,8 @@
   .pc-container,
   .pc-user-case,
   .pc-logos,
-  .pc-readMoreBtn {
+  .pc-readMoreBtn,
+  .pc-footer {
     display: none;
   }
 
