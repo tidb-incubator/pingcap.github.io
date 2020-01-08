@@ -541,6 +541,12 @@
 
         transform: rotate(-90deg);
       }
+
+      .down-arrow-center {
+        left: 50%;
+        bottom: 2% !important;
+        margin-left: -15px;
+      }
     }
   }
 
@@ -572,7 +578,7 @@
     }
 
     .intro {
-      padding: 1rem 1rem 0;
+      padding: 0 1rem;
       font-size: @size-8;
     }
   }
@@ -589,7 +595,7 @@
 
 @media only screen and (max-width: 414px) {
   .user-case .datas {
-    padding: 5.5rem 1.5rem 2.5rem;
+    padding: 5.5rem 1.5rem 1.5rem;
 
     .data .num {
       height: 80px;
@@ -617,19 +623,19 @@
     }
   }
 
-  .user-case {
-    .datas {
-      padding: 3.5rem 1.5rem .5rem;
+  .user-case .datas {
+    padding: 3.5rem 0 0;
 
-      .data {
-        .desc {
-          margin: 0;
-        }
+    .data {
+      margin: 0 1.5rem 0.5rem;
+
+      .num {
+        height: 40px;
       }
-    }
 
-    .intro {
-      padding: 0 1.5rem 0;
+      .desc {
+        font-size: @size-9;
+      }
     }
   }
 }
