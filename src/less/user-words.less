@@ -603,12 +603,63 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+  .mobile-container {
+    .panel {
+      .swiper-container {
+        height: 380px;
+        margin-top: 3rem;
+      }
+
+      .swiper-slide {
+        height: 330px;
+      }
+
+      .section-title {
+        top: 9rem;
+      }
+
+      .card {
+        .words {
+          height: 155px;
+        }
+      }
+    }
+  }
+
+  .user-case {
+    .datas {
+      padding: 5.5rem 0 0;
+
+      .data {
+        margin: 0 1.5rem 0.5rem;
+
+        .num {
+          height: 70px;
+        }
+
+        .desc {
+          font-size: @size-9;
+        }
+      }
+    }
+
+    .intro {
+      padding: 4rem 2rem 0
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 763px) {
   .mobile-container {
     .panel {
       .swiper-container {
         height: 330px;
         margin-top: 3rem;
+      }
+      
+      .section-title {
+        top: 6rem;
       }
 
       .swiper-slide {
@@ -681,19 +732,25 @@
     }
   }
 
-  .user-case .datas {
-    padding: 3.5rem 0 0;
+  .user-case {
+    .datas {
+      padding: 3.5rem 0 0;
 
-    .data {
-      margin: 0 1.5rem 0.5rem;
+      .data {
+        margin: 0 1.5rem 0.5rem;
 
-      .num {
-        height: 40px;
+        .num {
+          height: 40px;
+        }
+
+        .desc {
+          font-size: @size-9;
+        }
       }
+    }
 
-      .desc {
-        font-size: @size-9;
-      }
+    .intro {
+      padding: 1rem;
     }
   }
 }
