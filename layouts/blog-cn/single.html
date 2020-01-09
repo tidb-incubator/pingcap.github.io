@@ -33,8 +33,16 @@
                             {{- if .Params.author -}}
                                 {{ $len := len .Params.author }}
                                 {{- range $idx, $i := .Params.author -}}
-                                    {{ . }}
-                                    {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
+                                    {{- if gt $len 1 -}}
+                                        {{- if eq $idx 0 -}}
+                                            第一作者： {{ $i }}
+                                        {{- else -}}
+                                            ，第二作者： {{ $i }}
+                                        {{- end -}}
+                                    {{- else -}}
+                                        {{ . }}
+                                        {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
+                                    {{- end -}}
                                 {{- end -}}
                             {{- else -}}
                                 PingCAP

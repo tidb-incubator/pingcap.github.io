@@ -21,8 +21,16 @@
                     {{- if isset .Params "author" -}}
                         {{ $len := len .Params.author }}
                         {{- range $idx, $i := .Params.author -}}
-                            {{ . }}
-                            {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
+                            {{- if and (gt $len 1) (eq $listType "blog-cn") -}}
+                                {{- if eq $idx 0 -}}
+                                    第一作者： {{ $i }}
+                                {{- else -}}
+                                    ，第二作者： {{ $i }}
+                                {{- end -}}
+                            {{- else -}}
+                                {{ . }}
+                                {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
+                            {{- end -}}
                         {{- end -}}
                     {{- else -}}
                         PingCAP

@@ -1,5 +1,3 @@
-import { format } from "util"
-
 import { dynamicAddSubscribeForm } from './mailchimp'
 // JS Goes here - ES6 supported
 

@@ -7,44 +7,48 @@ const slider = $('#tpc-ranking-switch .slider')
 
 var sliderTextIsseason, sliderTextHistory
 
-if($('.slider').data('lang') == "cn") {
-  sliderTextIsseason = "赛季积分"
-  sliderTextHistory = "历史积分"
+if ($('.slider').data('lang') == 'cn') {
+  sliderTextIsseason = '赛季积分'
+  sliderTextHistory = '历史积分'
 } else {
-  if(window.matchMedia('(max-width: 768px)').matches) {
-    sliderTextIsseason = "S1 CC"
-    sliderTextHistory = "CC History"
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    sliderTextIsseason = 'S1 CC'
+    sliderTextHistory = 'CC History'
   } else {
-    sliderTextIsseason = "S1 Contribution Credit"
-    sliderTextHistory = "Contribution Credit History"
-  } 
+    sliderTextIsseason = 'S1 Contribution Credit'
+    sliderTextHistory = 'Contribution Credit History'
+  }
 }
 
 function renderData(data) {
   data
     .sort((a, b) => b.score - a.score)
     .map((d, i) => {
-      $(`
-      <div>
-        ${
-          i < 3
-            ? `<div class="medal medal${i + 1}"></div>`
-            : `<div class="index">${i + 1}</div>`
-        }
-        <div class="github"></div>
-        <div class="main">
-          <div class="info">
-            <div class="name">${d.name}${
-        !d.community ? ' <span class="ti"></span>' : ''
-      }${d.type === 'team' ? ' <span class="team">Team</span>' : ''}</div>
-            <div class="score">${d.score}</div>
-          </div>
-          <div class="progress-wrapper">
-            <progress class="progress" value="${d.score}" max="10000" />
-          </div>
-        </div>
-      </div>
-    `).appendTo('#ranking-list')
+      $(
+        '<div>' +
+          (i < 3
+            ? '<div class="medal medal' + (i + 1) + '"></div>'
+            : '<div class="index">' + (i + 1) + '</div>') +
+          '<div class="github"></div>\
+          <div class="main">\
+            <div class="info">\
+              <div class="name">' +
+          d.name +
+          (!d.community ? ' <span class="ti"></span>' : '') +
+          (d.type === 'team' ? ' <span class="team">Team</span>' : '') +
+          '</div>\
+              <div class="score">' +
+          d.score +
+          '</div>\
+            </div>\
+            <div class="progress-wrapper">\
+              <progress class="progress" value="' +
+          d.score +
+          '" max="10000" />\
+            </div>\
+          </div>\
+        </div>'
+      ).appendTo('#ranking-list')
     })
 }
 
@@ -72,8 +76,8 @@ season.on('click', () => getRankData(true))
 
 history.on('click', () => getRankData())
 
-$(document).ready(() => 
-  getRankData(true),
-  $('.first')[0].innerText = sliderTextIsseason,
-  $('.second')[0].innerText = sliderTextHistory
+$(document).ready(
+  () => getRankData(true),
+  ($('.first')[0].innerText = sliderTextIsseason),
+  ($('.second')[0].innerText = sliderTextHistory)
 )
