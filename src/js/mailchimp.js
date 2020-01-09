@@ -50,8 +50,9 @@ const elem =
   </div>\
 </form>\
 </div>\
-<script src="https://download.pingcap.com/js/mc-validate.js"></script>\
 '
+
+{/* <script src="https://download.pingcap.com/js/mc-validate.js"></script>\ */}
 
 export function dynamicAddSubscribeForm() {
   if (window.matchMedia('(max-width: 879px)').matches) {
