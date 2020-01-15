@@ -23,9 +23,10 @@
                         {{- range $idx, $i := .Params.author -}}
                             {{- if and (gt $len 1) (eq $listType "blog-cn") -}}
                                 {{- if eq $idx 0 -}}
-                                    第一作者： {{ $i }}
+                                    第一作者： {{ $i }}，第二作者：
                                 {{- else -}}
-                                    ，第二作者： {{ $i }}
+                                    {{ $i }}
+                                    {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
                                 {{- end -}}
                             {{- else -}}
                                 {{ . }}
