@@ -30,23 +30,23 @@
                         </li>
                         <li class="meta-item">
                             <img src="/images/svgs/icon-writer.svg" alt="Pen icon">
-                            {{- if .Params.author -}}
+                            {{- if isset .Params "author" -}}
                                 {{ $len := len .Params.author }}
+                                {{- if isset .Params "second_author" -}}第一作者：{{- end -}}
                                 {{- range $idx, $i := .Params.author -}}
-                                    {{- if gt $len 1 -}}
-                                        {{- if eq $idx 0 -}}
-                                            第一作者： {{ $i }}，第二作者：
-                                        {{- else -}}
-                                            {{ $i }}
-                                            {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
-                                        {{- end -}}
-                                    {{- else -}}
-                                        {{ . }}
-                                        {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
-                                    {{- end -}}
+                                    {{ . }}
+                                    {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
                                 {{- end -}}
                             {{- else -}}
                                 PingCAP
+                            {{- end -}}
+                            {{- if isset .Params "second_author" -}}
+                                {{ $len := len .Params.second_author }}
+                                ，第二作者：
+                                {{- range $idx, $i := .Params.second_author -}}
+                                    {{ . }}
+                                    {{- if lt $idx (sub $len 1) -}} ,&nbsp; {{- end -}}
+                                {{- end -}}
                             {{- end -}}
                         </li>
                     </ul>
