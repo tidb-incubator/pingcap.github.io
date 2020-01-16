@@ -51,16 +51,14 @@ function initialSearch(lang) {
     version = url.match(re)[0]
   }
 
-
   if (urlParams.has('q')) {
     $('#search-input').val(urlParams.get('q'))
     const client = algoliasearch(
-      'F9LNQGQBWG',
-      '53f6829641294d401e37fb6aacda703c'
+      'BH4D9OD16A',
+      'ad5e63b76a221558bdc65ab1abbec7a2'
     )
     // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
     const index = client.initIndex('pingcap')
-
     index.search(
       {
         query: urlParams.get('q'),
