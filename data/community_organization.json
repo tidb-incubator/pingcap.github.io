@@ -112,6 +112,12 @@
                 "tag": "TiDB"
             },
             {
+                "name": "宋歌",
+                "githubID": "shonge",
+                "link": "https://github.com/shonge",
+                "tag": "TiDB Operator"
+            },
+            {
                 "name": "林培裕",
                 "githubID": "mathspanda",
                 "link": "https://github.com/mathspanda",
