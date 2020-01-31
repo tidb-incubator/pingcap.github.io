@@ -3,7 +3,7 @@
 {{ $tv := .tv }}
 {{ $permalink := .global.RelPermalink }}
 {{ $content_file_path := .global.File.Path }}
-{{ $title := cond (eq .lang_prefix "docs_cn_") "文档" "Docs" }}
+{{ $title := cond (eq .lang_prefix "docs_cn_") "文档" "Documentation" }}
 
 {{ $file_name := replace (printf "%s%s%s" .lang_prefix $cv "_toc") "." "" }}
 
