@@ -58,7 +58,7 @@
             const hash = decodeURIComponent(location.hash)
             
             // process tab checked with hash
-            if(hash) {
+            if(hash && hash != '#positions') {
                 $('dt').removeClass('is-active')
                 $('dd').css('display', 'none')
                 
