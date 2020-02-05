@@ -620,9 +620,9 @@
                 "slack_link": "https://join.slack.com/t/tikv-wg/shared_invite/enQtNTUyODE4ODU2MzI0LWVlMWMzMDkyNWE5ZjY1ODAzMWUwZGVhNGNhYTc3MzJhYWE0Y2FjYjliYzY1OWJlYTc4OWVjZWM1NDkwN2QxNDE"
             },
             {
-                "title": "TiDB Parser SIG",
-                "desc": "Parser SIG 主要负责 TiDB parser 及其相关模块的开发和维护。工作内容包括提升 TiDB 对 MySQL 的语法兼容性、提升 SQL 语句解析性能等。",
-                "github_link": "",
+                "title": "TiDB DDL SIG",
+                "desc": "DDL SIG 主要负责 TiDB DDL 和 parser 及其相关模块的开发和维护。工作内容包括对 DDL 模块和 parser 模块进行稳定性、性能、与 MySQL 的兼容性等方面的提升。",
+                "github_link": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-ddl",
                 "slack_link": "https://join.slack.com/t/tidbcommunity/shared_invite/enQtNzc0MzI4ODExMDc4LWYwYmIzMjZkYzJiNDUxMmZlN2FiMGJkZjAyMzQ5NGU0NGY0NzI3NTYwMjAyNGQ1N2I2ZjAxNzc1OGUwYWM0NzE"
             },
             {
@@ -664,9 +664,9 @@
                 "slack_link": "https://join.slack.com/t/tikv-wg/shared_invite/enQtNTUyODE4ODU2MzI0LWVlMWMzMDkyNWE5ZjY1ODAzMWUwZGVhNGNhYTc3MzJhYWE0Y2FjYjliYzY1OWJlYTc4OWVjZWM1NDkwN2QxNDE"
             },
             {
-                "title": "TiDB Parser SIG",
-                "desc": "The Parser SIG is mainly responsible for the development and maintenance of TiDB parser and its related modules. The scope of work covers improving the syntax compatibility of TiDB to MySQL and improving the performance of parsing SQL statements, and so on.",
-                "github_link": "",
+                "title": "TiDB DDL SIG",
+                "desc": "DDL SIG is mainly responsible for the development and maintenance of TiDB DDL, the parser, and related modules. This SIG is engaged in improving the stability, performance, and compatibility with MySQL of the DDL module and the parser module.",
+                "github_link": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-ddl",
                 "slack_link": "https://join.slack.com/t/tidbcommunity/shared_invite/enQtNzc0MzI4ODExMDc4LWYwYmIzMjZkYzJiNDUxMmZlN2FiMGJkZjAyMzQ5NGU0NGY0NzI3NTYwMjAyNGQ1N2I2ZjAxNzc1OGUwYWM0NzE"
             },
             {
