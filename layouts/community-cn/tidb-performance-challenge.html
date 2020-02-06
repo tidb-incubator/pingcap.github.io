@@ -8,10 +8,7 @@ TiDB Performance Challenge
 {{ $.Scratch.Set "data_i18_cn" true }}
 {{ $.Scratch.Set "data_i18_link" "/community/organization" }}
 {{- partial "head/preload-css" (dict "href" "/css/community/tidb-performance-challenge.css") -}}
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
 {{- end -}}
 
 {{- define "main" -}}
@@ -25,11 +22,12 @@ TiDB Performance Challenge
         2019.11.04 - 2020.02.04
       </h2>
       <div class="banner-buttons">
-        <button class="button button-tpc button-receive">
-          <a target="_blank" href="https://github.com/tidb-perf-challenge/pcp/issues/new?template=performance-challenge-program.md&title=PCP%3A+Sign+Up">立即报名</a>
+        <button class="button button-tpc button-receive unclickable-btn">
+          活动已结束
         </button>
         <button class="button button-tpc button-details tpc-arrow-button">
-          <a target="_blank" href="https://github.com/pingcap/community/blob/master/challenge-Programs/performance-challenge-cn.md">挑战赛细则</a>
+          <a target="_blank"
+            href="https://github.com/pingcap/community/blob/master/challenge-Programs/performance-challenge-cn.md">挑战赛细则</a>
         </button>
       </div>
     </div>
@@ -50,11 +48,12 @@ TiDB Performance Challenge
     选手可选择个人或团队名义参赛完成任务并获得相应积分。积分可在赛季结束后进行奖项兑换。
   </div>
   <div class="banner-buttons">
-    <button class="button button-tpc button-receive">
-      <a target="_blank" href="https://github.com/tidb-perf-challenge/pcp/issues/new?template=performance-challenge-program.md&title=PCP%3A+Sign+Up">立即报名</a>
+    <button class="button button-tpc button-receive unclickable-btn">
+      活动已结束
     </button>
     <button class="button button-tpc button-details">
-      <a target="_blank" href="https://github.com/pingcap/community/blob/master/challenge-Programs/performance-challenge-cn.md">挑战赛细则</a>
+      <a target="_blank"
+        href="https://github.com/pingcap/community/blob/master/challenge-Programs/performance-challenge-cn.md">挑战赛细则</a>
     </button>
   </div>
 </section>
@@ -102,7 +101,8 @@ TiDB Performance Challenge
       </div>
     </div>
     <div>
-      <button class="button button-details"><a target="_blank" href="https://github.com/pingcap/community/blob/master/challenge-Programs/performance-challenge-cn.md">挑战赛细则</a></button>
+      <button class="button button-details"><a target="_blank"
+          href="https://github.com/pingcap/community/blob/master/challenge-Programs/performance-challenge-cn.md">挑战赛细则</a></button>
     </div>
   </div>
 </section>
@@ -113,12 +113,11 @@ TiDB Performance Challenge
       <div class="column is-4-desktop is-half-mobile">
         <div class="prize-card">
           <div>
-            <h3 class="title">100 <sub>分</sub></h3></h3>
+            <h3 class="title">100 <sub>分</sub></h3>
+            </h3>
             <p class="has-text-weight-bold">TiDB 黑/白色 T 恤</p>
-            <img
-              src="https://download.pingcap.com/images/tidb-performance-challenge/black-white-t.png"
-              alt="Black/White tshirt"
-            />
+            <img src="https://download.pingcap.com/images/tidb-performance-challenge/black-white-t.png"
+              alt="Black/White tshirt" />
           </div>
         </div>
       </div>
@@ -127,10 +126,7 @@ TiDB Performance Challenge
           <div>
             <h3 class="title">150 <sub>分</sub></h3>
             <p class="has-text-weight-bold">TiDB 电脑内胆包</p>
-            <img
-              src="https://download.pingcap.com/images/tidb-performance-challenge/handbag.png"
-              alt="Handbag"
-            />
+            <img src="https://download.pingcap.com/images/tidb-performance-challenge/handbag.png" alt="Handbag" />
           </div>
         </div>
       </div>
@@ -139,10 +135,7 @@ TiDB Performance Challenge
           <div>
             <h3 class="title">200 <sub>分</sub></h3>
             <p class="has-text-weight-bold">TiDB 保温杯</p>
-            <img
-              src="https://download.pingcap.com/images/tidb-performance-challenge/bottle.png"
-              alt="Bottle"
-            />
+            <img src="https://download.pingcap.com/images/tidb-performance-challenge/bottle.png" alt="Bottle" />
           </div>
         </div>
       </div>
@@ -151,10 +144,7 @@ TiDB Performance Challenge
           <div>
             <h3 class="title">300 <sub>分</sub></h3>
             <p class="has-text-weight-bold">TiDB 帽衫</p>
-            <img
-              src="https://download.pingcap.com/images/tidb-performance-challenge/sweater.png"
-              alt="Sweater"
-            />
+            <img src="https://download.pingcap.com/images/tidb-performance-challenge/sweater.png" alt="Sweater" />
           </div>
         </div>
       </div>
@@ -163,10 +153,7 @@ TiDB Performance Challenge
           <div>
             <h3 class="title">1800 <sub>分</sub></h3>
             <p class="has-text-weight-bold">THE NORTH FACE 双肩包（限量 3 件）</p>
-            <img
-              src="https://download.pingcap.com/images/tidb-performance-challenge/bag.png"
-              alt="Bag"
-            />
+            <img src="https://download.pingcap.com/images/tidb-performance-challenge/bag.png" alt="Bag" />
           </div>
         </div>
       </div>
@@ -175,10 +162,8 @@ TiDB Performance Challenge
           <div>
             <h3 class="title">1 : 1</h3>
             <p class="has-text-weight-bold">奖金兑换</p>
-            <img
-              src="https://download.pingcap.com/images/tidb-performance-challenge/eq.png"
-              alt="Equivalent exchange"
-            />
+            <img src="https://download.pingcap.com/images/tidb-performance-challenge/eq.png"
+              alt="Equivalent exchange" />
           </div>
         </div>
       </div>
@@ -191,18 +176,10 @@ TiDB Performance Challenge
     {{- range $idx, $i := .Site.Data.hackathon.learning_materials_2019 -}}
     <a href="{{ $i.link }}" target="_blank" class="card-item">
       <div class="thumbnail">
-        <img
-          class="lazy pc-bg"
-          data-original="{{ $i.thumbnail_pc }}"
-          src="/images/svgs/loader-spinner.svg"
-          alt="Cover"
-        />
-        <img
-          class="lazy mobile-bg"
-          data-original="{{ $i.thumbnail_mobile }}"
-          src="/images/svgs/loader-spinner.svg"
-          alt="Cover"
-        />
+        <img class="lazy pc-bg" data-original="{{ $i.thumbnail_pc }}" src="/images/svgs/loader-spinner.svg"
+          alt="Cover" />
+        <img class="lazy mobile-bg" data-original="{{ $i.thumbnail_mobile }}" src="/images/svgs/loader-spinner.svg"
+          alt="Cover" />
       </div>
       <div class="info">
         <h2 class="has-text-weight-bold">{{ $i.title }}</h2>
@@ -214,6 +191,8 @@ TiDB Performance Challenge
 </section>
 <section class="has-text-centered tpc-ranking">
   <h2 class="subtitle tpc-subtitle">积分排行榜</h2>
+  <p class="intro">各位 PCP 的参赛选手们，第一届 PCP 已于 2.4 日正式结束。2.4 日之后提交的 PR 将不被算在总分内。对于 2.4 日之前（包括 2.4 日当天）所提交的 PR 我们将延长 Review 时间至 2.16 日晚
+    12:00，积分榜分数最终更新时间为 2.16 晚 12:00。</p>
   <div class="container" style="max-width: 1220px;">
     <div id="tpc-ranking-switch">
       <div class="first">赛季积分</div>
