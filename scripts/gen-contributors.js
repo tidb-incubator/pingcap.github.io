@@ -31,7 +31,8 @@ const repos = [
   'tikv',
   'tipb',
   'tispark',
-  'tidb-binlog'
+  'tidb-binlog',
+  'chaos-mesh'
 ]
 
 const tidbRepo = [
