@@ -1,4 +1,10 @@
 [
+  { "name": "Go中国",
+    "title": "PingCAP 刘奇：成就了世界级产品梦想的 Gopher ",
+    "logo": "https://download.pingcap.com/images/news/go-china.png",
+    "link": "https://mp.weixin.qq.com/s/DdxWDcKzPhNABDh-pMv7Rw",
+    "date": "2020-01-21"
+  },
   { 
     "name": "清科集团",
     "title": "PingCAP 入选 2019 中国最具投资价值企业风云榜 50 强", 
