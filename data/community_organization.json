@@ -58,6 +58,14 @@
                 "title": "连尚网络 | 高级工程师",
                 "githubID": "niedhui",
                 "tag": "TiKV"
+            },
+            {
+                "avatar": "https://download.pingcap.com/images/community/organization/zhuangtianyi.png",
+                "link": "https://github.com/TennyZhuang",
+                "name": "庄天翼",
+                "title": "旷视科技 | 资深软件开发工程师",
+                "githubID": "TennyZhuang",
+                "tag": "TiKV"
             }
         ],
         "reviewer": [
@@ -95,6 +103,12 @@
                 "name": "陈付",
                 "githubID": "fredchenbj",
                 "link": "https://github.com/fredchenbj",
+                "tag": "TiKV"
+            },
+            {
+                "name": "Hetian Zhu",
+                "githubID": "fullstop000",
+                "link": "https://github.com/fullstop000",
                 "tag": "TiKV"
             }
         ],
