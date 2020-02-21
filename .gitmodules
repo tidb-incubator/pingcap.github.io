@@ -10,12 +10,36 @@
 [submodule "content/tidb-academy"]
 	path = content/tidb-academy
 	url = git@github.com:pingcap/private-tidb-academy.git
-[submodule "content/docs-cn"]
-	path = content/docs-cn
-	url = https://github.com/pingcap/docs-cn.git
-[submodule "content/docs"]
-	path = content/docs
-	url = https://github.com/pingcap/docs.git
 [submodule "content/blog"]
 	path = content/blog
 	url = https://github.com/pingcap/blog
+[submodule "content/docs-cn/dev"]
+	path = content/docs-cn/dev
+	url = https://github.com/pingcap/docs-cn.git
+[submodule "content/docs-cn/v2.1"]
+	path = content/docs-cn/v2.1
+	url = https://github.com/pingcap/docs-cn.git
+	branch = release-2.1
+[submodule "content/docs-cn/v3.0"]
+	path = content/docs-cn/v3.0
+	url = https://github.com/pingcap/docs-cn.git
+	branch = release-3.0
+[submodule "content/docs-cn/v3.1"]
+	path = content/docs-cn/v3.1
+	url = https://github.com/pingcap/docs-cn.git
+	branch = release-3.1
+[submodule "content/docs/dev"]
+	path = content/docs/dev
+	url = https://github.com/pingcap/docs.git
+[submodule "content/docs/v2.1"]
+	path = content/docs/v2.1
+	url = https://github.com/pingcap/docs.git
+	branch = release-2.1
+[submodule "content/docs/v3.0"]
+	path = content/docs/v3.0
+	url = https://github.com/pingcap/docs.git
+	branch = release-3.0
+[submodule "content/docs/v3.1"]
+	path = content/docs/v3.1
+	url = https://github.com/pingcap/docs.git
+	branch = release-3.1

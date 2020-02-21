@@ -55,16 +55,28 @@ copy_images_from_media_to_dist() {
   media_path=$(echo $parent_dir/$repo_name/media)
   # echo $media_path
   # echo $parent_dir/images/$repo_name
-  if [ $repo_name == 'meetup' ]; then
-    [ -d $media_path ] && mv $media_path/* $parent_dir/images/$repo_name
-  else
-    [ -d $media_path ] && mv $media_path $parent_dir/images/$repo_name # cp -R
+  # if [ $repo_name == 'meetup' ]; then
+  #   [ -d $media_path ] && mv $media_path/* $parent_dir/images/$repo_name
+  # else
+  #   [ -d $media_path ] && mv $media_path $parent_dir/images/$repo_name # cp -R
+  # fi
+
+  if [ ! -d $parent_dir/images/$repo_name ]; then
+    mkdir -p $parent_dir/images/$repo_name
   fi
+
+  [ -d $media_path ] && mv $media_path/* $parent_dir/images/$repo_name
 }
 
 # mv all content in media to dist/images
-copy_images_from_media_to_dist docs
-copy_images_from_media_to_dist docs-cn
+copy_images_from_media_to_dist docs/v2.1
+copy_images_from_media_to_dist docs/dev
+copy_images_from_media_to_dist docs/stable
+copy_images_from_media_to_dist docs/v3.1
+copy_images_from_media_to_dist docs-cn/v2.1
+copy_images_from_media_to_dist docs-cn/dev
+copy_images_from_media_to_dist docs-cn/stable
+copy_images_from_media_to_dist docs-cn/v3.1
 copy_images_from_media_to_dist blog-cn
 copy_images_from_media_to_dist blog
 copy_images_from_media_to_dist weekly
