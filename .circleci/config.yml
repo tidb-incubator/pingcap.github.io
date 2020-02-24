@@ -56,12 +56,6 @@ jobs:
           name: 'Publish Website'
           command: |
             if [ "${CIRCLE_BRANCH}" == "src" ]; then
-              ssh-keyscan "${DEPLOY_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
-              rsync -avz --delete dist/ "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}" || true;
-              ssh-keyscan "${DEPLOY_AWS_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
-              rsync -avz --delete dist/ "${DEPLOY_AWS_USER}@${DEPLOY_AWS_HOST}:${DEPLOY_AWS_PATH}" || true;
-              ssh-keyscan "${DEPLOY_AWS_HOST_BACK_UP}" >> ~/.ssh/known_hosts 2>/dev/null;
-              rsync -avz --delete dist/ "${DEPLOY_AWS_USER}@${DEPLOY_AWS_HOST_BACK_UP}:${DEPLOY_AWS_PATH}" || true;
               ssh-keyscan "${DEPLOY_UCLOUD_BJ_1_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
               rsync -avz --delete dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_BJ_1_HOST}:${DEPLOY_UCLOUD_PATH}";
               ssh-keyscan "${DEPLOY_UCLOUD_BJ_2_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
