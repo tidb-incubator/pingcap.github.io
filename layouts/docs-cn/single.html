@@ -26,7 +26,8 @@
                 {{ .Content }}
             </div>
             <div class="article-toc"></div>
-            {{- partial "archives/git-info.html" (dict "repo" "docs-cn" "isCn" "true" "global" . "sv" $stable_version) -}}
+            {{ $file_prefix := print "docs-cn/" $current_version }}
+            {{- partial "archives/git-info.html" (dict "file_prefix" $file_prefix "repo" "docs-cn" "isCn" "true" "global" . "sv" $stable_version) -}}
         </div>
 
         <div class="sidebar-page sticky-sidebar">

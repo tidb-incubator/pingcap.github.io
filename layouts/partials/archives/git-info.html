@@ -1,6 +1,8 @@
-{{ $prefix := print "content/" .repo "___"}}
+{{ $file_prefix := cond (in .file_prefix "stable") (replace .file_prefix "stable" .sv) .file_prefix }}
+{{ $prefix := print "content/" $file_prefix "___"}}
 {{ $file_path := cond (in .global.File.Path "stable") (replace .global.File.Path "stable" .sv) .global.File.Path }}
-{{ $filter_name := replace $file_path (print .repo "/") $prefix }}
+{{ $branch := strings.TrimPrefix "v" (index (findRE "(v\\d+\\.\\d+)" $file_path) 0) }}
+{{ $filter_name := replace $file_path (print $file_prefix "/") $prefix }}
 
 {{- range $item := .global.Site.Data.sub_git_info -}}
     {{- if and $item $item.name -}}
@@ -16,7 +18,7 @@
             {{- $commit_id := index $infos 4 -}}
             {{- $filename := index (split $item.name "___") 1 -}}
             <div class="git-info">
-                <a class="link" href="https://github.com/pingcap/{{$.repo}}/blob/master/{{$filename}}">"{{ $.global.Page.Title }}"</a>
+                <a class="link" href="https://github.com/pingcap/{{$.repo}}/blob/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}/{{$filename}}">"{{ $.global.Page.Title }}"</a>
                 {{ if $.isCn }}更新于{{ else }}was last updated{{ end }}
                 <span>{{ $month }} {{ $day }} {{ $year }}</span>:
                 <a class="link" href="https://github.com/pingcap/{{$.repo}}/commit/{{$commit_id}}">
