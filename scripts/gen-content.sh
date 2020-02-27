@@ -3,9 +3,13 @@ stable_version_tag="stable"
 
 cn_tmp_docs_path="content/docs-cn"
 en_tmp_docs_path="content/docs"
+index_file="_index.md"
 
 mv $en_tmp_docs_path/$stable_version $en_tmp_docs_path/$stable_version_tag
 mv $cn_tmp_docs_path/$stable_version $cn_tmp_docs_path/$stable_version_tag
+
+cp $en_tmp_docs_path/$stable_version_tag/$index_file $en_tmp_docs_path/
+cp $cn_tmp_docs_path/$stable_version_tag/$index_file $cn_tmp_docs_path/
 
 node scripts/gen-nav.js 'content/docs/stable/TOC.md' 'data/docs_stable_toc.json' '/docs/stable'
 node scripts/gen-nav.js 'content/docs/dev/TOC.md' 'data/docs_dev_toc.json' '/docs/dev'
