@@ -15,6 +15,14 @@
             "img": "https://download.pingcap.com/images/home-asktug-carousel.jpg",
             "alt": "AskTGU banner",
             "newTab": true
+        },
+        {
+            "link": "https://pingcap.com/cases-cn/user-message-2019/",
+            "gaTrackEventClass": "user_message_2019_view",
+            "gaTrackEventLabel": "homepage-user-message-2019-banner",
+            "img": "https://download.pingcap.com/user-message-2019-banner.png",
+            "alt": "User message 2019 banner",
+            "newTab": false
         }
     ]
 }
