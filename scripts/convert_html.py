@@ -26,7 +26,7 @@ m = doc_version_pattern.search(file_path)
 if m:
     doc_version = '/' + m.group(1)
 else:
-    doc_version = ''
+    doc_version = '/stable'
 
 with open(file_path, 'r') as f:
     soup = BeautifulSoup(f.read(), 'lxml')
