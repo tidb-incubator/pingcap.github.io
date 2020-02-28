@@ -25,8 +25,10 @@ folder = sys.argv[2]
 m = doc_version_pattern.search(file_path)
 if m:
     doc_version = '/' + m.group(1)
-else:
+elif (folder in ['docs-cn', 'docs']):
     doc_version = '/stable'
+else:
+    doc_version = ''
 
 with open(file_path, 'r') as f:
     soup = BeautifulSoup(f.read(), 'lxml')
