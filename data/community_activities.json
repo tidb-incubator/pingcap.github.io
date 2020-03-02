@@ -47,11 +47,11 @@
     },
     {
       "name": "TiDB Performance Challenge",
-      "active_image_pc": "https://download.pingcap.com/images/community/activities/performance-challenge-banner-pc.jpg",
-      "active_image_mobile" : "https://download.pingcap.com/images/tidb-performance-challenge/banner-mobile.jpg",
+      "active_image_pc": "https://download.pingcap.com/images/community/activities/usability-challenge-banner-pc.png",
+      "active_image_mobile" : "https://download.pingcap.com/images/tidb-usability-challenge/banner-mobile.png",
       "summary": "TiDB 性能挑战赛由 PingCAP 发起。旨在激发社区创造性，使选手可以通过完成一系列的任务提升 TiDB 产品的稳定性、性能和易用性。",
       "active": true,
-      "link": "/community-cn/tidb-performance-challenge"
+      "link": "/community-cn/tidb-usability-challenge"
     },
     {
       "name": "专项兴趣小组",

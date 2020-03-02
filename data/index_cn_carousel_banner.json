@@ -1,6 +1,14 @@
 {
     "banners": [
         {
+            "link": "https://pingcap.com/community-cn/tidb-usability-challenge/",
+            "gaTrackEventClass": "tidb-usability_view",
+            "gaTrackEventLabel": "homepage-usability-challenge-banner",
+            "img": "https://download.pingcap.com/images/tidb-usability-challenge/banner-mobile.png",
+            "alt": "TiDB Usability Challenge banner",
+            "newTab": false
+        },
+        {
             "link": "https://university.pingcap.com/",
             "gaTrackEventClass": "pingcap-university_view",
             "gaTrackEventLabel": "homepage-university-banner",
