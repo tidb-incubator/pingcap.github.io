@@ -184,6 +184,85 @@ function processTags(showMoreList) {
 //     })
 // }
 
+
+function tabCheckedInDocs() {
+  const hash = decodeURIComponent(location.hash)
+  var contentTabID
+  if (hash) {
+    switch (hash) {
+      case '#google':
+        $('input:radio[name=tabs]')
+          .filter('[value=GoogleContent]')
+          .prop('checked', true)
+        break
+      case '#aws':
+        $('input:radio[name=tabs]')
+          .filter('[value=AWSContent]')
+          .prop('checked', true)
+        break
+      case '#local':
+        $('input:radio[name=tabs]')
+          .filter('[value=LocalContent]')
+          .prop('checked', true)
+        break
+      case '#production':
+        $('input:radio[name=tabs]')
+          .filter('[value=productionContent]')
+          .prop('checked', true)
+        break
+      case '#development':
+        $('input:radio[name=tabs]')
+          .filter('[value=developmentContent]')
+          .prop('checked', true)
+        break
+    }
+  } else {
+    contentTabID = $('input:checked').val()
+    switch (contentTabID) {
+      case 'GoogleContent':
+        window.location.href = `./#google`
+        break
+      case 'AWSContent':
+        window.location.href = `./#aws`
+        break
+      case 'LocalContent':
+        window.location.href = `./#local`
+        break
+      case 'productionContent':
+        window.location.href = `./#production`
+        break
+      case 'developmentContent':
+        window.location.href = `./#development`
+        break
+    }
+  }
+  contentTabID = $('input:checked').val()
+  $('section').hide()
+  $('#' + contentTabID).show()
+  $('input').on('click', function() {
+    contentTabID = $('input:checked').val()
+    switch (contentTabID) {
+      case 'GoogleContent':
+        window.location.href = `./#google`
+        break
+      case 'AWSContent':
+        window.location.href = `./#aws`
+        break
+      case 'LocalContent':
+        window.location.href = `./#local`
+        break
+      case 'productionContent':
+        window.location.href = `./#production`
+        break
+      case 'developmentContent':
+        window.location.href = `./#development`
+        break
+    }
+    $('section').hide()
+    $('#' + contentTabID).show()
+  })
+}
+
 // Process dom elements after loaded
 $(document).ready(function() {
   var showMore = false
@@ -193,6 +272,8 @@ $(document).ready(function() {
 
   // Create TOC for article in docs module
   if ($('.article-toc').length) toc_run()
+
+  if ($('.tabs').length) tabCheckedInDocs()
 
   // processShowMoreBlogList()
   $('#showMore').click(function() {

@@ -31,10 +31,6 @@ function processHash() {
   if (location.href.search('#access_token') < 0) {
     smoothScroll(hash)
   }
-
-  if ($('.tabs'.length)) {
-    tabCheckedInDocs()
-  }
 }
 
 // initial algolia search
@@ -261,84 +257,6 @@ function processMobileOverlay() {
   })
 }
 
-function tabCheckedInDocs() {
-  const hash = decodeURIComponent(location.hash)
-  var contentTabID
-  if (hash) {
-    switch (hash) {
-      case '#google':
-        $('input:radio[name=tabs]')
-          .filter('[value=GoogleContent]')
-          .prop('checked', true)
-        break
-      case '#aws':
-        $('input:radio[name=tabs]')
-          .filter('[value=AWSContent]')
-          .prop('checked', true)
-        break
-      case '#local':
-        $('input:radio[name=tabs]')
-          .filter('[value=LocalContent]')
-          .prop('checked', true)
-        break
-      case '#production':
-        $('input:radio[name=tabs]')
-          .filter('[value=productionContent]')
-          .prop('checked', true)
-        break
-      case '#development':
-        $('input:radio[name=tabs]')
-          .filter('[value=developmentContent]')
-          .prop('checked', true)
-        break
-    }
-  } else {
-    contentTabID = $('input:checked').val()
-    switch (contentTabID) {
-      case 'GoogleContent':
-        window.location.href = `./#google`
-        break
-      case 'AWSContent':
-        window.location.href = `./#aws`
-        break
-      case 'LocalContent':
-        window.location.href = `./#local`
-        break
-      case 'productionContent':
-        window.location.href = `./#production`
-        break
-      case 'developmentContent':
-        window.location.href = `./#development`
-        break
-    }
-  }
-  contentTabID = $('input:checked').val()
-  $('section').hide()
-  $('#' + contentTabID).show()
-  $('input').on('click', function() {
-    contentTabID = $('input:checked').val()
-    switch (contentTabID) {
-      case 'GoogleContent':
-        window.location.href = `./#google`
-        break
-      case 'AWSContent':
-        window.location.href = `./#aws`
-        break
-      case 'LocalContent':
-        window.location.href = `./#local`
-        break
-      case 'productionContent':
-        window.location.href = `./#production`
-        break
-      case 'developmentContent':
-        window.location.href = `./#development`
-        break
-    }
-    $('section').hide()
-    $('#' + contentTabID).show()
-  })
-}
-
 // get TiDB contributors count
 function getTidbContributorCount() {
   const url = 'https://pingcap.com/api/tidb-contributors'
@@ -394,8 +312,6 @@ $(document).ready(function() {
   toggleWeChatQRCode()
 
   processMobileOverlay()
-
-  if ($('.tabs').length) tabCheckedInDocs()
 
   // Handle click event on Back to top button
   $('.back-to-top').click(function() {
