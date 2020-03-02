@@ -33,6 +33,12 @@ module.exports = {
       'js',
       'tidb_performance_challenge'
     ),
+    tidb_usability_challenge: path.join(
+      __dirname,
+      'src',
+      'js',
+      'tidb_usability_challenge'
+    ),
   },
   output: {
     path: path.join(__dirname, 'dist', 'js'),
