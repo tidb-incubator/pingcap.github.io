@@ -54,31 +54,45 @@ function renderData(data) {
 }
 
 function renderTaskGroups(groups) {
-  groups.forEach(g =>
-    $(
-      `<div class="column is-4"><div class="task">` +
-        (g['doing-users']
-          ? '<div class="user">' +
-            g['doing-users'].reduce(
-              (sum, user) =>
-                (sum += `
+  groups
+    .sort((a, b) => a.vote > b.vote)
+    .forEach((g, i) =>
+      $(
+        `<div class="column has-text-left is-4` +
+          ((i + 1) % 2 === 0 ? ' is-offset-2' : '') +
+          `"><div class="task">` +
+          '<div class="meta">' +
+          '<div class="user">' +
+          (g['doing-users']
+            ? g['doing-users'].reduce(
+                (sum, user) =>
+                  (sum += `
                   <a target="_blank" href="${user.github}">
                     <img class="avatar" src="${user.avatar}" />
                   </a>`),
-              ''
-            ) +
-            '</div>'
-          : '') +
-        `<h3 class="text"><a target="_blank" href="` +
-        g.issue +
-        `">` +
-        g.title +
-        (g.progress === 100 ? '<span class="finish"></span>' : '') +
-        `</a></h3><progress class="progress" value="` +
-        g.progress +
-        `" max="100" /></div></div>`
-    ).appendTo('.tuc-demands .columns')
-  )
+                ''
+              )
+            : '<img class="avatar" src="https://download.pingcap.com/images/tidb-performance-challenge/github-purple.png" />') +
+          '</div>' +
+          (g.bonus > 0 ? `<div class="bonus">${g.bonus}</div>` : '') +
+          '</div>' +
+          `<h3 class="text"><a target="_blank" href="` +
+          g.issue +
+          `">` +
+          `${i + 1}. ` +
+          g.title +
+          (g.progress === 100 ? '<span class="finish"></span>' : '') +
+          `</a></h3><progress class="progress" value="` +
+          g.progress +
+          `" max="100" /></div></div>`
+      ).appendTo('.tuc-demands .columns')
+    )
+
+  if (groups.length % 2 === 1) {
+    $('<div class="column is-4 is-offset-2"></div>').appendTo(
+      '.tuc-demands .columns'
+    )
+  }
 }
 
 function getRankData(isSeason) {
