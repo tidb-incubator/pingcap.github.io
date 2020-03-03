@@ -101,7 +101,11 @@ function getRankData(isSeason) {
   if (isSeason) {
     url = rankSeasonURL
     slider.text(sliderTextSeason)
-    slider.css('left', '1rem')
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      slider.css('left', '1rem')
+    } else {
+      slider.css('left', 'calc(30% + 1rem)')
+    }
   } else {
     url = rankURL
     slider.text(sliderTextHistory)

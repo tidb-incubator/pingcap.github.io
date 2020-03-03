@@ -1,7 +1,5 @@
 baseurl = "https://pingcap.com/"
-languageCode = "en-us"
-languageLang = "en"
-title = "MySQL at Scale"
+title = "SQL at Scale"
 # Do not make the url/path to lowercase
 disablePathToLower = true
 preserveTaxonomyNames = true

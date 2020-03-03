@@ -442,7 +442,8 @@ progress.progress {
         display: inline-block;
         width: 16px;
         height: 16px;
-        background: url(https://download.pingcap.com/images/tidb-usability-challenge/check.svg) no-repeat center;
+        background: url(https://download.pingcap.com/images/tidb-usability-challenge/check.svg)
+          no-repeat center;
         background-size: cover;
       }
     }
@@ -637,6 +638,7 @@ progress.progress {
 
   #ranking-switch {
     display: flex;
+    justify-content: center;
     margin-top: 4rem;
 
     @media @mobile {
@@ -644,12 +646,16 @@ progress.progress {
     }
 
     > div {
+      @media @mobile {
+        width: 50%;
+      }
+
       position: relative;
-      flex: 1;
+      width: 20%;
       height: 50px;
       line-height: 50px;
       background: #dad8ea;
-      color: @primary;
+      color: @B4;
       border-radius: 25px;
       font-size: 0.9rem;
       cursor: pointer;
@@ -668,9 +674,12 @@ progress.progress {
       }
 
       &.slider {
+        @media @mobile {
+          width: 50%;
+        }
+        
         position: absolute;
-        left: 1rem;
-        width: 50%;
+        width: 20%;
         background: @primary;
         color: #fff;
         transition: left ease 0.5s;

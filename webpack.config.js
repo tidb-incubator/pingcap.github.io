@@ -136,6 +136,6 @@ module.exports = {
   ],
   externals: [/^vendor\/.+\.js$/],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js'],
   },
 }

@@ -18,7 +18,7 @@
 <script type="text/javascript">"/"===location.pathname&&"pingcap.github.io"===location.hostname&&(location.href="/en/")</script>
 <link rel="preload"as="script"href="/js/app.js">
 </head>
-{{- $data_i18_cn := $.Scratch.Get "data_i18_cn" -}} {{- $homepage := $.Scratch.Get "homepage" -}} {{ $.Scratch.Set "stable_version" .Site.Params.versions.docs.stable_version }} {{ $.Scratch.Set "total_versions" .Site.Params.versions.docs.total_versions }}
+{{ $data_i18_cn := $.Scratch.Get "data_i18_cn" }} {{ $homepage := $.Scratch.Get "homepage" }} {{ $.Scratch.Set "stable_version" .Site.Params.versions.docs.stable_version }} {{ $.Scratch.Set "total_versions" .Site.Params.versions.docs.total_versions }}
 <body data-lang="{{- if $data_i18_cn -}}cn{{- else -}}en{{- end -}}"{{ if $homepage }}class="homepage"{{ end }}>
 <div id="page-content">
 {{- if $homepage -}} {{- partial "layout/release-banner" . -}} {{- end -}} {{- if $data_i18_cn -}} {{- partial "layout/header-cn" . -}} {{- partial "layout/mobile-sidebar-cn" . -}} {{- else -}} {{- partial "layout/header" . -}} {{- partial "layout/mobile-sidebar" . -}} {{- end -}} {{- block "main" . -}}{{- end -}} {{- if $data_i18_cn -}} {{- if not $no_footer -}} {{- partial "layout/footer-cn" . -}} {{- end -}} {{- else -}} {{- partial "layout/footer" . -}} {{- end -}} {{- partial "common/back-to-top.html" -}}

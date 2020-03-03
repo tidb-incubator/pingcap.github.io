@@ -1,4 +1,4 @@
-## Intro
+# Intro
 
 以下内容摘抄自该[《软件手册》](./doc/software-handbook.md)。
 
