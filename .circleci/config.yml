@@ -82,11 +82,11 @@ jobs:
             - opam-cache-{{ checksum "cloud-assets-utils/dune-project" }}
 
       - run:
-        name: Initialize opam
-        command: |
-          echo | sh <(curl -sL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)
-          opam init -c 4.07.1 --disable-sandboxing -y && opam switch 4.07.1 -y
-          opam install dune core -y
+          name: Initialize opam
+          command: |
+            echo | sh <(curl -sL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)
+            opam init -c 4.07.1 --disable-sandboxing -y && opam switch 4.07.1 -y
+            opam install dune core -y
 
       - save_cache:
           key: opam-cache-{{ checksum "cloud-assets-utils/dune-project" }}
@@ -94,33 +94,33 @@ jobs:
             - ~/.opam
 
       - run:
-        name: Configure qshell
-        command: |
-          curl http://devtools.qiniu.com/qshell-linux-x64-v2.4.1.zip -o qshell.zip
-          unzip qshell.zip
-          mv qshell-linux-x64-v2.4.1 /usr/local/bin/qshell
-          qshell account ${QINIU_ACCESS_KEY} ${QINIU_SECRET_KEY} test
+          name: Configure qshell
+          command: |
+            curl http://devtools.qiniu.com/qshell-linux-x64-v2.4.1.zip -o qshell.zip
+            unzip qshell.zip
+            sudo mv qshell-linux-x64-v2.4.1 /usr/local/bin/qshell
+            qshell account ${QINIU_ACCESS_KEY} ${QINIU_SECRET_KEY} test
       - run:
           name: configure awscli
           command: |
-            pip3 install awscli
+            sudo pip3 install awscli
             printf "%s\n" ${AWS_ACCESS_KEY} ${AWS_SECRET_KEY} ${AWS_REGION} "json" | aws configure
 
       - run:
-        name: Build cloud_assets_utils
-        command: |
-          eval $(opam env) && cd cloud-assets-utils && dune build
-          cp cloud-assets-utils/_build/default/bin/cloud_assets_utils.exe /usr/local/bin/cloud_assets_utils
+          name: Build cloud_assets_utils
+          command: |
+            eval $(opam env) && cd cloud-assets-utils && dune build
+            sudo cp ./_build/default/bin/cloud_assets_utils.exe /usr/local/bin/cloud-assets-utils
 
       - run: cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} static -cdn-refresh https://download.pingcap.com/
       - run: cd content/blog && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/blog -cdn-refresh https://download.pingcap.com/
       - run: cd content/blog-cn && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/blog-cn -cdn-refresh https://download.pingcap.com/
       - run: cd content/docs/dev && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/dev -cdn-refresh https://download.pingcap.com/
-      - run: cd content/docs/v3.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/stable -cdn-refresh https://download.pingcap.com/
+      - run: mv content/docs/stable content/docs/v3.0 && cd content/docs/v3.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/stable -cdn-refresh https://download.pingcap.com/
       - run: cd content/docs/v2.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/v2.1 -cdn-refresh https://download.pingcap.com/
       - run: cd content/docs/v3.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/v3.1 -cdn-refresh https://download.pingcap.com/
       - run: cd content/docs-cn/dev && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/dev -cdn-refresh https://download.pingcap.com/
-      - run: cd content/docs-cn/v3.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/stable -cdn-refresh https://download.pingcap.com/
+      - run: mv content/docs-cn/stable content/docs-cn/v3.0 && cd content/docs-cn/v3.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/stable -cdn-refresh https://download.pingcap.com/
       - run: cd content/docs-cn/v2.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/v2.1 -cdn-refresh https://download.pingcap.com/
       - run: cd content/docs-cn/v3.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/v3.1 -cdn-refresh https://download.pingcap.com/
       - run: cd content/meetup && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/meetup -cdn-refresh https://download.pingcap.com/
