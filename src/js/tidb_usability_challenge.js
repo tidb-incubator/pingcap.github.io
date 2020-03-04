@@ -12,13 +12,8 @@ if (slider.data('lang') === 'cn') {
   sliderTextSeason = '赛季积分'
   sliderTextHistory = '历史积分'
 } else {
-  if (window.matchMedia('(max-width: 768px)').matches) {
-    sliderTextSeason = 'S2 CC'
-    sliderTextHistory = 'CC History'
-  } else {
-    sliderTextSeason = 'S2 Contribution Credit'
-    sliderTextHistory = 'Contribution Credit History'
-  }
+  sliderTextSeason = 'Current'
+  sliderTextHistory = 'Accumulative'
 }
 
 function renderData(data) {

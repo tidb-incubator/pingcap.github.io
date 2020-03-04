@@ -1,4 +1,4 @@
 ---
 type: community
-layout: organization
+layout: index 
 ---

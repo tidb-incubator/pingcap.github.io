@@ -26,11 +26,11 @@
   }
 
   &:hover {
-    padding-left: 30px !important;
+    padding-left: 0.8em * 2.5 !important;
 
     &:after {
       opacity: 1;
-      left: 25px;
+      left: 0.8em;
     }
   }
 }
@@ -190,6 +190,14 @@ progress.progress {
       bottom: 0;
       left: 15em;
       color: @primary;
+    }
+  }
+}
+
+.tuc-hero.en {
+  .hero-body {
+    @media @mobile {
+      background-image: url(https://download.pingcap.com/images/tidb-usability-challenge/banner-mobile-en.svg);
     }
   }
 }
@@ -368,6 +376,11 @@ progress.progress {
         text-decoration: underline;
 
         a {
+          @media @tablet {
+            max-width: 150px;
+          }
+
+          display: inline-block;
           cursor: pointer;
 
           &:hover {
@@ -567,6 +580,23 @@ progress.progress {
   }
 }
 
+.tuc-prizes.en {
+  .card {
+    .score {
+      margin-bottom: 0.5rem;
+
+      &:after {
+        content: 'points';
+        right: -@font-size * 2.75;
+      }
+    }
+
+    img {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
 .tuc-studies {
   .card {
     @media @mobile {
@@ -621,7 +651,7 @@ progress.progress {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      height: 200px;
+      height: 225px;
       padding: 1rem;
       text-align: left;
 
@@ -677,7 +707,7 @@ progress.progress {
         @media @mobile {
           width: 50%;
         }
-        
+
         position: absolute;
         width: 20%;
         background: @primary;
@@ -753,9 +783,9 @@ progress.progress {
         width: 48px;
         height: 48px;
         margin-left: 1rem;
-        background: url(https://download.pingcap.com/images/tidb-performance-challenge/github-purple.png)
+        background: url(https://download.pingcap.com/images/tidb-usability-challenge/github.svg)
           no-repeat center;
-        background-size: cover;
+        background-size: contain;
       }
 
       .main {
@@ -822,6 +852,14 @@ progress.progress {
         }
       }
     }
+  }
+}
+
+.tuc-support {
+  .text {
+    margin-top: 0.5rem;
+    color: @B4;
+    font-size: @font-size;
   }
 }
 
