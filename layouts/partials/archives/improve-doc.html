@@ -1,6 +1,6 @@
 {{ $file_path := cond (in .global.File.Path "stable") (replace .global.File.Path "stable" .sv) .global.File.Path }}
 
-{{ $branch := strings.TrimPrefix "v" (index (findRE "(v\\d+\\.\\d+)" $file_path) 0) }}
+{{ $branch := strings.TrimPrefix "/v" (index (findRE "(\\/v\\d+\\.\\d+)" $file_path) 0) }}
 {{ $relative_path := strings.TrimPrefix (index (findRE "(\\/v\\d+\\.\\d+|\\/dev)" $file_path) 0) (strings.TrimPrefix .repo $file_path) }}
 
 <a href="https://github.com/pingcap/{{.repo}}/edit/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}{{$relative_path}}" class="improve-doc" target="_blank">
