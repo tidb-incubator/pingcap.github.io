@@ -3,13 +3,22 @@
     "name": "Internet",
     "children": [
       {
+        "name": "Shopee",
+        "industry": "E-Commerce",
+        "websiteLink": "https://en.wikipedia.org/wiki/Shopee",
+        "link": "https://pingcap.com/success-stories/choosing-right-database-for-your-applications/",
+        "logo": "/images/customers/shopee-logo.png",
+        "scale": "millions of users in 7 regions",
+        "isShow": true,
+        "summary": "With so many databases on the market, choosing the right fit for your app is not an easy task. As a leading e-commerce platform in Southeast Asia and Taiwan, Shopee has an effective strategy for database selection. Learn from their experience."
+      },
+      {
         "name": "JD Cloud",
         "industry": "Cloud Computing",
         "websiteLink": "https://www.crunchbase.com/organization/jd-cloud",
         "link": "https://pingcap.com/success-stories/lesson-learned-from-40-k-qps-and-20-billion-rows-of-data-in-a-single-scale-out-cluster/",
         "logo": "/images/customers/jd-cloud-logo.png",
         "scale": "330+ thousand registered users",
-        "isShow": true,
         "summary": "As a leading cloud computing service provider in China, JD Cloud uses TiKV as the primary database for their OSS metadata storage application. Currently, they've deployed 10+ TiKV clusters. In the production environment, a single cluster's QPS reaches 40 K at peak time. The data volume of the largest cluster hits 20+ billion rows."
       },
       {
