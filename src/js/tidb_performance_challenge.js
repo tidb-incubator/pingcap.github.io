@@ -1,4 +1,4 @@
-const rankURL = 'https://internal.pingcap.net/pcp/api/rank'
+const rankURL = 'https://internal.pingcap.net/pcp/api/rank/all'
 const rankSeason1URL = 'https://internal.pingcap.net/pcp/api/rank/season/1'
 
 const season = $('#tpc-ranking-switch .first')
