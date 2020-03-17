@@ -1,7 +1,3 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
 jobs:
   build:
@@ -10,11 +6,6 @@ jobs:
       - image: circleci/node:8.11.3
 
     working_directory: ~/repo
-
-    branches:
-      only:
-        - src
-        - yini/website-preview
 
     steps:
       # Notice netlify to deploy yini/preview branch when be triggered by webhook
@@ -125,3 +116,13 @@ jobs:
       - run: cd content/docs-cn/v3.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/v3.1 -cdn-refresh https://download.pingcap.com/
       - run: cd content/meetup && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/meetup -cdn-refresh https://download.pingcap.com/
       - run: cd content/weekly && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/weekly -cdn-refresh https://download.pingcap.com/
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - src
+                - yini/website-preview
