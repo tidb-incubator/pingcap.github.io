@@ -1,4 +1,4 @@
-# convert html links of a tags and src of img tags
+# Convert html links of a tags and src of img tags
 
 from bs4 import BeautifulSoup
 
@@ -37,7 +37,6 @@ for link in soup.find_all('a'):
     href = link['href']
     if href:
         if (not abs_hyper_link_pattern.match(href)) and href.rfind('.md') > 0:
-            
             href = href.replace('.md', '')
             href = re.sub(r'^[\.\/]*', '/', href, count=0, flags=0)
             href = os.path.normpath('/' + folder + doc_version + '/' + href)
@@ -57,7 +56,6 @@ for img in soup.find_all('img'):
             img['src'] = '/images/svgs/loader-spinner.svg'
             img['class'] = 'lazy'
 
-
-# write html
+# Write html
 with open(file_path, 'w') as f:
     f.write(unicode(soup))

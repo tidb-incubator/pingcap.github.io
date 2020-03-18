@@ -29,8 +29,6 @@ function createEventListConsole(eventTitles, eventLinks) {
 //   $('.banner-btn').css('top', ratioT * bannerH)
 // }
 
-const _ = require('lodash')
-
 $(document).ready(function() {
   var events = []
   if ($('.feature-activity').length) {
@@ -276,7 +274,9 @@ $(document).ready(function() {
 
   $('.modal-overlay').on('click', function(e) {
     if ($(this).hasClass('active')) {
-      if (_.isEqual(e.target, e.delegateTarget)) closeModal()
+      if (e.target === e.delegateTarget) {
+        closeModal()
+      }
     }
   })
 

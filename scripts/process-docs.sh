@@ -10,19 +10,14 @@ replace_dist_html_link() {
   if [ -d "$doc_tmp_path" ];then
     for html in "$doc_tmp_path"/*
     do
-      # echo "$html"
-      # [ "$html" = "." -o "$html" = ".." ] && continue
       if [ -d "$html" ];then
-        # echo "process sub dir: " $html
         replace_dist_html_link "$html" $repo_name
       elif [[ ! -d "$html" ]] && echo "$html" | grep -E '\.html$' > /dev/null;then
         set +e
-        # echo $html
+
         if grep -E 'href=\"\S+\.md' $html > /dev/null;then
-          # echo "process... $html"
           python scripts/convert_html.py $html $repo_name
         elif grep -E 'img src=\"[\.\/]*media\/' $html > /dev/null;then
-          # echo "process img... $html"
           python scripts/convert_html.py $html $repo_name
         fi
         set -e
@@ -53,8 +48,7 @@ parent_dir="`echo $(pwd) | sed 's;/scripts;;g'`/dist"
 copy_images_from_media_to_dist() {
   repo_name=$1
   media_path=$(echo $parent_dir/$repo_name/media)
-  # echo $media_path
-  # echo $parent_dir/images/$repo_name
+
   if [ ! -d $parent_dir/images/$repo_name ]; then
     mkdir -p $parent_dir/images/$repo_name
   fi

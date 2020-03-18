@@ -2,32 +2,27 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
-      - image: circleci/node:8.11.3
-
-    working_directory: ~/repo
-
+      - image: circleci/node:lts-buster
     steps:
-      # Notice netlify to deploy yini/preview branch when be triggered by webhook
-      - run: curl -X POST -d '' https://api.netlify.com/build_hooks/5cb97398aed249fc2447b1f1
-
       - add_ssh_keys:
           fingerprints:
+            # https://circleci.com/gh/pingcap/pingcap.github.io/edit#checkout
             - '1b:b6:ef:e0:fb:85:6d:8f:78:87:a6:ce:1f:34:ec:66'
+            # Use in scripts/push-gh-pages.sh
             - '6a:a6:ac:e8:9e:ee:7d:ef:18:92:94:0b:b0:2c:34:82'
 
       - checkout
 
       # Dependencies required for deploy
       # python3-pip for awscli
-      # m4 for ocaml
-      - run: sudo apt-get install rsync Python-bs4 python3-pip m4 -y
+      # m4 for OCaml
+      - run: sudo apt update && sudo apt install rsync python-bs4 python3-pip m4 -y
 
       # Download and cache dependencies and submodules
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
+            # Fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
       - run: npm install
@@ -37,7 +32,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: npm run build
+      - run:
+          command: npm run build
+          no_output_timeout: 20m
 
       - run:
          name: consolidate duplicate URLs
@@ -46,7 +43,8 @@ jobs:
       - deploy:
           name: 'Publish Website'
           command: |
-            if [ "${CIRCLE_BRANCH}" == "src" ]; then
+            if [ "${CIRCLE_BRANCH}" == "src" ]
+            then
               ssh-keyscan "${DEPLOY_UCLOUD_BJ_1_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
               rsync -avz --delete dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_BJ_1_HOST}:${DEPLOY_UCLOUD_PATH}";
               ssh-keyscan "${DEPLOY_UCLOUD_BJ_2_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
@@ -59,10 +57,11 @@ jobs:
             fi
 
       - deploy:
-          name: "Publish github.io"
+          name: "Publish pingcap.github.io"
           command: |
-            if [ "${CIRCLE_BRANCH}" == "src" ];
-              then chmod +x ./scripts/push-gh-pages.sh; sh ./scripts/push-gh-pages.sh;
+            if [ "${CIRCLE_BRANCH}" == "src" ]
+            then
+              sh ./scripts/push-gh-pages.sh;
             fi
 
       # Start to sync static folder
@@ -70,7 +69,7 @@ jobs:
 
       - restore_cache:
           keys:
-            - opam-cache-{{ checksum "cloud-assets-utils/dune-project" }}
+            - opam-cache-v1-{{ checksum "cloud-assets-utils/dune-project" }}
 
       - run:
           name: Initialize opam
@@ -80,7 +79,7 @@ jobs:
             opam install dune core -y
 
       - save_cache:
-          key: opam-cache-{{ checksum "cloud-assets-utils/dune-project" }}
+          key: opam-cache-v1-{{ checksum "cloud-assets-utils/dune-project" }}
           paths:
             - ~/.opam
 
@@ -116,6 +115,11 @@ jobs:
       - run: cd content/docs-cn/v3.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/v3.1 -cdn-refresh https://download.pingcap.com/
       - run: cd content/meetup && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/meetup -cdn-refresh https://download.pingcap.com/
       - run: cd content/weekly && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/weekly -cdn-refresh https://download.pingcap.com/
+  preview:
+    machine:
+      image: ubuntu-1604:201903-01
+    steps:
+      - run: curl -X POST -d {} https://api.netlify.com/build_hooks/5e71c8a620f3419c2fea69cc
 workflows:
   version: 2
   build:
@@ -125,4 +129,8 @@ workflows:
             branches:
               only:
                 - src
-                - yini/website-preview
+      - preview:
+          filters:
+            branches:
+              only:
+                - preview
