@@ -50,8 +50,8 @@ function initialSearch(lang) {
   if (urlParams.has('q')) {
     $('#search-input').val(urlParams.get('q'))
     const client = algoliasearch(
-      'F82A1HDS5T',
-      'bc05d9b0c3660ab0f7c0fa73c9f1bed3'
+      'YTQ9N1XXRW',
+      '17e3740f6f5e5925ed393ae40710894f'
     )
     // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
     const index = client.initIndex('pingcap')
