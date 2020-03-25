@@ -15,8 +15,7 @@ jobs:
 
       # Dependencies required for deploy
       # python3-pip for awscli
-      # m4 for OCaml
-      - run: sudo apt update && sudo apt install rsync python-bs4 python3-pip m4 -y
+      - run: sudo apt update && sudo apt install rsync python-bs4 python3-pip -y
 
       # Download and cache dependencies and submodules
       - restore_cache:
@@ -64,24 +63,13 @@ jobs:
               sh ./scripts/push-gh-pages.sh;
             fi
 
-      # Start to sync static folder
-      - run: git clone https://github.com/pingcap/cloud-assets-utils.git --depth 1
-
-      - restore_cache:
-          keys:
-            - opam-cache-{{ checksum "cloud-assets-utils/dune-project" }}
-
+      # Start to sync assets
       - run:
-          name: Initialize opam
+          name: Download cloud_assets_utils
           command: |
-            echo | sh <(curl -sL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)
-            opam init -c 4.07.1 --disable-sandboxing -y && opam switch 4.07.1 -y
-            opam install dune core -y
-
-      - save_cache:
-          key: opam-cache-{{ checksum "cloud-assets-utils/dune-project" }}
-          paths:
-            - ~/.opam
+            curl -L https://github.com/pingcap/cloud-assets-utils/releases/download/v0.2.0/cloud_assets_utils-ubuntu-latest -o cloud_assets_utils
+            chmod +x cloud_assets_utils
+            sudo mv cloud_assets_utils /usr/local/bin/cloud-assets-utils
 
       - run:
           name: Configure qshell
@@ -95,12 +83,6 @@ jobs:
           command: |
             sudo pip3 install awscli
             printf "%s\n" ${AWS_ACCESS_KEY} ${AWS_SECRET_KEY} ${AWS_REGION} "json" | aws configure
-
-      - run:
-          name: Build cloud_assets_utils
-          command: |
-            eval $(opam env) && cd cloud-assets-utils && dune build
-            sudo cp ./_build/default/bin/cloud_assets_utils.exe /usr/local/bin/cloud-assets-utils
 
       - run: cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} static -cdn-refresh https://download.pingcap.com/
       - run: cd content/blog && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/blog -cdn-refresh https://download.pingcap.com/
