@@ -67,5 +67,5 @@ copy_images_from_media_to_dist docs-cn/stable
 copy_images_from_media_to_dist docs-cn/v3.1
 copy_images_from_media_to_dist blog-cn
 copy_images_from_media_to_dist blog
-copy_images_from_media_to_dist weekly
+# copy_images_from_media_to_dist weekly
 copy_images_from_media_to_dist meetup
