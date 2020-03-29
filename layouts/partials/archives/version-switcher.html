@@ -29,11 +29,11 @@
         {{- range $idx, $i := $docs_total_versions -}}
         {{- if not (eq $idx 0) -}}
         {{ $docs_index_page := findRE "(/v\\d+\\.\\d+|\\/dev|\\/stable)" $permalink }}
-
         {{ $exist_url := replaceRE "(/v\\d+\\.\\d+|\\/dev|\\/stable)" (print "/" $i) $permalink}}
+        {{ $relative_url := replaceRE "(/search)" "" $exist_url }}
         <a class="dropdown-item {{ if in $doesnot_exist_ver $i }}unclickable-btn{{ end }}"
             href="
-                {{ if in $doesnot_exist_ver $i }}#{{ else }}{{ if $docs_index_page }}{{ $exist_url }}{{ else }}{{ print $permalink $i }}{{ end }}{{ end }}">
+                {{ if in $doesnot_exist_ver $i }}#{{ else }}{{ if $docs_index_page }}{{ $relative_url }}{{ else }}{{ print $permalink $i }}{{ end }}{{ end }}">
             {{- if eq $i "stable" -}}
             {{ $docs_stable_version }} (stable)
             {{- else if eq $i "v3.1" -}}

@@ -7,7 +7,6 @@ set -e
 replace_dist_html_link() {
   local doc_tmp_path=$1
   local repo_name=$2
-  echo $doc_tmp_path
   if [ -d "$doc_tmp_path" ];then
     for html in "$doc_tmp_path"/*
     do

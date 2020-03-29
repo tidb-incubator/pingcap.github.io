@@ -26,7 +26,9 @@
                 </ul>
             </div>
             <div class="global-search">
-                {{ partial "layout/search.html" (dict "global" . "lang" "en") }}
+                {{ $search_doc_version := index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0 }}
+                {{ $search_doc_version := default "stable" $search_doc_version }}
+                {{ partial "layout/search.html" (dict "global" . "search_doc_version" $search_doc_version "lang" "en") }}
             </div>
         </div>
         <div class="nav-btn nav-slider">

@@ -50,46 +50,46 @@ function initialSearch(lang) {
   if (urlParams.has('q')) {
     $('#search-input').val(urlParams.get('q'))
     const client = algoliasearch(
-      'YTQ9N1XXRW',
-      '17e3740f6f5e5925ed393ae40710894f'
+      'VJR4FNZBAR',
+      'd8d750638ba15018530e22d9360ff8f0'
     )
     // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
     const index = client.initIndex('pingcap')
-    console.log('q', urlParams.get('q'), lang)
+    var newHitArray = []
 
     index
       .search(urlParams.get('q'), {
-        attributesToRetrieve: [
-          'version',
-          '_highlightResult',
-          '_snippetResult',
-          'hierarchy',
-          'url',
-        ],
+        // attributesToRetrieve: [
+        //   '_highlightResult',
+        //   '_snippetResult',
+        //   'hierarchy',
+        //   'url',
+        // ],
         hitsPerPage: 300,
-        facetFilters: ['tags:' + lang],
+        facetFilters: ['tags:' + lang, 'version:' + version],
       })
       .then(({ hits }) => {
         // selects the first result of each category and puts into the new hit array
+        var categoryArr = []
         newHitArray = hits.filter(hit => {
-          // var category = hit.hierarchy.lvl0
-          // if (category && !categoryArr.includes(category)) {
-          //   categoryArr.push(category)
+          var category = hit.hierarchy.lvl0
+          if (category && !categoryArr.includes(category)) {
+            categoryArr.push(category)
 
-          // unifies anchor style
-          var lastLvl = Object.values(hit.hierarchy)
-            .filter(value => value != null)
-            .pop()
-          hit['url'] = hit.url.replace(
-            /\#.*$/g,
-            '#' +
-              lastLvl
-                .replace(/\s+/g, '-')
-                .replace(/[^-\w\u4E00-\u9FFF]*/g, '')
-                .toLowerCase()
-          )
-          return hit
-          // }
+            // unifies anchor style
+            var lastLvl = Object.values(hit.hierarchy)
+              .filter(value => value != null)
+              .pop()
+            hit['url'] = hit.url.replace(
+              /\#.*$/g,
+              '#' +
+                lastLvl
+                  .replace(/\s+/g, '-')
+                  .replace(/[^-\w\u4E00-\u9FFF]*/g, '')
+                  .toLowerCase()
+            )
+            return hit
+          }
         })
 
         // appends results to search-results container

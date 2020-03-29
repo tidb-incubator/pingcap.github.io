@@ -22,7 +22,6 @@ docs_type_pattern = re.compile(r'(docs|docs-cn)\/(tidb-in-kubernetes|tidb-data-m
 
 file_path = sys.argv[1]
 folder = sys.argv[2]
-print(file_path)
 
 with open(file_path, 'r') as f:
     soup = BeautifulSoup(f.read(), 'lxml')
