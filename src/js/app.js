@@ -55,37 +55,41 @@ function initialSearch(lang) {
     )
     // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
     const index = client.initIndex('pingcap')
-    index.search(
-      {
-        query: urlParams.get('q'),
+    console.log('q', urlParams.get('q'), lang)
+
+    index
+      .search(urlParams.get('q'), {
+        attributesToRetrieve: [
+          'version',
+          '_highlightResult',
+          '_snippetResult',
+          'hierarchy',
+          'url',
+        ],
         hitsPerPage: 300,
-        facetFilters: ['tags:' + lang, 'version:' + version],
-      },
-
-      (err, { hits } = {}) => {
-        if (err) throw err
-        var categoryArr = []
-
+        facetFilters: ['tags:' + lang],
+      })
+      .then(({ hits }) => {
         // selects the first result of each category and puts into the new hit array
         newHitArray = hits.filter(hit => {
-          var category = hit.hierarchy.lvl0
-          if (category && !categoryArr.includes(category)) {
-            categoryArr.push(category)
+          // var category = hit.hierarchy.lvl0
+          // if (category && !categoryArr.includes(category)) {
+          //   categoryArr.push(category)
 
-            // unifies anchor style
-            var lastLvl = Object.values(hit.hierarchy)
-              .filter(value => value != null)
-              .pop()
-            hit['url'] = hit.url.replace(
-              /\#.*$/g,
-              '#' +
-                lastLvl
-                  .replace(/\s+/g, '-')
-                  .replace(/[^-\w\u4E00-\u9FFF]*/g, '')
-                  .toLowerCase()
-            )
-            return hit
-          }
+          // unifies anchor style
+          var lastLvl = Object.values(hit.hierarchy)
+            .filter(value => value != null)
+            .pop()
+          hit['url'] = hit.url.replace(
+            /\#.*$/g,
+            '#' +
+              lastLvl
+                .replace(/\s+/g, '-')
+                .replace(/[^-\w\u4E00-\u9FFF]*/g, '')
+                .toLowerCase()
+          )
+          return hit
+          // }
         })
 
         // appends results to search-results container
@@ -94,23 +98,23 @@ function initialSearch(lang) {
             $('#search-result-title').append('搜索结果')
             $('#search-results').append(
               '<div class="search-category-result">\
-                <p>很抱歉，我们没有找到您期望的内容。</p>\
-                <ul>\
-                <li>请尝试其它搜索词，或者去 <a href="https://asktug.com/" target="_blank"> AskTUG</a> (TiDB User Group) 提问试试。</li>\
-                <li>如果您想搜索英文内容，请移步至<a href="https://pingcap.com/docs/">英文文档</a>进行搜索。</li>\
-                </ul>\
-              </div>'
+                        <p>很抱歉，我们没有找到您期望的内容。</p>\
+                        <ul>\
+                        <li>请尝试其它搜索词，或者去 <a href="https://asktug.com/" target="_blank"> AskTUG</a> (TiDB User Group) 提问试试。</li>\
+                        <li>如果您想搜索英文内容，请移步至<a href="https://pingcap.com/docs/">英文文档</a>进行搜索。</li>\
+                        </ul>\
+                      </div>'
             )
           } else if (lang == 'en') {
             $('#search-result-title').append('Search Results')
             $('#search-results').append(
               '<div class="search-category-result">\
-                <p>Sorry. We couldn\'t find what you\'re looking for.</p>\
-                <ul>\
-                <li>If you\'ve come to pages of an unexpected language, go to <a href="https://pingcap.com/docs-cn/">Chinese documentation</a> and try again.</li>\
-                <li>If you do want to get some English content, <a href="https://pingcap.com/">PingCAP home page</a> might be a better place for you to go.</li>\
-                </ul>\
-              </div>'
+                        <p>Sorry. We couldn\'t find what you\'re looking for.</p>\
+                        <ul>\
+                        <li>If you\'ve come to pages of an unexpected language, go to <a href="https://pingcap.com/docs-cn/">Chinese documentation</a> and try again.</li>\
+                        <li>If you do want to get some English content, <a href="https://pingcap.com/">PingCAP home page</a> might be a better place for you to go.</li>\
+                        </ul>\
+                      </div>'
             )
           }
         } else {
@@ -122,7 +126,7 @@ function initialSearch(lang) {
               .map(
                 hit =>
                   '<div class="search-category-result">\
-              <a href="' +
+                      <a href="' +
                   hit.url +
                   '" target="_blank"><h1 class="search-category-title">' +
                   hit.hierarchy.lvl0 +
@@ -130,7 +134,7 @@ function initialSearch(lang) {
                   '<div class="item-link">' +
                   hit.url +
                   '</div>\
-                <div class="search-result-item">' +
+                        <div class="search-result-item">' +
                   (hit._highlightResult.content.value.length > 500
                     ? hit._snippetResult.content.value
                     : hit._highlightResult.content.value) +
@@ -145,8 +149,7 @@ function initialSearch(lang) {
         if ($('.search-category-result').length) {
           $('.lazy').css('display', 'none')
         }
-      }
-    )
+      })
   } else {
     if (lang == 'cn') {
       $('#search-result-title').append('搜索结果')
@@ -322,5 +325,22 @@ $(document).ready(function() {
       800
     )
     return false
+  })
+
+  $('.docs-type-selector').click(function() {
+    if ($('.header-dropdown-menu').hasClass('visibility-hide')) {
+      $('.header-dropdown-menu').removeClass('visibility-hide')
+    } else {
+      $('.header-dropdown-menu').slideToggle('fast')
+    }
+  })
+
+  // hide dropdown Menu if user clicks other divs when the status of dropdown menu is open
+  $('body').click(function(e) {
+    if (e.target.classList.value != 'header-doc-nav') {
+      if ($('.header-dropdown-menu').css('display') == 'block') {
+        $('.header-dropdown-menu').slideToggle('fast')
+      }
+    }
   })
 })

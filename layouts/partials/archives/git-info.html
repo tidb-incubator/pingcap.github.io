@@ -1,9 +1,10 @@
-{{ $file_prefix := cond (in .file_prefix "stable") (replace .file_prefix "stable" .sv) .file_prefix }}
-{{ $prefix := print "content/" $file_prefix "___"}}
-{{ $file_path := cond (in .global.File.Path "stable") (replace .global.File.Path "stable" .sv) .global.File.Path }}
-{{ $branch := strings.TrimPrefix "/v" (index (findRE "(\\/v\\d+\\.\\d+)" $file_path) 0) }}
-{{ $filter_name := replace $file_path (print $file_prefix "/") $prefix }}
-
+{{ $lang := cond (eq .docs_type "tidb") "" (cond .isCn "zh/" "en/") }}
+{{ $file_prefix_with_version := cond (in .file_prefix "stable") (replace .file_prefix "stable" .sv) .file_prefix }}
+{{ $path_prefix := print "content/" (cond (eq .docs_type "tidb") (cond .isCn "docs-cn/" "docs/") "docs/") (replace $file_prefix_with_version "_" "-") "___"}}
+{{ $md_file_path_with_version := cond (in .global.File.Path "stable") (replace .global.File.Path "stable" .sv) .global.File.Path }}
+{{ $branch := strings.TrimPrefix "/v" (index (findRE "(\\/v\\d+\\.\\d+)" $file_prefix_with_version) 0) }}
+{{ $md_file_path := strings.TrimPrefix (print (cond .isCn "docs-cn/" "docs/") (replace $file_prefix_with_version "_" "-") "/") $md_file_path_with_version }}
+{{ $filter_name := print $path_prefix $lang (cond (eq .multi_level_url "") $md_file_path .multi_level_url) }}
 {{- range $item := .global.Site.Data.sub_git_info -}}
     {{- if and $item $item.name -}}
         {{- if eq $item.name $filter_name -}}
@@ -18,10 +19,10 @@
             {{- $commit_id := index $infos 4 -}}
             {{- $filename := index (split $item.name "___") 1 -}}
             <div class="git-info">
-                <a class="link" href="https://github.com/pingcap/{{$.repo}}/blob/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}/{{$filename}}">"{{ $.global.Page.Title }}"</a>
+                <a class="link" href="https://github.com/pingcap/{{$.docs_repo}}/blob/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}/{{$filename}}">"{{ $.global.Page.Title }}"</a>
                 {{ if $.isCn }}更新于{{ else }}was last updated{{ end }}
                 <span>{{ $month }} {{ $day }} {{ $year }}</span>:
-                <a class="link" href="https://github.com/pingcap/{{$.repo}}/commit/{{$commit_id}}">
+                <a class="link" href="https://github.com/pingcap/{{$.docs_repo}}/commit/{{$commit_id}}">
                     {{ $msg }} <span class="hash">({{ $hash }})</span>
                 </a>
             </div>

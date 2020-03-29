@@ -1,5 +1,5 @@
 {{ $nav_active := $.Scratch.Get "nav_active" }}
-{{ $stable_version_tag := "stable" }}
+{{ $tidb_stable_version_tag := "stable" }}
 <header role="navigation" class="fixed-top">
     <div class="container">
         <a class="nav-brand" href="/en"><img src="/images/pingcap-logo.png" alt="PingCAP"></a>
@@ -9,7 +9,15 @@
                 <li {{ if eq $nav_active "cloud"}}class="sel"{{end}}><a class="a-en" href="/tidb-cloud/">Cloud</a></li>
                 <li {{ if eq $nav_active "academy"}} class="sel" {{end}}><a class="a-en" class="tidb-academy"
                     href="/tidb-academy">TiDB Academy</a></li>
-                <li {{ if eq $nav_active "docs"}}class="sel" {{end}}><a class="a-en" href="/docs/{{ $stable_version_tag }}">Docs</a></li>
+                <li class="docs-type-selector {{ if eq $nav_active "docs"}}sel{{end}}" id="docsTypeSelector">
+                    <p class="header-doc-nav">Docs</p>
+                    <div class="header-dropdown-menu visibility-hide" id="docsTypeSelectorItem">
+                        <a class="header-dropdown-item" href="/docs/stable/">TiDB</a>
+                        <a class="header-dropdown-item" href="/docs/tidb-in-kubernetes/stable/">TiDB in Kubernetes</a>
+                        <a class="header-dropdown-item" href="/docs/tidb-data-migration/stable/">TiDB data migration (DM)</a>
+                    </div>
+                </li>
+                
                 <li {{ if eq $nav_active "cases"}}class="sel" {{end}}><a class="a-en" href="/success-stories">Success
                     Stories</a></li>
                 <li {{ if eq $nav_active "blog"}}class="sel" {{end}}><a class="a-en" href="/blog">Blog</a></li>
@@ -17,9 +25,7 @@
                 </ul>
             </div>
             <div class="global-search">
-                {{ $search_doc_version := index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0 }}
-                {{ $search_doc_version := default "stable" $search_doc_version }}
-                {{ partial "layout/search.html" (dict "global" . "search_doc_version" $search_doc_version "lang" "en" "stable_version_tag" $stable_version_tag) }}
+                {{ partial "layout/search.html" (dict "global" . "lang" "en") }}
             </div>
         </div>
         <div class="nav-btn nav-slider">

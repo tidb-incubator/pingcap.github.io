@@ -8,8 +8,14 @@
                     <li><a href="https://university.pingcap.com/" target="_blank" class="nav-blinking"
                         onclick="trackViews('navbar-university', 'pingcap-university_view')">PingCAP
                         University</a></li>
-                    <li {{ if eq $nav_active "docs"}}class="sel" {{end}}><a href="/docs-cn/stable/"
-                        onclick="trackViews('navbar-docs', 'docs-cn_view')">文档</a></li>
+                    <li class="docs-type-selector {{ if eq $nav_active "docs"}}sel{{end}}" id="docsTypeSelector">
+                        <p class="header-doc-nav">文档</p>
+                        <div class="header-dropdown-menu visibility-hide" id="docsTypeSelectorItem">
+                            <a class="header-dropdown-item" href="/docs-cn/stable/" onclick="trackViews('navbar-tidb-docs', 'docs-cn_view')">TiDB</a>
+                            <a class="header-dropdown-item" href="/docs-cn/tidb-in-kubernetes/stable/" onclick="trackViews('navbar-operator-docs', 'docs-cn_view')">TiDB in Kubernetes</a>
+                            <a class="header-dropdown-item" href="/docs-cn/tidb-data-migration/stable/" onclick="trackViews('navbar-dm-docs', 'docs-cn_view')">TiDB data migration (DM)</a>
+                        </div>
+                    </li>
                     <li {{ if eq $nav_active "cases"}}class="sel"{{end}}><a href="/cases-cn">案例</a></li>
                     <li {{ if eq $nav_active "community"}}class="sel"{{end}}><a href="/community-cn">社区</a></li>
                     <li {{ if eq $nav_active "blog"}}class="sel"{{end}}><a href="/blog-cn">博客</a></li>

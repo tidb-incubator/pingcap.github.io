@@ -26,8 +26,12 @@
 
 {{ $data_i18_cn := $.Scratch.Get "data_i18_cn" }}
 {{ $homepage := $.Scratch.Get "homepage" }}
-{{ $.Scratch.Set "stable_version" .Site.Params.versions.docs.stable_version }}
-{{ $.Scratch.Set "total_versions" .Site.Params.versions.docs.total_versions }}
+{{ $.Scratch.Set "tidb_stable_version" .Site.Params.versions.docs.tidb_stable_version }}
+{{ $.Scratch.Set "tidb_total_versions" .Site.Params.versions.docs.tidb_total_versions }}
+{{ $.Scratch.Set "operator_stable_version" .Site.Params.versions.docs.operator_stable_version }}
+{{ $.Scratch.Set "operator_total_versions" .Site.Params.versions.docs.operator_total_versions }}
+{{ $.Scratch.Set "dm_stable_version" .Site.Params.versions.docs.dm_stable_version }}
+{{ $.Scratch.Set "dm_total_versions" .Site.Params.versions.docs.dm_total_versions }}
 <body data-lang="{{- if $data_i18_cn -}}cn{{- else -}}en{{- end -}}" {{ if $homepage }}class="homepage"{{ end }}>
     <!-- {{- partial "loaders/page-loader.html" -}} -->
 

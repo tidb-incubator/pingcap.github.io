@@ -1,58 +1,81 @@
-[submodule "content/blog-cn"]
-	path = content/blog-cn
-	url = https://github.com/pingcap/blog-cn.git
-	shallow = true
-[submodule "content/meetup"]
-	path = content/meetup
-	url = https://github.com/pingcap/meetup.git
-	shallow = true
-[submodule "content/weekly"]
-	path = content/weekly
-	url = https://github.com/pingcap/weekly.git
-	shallow = true
-[submodule "content/tidb-academy"]
-	path = content/tidb-academy
-	url = git@github.com:pingcap/private-tidb-academy.git
-	shallow = true
 [submodule "content/blog"]
 	path = content/blog
 	url = https://github.com/pingcap/blog
-	shallow = true
-[submodule "content/docs-cn/dev"]
-	path = content/docs-cn/dev
-	url = https://github.com/pingcap/docs-cn.git
-	shallow = true
-[submodule "content/docs-cn/v2.1"]
-	path = content/docs-cn/v2.1
-	url = https://github.com/pingcap/docs-cn.git
-	branch = release-2.1
-	shallow = true
-[submodule "content/docs-cn/v3.0"]
-	path = content/docs-cn/v3.0
-	url = https://github.com/pingcap/docs-cn.git
-	branch = release-3.0
-	shallow = true
-[submodule "content/docs-cn/v3.1"]
-	path = content/docs-cn/v3.1
-	url = https://github.com/pingcap/docs-cn.git
-	branch = release-3.1
-	shallow = true
+	shallowed = true
+[submodule "content/blog-cn"]
+	path = content/blog-cn
+	url = https://github.com/pingcap/blog-cn
+	shallowed = true
+[submodule "content/weekly"]
+	path = content/weekly
+	url = https://github.com/pingcap/weekly
+	shallowed = true
+[submodule "content/meetup"]
+	path = content/meetup
+	url = https://github.com/pingcap/meetup
+	shallowed = true
+[submodule "content/tidb-academy"]
+	path = content/tidb-academy
+	url = https://github.com/pingcap/private-tidb-academy
+	shallowed = true
 [submodule "content/docs/dev"]
 	path = content/docs/dev
-	url = https://github.com/pingcap/docs.git
-	shallow = true
+	url = https://github.com/pingcap/docs
+	shallowed = true
 [submodule "content/docs/v2.1"]
 	path = content/docs/v2.1
-	url = https://github.com/pingcap/docs.git
+	url = https://github.com/pingcap/docs
+	shallowed = true
 	branch = release-2.1
-	shallow = true
-[submodule "content/docs/v3.0"]
-	path = content/docs/v3.0
-	url = https://github.com/pingcap/docs.git
-	branch = release-3.0
-	shallow = true
 [submodule "content/docs/v3.1"]
 	path = content/docs/v3.1
-	url = https://github.com/pingcap/docs.git
+	url = https://github.com/pingcap/docs
+	shallowed = true
 	branch = release-3.1
-	shallow = true
+[submodule "content/docs-cn/v2.1"]
+	path = content/docs-cn/v2.1
+	url = https://github.com/pingcap/docs-cn
+	shallowed = true
+	branch = release-2.1
+[submodule "content/docs-cn/dev"]
+	path = content/docs-cn/dev
+	url = https://github.com/pingcap/docs-cn
+	shallowed = true
+[submodule "content/docs-cn/v3.1"]
+	path = content/docs-cn/v3.1
+	url = https://github.com/pingcap/docs-cn
+	shallowed = true
+	branch = release-3.1
+[submodule "content/docs-cn/v3.0"]
+	path = content/docs-cn/v3.0
+	url = https://github.com/pingcap/docs-cn
+	shallowed = true
+	branch = release-3.0
+[submodule "content/docs/tidb-in-kubernetes/v1.0"]
+	path = content/docs/tidb-in-kubernetes/v1.0
+	url = https://github.com/pingcap/docs-tidb-operator
+	shallowed = true
+	branch = release-1.0
+[submodule "content/docs/tidb-in-kubernetes/v1.1"]
+	path = content/docs/tidb-in-kubernetes/v1.1
+	url = https://github.com/pingcap/docs-tidb-operator
+	shallowed = true
+	branch = release-1.1
+[submodule "content/docs/tidb-in-kubernetes/dev"]
+	path = content/docs/tidb-in-kubernetes/dev
+	url = https://github.com/pingcap/docs-tidb-operator
+	shallowed = true
+[submodule "content/docs/tidb-data-migration/dev"]
+	path = content/docs/tidb-data-migration/dev
+	url = https://github.com/pingcap/docs-dm
+	shallowed = true
+[submodule "content/docs/tidb-data-migration/v1.0"]
+	path = content/docs/tidb-data-migration/v1.0
+	url = https://github.com/pingcap/docs-dm
+	shallowed = true
+	branch = release-1.0
+[submodule "content/docs/v3.0"]
+	path = content/docs/v3.0
+	url = https://github.com/pingcap/docs
+	shallowed = true
+	branch = release-3.0

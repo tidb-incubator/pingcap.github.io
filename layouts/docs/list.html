@@ -12,14 +12,43 @@
 {{- end -}}
 
 {{- define "main" -}}
-{{ $stable_version := $.Scratch.Get "stable_version" }}
-{{ $total_versions := $.Scratch.Get "total_versions" }}
+{{$.Scratch.Set "docs_stable_version" ""}}
+{{$.Scratch.Set "docs_type" ""}}
+{{$.Scratch.Set "docs_repo" ""}}
+{{$docs_total_versions := slice ""}}
+
+<!-- set total versions and stable version according to the docs type -->
+{{ if hasPrefix .RelPermalink "/docs/tidb-data-migration/" }}
+<!-- docs dm -->
+{{ $.Scratch.Add "docs_type" "tidb_data_migration" }}
+{{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "dm_stable_version") }}
+{{ $.Scratch.Add "docs_repo" "docs-dm"}}
+{{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "dm_total_versions") }}
+{{ else if hasPrefix .RelPermalink "/docs/tidb-in-kubernetes/" }}
+<!-- docs operator -->
+{{ $.Scratch.Add "docs_type" "tidb_in_kubernetes"}}
+{{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "operator_stable_version") }}
+{{ $.Scratch.Add "docs_repo" "docs-tidb-operator"}}
+{{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "operator_total_versions") }}
+{{ else }}
+<!-- docs tidb -->
+{{ $.Scratch.Add "docs_type" "tidb" }}
+{{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "tidb_stable_version") }}
+{{ $.Scratch.Add "docs_repo" "docs"}}
+{{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "tidb_total_versions") }}
+{{ end }}
+
 {{ $current_version := default "stable" (index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0) }}
+
 <div class="doc" id="list_page">
     <div class="container">
-        {{ $.Scratch.Add "data_i18_link" $current_version }}
-        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_" "cv" $current_version "sv" $stable_version "tv" $total_versions) }}
-
+        {{ if eq ($.Scratch.Get "docs_repo") "docs" }}
+            {{ $.Scratch.Add "data_i18_link" (trim $current_version "/") }}
+        {{ else }}
+            {{ $.Scratch.Add "data_i18_link" (print (replace ($.Scratch.Get "docs_type") "_" "-") "/" $current_version )}}
+        {{ end }}
+        {{ $multi_level_url := cond (isset .Params "multi_level_url") .Params.multi_level_url ""}}
+        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_" "cv" $current_version "sv" ($.Scratch.Get "docs_stable_version") "tv" $docs_total_versions "docs_type" ($.Scratch.Get "docs_type")) }}
         <div class="archive">
             <div class="content markdown-body">
                 {{ .Content }}
@@ -28,12 +57,10 @@
         </div>
 
         <div class="sidebar-page sticky-sidebar">
-            {{ $current_page := printf "%s%s%s" "docs/" $current_version "/overview.md" }}
-            {{ with .Site.GetPage "page" $current_page }}
-                {{- partial "archives/request-docs-changes.html" (dict "repo" "docs" "global" . "link" .Permalink "prefixRepo" "docs/" "sv" $stable_version) -}}
-            {{ end }}
-            {{ $download_pdf := cond (eq $current_version "stable") $stable_version $current_version }}
-            {{ partial "archives/download-pdf.html" (dict "version" $download_pdf) }}
+            {{- partial "archives/request-docs-changes.html" (dict "global" . "repo" ($.Scratch.Get "docs_repo") "isCn" false "link" .Permalink "docs_type" ($.Scratch.Get "docs_type") "sv" ($.Scratch.Get "docs_stable_version") "multi_level_url" $multi_level_url) -}}
+            {{ $download_pdf := cond (eq $current_version "stable") ($.Scratch.Get "docs_stable_version") $current_version }}
+
+            {{ partial "archives/download-pdf.html" (dict "docs_type" ($.Scratch.Get "docs_type") "version" $download_pdf) }}
             <p class="toc-title">What’s on this page</p>
             <div id="smart_toc_wrapper"></div>
         </div>

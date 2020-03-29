@@ -2,10 +2,8 @@ const fs = require('fs')
 const tableRe = /^[\-\+]\s?.*(\n^\s*[\-\+].*)*/m
 const anchorTitleRe = /(\s*)[\+\-]\s*\[(.*)\]\((.*)\)/
 const titleRe = /^(\s*)[\+\-]\s*([^[]*)/
-const stable_version = 'v3.0'
-const stable_version_tag = 'stable'
 
-function genTableJSONFromMarkdown(source, target, prefix) {
+function genTableJSONFromMarkdown(source, target, prefix, urlPath) {
   const contents = fs.readFileSync(source, 'utf8')
   const reResult = tableRe.exec(contents)
   let NavData = { children: [] }
@@ -23,10 +21,12 @@ function genTableJSONFromMarkdown(source, target, prefix) {
         if (/^https?:\/\//.test(r1[3])) {
           link = r1[3]
         } else {
-          if (/\/v3.0\//.test(r1[3])) {
-            r1[3] = r1[3].replace(stable_version, stable_version_tag)
+          if (urlPath == 'basename') {
+            baseName = new String(r1[3]).substring(r1[3].lastIndexOf('/') + 1)
+            link = prefix + baseName.replace('.md', '/')
+          } else {
+            link = prefix + r1[3].replace('.md', '/')
           }
-          link = prefix + r1[3].replace('.md', '/')
         }
       } else if (r2) {
         space = r2[1]
@@ -91,10 +91,10 @@ function genTableJSONFromMarkdown(source, target, prefix) {
 
 var args = process.argv.slice(2)
 
-if (args.length != 3) {
+if (args.length != 4) {
   console.log(
-    'Usage: node <this> arg1 arg2 arg3 # arg1 markdown source path, arg2 json file path arg3 url prefix'
+    'Usage: node <this> arg1 arg2 arg3 arg4 # arg1 markdown source path, arg2 json file path, arg3 url prefix and arg4 basename'
   )
 }
 
-genTableJSONFromMarkdown(args[0], args[1], args[2])
+genTableJSONFromMarkdown(args[0], args[1], args[2], args[3])

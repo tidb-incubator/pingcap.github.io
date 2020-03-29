@@ -1,24 +1,24 @@
-{{ $stable_version := .sv }}
-{{ $total_versions := .tv }}
+{{ $docs_stable_version := .sv }}
+{{ $docs_total_versions := .tv }}
 {{ $current_version := .cv }}
 {{ $permalink := .permalink }}
 {{ $content_file_path := .content_file_path }}
-
 {{ $doesnot_exist_ver := slice ""}}
 
-{{- range $idx, $i := $total_versions -}}
+{{- range $idx, $i := $docs_total_versions -}}
 
-{{ $file_path := printf "%s%s" "./content/" (replaceRE "(/v\\d+\\.\\d+|\\/dev|\\/stable)" (printf "%s%s" "/" $i) $content_file_path)}}
+{{ $file_path := print "./content/" (replaceRE "(/v\\d+\\.\\d+|\\/dev|\\/stable)" (print "/" $i) $content_file_path)}}
 
 {{- if not (fileExists $file_path) -}}
 {{ $doesnot_exist_ver = $doesnot_exist_ver | append $i }}
 {{- end -}}
+
 {{- end -}}
 
 <div class="version-switcher">
     <button type="button" id="dropdownMenuButton">
         {{- if eq $current_version "stable" -}}
-        {{ $stable_version }}
+        {{ $docs_stable_version }}
         {{- else if eq $current_version "v3.1" -}}
         v3.1-beta
         {{- else -}}
@@ -26,15 +26,16 @@
         {{- end -}}
     </button>
     <div class="dropdown-menu visibility-hide" id="dropdown-menu-items">
-        {{- range $idx, $i := $total_versions -}}
+        {{- range $idx, $i := $docs_total_versions -}}
+        {{- if not (eq $idx 0) -}}
         {{ $docs_index_page := findRE "(/v\\d+\\.\\d+|\\/dev|\\/stable)" $permalink }}
 
-        {{ $exist_url := replaceRE "(/v\\d+\\.\\d+|\\/dev|\\/stable)" (printf "%s%s" "/" $i) $permalink}}
+        {{ $exist_url := replaceRE "(/v\\d+\\.\\d+|\\/dev|\\/stable)" (print "/" $i) $permalink}}
         <a class="dropdown-item {{ if in $doesnot_exist_ver $i }}unclickable-btn{{ end }}"
             href="
-                {{ if in $doesnot_exist_ver $i }}#{{ else }}{{ if $docs_index_page }}{{ $exist_url }}{{ else }}{{ printf "%s%s" $permalink $i }}{{ end }}{{ end }}">
+                {{ if in $doesnot_exist_ver $i }}#{{ else }}{{ if $docs_index_page }}{{ $exist_url }}{{ else }}{{ print $permalink $i }}{{ end }}{{ end }}">
             {{- if eq $i "stable" -}}
-            {{ $stable_version }} (stable)
+            {{ $docs_stable_version }} (stable)
             {{- else if eq $i "v3.1" -}}
             v3.1-beta
             {{- else -}}
@@ -44,6 +45,7 @@
             <span class="tooltiptext">This doc does not exist in {{ $i }}</span>
             {{- end -}}
         </a>
+        {{- end -}}
         {{- end -}}
     </div>
 </div>

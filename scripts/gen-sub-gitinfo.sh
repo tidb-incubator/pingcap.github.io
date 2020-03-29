@@ -7,6 +7,7 @@ target_file="${curdir}/../data/sub_git_info.json"
 printf "[\n" > $target_file
 
 subs=`git config --file .gitmodules --get-regexp path | awk '{ print $2 }'`
+echo $subs
 for module in $(echo $subs);
 do
   cd $module

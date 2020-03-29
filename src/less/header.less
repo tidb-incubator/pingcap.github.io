@@ -60,8 +60,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #3e3e3e inset !important;
-    -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0 30px #3e3e3e inset !important;
+  -webkit-text-fill-color: white !important;
 }
 
 .nav-brand {
@@ -147,6 +147,23 @@ nav.mobile-sidebar {
   opacity: 0.9;
   z-index: 100002;
 
+  .docs-type-selector {
+    p {
+      padding: .3rem .75rem;
+    }
+  
+    .header-dropdown-menu {
+      height: 4.5rem;
+
+      a.header-dropdown-item {
+        text-align: left;
+        height: 1.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        font-size: 12px;
+      }
+    }
+  }
+
   h4 {
     color: inherit;
   }
@@ -197,6 +214,7 @@ nav.mobile-sidebar {
     margin: 10px 0;
 
     li {
+
       a:hover,
       &.sel a {
         color: fade(white, 50%);
@@ -370,15 +388,22 @@ header {
           a {
             box-sizing: content-box;
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
             height: @navHeight;
             padding: 0.5rem 0.4rem;
             letter-spacing: 1.5px;
           }
 
-          .a-en {
+          .a-en,
+          p.header-doc-nav {
             padding: 0.5rem 0.55rem;
+
+            &:hover {
+              color: @themeBlue;
+              transition: all 0.5s ease;
+              cursor: pointer;
+            }
           }
 
           & a:hover,
@@ -387,11 +412,49 @@ header {
             color: @themeBlue;
             transition: all 0.5s ease;
           }
-          
+
           &.sel a.link-download {
             background-color: white;
-            color: @themeBlue !important;
+            color: @themeBlue  !important;
           }
+        }
+
+        .docs-type-selector {
+          position: relative;
+
+          .header-dropdown-menu {
+            align-items: left;
+            position: absolute;
+            top: 3rem;
+            padding: 0.5rem;
+            width: max-content;
+            color: @darkGray;
+            background: @grayWhite;
+            text-align: left !important;
+            border-radius: 4px;
+
+            a.header-dropdown-item {
+              text-align: left;
+              letter-spacing: 0px;
+              height: 1rem;
+              padding: 0.5rem;
+            }
+          }
+
+          &.sel {
+            .header-dropdown-item {
+              color: @darkGray;
+
+              &:hover {
+                color: @themeBlue;
+              }
+            }
+          }
+
+          .visibility-hide {
+            visibility: hidden;
+          }
+
         }
       }
 
@@ -413,7 +476,7 @@ header {
 
         &:hover {
           background-color: white;
-          color: @themeBlue !important;
+          color: @themeBlue  !important;
           transition: all 0.5s ease;
 
           svg,
