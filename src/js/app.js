@@ -34,13 +34,15 @@ function processHash() {
 }
 
 // initial algolia search
-function initialSearch(lang) {
+function initialSearch(lang, docs_type) {
   let urlParams = new URLSearchParams(window.location.search)
   let url = window.location.href
 
   var re = new RegExp('(v\\d+\\.\\d+|dev|stable)')
   var version
   var newHitArray = []
+  const regex = /\//gi
+  const type = docs_type.replace(regex, '')
 
   // gets current version
   if (url.match(re)) {
@@ -53,20 +55,19 @@ function initialSearch(lang) {
       'VJR4FNZBAR',
       'd8d750638ba15018530e22d9360ff8f0'
     )
+    // community plan AppID and search API key
     // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
     const index = client.initIndex('pingcap')
     var newHitArray = []
 
     index
       .search(urlParams.get('q'), {
-        // attributesToRetrieve: [
-        //   '_highlightResult',
-        //   '_snippetResult',
-        //   'hierarchy',
-        //   'url',
-        // ],
         hitsPerPage: 300,
-        facetFilters: ['tags:' + lang, 'version:' + version],
+        facetFilters: [
+          'tags:' + lang,
+          'version:' + version,
+          'docs_type:' + type,
+        ],
       })
       .then(({ hits }) => {
         // selects the first result of each category and puts into the new hit array
@@ -170,7 +171,10 @@ function initialSearch(lang) {
 
 // process search ui
 function processSearch() {
-  initialSearch($('#search-input').data('lang'))
+  initialSearch(
+    $('#search-input').data('lang'),
+    $('#search-input').data('type')
+  )
   // Hide search suggestions dropdown menu on focusout
   $('#search-input').focusout(function() {
     $('.ds-dropdown-menu').hide()

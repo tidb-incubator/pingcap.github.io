@@ -29,8 +29,9 @@
             </div>
             <div class="global-search">
                 {{ $search_doc_version := index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0 }}
+                {{ $docs_type := index (findRE "(/tidb-in-kubernetes/|/tidb-data-migration/)" .RelPermalink) 0 }}
                 {{ $search_doc_version := default "stable" $search_doc_version }}
-                {{ partial "layout/search.html" (dict "global" . "search_doc_version" $search_doc_version "lang" "cn") }}
+                {{ partial "layout/search.html" (dict "global" . "search_doc_version" $search_doc_version "lang" "cn" "docs_type" $docs_type) }}
             </div>
         </div>
         <div class="nav-btn nav-slider">
