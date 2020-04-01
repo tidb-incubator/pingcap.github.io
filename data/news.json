@@ -1,5 +1,17 @@
 [
   {
+    "title": "How We Reduced Multi-Region Read Latency and Network Traffic by 50%",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/how-we-reduced-multi-region-read-latency-and-netwo",
+    "date": "2020-03-26"
+  },
+  {
+    "title": "Squashed Bugs, Served Hot and Fresh With Failure Rate Heatmaps",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/squashed-bugs-served-hot-and-fresh-with-failure-ra",
+    "date": "2020-01-03"
+  },
+  {
     "title": "AutoTiKV: TiKV Tuning Made Easy by AI and Machine Learning",
     "logo": "/images/news/cncf.png",
     "link": "https://www.cncf.io/blog/2019/12/10/autotikv-tikv-tuning-made-easy-by-ai-and-machine-learning/",
