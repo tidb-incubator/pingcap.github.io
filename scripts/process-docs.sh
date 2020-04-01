@@ -31,6 +31,9 @@ tidb_docs_versions=(stable dev v2.1 v3.1)
 operator_docs_versions=(stable dev v1.1)
 dm_docs_versions=(stable dev)
 
+replace_dist_html_link "$en_tmp_docs_path/index.html" "docs"
+replace_dist_html_link "$cn_tmp_docs_path/index.html" "docs-cn"
+
 for v in "${tidb_docs_versions[@]}"
 do
   replace_dist_html_link "$en_tmp_docs_path/$v" "docs/$v"

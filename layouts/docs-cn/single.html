@@ -13,59 +13,59 @@
 {{- end -}}
 
 {{- define "main" -}}
-{{$.Scratch.Set "docs_stable_version" ""}}
-{{$.Scratch.Set "docs_type" ""}}
-{{$.Scratch.Set "docs_repo" ""}}
-{{$.Scratch.Set "title_prefix" ""}}
+{{ $docs_stable_version := "" }}
+{{ $docs_type := "" }}
+{{ $docs_repo := "" }}
+{{ $title_prefix := "" }}
 {{$docs_total_versions := slice ""}}
 
 <!-- set total versions and stable version according to the docs type -->
 {{ if hasPrefix .RelPermalink "/docs-cn/tidb-data-migration/" }}
 <!-- docs dm -->
-{{ $.Scratch.Add "docs_type" "tidb_data_migration" }}
-{{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "dm_stable_version") }}
-{{ $.Scratch.Add "docs_repo" "docs-dm"}}
-{{ $.Scratch.Add "title_prefix" "TiDB Data Migration" }}
+{{ $docs_type = "tidb_data_migration" }}
+{{ $docs_stable_version = $.Scratch.Get "dm_stable_version" }}
+{{ $docs_repo = "docs-dm"}}
+{{ $title_prefix = "TiDB Data Migration" }}
 {{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "dm_total_versions") }}
 {{ else if hasPrefix .RelPermalink "/docs-cn/tidb-in-kubernetes/" }}
 <!-- docs operator -->
-{{ $.Scratch.Add "docs_type" "tidb_in_kubernetes"}}
-{{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "operator_stable_version") }}
-{{ $.Scratch.Add "docs_repo" "docs-tidb-operator"}}
-{{ $.Scratch.Add "title_prefix" "TiDB in Kubernetes" }}
+{{ $docs_type = "tidb_in_kubernetes"}}
+{{ $docs_stable_version = $.Scratch.Get "operator_stable_version" }}
+{{ $docs_repo = "docs-tidb-operator"}}
+{{ $title_prefix = "TiDB in Kubernetes" }}
 {{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "operator_total_versions") }}
 {{ else }}
 <!-- docs tidb -->
-{{ $.Scratch.Add "docs_type" "tidb" }}
-{{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "tidb_stable_version") }}
-{{ $.Scratch.Add "docs_repo" "docs"}}
-{{ $.Scratch.Add "title_prefix" "TiDB" }}
+{{ $docs_type = "tidb" }}
+{{ $docs_stable_version = $.Scratch.Get "tidb_stable_version" }}
+{{ $docs_repo = "docs"}}
+{{ $title_prefix = "TiDB" }}
 {{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "tidb_total_versions") }}
 {{ end }}
 
 {{ $current_version := default "stable" (index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0) }}
 <div class="doc">
     <div class="container">
-        {{ if eq ($.Scratch.Get "docs_repo") "docs" }}
+        {{ if eq $docs_repo "docs" }}
             {{ $.Scratch.Add "data_i18_link" (trim $current_version "/") }}
         {{ else }}
-            {{ $.Scratch.Add "data_i18_link" (print (replace ($.Scratch.Get "docs_type") "_" "-") "/" $current_version )}}
+            {{ $.Scratch.Add "data_i18_link" (print (replace $docs_type "_" "-") "/" $current_version )}}
         {{ end }}
         {{ $multi_level_url := cond (isset .Params "multi_level_url") .Params.multi_level_url ""}}
-        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_cn_" "cv" $current_version "sv" ($.Scratch.Get "docs_stable_version") "tv" $docs_total_versions "docs_type" ($.Scratch.Get "docs_type") "title_prefix" ($.Scratch.Get "title_prefix")) }}
+        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_cn_" "cv" $current_version "sv" $docs_stable_version "tv" $docs_total_versions "docs_type" $docs_type "title_prefix" $title_prefix) }}
 
         <div class="archive">
             <div class="content markdown-body">
                 {{ .Content }}
             </div>
             <div class="article-toc"></div>
-            {{ $file_prefix := print (cond (eq ($.Scratch.Get "docs_type") "tidb") "" (print ($.Scratch.Get "docs_type") "/")) $current_version }}
-            {{- partial "archives/git-info.html" (dict "file_prefix" $file_prefix "docs_repo" ($.Scratch.Get "docs_repo") "docs_type" ($.Scratch.Get "docs_type") "global" . "sv" ($.Scratch.Get "docs_stable_version") "isCn" true "multi_level_url" $multi_level_url) -}}
+            {{ $file_prefix := print (cond (eq $docs_type "tidb") "" (print $docs_type "/")) $current_version }}
+            {{- partial "archives/git-info.html" (dict "file_prefix" $file_prefix "docs_repo" $docs_repo "docs_type" $docs_type "global" . "sv" $docs_stable_version "isCn" true "multi_level_url" $multi_level_url) -}}
         </div>
 
         <div class="sidebar-page sticky-sidebar">
-            {{- partial "archives/improve-doc.html" (dict "global" . "repo" ($.Scratch.Get "docs_repo") "isCn" true "docs_type" ($.Scratch.Get "docs_type") "sv" ($.Scratch.Get "docs_stable_version") "multi_level_url" $multi_level_url) }}
-            {{- partial "archives/request-docs-changes.html" (dict "global" . "repo" ($.Scratch.Get "docs_repo") "isCn" true "link" .Permalink "docs_type" ($.Scratch.Get "docs_type") "sv" ($.Scratch.Get "docs_stable_version") "multi_level_url" $multi_level_url "isCn" true) -}}
+            {{- partial "archives/improve-doc.html" (dict "global" . "repo" $docs_repo "isCn" true "docs_type" $docs_type "sv" $docs_stable_version "multi_level_url" $multi_level_url) }}
+            {{- partial "archives/request-docs-changes.html" (dict "global" . "repo" $docs_repo "isCn" true "link" .Permalink "docs_type" $docs_type "sv" $docs_stable_version "multi_level_url" $multi_level_url "isCn" true) -}}
             <p class="toc-title">本页导航</p>
             <div id="smart_toc_wrapper"></div>
         </div>

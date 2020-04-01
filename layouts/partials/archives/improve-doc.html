@@ -2,6 +2,7 @@
 
 {{ $relative_path := slice "" }}
 {{ $lang := cond .isCn "/zh" "/en" }}
+{{ $repo := cond .isCn "docs-cn" "docs"}}
 
 {{ $repo_prefix := cond (eq .repo "docs") (cond .isCn (print .repo "-cn") .repo) (print (cond .isCn "docs-cn/" "docs/") (replace .docs_type "_" "-")) }}
 
@@ -16,7 +17,7 @@
     {{ $relative_path = $relative_path | append (print $lang $relative_path_temp) }}
 {{ end }}
 
-<a href="https://github.com/pingcap/{{.repo}}/edit/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}{{index $relative_path 1}}" class="improve-doc" target="_blank">
+<a href="https://github.com/pingcap/{{$repo}}/edit/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}{{index $relative_path 1}}" class="improve-doc" target="_blank">
     {{ partial "svgs/icon-edit.svg" (dict "fill" "#142848" "width" 14 "height" 14 ) }}
     {{ if .isCn }}修改本文{{else}}Edit this page{{end}}
 </a>
