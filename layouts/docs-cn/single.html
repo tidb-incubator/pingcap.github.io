@@ -8,7 +8,6 @@
     {{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
     {{$.Scratch.Set "nav_active" "docs"}}
     {{$.Scratch.Set "data_i18_cn" true }}
-    {{$.Scratch.Set "title_prefix" ""}}
     {{$.Scratch.Set "data_i18_link" "/docs/" }}
     {{$.Scratch.Set "metaTitle" "TiDB 官方用户文档"}}
 {{- end -}}
@@ -17,6 +16,7 @@
 {{$.Scratch.Set "docs_stable_version" ""}}
 {{$.Scratch.Set "docs_type" ""}}
 {{$.Scratch.Set "docs_repo" ""}}
+{{$.Scratch.Set "title_prefix" ""}}
 {{$docs_total_versions := slice ""}}
 
 <!-- set total versions and stable version according to the docs type -->
