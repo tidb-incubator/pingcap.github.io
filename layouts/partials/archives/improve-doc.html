@@ -11,7 +11,7 @@
 {{ if eq .repo "docs" }}
     {{ $relative_path = $relative_path | append (print "" $relative_path_temp) }}
 {{ else if .multi_level_url }}
-    {{ $relative_path = $relative_path | append (print $lang "/" .multi_level_url) }}
+    {{ $relative_path = $relative_path | append (print $lang "/" .multi_level_url ".md") }}
 {{ else }}
     {{ $relative_path = $relative_path | append (print $lang $relative_path_temp) }}
 {{ end }}
