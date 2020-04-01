@@ -52,7 +52,7 @@
             {{ $.Scratch.Add "data_i18_link" (print (replace ($.Scratch.Get "docs_type") "_" "-") "/" $current_version )}}
         {{ end }}
         {{ $multi_level_url := cond (isset .Params "multi_level_url") .Params.multi_level_url ""}}
-        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_cn_" "cv" $current_version "sv" ($.Scratch.Get "docs_stable_version") "tv" $docs_total_versions "docs_type" ($.Scratch.Get "docs_type")) }}
+        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_cn_" "cv" $current_version "sv" ($.Scratch.Get "docs_stable_version") "tv" $docs_total_versions "docs_type" ($.Scratch.Get "docs_type") "title_prefix" ($.Scratch.Get "title_prefix")) }}
 
         <div class="archive">
             <div class="content markdown-body">
