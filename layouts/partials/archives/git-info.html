@@ -1,4 +1,5 @@
 {{ $lang := cond (eq .docs_type "tidb") "" (cond .isCn "zh/" "en/") }}
+{{ $docs_repo := cond .isCn "docs-cn" "docs" }}
 {{ $file_prefix_with_version := cond (in .file_prefix "stable") (replace .file_prefix "stable" .sv) .file_prefix }}
 {{ $path_prefix := print "content/" (cond (eq .docs_type "tidb") (cond .isCn "docs-cn/" "docs/") "docs/") (replace $file_prefix_with_version "_" "-") "___"}}
 {{ $md_file_path_with_version := cond (in .global.File.Path "stable") (replace .global.File.Path "stable" .sv) .global.File.Path }}
@@ -19,10 +20,10 @@
             {{- $commit_id := index $infos 4 -}}
             {{- $filename := index (split $item.name "___") 1 -}}
             <div class="git-info">
-                <a class="link" href="https://github.com/pingcap/{{$.docs_repo}}/blob/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}/{{$filename}}">"{{ $.global.Page.Title }}"</a>
+                <a class="link" href="https://github.com/pingcap/{{$docs_repo}}/blob/{{ if $branch }}release-{{$branch}}{{else}}master{{end}}/{{$filename}}">"{{ $.global.Page.Title }}"</a>
                 {{ if $.isCn }}更新于{{ else }}was last updated{{ end }}
                 <span>{{ $month }} {{ $day }} {{ $year }}</span>:
-                <a class="link" href="https://github.com/pingcap/{{$.docs_repo}}/commit/{{$commit_id}}">
+                <a class="link" href="https://github.com/pingcap/{{$docs_repo}}/commit/{{$commit_id}}">
                     {{ $msg }} <span class="hash">({{ $hash }})</span>
                 </a>
             </div>
