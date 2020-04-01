@@ -22,6 +22,10 @@ docs_type_pattern = re.compile(r'(docs|docs-cn)\/(tidb-in-kubernetes|tidb-data-m
 
 file_path = sys.argv[1]
 folder = sys.argv[2]
+default_version = ''
+
+if file_path == "dist/docs/index.html" or file_path == "dist/docs-cn/index.html":
+    default_version = '/stable'
 
 with open(file_path, 'r') as f:
     soup = BeautifulSoup(f.read(), 'lxml')
@@ -36,7 +40,7 @@ for link in soup.find_all('a'):
             if (docs_type_pattern.match(folder)) and len(href.split('/')) > 2:
                 length = len(href.split('/'))
                 href = href.split('/')[length - 1]
-            href = os.path.normpath('/' + folder + '/' + href)
+            href = os.path.normpath('/' + folder + default_version + '/' + href)
             link['href'] = href
 
 for img in soup.find_all('img'):
@@ -46,7 +50,7 @@ for img in soup.find_all('img'):
             _src = re.sub(r'[\.\/]*media\/', '/', src, count=0, flags=0)
             if (docs_type_pattern.match(folder)):
                 folder = re.sub(r'(docs\/|docs-cn\/)', '', folder)
-            _src = 'https://download.pingcap.com/images/' + folder + _src
+            _src = 'https://download.pingcap.com/images/' + folder + default_version + _src
             img['data-original']= _src
             img['src'] = '/images/svgs/loader-spinner.svg'
             img['class'] = 'lazy'
