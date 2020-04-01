@@ -4,7 +4,7 @@
 {{ $docs_type := .docs_type }}
 {{ $permalink := .global.RelPermalink }}
 {{ $content_file_path := .global.File.Path }}
-{{ $title := cond (eq .lang_prefix "docs_cn_") "文档" "Documentation" }}
+{{ $title := print .title_prefix (cond (eq .lang_prefix "docs_cn_") " 文档" " Documentation") }}
 
 {{ $toc_file_name := replace (print .lang_prefix $docs_type "_" $cv "_toc") "." "" }}
 

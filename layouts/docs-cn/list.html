@@ -16,6 +16,7 @@
 {{$.Scratch.Set "docs_stable_version" ""}}
 {{$.Scratch.Set "docs_type" ""}}
 {{$.Scratch.Set "docs_repo" ""}}
+{{$.Scratch.Set "title_prefix" ""}}
 {{$docs_total_versions := slice ""}}
 
 <!-- set total versions and stable version according to the docs type -->
@@ -24,18 +25,21 @@
 {{ $.Scratch.Add "docs_type" "tidb_data_migration" }}
 {{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "dm_stable_version") }}
 {{ $.Scratch.Add "docs_repo" "docs-dm"}}
+{{ $.Scratch.Add "title_prefix" "TiDB Data Migration" }}
 {{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "dm_total_versions") }}
 {{ else if hasPrefix .RelPermalink "/docs-cn/tidb-in-kubernetes/" }}
 <!-- docs operator -->
 {{ $.Scratch.Add "docs_type" "tidb_in_kubernetes"}}
 {{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "operator_stable_version") }}
 {{ $.Scratch.Add "docs_repo" "docs-tidb-operator"}}
+{{ $.Scratch.Add "title_prefix" "TiDB in Kubernetes" }}
 {{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "operator_total_versions") }}
 {{ else }}
 <!-- docs tidb -->
 {{ $.Scratch.Add "docs_type" "tidb" }}
 {{ $.Scratch.Add "docs_stable_version" ($.Scratch.Get "tidb_stable_version") }}
 {{ $.Scratch.Add "docs_repo" "docs"}}
+{{ $.Scratch.Add "title_prefix" "TiDB" }}
 {{ $docs_total_versions = $docs_total_versions | append ($.Scratch.Get "tidb_total_versions") }}
 {{ end }}
 
@@ -50,7 +54,7 @@
         {{ end }}
 
         {{ $multi_level_url := cond (isset .Params "multi_level_url") .Params.multi_level_url ""}}
-        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_cn_" "cv" $current_version "sv" ($.Scratch.Get "docs_stable_version") "tv" $docs_total_versions "docs_type" ($.Scratch.Get "docs_type")) }}
+        {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_cn_" "cv" $current_version "sv" ($.Scratch.Get "docs_stable_version") "tv" $docs_total_versions "docs_type" ($.Scratch.Get "docs_type") "title_prefix" ($.Scratch.Get "title_prefix")) }}
 
         <div class="archive">
             <div class="content markdown-body">
