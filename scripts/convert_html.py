@@ -23,7 +23,6 @@ docs_type_pattern = re.compile(r'(docs|docs-cn)\/(tidb-in-kubernetes|tidb-data-m
 file_path = sys.argv[1]
 folder = sys.argv[2]
 default_version = ''
-print('file path', file_path)
 
 if file_path == "dist/docs/index.html" or file_path == "dist/docs-cn/index.html":
     default_version = '/stable'
@@ -43,7 +42,6 @@ for link in soup.find_all('a'):
                 href = href.split('/')[length - 1]
             href = os.path.normpath('/' + folder + default_version + '/' + href)
             link['href'] = href
-            print('href', href)
 
 for img in soup.find_all('img'):
     src = img['src']
