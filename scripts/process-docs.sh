@@ -39,32 +39,26 @@ start_time=$(date +%H%M%S)
 echo "start time" $start_time
 for v in "${tidb_docs_versions[@]}"
 do
-{
   echo "$en_tmp_docs_path/$v"
   echo "$cn_tmp_docs_path/$v"
-  replace_dist_html_link "$en_tmp_docs_path/$v" "docs/$v"
-  replace_dist_html_link "$cn_tmp_docs_path/$v" "docs-cn/$v"
-} &
+  replace_dist_html_link "$en_tmp_docs_path/$v" "docs/$v" &
+  replace_dist_html_link "$cn_tmp_docs_path/$v" "docs-cn/$v" &
 done
 
 for v in "${operator_docs_versions[@]}"
 do 
-{ 
   echo "$en_tmp_docs_path/tidb-in-kubernetes/$v"
   echo "$cn_tmp_docs_path/tidb-in-kubernetes/$v"
-  replace_dist_html_link "$en_tmp_docs_path/tidb-in-kubernetes/$v" "docs/tidb-in-kubernetes/$v"
-  replace_dist_html_link "$cn_tmp_docs_path/tidb-in-kubernetes/$v" "docs-cn/tidb-in-kubernetes/$v"
-} &
+  replace_dist_html_link "$en_tmp_docs_path/tidb-in-kubernetes/$v" "docs/tidb-in-kubernetes/$v" &
+  replace_dist_html_link "$cn_tmp_docs_path/tidb-in-kubernetes/$v" "docs-cn/tidb-in-kubernetes/$v" &
 done
 
 for v in "${dm_docs_versions[@]}"
 do
-{
   echo "$en_tmp_docs_path/tidb-data-migration/$v"
   echo "$cn_tmp_docs_path/tidb-data-migration/$v"
-  replace_dist_html_link "$en_tmp_docs_path/tidb-data-migration/$v" "docs/tidb-data-migration/$v"
-  replace_dist_html_link "$cn_tmp_docs_path/tidb-data-migration/$v" "docs-cn/tidb-data-migration/$v"
-} &
+  replace_dist_html_link "$en_tmp_docs_path/tidb-data-migration/$v" "docs/tidb-data-migration/$v" &
+  replace_dist_html_link "$cn_tmp_docs_path/tidb-data-migration/$v" "docs-cn/tidb-data-migration/$v" &
 done
 
 for repo in "${misc_repos[@]}"
@@ -75,10 +69,11 @@ do
 } &
 done
 
+# waiting all tasks finish.
 wait
+
 end_time=$(date +%H%M%S)
 echo "end time" $end_time
-
 replace_dist_html_link "dist/cases-cn" blog-cn
 replace_dist_html_link "dist/success-stories" blog
 echo "finish all replacement"
