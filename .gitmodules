@@ -16,7 +16,7 @@
 	shallowed = true
 [submodule "content/tidb-academy"]
 	path = content/tidb-academy
-	url = https://github.com/pingcap/private-tidb-academy
+	url = git@github.com:pingcap/private-tidb-academy.git
 	shallowed = true
 [submodule "content/docs/dev"]
 	path = content/docs/dev
