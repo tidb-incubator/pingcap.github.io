@@ -30,36 +30,58 @@ en_tmp_docs_path="dist/docs"
 tidb_docs_versions=(stable dev v2.1 v3.1)
 operator_docs_versions=(stable dev v1.1)
 dm_docs_versions=(stable dev)
+misc_repos=(blog-cn blog meetup weekly)
 
 python scripts/convert_html.py "$en_tmp_docs_path/index.html" "docs"
 python scripts/convert_html.py "$cn_tmp_docs_path/index.html" "docs-cn"
 
+start_time=$(date +%H%M%S)
+echo "start time" $start_time
 for v in "${tidb_docs_versions[@]}"
 do
+{
+  echo "$en_tmp_docs_path/$v"
+  echo "$cn_tmp_docs_path/$v"
   replace_dist_html_link "$en_tmp_docs_path/$v" "docs/$v"
   replace_dist_html_link "$cn_tmp_docs_path/$v" "docs-cn/$v"
+} &
 done
 
 for v in "${operator_docs_versions[@]}"
-do
+do 
+{ 
+  echo "$en_tmp_docs_path/tidb-in-kubernetes/$v"
+  echo "$cn_tmp_docs_path/tidb-in-kubernetes/$v"
   replace_dist_html_link "$en_tmp_docs_path/tidb-in-kubernetes/$v" "docs/tidb-in-kubernetes/$v"
   replace_dist_html_link "$cn_tmp_docs_path/tidb-in-kubernetes/$v" "docs-cn/tidb-in-kubernetes/$v"
+} &
 done
 
 for v in "${dm_docs_versions[@]}"
 do
+{
+  echo "$en_tmp_docs_path/tidb-data-migration/$v"
+  echo "$cn_tmp_docs_path/tidb-data-migration/$v"
   replace_dist_html_link "$en_tmp_docs_path/tidb-data-migration/$v" "docs/tidb-data-migration/$v"
   replace_dist_html_link "$cn_tmp_docs_path/tidb-data-migration/$v" "docs-cn/tidb-data-migration/$v"
+} &
 done
 
-cn_tmp_blogs_path="dist/blog-cn"
-en_tmp_blogs_path="dist/blog"
-replace_dist_html_link "$cn_tmp_blogs_path" blog-cn
+for repo in "${misc_repos[@]}"
+do 
+{
+  echo "dist/$repo"
+  replace_dist_html_link "dist/$repo" "$repo"
+} &
+done
+
+wait
+end_time=$(date +%H%M%S)
+echo "end time" $end_time
+
 replace_dist_html_link "dist/cases-cn" blog-cn
-replace_dist_html_link "$en_tmp_blogs_path" blog
 replace_dist_html_link "dist/success-stories" blog
-replace_dist_html_link "dist/meetup" meetup
-replace_dist_html_link "dist/weekly" weekly
+echo "finish all replacement"
 
 parent_dir="`echo $(pwd) | sed 's;/scripts;;g'`/dist"
 copy_images_from_media_to_dist() {
