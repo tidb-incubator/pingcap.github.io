@@ -1,5 +1,11 @@
 [
   {
+    "title": "Run Your First Chaos Experiment in 10 Minutes",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/run-your-first-chaos-experiment-in-10-minutes",
+    "date": "2020-04-02"
+  },
+  {
     "title": "How We Reduced Multi-Region Read Latency and Network Traffic by 50%",
     "logo": "/images/news/dzone-logo.png",
     "link": "https://dzone.com/articles/how-we-reduced-multi-region-read-latency-and-netwo",
