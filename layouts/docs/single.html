@@ -59,7 +59,7 @@
             </div>
             <div class="article-toc"></div>
             {{ $file_prefix := print (cond (eq $docs_type "tidb") "" (print $docs_type "/")) $current_version }}
-            {{- partial "archives/git-info.html" (dict "file_prefix" $file_prefix "docs_repo" $docs_repo "docs_type" $docs_type "global" . "sv" $docs_stable_version "isCn" false "multi_level_url" $multi_level_url) -}}
+            {{- partial "archives/git-info.html" (dict "file_prefix" $file_prefix "repo" $docs_repo "docs_type" $docs_type "global" . "sv" $docs_stable_version "isCn" false "multi_level_url" $multi_level_url) -}}
         </div>
         <div class="sidebar-page">
             <div class="sticky-sidebar">
