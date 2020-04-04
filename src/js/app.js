@@ -331,20 +331,13 @@ $(document).ready(function() {
     return false
   })
 
-  $('.docs-type-selector').click(function() {
-    if ($('.header-dropdown-menu').hasClass('visibility-hide')) {
-      $('.header-dropdown-menu').removeClass('visibility-hide')
-    } else {
-      $('.header-dropdown-menu').slideToggle('fast')
-    }
-  })
-
-  // hide dropdown Menu if user clicks other divs when the status of dropdown menu is open
-  $('body').click(function(e) {
-    if (e.target.classList.value != 'header-doc-nav') {
-      if ($('.header-dropdown-menu').css('display') == 'block') {
-        $('.header-dropdown-menu').slideToggle('fast')
+  if (window.matchMedia('(max-width: 500px)').matches) {
+    $('.docs-type-selector').click(function() {
+      if ($('.header-dropdown-menu').css('display') == 'none') {
+        $('.header-dropdown-menu').css('display', 'block')
+      } else {
+        $('.header-dropdown-menu').css('display', 'none')
       }
-    }
-  })
+    })
+  }
 })
