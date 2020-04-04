@@ -79,3 +79,11 @@
 	url = https://github.com/pingcap/docs
 	shallowed = true
 	branch = release-3.0
+[submodule "content/docs/v4.0"]
+	path = content/docs/v4.0
+	url = https://github.com/pingcap/docs
+	branch = release-4.0
+[submodule "content/docs-cn/v4.0"]
+	path = content/docs-cn/v4.0
+	url = https://github.com/pingcap/docs-cn
+	branch = release-4.0
