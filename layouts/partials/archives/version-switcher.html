@@ -23,8 +23,8 @@
         v3.1-rc
         {{- else if eq $current_version "v1.1" -}}
         v1.1-rc
-        {{- else if eq $current_version "v4.0" -}}
-        v4.0-beta
+        <!-- {{- else if eq $current_version "v4.0" -}}
+        v4.0-beta -->
         {{- else -}}
         {{ $current_version }}
         {{- end -}}
@@ -44,8 +44,8 @@
             v3.1-rc
             {{- else if eq $i "v1.1" -}}
             v1.1-rc
-            {{- else if eq $i "v4.0" -}}
-            v4.0-beta
+            <!-- {{- else if eq $i "v4.0" -}}
+            v4.0-beta -->
             {{- else -}}
             {{ $i }}
             {{- end -}}
