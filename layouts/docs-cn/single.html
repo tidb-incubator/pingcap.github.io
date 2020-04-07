@@ -44,6 +44,8 @@
 {{ end }}
 
 {{ $current_version := default "stable" (index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0) }}
+<div class="live-poster-mobile"><a href="http://t.cn/A6Pgdo1D" target="_blank"><img class="lazy"
+    src="/images/live-poster-mobile.jpg"></a></div>
 <div class="doc">
     <div class="container">
         {{ if eq $docs_repo "docs" }}
@@ -68,6 +70,7 @@
             {{- partial "archives/request-docs-changes.html" (dict "global" . "repo" $docs_repo "isCn" true "link" .Permalink "docs_type" $docs_type "sv" $docs_stable_version "multi_level_url" $multi_level_url "isCn" true) -}}
             <p class="toc-title">本页导航</p>
             <div id="smart_toc_wrapper"></div>
+            <div class="live-poster-pc"><img class="lazy" src="/images/live-poster-pc.jpg"></div>
         </div>
     </div>
 </div>

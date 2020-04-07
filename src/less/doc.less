@@ -21,6 +21,22 @@
 // margin
 @tocLineMargin: 10px;
 
+.live-poster-mobile {
+  margin-top: @headerHeight;
+  display: none;
+  position: fixed;
+  z-index: 10;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .doc,
 .blog,
 .meetup,
@@ -509,7 +525,7 @@
     position: relative !important;
     left: initial !important;
     max-width: @pageSidebarWidth !important;
-    max-height: 100vh !important;
+    max-height: 30vh !important;
     padding: 0;
     border: none;
     border-color: transparent;
@@ -538,6 +554,19 @@
     ul ul a:hover,
     ul ul li.active > a {
       padding-left: calc(~'1.2rem - 2px');
+    }
+  }
+
+  .live-poster-pc {
+    margin-top: 2rem;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -784,7 +813,7 @@ a.letter::before {
     }
 
     .sidebar {
-      padding-top: 80px;
+      padding-top: 110px;
       max-width: 100%;
       min-height: 100%;
       overflow: auto;
