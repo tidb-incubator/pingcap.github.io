@@ -49,25 +49,23 @@ function initialSearch(lang, docs_type) {
     version = url.match(re)[0]
   }
 
+  const doc_index = lang + '-' + version
+
   if (urlParams.has('q')) {
     $('#search-input').val(urlParams.get('q'))
     const client = algoliasearch(
-      'VJR4FNZBAR',
-      'd8d750638ba15018530e22d9360ff8f0'
+      'YTQ9N1XXRW',
+      '234d680da52cc6cc13c6d3d70d58852b'
     )
     // community plan AppID and search API key
     // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
-    const index = client.initIndex('pingcap')
+    const index = client.initIndex(doc_index)
     var newHitArray = []
 
     index
       .search(urlParams.get('q'), {
         hitsPerPage: 300,
-        facetFilters: [
-          'tags:' + lang,
-          'version:' + version,
-          'docs_type:' + type,
-        ],
+        facetFilters: ['docs_type:' + type],
       })
       .then(({ hits }) => {
         // selects the first result of each category and puts into the new hit array
