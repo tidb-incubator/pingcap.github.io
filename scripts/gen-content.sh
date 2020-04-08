@@ -1,4 +1,4 @@
-tidb_stable_version="v3.0"
+tidb_stable_version="v4.0"
 operator_stable_version="v1.0"
 dm_stable_version="v1.0"
 tidb_in_kubernetes=(stable dev v1.1)
@@ -44,12 +44,12 @@ node scripts/gen-nav.js 'content/docs/stable/TOC.md' 'data/docs_tidb_stable_toc.
 node scripts/gen-nav.js 'content/docs/dev/TOC.md' 'data/docs_tidb_dev_toc.json' '/docs/dev' 'fullpath'
 node scripts/gen-nav.js 'content/docs/v2.1/TOC.md' 'data/docs_tidb_v21_toc.json' '/docs/v2.1' 'fullpath'
 node scripts/gen-nav.js 'content/docs/v3.1/TOC.md' 'data/docs_tidb_v31_toc.json' '/docs/v3.1' 'fullpath'
-node scripts/gen-nav.js 'content/docs/v4.0/TOC.md' 'data/docs_tidb_v40_toc.json' '/docs/v4.0' 'fullpath'
+node scripts/gen-nav.js 'content/docs/v3.0/TOC.md' 'data/docs_tidb_v30_toc.json' '/docs/v3.0' 'fullpath'
 node scripts/gen-nav.js 'content/docs-cn/stable/TOC.md' 'data/docs_cn_tidb_stable_toc.json' '/docs-cn/stable' 'fullpath'
 node scripts/gen-nav.js 'content/docs-cn/dev/TOC.md' 'data/docs_cn_tidb_dev_toc.json' '/docs-cn/dev' 'fullpath'
 node scripts/gen-nav.js 'content/docs-cn/v2.1/TOC.md' 'data/docs_cn_tidb_v21_toc.json' '/docs-cn/v2.1' 'fullpath'
 node scripts/gen-nav.js 'content/docs-cn/v3.1/TOC.md' 'data/docs_cn_tidb_v31_toc.json' '/docs-cn/v3.1' 'fullpath'
-node scripts/gen-nav.js 'content/docs-cn/v4.0/TOC.md' 'data/docs_cn_tidb_v40_toc.json' '/docs-cn/v4.0' 'fullpath'
+node scripts/gen-nav.js 'content/docs-cn/v3.0/TOC.md' 'data/docs_cn_tidb_v30_toc.json' '/docs-cn/v3.0' 'fullpath'
 node scripts/gen-nav.js 'content/about-cn/recruit/TOC.md' 'data/recruit_cn_toc.json' '/about-cn/recruit/' 'fullpath'
 node scripts/gen-nav.js 'content/blog-cn/TOC-User-Case.md' 'data/cases_cn_toc.json' '/cases-cn/' 'fullpath'
 node scripts/gen-nav.js 'content/tidb-academy/README.md' 'data/tidb_academy_toc.json' '/tidb-academy/' 'fullpath'

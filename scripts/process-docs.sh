@@ -27,7 +27,7 @@ replace_dist_html_link() {
 
 cn_tmp_docs_path="dist/docs-cn"
 en_tmp_docs_path="dist/docs"
-tidb_docs_versions=(stable dev v2.1 v3.1 v4.0)
+tidb_docs_versions=(stable dev v2.1 v3.1 v3.0)
 operator_docs_versions=(stable dev v1.1)
 dm_docs_versions=(stable dev)
 misc_repos=(blog-cn blog meetup weekly)
@@ -95,12 +95,12 @@ copy_images_from_media_to_dist docs/v2.1
 copy_images_from_media_to_dist docs/dev
 copy_images_from_media_to_dist docs/stable
 copy_images_from_media_to_dist docs/v3.1
-copy_images_from_media_to_dist docs/v4.0
+copy_images_from_media_to_dist docs/v3.0
 copy_images_from_media_to_dist docs-cn/v2.1
 copy_images_from_media_to_dist docs-cn/dev
 copy_images_from_media_to_dist docs-cn/stable
 copy_images_from_media_to_dist docs-cn/v3.1
-copy_images_from_media_to_dist docs-cn/v4.0
+copy_images_from_media_to_dist docs-cn/v3.0
 copy_images_from_media_to_dist blog-cn
 copy_images_from_media_to_dist blog
 # copy_images_from_media_to_dist weekly

@@ -3,7 +3,7 @@
 # mark all duplicate pages with a rel="canonical" link element
 set -e
 
-old_versions=(v2.1 dev v3.0)
+old_versions=(v2.1 dev v3.0 v3.1)
 
 consolidate_duplicate_urls() {
     local doc_temp_path=$1

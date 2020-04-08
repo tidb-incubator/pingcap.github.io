@@ -18,13 +18,11 @@
 <div class="version-switcher">
     <button type="button" id="dropdownMenuButton">
         {{- if eq $current_version "stable" -}}
-        {{ $docs_stable_version }}
+        {{ $docs_stable_version }}-rc
         {{- else if eq $current_version "v3.1" -}}
         v3.1-rc
         {{- else if eq $current_version "v1.1" -}}
         v1.1-rc
-        {{- else if eq $current_version "v4.0" -}}
-        v4.0-beta
         {{- else -}}
         {{ $current_version }}
         {{- end -}}
@@ -39,13 +37,11 @@
             href="
                 {{ if in $doesnot_exist_ver $i }}#{{ else }}{{ if $docs_index_page }}{{ $relative_url }}{{ else }}{{ print $permalink $i }}{{ end }}{{ end }}">
             {{- if eq $i "stable" -}}
-            {{ $docs_stable_version }} (stable)
+            {{ $docs_stable_version }}-rc (stable)
             {{- else if eq $i "v3.1" -}}
             v3.1-rc
             {{- else if eq $i "v1.1" -}}
             v1.1-rc
-            {{- else if eq $i "v4.0" -}}
-            v4.0-beta
             {{- else -}}
             {{ $i }}
             {{- end -}}
