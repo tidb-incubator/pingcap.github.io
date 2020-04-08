@@ -1,6 +1,14 @@
 {
   "activities": [
     {
+      "name": "TiDB Performance Challenge",
+      "active_image_pc": "https://download.pingcap.com/images/community/activities/usability-challenge-banner-pc.png",
+      "active_image_mobile" : "https://download.pingcap.com/images/tidb-usability-challenge/banner-mobile.svg",
+      "summary": "TiDB 挑战赛由 PingCAP 发起，旨在激发社区创造性，使选手可以通过完成一系列的任务提升 TiDB 产品的稳定性、性能和易用性。第二赛季将聚焦 TiDB 易用性。",
+      "active": false,
+      "link": "/community-cn/tidb-usability-challenge"
+    },
+    {
       "name": "Infra Meetup",
       "active_image_pc": "https://download.pingcap.com/images/community/activities/meetup-active-img.jpg",
       "active_image_mobile" : "https://download.pingcap.com/images/community/activities/meetup.svg",
@@ -46,12 +54,12 @@
       "link": "/community-cn/paper-reading"
     },
     {
-      "name": "TiDB Performance Challenge",
-      "active_image_pc": "https://download.pingcap.com/images/community/activities/usability-challenge-banner-pc.png",
-      "active_image_mobile" : "https://download.pingcap.com/images/tidb-usability-challenge/banner-mobile.svg",
-      "summary": "TiDB 挑战赛由 PingCAP 发起，旨在激发社区创造性，使选手可以通过完成一系列的任务提升 TiDB 产品的稳定性、性能和易用性。第二赛季将聚焦 TiDB 易用性。",
+      "name": "TiDB Bug Hunting",
+      "active_image_pc": "https://download.pingcap.com/images/community/activities/bug-hunting-pc.jpg",
+      "active_image_mobile" : "https://download.pingcap.com/images/community/activities/bug-hunting-mobile.jpg",
+      "summary": "为了让大家更早体验 TiDB 4.0，我们邀请您参与到 TiDB 4.0 捉“虫”竞赛，在尝鲜的同时发现影响您体验的 bug，PingCAP 将联合 TiDB 开发者社区一起“灭虫”。让 TiDB 新版本给大家带来更好的体验。",
       "active": true,
-      "link": "/community-cn/tidb-usability-challenge"
+      "link": "/community-cn/tidb-bug-hunting/"
     },
     {
       "name": "专项兴趣小组",
@@ -65,42 +73,34 @@
 
   "upcoming_activities": [
     {
-      "topic": "高可用架构设计与实践",
-      "addr": "北京",
-      "date": "2019-11-24",
-      "signup_link": "http://www.huodongxing.com/event/3518605971800",
+      "topic": "20:00-21:30, The Future of Database：脑洞与探索未来的数据库是什么样的？",
+      "addr": "",
+      "date": "2020-04-11",
+      "signup_link": "http://t.cn/A6h2cZFe",
       "review_link": "",
       "external_link": true
     },
     {
-      "topic": "TiDB 性能调优专题活动",
-      "addr": "广州",
-      "date": "2019-11-30",
-      "signup_link": "http://www.huodongxing.com/event/6518634065400",
+      "topic": "20:00-21:30, The Future of Database：会 MySQL 就会大数据 - HTAP 的现在和未来",
+      "addr": "",
+      "date": "2020-04-18",
+      "signup_link": "http://t.cn/A6h2cZFe",
       "review_link": "",
       "external_link": true
     },
     {
-      "topic": "双十一/黑五等高并发场景下的架构设计与实践",
-      "addr": "杭州",
-      "date": "2019-11-30",
-      "signup_link": "https://www.huodongxing.com/event/9519218935900",
+      "topic": "20:00-21:30, The Future of Database：“聪明”的数据库 - 减少你的心智负担",
+      "addr": "",
+      "date": "2020-04-25",
+      "signup_link": "http://t.cn/A6h2cZFe",
       "review_link": "",
       "external_link": true
     },
     {
-      "topic": "同程艺龙、汽车之家和马蜂窝的数据库异构升迁之路",
-      "addr": "北京",
-      "date": "2019-12-22",
-      "signup_link": "http://www.huodongxing.com/event/2522645075200",
-      "review_link": "",
-      "external_link": true
-    },
-    {
-      "topic": "走进喜马拉雅：网关演化、数据计算平台设计与 TiDB 实践",
-      "addr": "上海",
-      "date": "2019-12-22",
-      "signup_link": "http://www.huodongxing.com/event/8522561696900",
+      "topic": "20:00-21:30, The Future of Database：未来什么是让人“放心”的数据库",
+      "addr": "",
+      "date": "2020-04-30",
+      "signup_link": "http://t.cn/A6h2cZFe",
       "review_link": "",
       "external_link": true
     }

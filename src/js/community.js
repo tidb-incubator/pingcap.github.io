@@ -38,9 +38,7 @@ $(document).ready(function() {
       var m = new Date(date).getMonth() + 1
       var d = new Date(date).getDate()
       var title =
-        $(this)[0].children[0].innerText +
-        ', ' +
-        $(this)[0].children[3].innerText
+        $(this)[0].children[0].innerText + $(this)[0].children[3].innerText
       events.push({
         Title: title,
         Date: new Date(y, m, d),
@@ -177,7 +175,7 @@ $(document).ready(function() {
     $(this).addClass('schedule-btn-checked')
     $(this).addClass('mobile-btn-checked')
     $('.schedules').hide()
-    
+
     var btnID = $(this).attr('id')
     $('#' + btnID + '-schedule').show()
     switch (btnID) {
@@ -229,12 +227,22 @@ $(document).ready(function() {
     )
   })
 
- // toggle answers when click question in hackathon2019
+  // toggle answers when click question in hackathon2019
   $('.question').click(function() {
-    $(this).parent().siblings().children('.question').removeClass('expand')
-    $(this).next().slideToggle();
+    $(this)
+      .parent()
+      .siblings()
+      .children('.question')
+      .removeClass('expand')
+    $(this)
+      .next()
+      .slideToggle()
     $(this).toggleClass('expand')
-    $(this).parent().siblings().children('.answer').slideUp();
+    $(this)
+      .parent()
+      .siblings()
+      .children('.answer')
+      .slideUp()
   })
 
   // toggle answers when click contributor subtitle in developer group
@@ -243,7 +251,10 @@ $(document).ready(function() {
     $('.j-schedule-overlay').fadeIn()
     $('.j-schedule-overlay, .modal').addClass('active')
     if (window.matchMedia('(max-width: 600px)').matches) {
-      $('.schedule-on-modal img').attr('src', 'https://download.pingcap.com/images/hackathon2019/hackathon2019-schedule-mobile.png')
+      $('.schedule-on-modal img').attr(
+        'src',
+        'https://download.pingcap.com/images/hackathon2019/hackathon2019-schedule-mobile.png'
+      )
     }
   })
 
@@ -251,25 +262,33 @@ $(document).ready(function() {
     $('.j-grading-overlay').fadeIn()
     $('.j-grading-overlay, .modal').addClass('active')
     if (window.matchMedia('(max-width: 600px)').matches) {
-      $('.schedule-on-modal img').attr('src', 'https://download.pingcap.com/images/hackathon2019/hackathon2019-grading-mobile.png')
+      $('.schedule-on-modal img').attr(
+        'src',
+        'https://download.pingcap.com/images/hackathon2019/hackathon2019-grading-mobile.png'
+      )
     }
   })
 
   if (window.matchMedia('(max-width: 414px)').matches) {
     $('.j-thumbnailText-click').click(function() {
       if ($('.thumbnail-text').hasClass('thumbnail-text-click')) {
-        $('.thumbnail-text').not(this).each(function() {
-          $(this).removeClass('thumbnail-text-click')
-        })
+        $('.thumbnail-text')
+          .not(this)
+          .each(function() {
+            $(this).removeClass('thumbnail-text-click')
+          })
       }
       $(this).toggleClass('thumbnail-text-click')
     })
   } else {
-    $('.j-thumbnailText-click').hover(function() {
-      $(this).addClass('thumbnail-text-click')
-    }, function() {
-      $(this).removeClass('thumbnail-text-click')
-    })
+    $('.j-thumbnailText-click').hover(
+      function() {
+        $(this).addClass('thumbnail-text-click')
+      },
+      function() {
+        $(this).removeClass('thumbnail-text-click')
+      }
+    )
   }
 
   $('.modal-overlay').on('click', function(e) {
@@ -296,45 +315,59 @@ $(document).ready(function() {
       1000
     )
   })
-  
 
-  if(window.matchMedia('(min-width: 1024px)').matches) {
-    $('.j-hover').hover(function(){
-      if($(this).hasClass('userSubBtn')) {
-        $(this).addClass('userSubBtn-hover')
-      } else {
-        $(this).addClass('branchBtn-hover')
-        if($(this).hasClass('j-devSubBtn-hover')) {
-          $(this).children().addClass('devSubBtn-hover')
+  if (window.matchMedia('(min-width: 1024px)').matches) {
+    $('.j-hover').hover(
+      function() {
+        if ($(this).hasClass('userSubBtn')) {
+          $(this).addClass('userSubBtn-hover')
+        } else {
+          $(this).addClass('branchBtn-hover')
+          if ($(this).hasClass('j-devSubBtn-hover')) {
+            $(this)
+              .children()
+              .addClass('devSubBtn-hover')
+          }
         }
+        $(this)
+          .siblings()
+          .addClass('org-tooltiptext-hover')
+      },
+      function() {
+        $('.orgBtn').removeClass('devSubBtn-hover')
+        $('.orgBtn').removeClass('userSubBtn-hover')
+        $(this).removeClass('branchBtn-hover')
+        $(this)
+          .siblings()
+          .removeClass('org-tooltiptext-hover')
       }
-      $(this).siblings().addClass('org-tooltiptext-hover')
-    }, function(){
-      $('.orgBtn').removeClass('devSubBtn-hover')
-      $('.orgBtn').removeClass('userSubBtn-hover')
-      $(this).removeClass('branchBtn-hover')
-      $(this).siblings().removeClass('org-tooltiptext-hover')
-    })
+    )
   } else {
     $('.j-mobile-hover').click(function() {
-      if($(this).hasClass('comBtn')) {
+      if ($(this).hasClass('comBtn')) {
         $('.pmcBtn').removeClass('pmcBtn-click')
         $('.userBtn').removeClass('userBtn-click')
         $(this).toggleClass('comBtn-click')
-      } else if($(this).hasClass('pmcBtn')) {
+      } else if ($(this).hasClass('pmcBtn')) {
         $(this).toggleClass('pmcBtn-click')
         $('.userBtn').removeClass('userBtn-click')
         $('.comBtn').removeClass('comBtn-click')
-      } else if($(this).hasClass('userBtn')) {
+      } else if ($(this).hasClass('userBtn')) {
         $(this).toggleClass('userBtn-click')
         $('.comBtn').removeClass('comBtn-click')
         $('.pmcBtn').removeClass('pmcBtn-click')
       }
-      if(!($(this)).siblings().hasClass('org-tooltiptext-hover')) {
+      if (
+        !$(this)
+          .siblings()
+          .hasClass('org-tooltiptext-hover')
+      ) {
         $('.org-tooltiptext').removeClass('org-tooltiptext-hover')
         $('div').removeClass('org-tooltiptext-hover')
       }
-      $(this).siblings().toggleClass('org-tooltiptext-hover')
+      $(this)
+        .siblings()
+        .toggleClass('org-tooltiptext-hover')
     })
   }
 })
