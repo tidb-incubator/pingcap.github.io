@@ -23,6 +23,7 @@ module.exports = {
     anchor: pathJoinSrcJs('anchor'),
     tidb_performance_challenge: pathJoinSrcJs('tidb_performance_challenge'),
     tidb_usability_challenge: pathJoinSrcJs('tidb_usability_challenge'),
+    tidb_4_challenge: pathJoinSrcJs('tidb_4_challenge'),
   },
   output: {
     path: path.join(__dirname, 'dist', 'js'),

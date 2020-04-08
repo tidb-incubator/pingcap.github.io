@@ -13,16 +13,16 @@
   align-items: center;
 }
 
-.tuc-arrow-button() {
+.tuc-arrow-button(@top: 15px) {
   transition: 0.5s;
 
   &:after {
     content: '➔';
     position: absolute;
     opacity: 0;
-    top: 15px;
+    top: @top;
     left: 0;
-    transition: 0.5s;
+    transition: opacity 0.5s, left 0.5s;
   }
 
   &:hover {
@@ -152,6 +152,16 @@ progress.progress {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    &.bug-hunting {
+      @media @mobile {
+        &.bug-hunting {
+          background-image: url(/images/tidb-4-challenge/banner-mobile.svg);
+        }
+      }
+
+      background-image: url(/images/tidb-4-challenge/banner-pc.svg);
+    }
   }
 
   .title,
@@ -273,6 +283,10 @@ progress.progress {
           p {
             margin-bottom: 0.5rem;
             font-size: @font-size;
+          }
+
+          a {
+            color: @primary;
           }
         }
       }
@@ -575,6 +589,11 @@ progress.progress {
         width: 90%;
         height: 30%;
         margin-top: 2.5rem;
+
+        &.is-png {
+          width: 30%;
+          height: 30%;
+        }
       }
     }
   }
@@ -651,7 +670,7 @@ progress.progress {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      height: 225px;
+      height: 250px;
       padding: 1rem;
       text-align: left;
 
@@ -884,6 +903,39 @@ progress.progress {
     img {
       height: 100%;
       border-radius: 8px;
+    }
+  }
+}
+
+.t4c-demands {
+  .box {
+    .VHCenter();
+
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .title {
+    color: @B4;
+    font-size: @font-size;
+
+    &:hover {
+      color: @primary;
+    }
+  }
+
+  .button {
+    .tuc-arrow-button(8px);
+
+    width: 150px;
+    color: @primary;
+    font-size: @font-size;
+    border-radius: 25px;
+    border-color: @primary;
+
+    &:hover {
+      background: @primary;
+      color: #fff;
     }
   }
 }
