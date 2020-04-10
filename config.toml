@@ -27,8 +27,8 @@ ignoreFiles = ["TODO\\.md$"]
 [params.versions.docs]
 tidb_total_versions = ['stable', 'dev', 'v3.1', 'v3.0', 'v2.1']
 tidb_stable_version = "v4.0"
-operator_stable_version = "v1.0"
-operator_total_versions = ['stable', 'v1.1', 'dev']
+operator_stable_version = "v1.1"
+operator_total_versions = ['stable', 'v1.0', 'dev']
 dm_stable_version = "v1.0"
 dm_total_versions = ['stable', 'dev']
 

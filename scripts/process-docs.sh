@@ -28,7 +28,7 @@ replace_dist_html_link() {
 cn_tmp_docs_path="dist/docs-cn"
 en_tmp_docs_path="dist/docs"
 tidb_docs_versions=(stable dev v2.1 v3.1 v3.0)
-operator_docs_versions=(stable dev v1.1)
+operator_docs_versions=(stable dev v1.0)
 dm_docs_versions=(stable dev)
 misc_repos=(blog-cn blog meetup weekly)
 

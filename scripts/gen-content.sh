@@ -1,7 +1,7 @@
 tidb_stable_version="v4.0"
-operator_stable_version="v1.0"
+operator_stable_version="v1.1"
 dm_stable_version="v1.0"
-tidb_in_kubernetes=(stable dev v1.1)
+tidb_in_kubernetes=(stable v1.0 dev)
 tidb_data_migration=(stable dev)
 ecoSys_docs_type=(tidb-in-kubernetes tidb-data-migration)
 
