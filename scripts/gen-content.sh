@@ -16,11 +16,13 @@ mv $cn_tmp_docs_path/$tidb_stable_version $cn_tmp_docs_path/$stable_version_tag
 cp $en_tmp_docs_path/$stable_version_tag/$index_file $en_tmp_docs_path/
 cp $cn_tmp_docs_path/$stable_version_tag/$index_file $cn_tmp_docs_path/
 
+mv $en_tmp_docs_path/tidb-in-kubernetes/v1.1 $en_tmp_docs_path/tidb-in-kubernetes/stable
+mv $en_tmp_docs_path/tidb-data-migration/v1.0 $en_tmp_docs_path/tidb-data-migration/stable
+
 for docs_type in "${ecoSys_docs_type[@]}"
 do
     type_vers="${docs_type//-/_}"
     versions=${type_vers}[@]
-    mv $en_tmp_docs_path/$docs_type/$operator_stable_version $en_tmp_docs_path/$docs_type/$stable_version_tag
     for v in "${!versions}"
     do
         # make directory for docs_cn and move files from docs_en to docs_cn
