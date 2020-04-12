@@ -1,15 +1,15 @@
 {{- define "headTpl" -}}
-    <style type="text/css" media="screen">
-        .st_tree {
-            display: none;
-        }
-    </style>
-    {{- partial "head/preload-css" (dict "href" "https://download.pingcap.com/style/github-markdown.css") -}}
-    {{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
-    {{$.Scratch.Set "nav_active" "docs"}}
-    {{$.Scratch.Set "data_i18_link" (print "/docs" (cond (isset .Params "cn") "-cn" "") "/") }}
-    {{ $.Scratch.Set "metaTitle" "TiDB Documentation" }}
-    {{$.Scratch.Set "data_i18_cn" (cond (isset .Params "cn") true false) }}
+<style type="text/css" media="screen">
+    .st_tree {
+        display: none;
+    }
+</style>
+{{- partial "head/preload-css" (dict "href" "https://download.pingcap.com/style/github-markdown.css") -}}
+{{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
+{{$.Scratch.Set "nav_active" "docs"}}
+{{$.Scratch.Set "data_i18_link" (print "/docs" (cond (isset .Params "cn") "-cn" "") "/") }}
+{{ $.Scratch.Set "metaTitle" "TiDB Documentation" }}
+{{$.Scratch.Set "data_i18_cn" (cond (isset .Params "cn") true false) }}
 {{- end -}}
 
 {{- define "main" -}}
@@ -48,16 +48,17 @@
 <div class="doc" id="list_page">
     <div class="container">
         {{ if eq ($.Scratch.Get "docs_repo") "docs" }}
-            {{ $.Scratch.Add "data_i18_link" (trim $current_version "/") }}
+        {{ $.Scratch.Add "data_i18_link" (trim $current_version "/") }}
         {{ else }}
-            {{ $.Scratch.Add "data_i18_link" (print (replace ($.Scratch.Get "docs_type") "_" "-") "/" $current_version )}}
+        {{ $.Scratch.Add "data_i18_link" (print (replace ($.Scratch.Get "docs_type") "_" "-") "/" $current_version )}}
         {{ end }}
         {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" (cond (isset .Params "cn") "docs_cn_" "docs_") "cv" $current_version "sv" ($.Scratch.Get "docs_stable_version") "tv" $docs_total_versions "docs_type" ($.Scratch.Get "docs_type") "title_prefix" ($.Scratch.Get "title_prefix")) }}
         {{- partial "archives/search-results-list" -}}
+    </div>
 </div>
 {{- end -}}
 
 {{- define "footJS" -}}
-    <script type="text/javascript" src="/js/vendor/lazyload.min.js"></script>
-    <script type="text/javascript" src="/js/doc.js"></script>
+<script type="text/javascript" src="/js/vendor/lazyload.min.js"></script>
+<script type="text/javascript" src="/js/doc.js"></script>
 {{- end -}}
