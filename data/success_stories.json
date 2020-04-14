@@ -95,7 +95,7 @@
         "logo": "/images/customers/yiguo-logo.png",
         "websiteLink": "https://www.crunchbase.com/organization/shanghai-yiguo-electron-business",
         "link":
-          "https://www.datanami.com/2018/02/22/hybrid-database-capturing-perishable-insights-yiguo/",
+          "https://pingcap.com/success-stories/hybrid-database-capturing-perishable-insights-at-yiguo/",
         "summary": "As the largest B2C fresh produce online marketplace in China, serving close to 5 million users and more than 1,000 enterprise customers, Yiguo.com uses TiDB to capture real-time insights from fresh transactional data, in order to make timely and accurate business decisions."
       },
       {
