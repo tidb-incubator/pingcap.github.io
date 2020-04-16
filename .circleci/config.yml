@@ -24,11 +24,6 @@ jobs:
             # Fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - restore_cache:
-          key: v1-dist-files
-
-      - run: mkdir -p dist;mv dist dist-old
-
       - run: npm install
 
       - save_cache:
@@ -44,24 +39,19 @@ jobs:
          name: consolidate duplicate URLs
          command: bash ./scripts/consolidate-duplicate-urls.sh
 
-      - save_cache:
-          paths:
-            - dist
-          key: v1-dist-files
-          
       - deploy:
           name: 'Publish Website'
           command: |
             if [ "${CIRCLE_BRANCH}" == "src" ]
             then
               ssh-keyscan "${DEPLOY_UCLOUD_BJ_1_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
-              rsync -rvcm --delete --compare-dest=dist-old/ dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_BJ_1_HOST}:${DEPLOY_UCLOUD_PATH}";
+              rsync -avz --delete dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_BJ_1_HOST}:${DEPLOY_UCLOUD_PATH}";
               ssh-keyscan "${DEPLOY_UCLOUD_BJ_2_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
-              rsync -rvcm --delete --compare-dest=dist-old/ dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_BJ_2_HOST}:${DEPLOY_UCLOUD_PATH}";
+              rsync -avz --delete dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_BJ_2_HOST}:${DEPLOY_UCLOUD_PATH}";
               ssh-keyscan "${DEPLOY_UCLOUD_LA_1_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
-              rsync -rvcm --delete --compare-dest=dist-old/ dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_LA_1_HOST}:${DEPLOY_UCLOUD_PATH}";
+              rsync -avz --delete dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_LA_1_HOST}:${DEPLOY_UCLOUD_PATH}";
               ssh-keyscan "${DEPLOY_UCLOUD_LA_2_HOST}" >> ~/.ssh/known_hosts 2>/dev/null;
-              rsync -rvcm --delete --compare-dest=dist-old/ dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_LA_2_HOST}:${DEPLOY_UCLOUD_PATH}";
+              rsync -avz --delete dist/ "${DEPLOY_UCLOUD_USER}@${DEPLOY_UCLOUD_LA_2_HOST}:${DEPLOY_UCLOUD_PATH}";
               curl "http://www.google.com/ping?sitemap=https://pingcap.com/sitemap.xml"
             fi
 
