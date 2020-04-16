@@ -27,7 +27,7 @@ jobs:
       - restore_cache:
           key: v1-dist-files
 
-      - run: mkdir dist-old 2>/dev/null;cp -R dist/ dist-old 2>/dev/null; true
+      - run: mkdir dist-old 2>/dev/null || cp -R dist/ dist-old 2>/dev/null || true
 
       - run: npm install
 
