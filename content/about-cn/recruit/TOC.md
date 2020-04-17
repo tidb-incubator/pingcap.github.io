@@ -5,6 +5,8 @@
 - Engineering
   - [分布式存储系统研发经理](engineering/tikv-engineer.md)
   - [分布式调度研发工程师](engineering/pd-engineer.md)
+  - [数据库内核开发-优化器](engineering/optimizer-engineer.md)
+  - [Real-Time Analytics 研发工程师](engineering/real-time-analytics-engineer.md )
   - [TiDB 研发工程师](engineering/tidb-engineer.md)
   - [OLAP 引擎研发工程师](engineering/olap-engineer.md)
   - [Tools 研发工程师](engineering/tools-engineer.md)
@@ -14,6 +16,7 @@
   - [工程效率研发工程师](engineering/engineering-efficiency-engineer.md)
   - [运维工程师](engineering/sa-engineer.md)
 - Business
+  - [高级行业方案架构师](business/senior-solution-architect.md)
   - [资深商务经理](business/senior-business-manager.md)
   - [资深行业销售总监](business/sales-director.md)
   - [资深售前技术总监](business/presales-director.md)
