@@ -3,12 +3,12 @@ title: Real-Time Analytics 研发工程师
 tags:
   - Engineering
 location: 北京，上海，杭州，成都，广州
-avatar: engineering
+avatar: database
 position: true 
  
 ---
 
-# 职位名称 Real-Time Analytics 研发工程师
+# Real-Time Analytics 研发工程师
 
 **职位描述：**
 

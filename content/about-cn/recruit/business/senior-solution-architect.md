@@ -7,7 +7,7 @@ avatar: business
 position: true 
 
 ---
-# 职位名称 高级行业方案架构师
+# 高级行业方案架构师
 
 **职位描述：**
 

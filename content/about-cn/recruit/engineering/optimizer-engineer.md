@@ -3,12 +3,12 @@ title: 数据库内核开发-优化器
 tags:
   - Engineering
 location: 北京，上海，杭州，成都，广州
-avatar: engineering
+avatar: database
 position: true 
  
 ---
 
-# 职位名称 数据库内核开发-优化器
+# 数据库内核开发-优化器
 
 **职位描述：**
 
