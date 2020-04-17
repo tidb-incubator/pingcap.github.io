@@ -84,15 +84,6 @@ rm_images_from_media_docs() {
   rm -rf $parent_dir/$repo_name/media
 }
 
-copy_images_from_media_to_dist() {	
-  repo_name=$1	
-  media_path=$(echo $parent_dir/$repo_name/media)
-  if [ ! -d $parent_dir/images/$repo_name ]; then	
-    mkdir -p $parent_dir/images/$repo_name	
-    mv $media_path/* $parent_dir/images/$repo_name
-  fi
-}
-
 # mv blog-cn/cases-cn in media to dist/images
 rm_images_from_media_docs docs/v2.1
 rm_images_from_media_docs docs/dev
@@ -104,8 +95,7 @@ rm_images_from_media_docs docs-cn/dev
 rm_images_from_media_docs docs-cn/stable
 rm_images_from_media_docs docs-cn/v3.1
 rm_images_from_media_docs docs-cn/v3.0
+rm_images_from_media_docs blog-cn
 rm_images_from_media_docs blog
 rm_images_from_media_docs weekly
 rm_images_from_media_docs meetup
-
-copy_images_from_media_to_dist blog-cn
