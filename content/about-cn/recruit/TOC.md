@@ -33,6 +33,7 @@
   - [Content Strategist](i18n/content-strategist.md)
   - [Demand Generation Specialist](i18n/demand-generation-specialist.md)
 - MKT
+  - [高级产品市场经理](market/senior-product-marketing-manager.md)
   - [社区运营](market/community-operation.md)
 - Campus
   - [Infrastructure Engineer](campus/campus-2020-infrastructure-engineer.md)
