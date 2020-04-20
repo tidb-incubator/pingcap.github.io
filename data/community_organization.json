@@ -565,7 +565,6 @@
             "徐嘉埥 | Bigo",
             "许超 | VIPKID",
             "旋凯 | 58 同城",
-            "闫晓宇 | 同城艺龙", 
             "羊欢 | OPPO",
             "杨建荣 | 竞技世界",
             "翟振兴 | 网易",
@@ -851,6 +850,10 @@
                 {
                     "name": "2. (Talk) TiDB 在网易互娱的选择与体验",
                     "href": "https://asktug.com/t/tug/1227"
+                },
+                {
+                    "name": "3. (Talk) 网易互娱的数据库技术选型思路",
+                    "href": "https://asktug.com/t/tug-x-shopee/1550"
                 }
             ]
         },
