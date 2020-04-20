@@ -347,17 +347,17 @@
             },
             {
                 "avatar": "/images/community/organization/user-group/content/cuichunhua.png",
-                "name": "崔春华 - Co Leader",
+                "name": "崔春华 - Co-Leader",
                 "title": "小米 | DBA 主管"
             },
             {
                 "avatar": "/images/community/organization/user-group/content/gaohaitao.png",
-                "name": "高海淘 - Co Leader",
+                "name": "高海淘 - Co-Leader",
                 "title": "美团点评 | RD"
             },
             {
                 "avatar": "/images/community/organization/user-group/content/wangzhiguang.png",
-                "name": "王志广 - Co Leader",
+                "name": "王志广 - Co-Leader",
                 "title": "平安科技 | 数据库架构师"
             }
         ],
@@ -370,13 +370,16 @@
             },
             {
                 "avatar": "/images/community/organization/user-group/local/zhuboshuai.png",
-                "name": "朱博帅（北京区）Co Leader",
+                "name": "朱博帅（北京区）Co-Leader",
                 "title": "爱奇艺 | 数据库开发工程师"
             },
             {
                 "avatar": "/images/community/organization/user-group/local/durong.png",
-                "name": "杜蓉（北京区）Co Leader",
+                "name": "杜蓉（北京区）Co-Leader",
                 "title": "光大银行 | DBA"
+            },
+            {
+                "blank": true
             },
             {
                 "avatar": "/images/community/organization/user-group/local/zhangwen.png",
@@ -385,13 +388,16 @@
             },
             {
                 "avatar": "/images/community/organization/user-group/local/changyande.png",
-                "name": "常彦德（上海区）Co Leader",
+                "name": "常彦德（上海区）Co-Leader",
                 "title": "UCloud | 副经理"
             },
             {
                 "avatar": "/images/community/organization/user-group/local/yanxiaoyu.png",
-                "name": "闫晓宇（上海区）Co Leader",
+                "name": "闫晓宇（上海区）Co-Leader",
                 "title": "同程艺龙 | 技术专家"
+            },
+            {
+                "blank": true
             },
             {
                 "avatar": "/images/community/organization/user-group/local/huoshao.png",
@@ -400,7 +406,7 @@
             },
             {
                 "avatar": "/images/community/organization/user-group/local/pengxing.png",
-                "name": "彭兴（杭州区）Co Leader",
+                "name": "彭兴（杭州区）Co-Leader",
                 "title": "曹操专车 | 数据库负责人"
             },
             {
@@ -410,7 +416,7 @@
             },
             {
                 "avatar": "/images/community/organization/user-group/local/hezhiyong.png",
-                "name": "何志勇（华南区）Co Leader",
+                "name": "何志勇（华南区）Co-Leader",
                 "title": "平安科技 | 资深云数据库工程师"
             },
             {
@@ -420,7 +426,7 @@
             },
             {
                 "avatar": "/images/community/organization/user-group/local/yuanwenxue.png",
-                "name": "袁文学（西南区）Co Leader",
+                "name": "袁文学（西南区）Co-Leader",
                 "title": "聚美集团 | DBA"
             }
         ],
@@ -720,15 +726,15 @@
             "links": [
                 {
                     "name": "1. 微众银行数据库架构演进及 TiDB 实践经验",
-                    "href": "https://asktug.com/t/tidb/913"
+                    "href": "https://pingcap.com/cases-cn/user-case-webank/"
                 },
                 {
-                    "name": "2. (Talk) 易果集团数据中台的转型和实践",
-                    "href": "https://pingcap.com/community-cn/techday2019/"
+                    "name": "2. (Talk) TiDB 在微众银行的实践与应用",
+                    "href": "https://pingcap.com/community-cn/devcon2019/"
                 },
                 {
                     "name": "3. (Talk) TiDB 在微众银行的实践之旅",
-                    "href": "https://pingcap.com/community-cn/techday2019/"
+                    "href": "https://pingcap.com/community-cn/devcon2019/"
                 },
                 {
                     "name": "4. (Talk) TiDB on ARM",
@@ -768,7 +774,7 @@
                 },
                 {
                     "name": "2. (Talk) All in！转转 TiDB 大规模实践之旅",
-                    "href": "https://pingcap.com/cases-cn/user-case-zhuanzhuan/"
+                    "href": "https://pingcap.com/community-cn/devcon2019/"
                 },
                 {
                     "name": "3. (Talk) 转转数据库架构构建之道",
@@ -827,7 +833,7 @@
                     "href": "https://asktug.com/t/topic/1358"
                 },
                 {
-                    "name": "3. DRDS vs Tidb",
+                    "name": "3. DRDS vs TiDB",
                     "href": "https://blog.csdn.net/jiashiwen/article/details/89177068"
                 }
             ]
@@ -979,7 +985,7 @@
             "title": "首席架构师",
             "links": [
                 {
-                    "name": "1. TiDB 在二维火的实践及海外机房构建",
+                    "name": "1. TiDB 在某餐饮 SaaS 服务商的实践及海外机房构建",
                     "href": "https://asktug.com/t/topic/33030"
                 },
                 {

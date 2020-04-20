@@ -183,20 +183,20 @@
                               </a>
                               <a href="{{ $i.link}}" target="_blank" class="member-info">
                                 <p>{{ $i.name }}</p>
-                                <p>{{ $i.title }}</p>
+                                <p class="title">{{ $i.title }}</p>
                                 <div class="github-icon user-github-icon"><p>{{ $i.githubID }}</p></div>
                               </a>
                             {{- else -}}
                               <img class="lazy avatar" data-original="{{ $i.avatar }}" src="/images/svgs/loader-spinner.svg" alt="avatar"/>
                               <div class="member-info">
                                   <p>{{ $i.name }}</p>
-                                  <p>{{ $i.title }}</p>
+                                  <p class="title">{{ $i.title }}</p>
                               </div>
                             {{- end -}}
                           </div>
                         {{- end -}}
                       </div>
-                      <div class="member-type user-type">Content Team Leader（内容组负责人）</div>
+                      <div class="member-type user-type">Content Team（内容组）</div>
                       <div class="flex-lists members user-divider">
                         {{- range $idx, $i := .Site.Data.community_organization.user_members.content -}}
                           <div class="member flex-lists {{if $i.githubID }}member-hover{{ end }}">
@@ -206,22 +206,25 @@
                               </a>
                               <a href="{{ $i.link}}" target="_blank"target="_blank" class="member-info">
                                 <p>{{ $i.name }}</p>
-                                <p>{{ $i.title }}</p>
+                                <p class="title">{{ $i.title }}</p>
                                 <div class="github-icon user-github-icon"><p>{{ $i.githubID }}</p></div>
                               </a>
                             {{- else -}}
                               <img class="lazy avatar" data-original="{{ $i.avatar }}" src="/images/svgs/loader-spinner.svg" alt="avatar"/>
                               <div class="member-info">
                                   <p>{{ $i.name }}</p>
-                                  <p>{{ $i.title }}</p>
+                                  <p class="title">{{ $i.title }}</p>
                               </div>
                             {{- end -}}
                           </div>
                         {{- end -}}
                       </div>
-                      <div class="member-type user-type">Local Team Leader（区域组负责人）</div>
+                      <div class="member-type user-type">Local Team（区域组）</div>
                       <div class="flex-lists members user-divider">
                         {{- range $idx, $i := .Site.Data.community_organization.user_members.local -}}
+                          {{ if $i.blank }}
+                          <div class="member flex-lists"></div>
+                          {{ else }}
                           <div class="member flex-lists {{if $i.githubID }}member-hover{{ end }}">
                             {{- if $i.githubID -}}
                               <a href="{{ $i.link }}" target="_blank">
@@ -229,17 +232,18 @@
                               </a>
                               <a href="{{ $i.link}}" target="_blank"target="_blank" class="member-info">
                                 <p>{{ $i.name }}</p>
-                                <p>{{ $i.title }}</p>
+                                <p class="title">{{ $i.title }}</p>
                                 <div class="github-icon user-github-icon"><p>{{ $i.githubID }}</p></div>
                               </a>
                             {{- else -}}
                               <img class="lazy avatar" data-original="{{ $i.avatar }}" src="/images/svgs/loader-spinner.svg" alt="avatar"/>
                               <div class="member-info">
                                   <p>{{ $i.name }}</p>
-                                  <p>{{ $i.title }}</p>
+                                  <p class="title">{{ $i.title }}</p>
                               </div>
                             {{- end -}}
                           </div>
+                          {{ end }}
                         {{- end -}}
                       </div>
                       <div class="member-type user-type">Ambassador</div>
