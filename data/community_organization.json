@@ -299,78 +299,129 @@
     "user_members": {
         "leader": [
             {
-                "avatar": "https://download.pingcap.com/images/community/organization/sunxiaoguang.jpeg",
+                "avatar": "/images/community/organization/user-group/tmc/fangxiaole.png",
+                "name": "房晓乐 - TMC Leader",
+                "title": "PingCAP | 互联网首席架构师"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/tmc/yuzhenhua.png",
+                "name": "于振华",
+                "title": "北银金科 | 云计算应用部副总经理"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/tmc/sunxiaoguang.png",
                 "link": "https://github.com/sunxiaoguang",
-                "name": "孙晓光 - TUG （北京区） Leader",
+                "name": "孙晓光",
                 "title": "知乎 | 技术平台负责人",
                 "githubID": "sunxiaoguang"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/luoruixing.jpg",
-                "link": "https://github.com/luoruixing",
-                "name": "罗瑞星 - TUG（上海区）Leader",
-                "title": "易果集团 | 数据架构专家",
-                "githubID": "luoruixing"
+                "avatar": "/images/community/organization/user-group/tmc/houshengwen.png",
+                "name": "侯圣文",
+                "title": "贝壳找房 | 技术总监"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/liyinlong.jpg",
-                "name": "李银龙 - TUG（西南区）Leader",
-                "title": "马上消费金融 | 容器云 TiDB 负责人"
+                "avatar": "/images/community/organization/user-group/tmc/liuchunhui.png",
+                "name": "刘春辉",
+                "title": "Shopee | DBA Manager"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/yangwen.jpg",
-                "link": "https://github.com/yangwenmai",
-                "name": "杨文 - TUG （华南区）Leader",
-                "title": "早安科技 | 后端技术负责人",
-                "githubID": "yangwenmai"
-            },
-            {
-                "avatar": "https://download.pingcap.com/images/instructors/huoshao.jpg",
-                "name": "火烧 - TUG（杭州区）Leader",
-                "title": "二维火 | 首席架构师"
-            }
-        ],
-        "co_leader": [
-            {
-                "avatar": "https://download.pingcap.com/images/instructors/houshengwen.jpg",
-                "name": "侯圣文 - TUG Co-Leader",
-                "title": "Oracle ACE 总监，贝壳找房 | 数据技术总监"
-            },
-            {
-                "avatar": "https://download.pingcap.com/images/instructors/zhaoyinggang-hackathon.jpeg",
-                "name": "赵应钢 - TUG Co-Leader",
-                "title": "美团点评 | 分布式数据库平台负责人，研究员",
+                "avatar": "/images/community/organization/user-group/tmc/zhaoyinggang.png",
+                "name": "赵应钢",
+                "title": "美团点评 | 数据库专家",
                 "githubID": "nettedfish",
                 "link": "https://github.com/nettedfish"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/yubowei.jpeg",
-                "name": "于伯伟 - TUG Co-Leader",
-                "title": "58 集团 | 数据库高级经理"
+                "avatar": "/images/community/organization/user-group/tmc/pengqin.png",
+                "name": "彭琴",
+                "title": "PingCAP | New-Economy User Success Team Leader"
+            }
+        ],
+
+        "content": [
+            {
+                "avatar": "/images/community/organization/user-group/content/huangxiao.png",
+                "name": "黄潇 - Leader",
+                "title": "美团点评 | DBA"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/hupanpan.jpg",
-                "name": "胡盼盼 - TUG Co-Leader",
-                "title": "微众银行 | 数据库平台室室经理"
+                "avatar": "/images/community/organization/user-group/content/cuichunhua.png",
+                "name": "崔春华 - Co Leader",
+                "title": "小米 | DBA 主管"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/yangjianrong.jpg",
-                "link": "https://github.com/jeanron100",
-                "name": "杨建荣 - TUG （北京区） Co-Leader",
-                "title": "经济世界 | 资深 DBA",
-                "githubID": "jeanron100"
+                "avatar": "/images/community/organization/user-group/content/gaohaitao.png",
+                "name": "高海淘 - Co Leader",
+                "title": "美团点评 | RD"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/wangzhiguang.jpg",
-                "name": "王志广 - TUG（上海区）Co-Leader",
-                "title": "平安科技 | 资深数据库工程师"
+                "avatar": "/images/community/organization/user-group/content/wangzhiguang.png",
+                "name": "王志广 - Co Leader",
+                "title": "平安科技 | 数据库架构师"
+            }
+        ],
+
+        "local": [
+            {
+                "avatar": "/images/community/organization/user-group/content/huangxiao.png",
+                "name": "黄潇（北京区）Leader",
+                "title": "美团点评 | DBA"
             },
             {
-                "avatar": "https://download.pingcap.com/images/instructors/pengxing.jpg",
-                "link": "https://github.com/aioas",
-                "name": "彭兴 - TUG（杭州区）Co-Leader",
-                "title": "曹操专车 | DBA 团队负责人",
-                "githubID": "aioas"
+                "avatar": "/images/community/organization/user-group/local/zhuboshuai.png",
+                "name": "朱博帅（北京区）Co Leader",
+                "title": "爱奇艺 | 数据库开发工程师"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/durong.png",
+                "name": "杜蓉（北京区）Co Leader",
+                "title": "光大银行 | DBA"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/zhangwen.png",
+                "name": "张雯（上海区）Leader",
+                "title": "bilibili | DBA"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/changyande.png",
+                "name": "常彦德（上海区）Co Leader",
+                "title": "UCloud | 副经理"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/yanxiaoyu.png",
+                "name": "闫晓宇（上海区）Co Leader",
+                "title": "同程艺龙 | 技术专家"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/huoshao.png",
+                "name": "火烧（杭州区）Leader",
+                "title": "小电科技 | 首席架构师"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/pengxing.png",
+                "name": "彭兴（杭州区）Co Leader",
+                "title": "曹操专车 | 数据库负责人"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/yangwen.png",
+                "name": "杨文（华南区）Leader",
+                "title": "POP | 后端技术负责人"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/hezhiyong.png",
+                "name": "何志勇（华南区）Co Leader",
+                "title": "平安科技 | 资深云数据库工程师"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/liyinlong.png",
+                "name": "李银龙（西南区）Leader",
+                "title": "马上消费金融 | 容器云数据库负责人"
+            },
+            {
+                "avatar": "/images/community/organization/user-group/local/yuanwenxue.png",
+                "name": "袁文学（西南区）Co Leader",
+                "title": "聚美集团 | DBA"
             }
         ],
 
@@ -453,69 +504,635 @@
         ],
 
         "ambassador_1": [
-             "蔺瑞超 | 汽车之家",
-             "韩锋 | 宜信",
-             "黄潇 | 美团点评",
-             "杜振强 | 美团点评",
-             "吕磊 | 美团点评 ",
-             "卞新栋 | 凤凰网",
-             "贾世闻 | 京东云",
-             "夏梦禹 | 京东云",
-             "翟振兴 | 京东云", 
-             "孙玄 | 转转"
+            "卞新栋 | 凤凰网",
+            "常彦德 | UCloud",
+            "陈付 | 一点资讯", 
+            "陈阳 | bilibili",
+            "成达舜 | 微拍堂",
+            "代加成 | 聚美集团",
+            "代晓磊 | 360", 
+            "杜振强 | 美团点评",
+            "范坤鹏 | 哗啦啦",
+            "傅少峰 | 新东方"
         ],
 
         "ambassador_2": [
-             "冀浩东 | 转转",
-             "吴炳锡 | 知数堂",
-             "郭磊涛 | 爱奇艺",
-             "朱博帅 | 爱奇艺",
-             "傅少峰 | 新东方",
-             "徐国强 | 小米",
-             "刘春雷 | 58 集团", 
-             "旋凯 | 58 集团", 
-             "陈付 | 一点资讯", 
-             "代晓磊 | 360", 
-             "范坤鹏 | 哗啦啦",
-             "黄云鹏 | 东方龙马", 
-             "李旸 | 衡石科技", 
-             "许超 | VIPKID", 
-             "张俊骏 | 小红书", 
-             "张亿皓 | 小红书",  
-             "张雯 | 哔哩哔哩", 
-             "王旭 | 哔哩哔哩", 
-             "李振环 | 贝壳金服", 
-             "闫晓宇 | 同城艺龙", 
-             "常彦德 | UCloud", 
-             "孙海龙 | 上上签", 
-             "郑海龙 | 上上签", 
-             "田红阳 | 微拍堂",
-             "张能凤 | 挖财",
-             "周雄海 | 挖财",
-             "朱康 | 挖财", 
-             "朱凡纳 | 蘑菇街", 
-             "涂明雷 | 大树金融", 
-             "成达舜 | 微拍堂", 
-             "刘春辉 | Shopee", 
-             "郑智辉 |  腾讯", 
-             "洪超 | Shopee", 
-             "赖大贺 | Shopee",
-             "李文杰 | 网易游戏", 
-             "向宇 | 腾讯", 
-             "苏俊逸 | 腾讯", 
-             "何志勇 | 平安科技", 
-             "黄蔚 | 微众银行", 
-             "黄龙 | 360 金融", 
-             "刘巧 | 随手科技", 
-             "韩超 | 随手科技", 
-             "徐嘉埥 | Bigo", 
-             "毛锐 | 金山",
-             "刘亚丹 | 虎牙直播", 
-             "张振威 | 虎牙直播",
-             "张进 | 联通", 
-             "吴世华 | 中网彩"
+            "高新刚 | 京东数科",
+            "郭磊涛 | 爱奇艺",
+            "贺磊 | 360",
+            "洪超 | Shopee",
+            "胡盼盼 | 微众银行",
+            "黄龙 | 360 金融",
+            "黄蔚 | 微众银行",
+            "黄云鹏 | 东方龙马",
+            "冀浩东 | 转转",
+            "贾世闻 | 京东云",
+            "靳献旗 | 汽车之家",
+            "赖大贺 | Shopee",
+            "兰将州 | 腾讯游戏",
+            "李丹 | 原奇虎 360",
+            "李敏 | Blued",
+            "李文杰 | 网易游戏",
+            "李真旭 | 云和恩墨",
+            "李振环 | 贝壳金服",
+            "梁飞龙 | 腾讯游戏",
+            "蔺瑞超 | 汽车之家",
+            "刘春雷 | 58 集团",
+            "刘光亮 | 丰巢科技",
+            "刘江 | 伴鱼",
+            "刘强 | 瓜子",
+            "刘筠松 | 涂鸦智能",
+            "吕磊 | 美团点评 ",
+            "罗瑞星 | 前易果集团",
+            "皮雪锋 | 云集",
+            "孙玄 | 奈学教育",
+            "覃左言 | 小米",
+            "田帅萌 | 京东数科",
+            "田维繁 | 网易（广州）",
+            "涂名雷 | 51 公积金",
+            "汪涉洋 | 瓜子二手车",
+            "王兵 | 寰信通",
+            "王春涛 | 聚美集团",
+            "王旭 | bilibili",
+            "吴炳锡 | 知数堂",
+            "夏梦禹 | 京东云",
+            "徐嘉埥 | Bigo",
+            "许超 | VIPKID",
+            "旋凯 | 58 同城",
+            "闫晓宇 | 同城艺龙", 
+            "羊欢 | OPPO",
+            "杨建荣 | 竞技世界",
+            "翟振兴 | 网易",
+            "张俊骏 | 小红书",
+            "张亿皓 | 小红书",
+            "赵海军 | 车和家",
+            "郑赫扬 | 学乐云",
+            "郑智辉 | 腾讯"
         ]
     },
+
+    "mva2019": [
+        {
+            "name": "何志勇",
+            "avatar": "/images/community/organization/user-group/mva/hezhiyong.png",
+            "company": "平安科技",
+            "title": "资深云数据库工程师",
+            "links": [
+                {
+                    "name": "1.TiDB 在平安核心系统的引入及应用",
+                    "href": "https://pingcap.com/cases-cn/user-case-pingankeji/"
+                },
+                {
+                    "name": "2. (Talk) TiDB 在平安的应用实战",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "3. (Talk) 分进合击——分布式数据库在平安应用实战",
+                    "href": "https://dbaplus.cn/activity-48-759-1.html"
+                }
+            ]
+        },
+        {
+            "name": "孙晓光",
+            "avatar": "/images/community/organization/user-group/tmc/sunxiaoguang.png",
+            "company": "知乎",
+            "title": "技术平台负责人",
+            "links": [
+                {
+                    "name": "1. TiDB 在知乎万亿量级业务数据下的实践和挑战",
+                    "href": "https://mp.weixin.qq.com/s/AdxZY0FVYGkTos0F5LOfzw"
+                },
+                {
+                    "name": "2. 知乎已读服务的前生今世与未来",
+                    "href": "https://asktug.com/t/topic/312"
+                },
+                {
+                    "name": "3. TiDB PD 组件代码阅读",
+                    "href": "https://asktug.com/t/tidb-pd/1388"
+                },
+                {
+                    "name": "4. 拥抱 Elasticsearch：给 TiDB 插上全文检索的翅膀",
+                    "href": "https://mp.weixin.qq.com/s/TWi4ZbTrsnbie4C6Vdjt-A"
+                },
+                {
+                    "name": "5. (Talk) TiDB 在知乎万亿量级业务数据下的实践和挑战",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "6. (Talk) 知乎已读服务架构演进",
+                    "href": "https://mp.weixin.qq.com/s/9pOVJUHqgJgfdUQRUvm67w"
+                }
+            ]
+        },
+        {
+            "name": "张俊骏",
+            "avatar": "/images/community/organization/user-group/mva/zhangjunjun.png",
+            "company": "小红书",
+            "title": "数据库与中间件团队负责人",
+            "links": [
+                {
+                    "name": "1. TiDB 在小红书从 0 到 200+ 节点的探索和应用",
+                    "href": "https://mp.weixin.qq.com/s/fq7U_x4LftlqFx3vD1S3jw"
+                },
+                {
+                    "name": "2. (Talk) TiDB 在小红书多场景应用",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "3. (Talk) TiDB 在小红书的实践案例分享",
+                    "href": "https://mp.weixin.qq.com/s/67fxOqXbwFO9go7K_7x-CA"
+                }
+            ]
+        },
+        {
+            "name": "胡盼盼",
+            "avatar": "/images/community/organization/user-group/mva/hupanpan.png",
+            "company": "微众银行",
+            "title": "数据库平台室经理",
+            "links": [
+                {
+                    "name": "1. 微众银行数据库架构演进及 TiDB 实践经验",
+                    "href": "https://pingcap.com/cases-cn/user-case-webank/"
+                },
+                {
+                    "name": "2. (Talk) 微众银行 TiDB 实践",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "3. (Talk) 微众银行核心数据库架构演进",
+                    "href": "https://archsummit.infoq.cn/2019/shenzhen/presentation/1828"
+                }
+            ]
+        },
+        {
+            "name": "刘春雷",
+            "avatar": "/images/community/organization/user-group/mva/liuchunlei.png",
+            "company": "58 集团",
+            "title": "高级 DBA",
+            "links": [
+                {
+                    "name": "1. TiDB 在 58 集团的应用与实践",
+                    "href": "https://pingcap.com/cases-cn/user-case-58/"
+                },
+                {
+                    "name": "2. TiDB 拓扑查询工具 qtidb",
+                    "href": "https://asktug.com/t/tidb-qtidb/908"
+                },
+                {
+                    "name": "3. TiDB监控实现--存活监控",
+                    "href": "https://asktug.com/t/tidb/918"
+                },
+                {
+                    "name": "4. 记一次 TiDB 业务优化",
+                    "href": "https://asktug.com/t/tidb/1781/2"
+                },
+                {
+                    "name": "5. 再记一次业务优化",
+                    "href": "https://asktug.com/t/topic/1818"
+                }
+            ]
+        },
+        {
+            "name": "罗瑞星",
+            "avatar": "/images/community/organization/user-group/mva/luoruixing.png",
+            "company": "前易果集团",
+            "title": "数据架构专家",
+            "links": [
+                {
+                    "name": "1. 易果 TiDB 的使用以及数据中台的思考",
+                    "href": "https://asktug.com/t/tidb/913"
+                },
+                {
+                    "name": "2. (Talk) 易果集团数据中台的转型和实践",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "3. (Talk) 易果集团的数据平台建设历程",
+                    "href": "https://mp.weixin.qq.com/s/eDuJUQBMoO0jx9CpHYbxEg"
+                }
+            ]
+        },
+        {
+            "name": "黄蔚",
+            "avatar": "/images/community/organization/user-group/mva/huangwei.png",
+            "company": "微众银行",
+            "title": "高级 DBA",
+            "links": [
+                {
+                    "name": "1. 微众银行数据库架构演进及 TiDB 实践经验",
+                    "href": "https://asktug.com/t/tidb/913"
+                },
+                {
+                    "name": "2. (Talk) 易果集团数据中台的转型和实践",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "3. (Talk) TiDB 在微众银行的实践之旅",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "4. (Talk) TiDB on ARM",
+                    "href": "https://mp.weixin.qq.com/s/FU04PacLlmNH89ETusN69A"
+                }
+            ]
+        },
+        {
+            "name": "黄龙",
+            "avatar": "/images/community/organization/user-group/mva/huanglong.png",
+            "company": "360 金融",
+            "title": "深圳大数据组负责人",
+            "links": [
+                {
+                    "name": "1. TiDB 在实时渠道转化分析的应用",
+                    "href": "https://asktug.com/t/tidb/1060"
+                },
+                {
+                    "name": "2. (Talk)TiDB 数仓在 360 金融渠道运营的应用",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "3. (Talk) TiDB 在实时渠道转化分析的应用",
+                    "href": "https://asktug.com/t/tug/881"
+                }
+            ]
+        },
+        {
+            "name": "孙玄",
+            "avatar": "/images/community/organization/user-group/mva/sunxuan.png",
+            "company": "奈学教育",
+            "title": "创始人 & CEO",
+            "links": [
+                {
+                    "name": "1. 转转数据库架构构建之道",
+                    "href": "https://asktug.com/t/topic/1021"
+                },
+                {
+                    "name": "2. (Talk) All in！转转 TiDB 大规模实践之旅",
+                    "href": "https://pingcap.com/cases-cn/user-case-zhuanzhuan/"
+                },
+                {
+                    "name": "3. (Talk) 转转数据库架构构建之道",
+                    "href": "https://asktug.com/t/tug-tidb/865"
+                }
+            ]
+        },
+        {
+            "name": "郭磊涛",
+            "avatar": "/images/community/organization/user-group/mva/guoleitao.png",
+            "company": "爱奇艺",
+            "title": "数据库负责人",
+            "links": [
+                {
+                    "name": "1. 爱奇艺数据库技术选型思路",
+                    "href": "https://asktug.com/t/topic/1396/1"
+                },
+                {
+                    "name": "2. (Talk) TiDB 在爱奇艺的应用实践",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                },
+                {
+                    "name": "3. (Talk) 爱奇艺的数据库技术选型思路",
+                    "href": "https://asktug.com/t/tug/1043"
+                }
+            ]
+        },
+        {
+            "name": "李振环",
+            "avatar": "/images/community/organization/user-group/mva/lizhenhuan.png",
+            "company": "贝壳金服",
+            "title": "资深大数据工程师",
+            "links": [
+                {
+                    "name": "1. 贝壳金服 TiDB 在线跨机房迁移实践",
+                    "href": "https://pingcap.com/cases-cn/user-case-beikejinfu/"
+                },
+                {
+                    "name": "2. (Talk) 贝壳金服基于 TiDB 的数据中台演进",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                }
+            ]
+        },
+        {
+            "name": "贾世闻",
+            "avatar": "/images/community/organization/user-group/mva/jiashiwen.png",
+            "company": "京东云",
+            "title": "架构师",
+            "links": [
+                {
+                    "name": "1. TiKV 开发环境单机部署",
+                    "href": "https://asktug.com/t/tikv/452"
+                },
+                {
+                    "name": "2. 技术选型中的非技术因素",
+                    "href": "https://asktug.com/t/topic/1358"
+                },
+                {
+                    "name": "3. DRDS vs Tidb",
+                    "href": "https://blog.csdn.net/jiashiwen/article/details/89177068"
+                }
+            ]
+        },
+        {
+            "name": "李文杰",
+            "avatar": "/images/community/organization/user-group/mva/liwenjie.png",
+            "company": "网易互娱",
+            "title": "数据库工程师",
+            "links": [
+                {
+                    "name": "1. TiDB 在网易互娱的选择与体验",
+                    "href": "https://pingcap.com/cases-cn/user-case-wangyihuyu/"
+                },
+                {
+                    "name": "2. (Talk) TiDB 在网易互娱的选择与体验",
+                    "href": "https://asktug.com/t/tug/1227"
+                }
+            ]
+        },
+        {
+            "name": "刘春辉",
+            "avatar": "/images/community/organization/user-group/tmc/liuchunhui.png",
+            "company": "Shopee",
+            "title": "DBA Manager",
+            "links": [
+                {
+                    "name": "1. TiDB 3.0：窗口函数初体验",
+                    "href": "https://asktug.com/t/tidb-3-0/348"
+                },
+                {
+                    "name": "2. TiDB 的数据库技术选型思路",
+                    "href": "https://mp.weixin.qq.com/s/m6jD0oB0sIHpH1z2gc3pew"
+                },
+                {
+                    "name": "3. (Talk) TiDB 的数据库技术选型思路",
+                    "href": "https://asktug.com/t/tug-x-shopee/1550"
+                }
+            ]
+        },
+        {
+            "name": "代晓磊",
+            "avatar": "/images/community/organization/user-group/mva/daixiaolei.png",
+            "company": "360 智慧商业",
+            "title": "数据库运维专家",
+            "links": [
+                {
+                    "name": "1. 360 商业化 TiDB 写热点的优化思路",
+                    "href": "https://mp.weixin.qq.com/s/E6GotdOAVPKlWdKIrW1SQA"
+                },
+                {
+                    "name": "2. (Talk) TiDB在360商业化业务的应用实践",
+                    "href": "https://asktug.com/t/tug-tidb/1500"
+                }
+            ]
+        },
+        {
+            "name": "王志广",
+            "avatar": "/images/community/organization/user-group/content/wangzhiguang.png",
+            "company": "平安科技",
+            "title": "资深数据库工程师",
+            "links": [
+                {
+                    "name": "1. TiDB 私有云实践",
+                    "href": "https://asktug.com/t/tidb/1059"
+                },
+                {
+                    "name": "2. TiDB 慢日志解析源码解读",
+                    "href": "https://asktug.com/t/tidb/1902"
+                },
+                {
+                    "name": "3. (Talk) TiDB 私有云实践",
+                    "href": "https://asktug.com/t/tug-tidb-cloud/1041"
+                }
+            ]
+        },
+        {
+            "name": "杨文",
+            "avatar": "/images/community/organization/user-group/local/yangwen.png",
+            "company": "早安科技",
+            "title": "后端技术负责人",
+            "links": [
+                {
+                    "name": "1. 在 GCP 上使用 TiDB Operator 构建 TiDB 集群",
+                    "href": "https://asktug.com/t/gcp-tidb-operator-tidb/437"
+                },
+                {
+                    "name": "2. 在 minikube 上使用 TiDB Operator 构建 TiDB 集群",
+                    "href": "https://asktug.com/t/minikube-tidb-operator-tidb/1382"
+                },
+                {
+                    "name": "3. PingCAP Talent Plan（广州） 第四期公开课笔记",
+                    "href": "https://asktug.com/t/pingcap-talent-plan/1397"
+                },
+                {
+                    "name": "4. TiDB 中的全局唯一 ID",
+                    "href": "https://asktug.com/t/tidb-id/1521"
+                }
+            ]
+        },
+        {
+            "name": "张雯",
+            "avatar": "/images/community/organization/user-group/local/zhangwen.png",
+            "company": "bilibili",
+            "title": "DBA",
+            "links": [
+                {
+                    "name": "1. TiDB 追番手帐（上）",
+                    "href": "https://asktug.com/t/tidb/1637"
+                },
+                {
+                    "name": "2. TiDB 追番手帐（中）",
+                    "href": "https://asktug.com/t/tidb/1772"
+                },
+                {
+                    "name": "3. TiDB 追番手帐（下）",
+                    "href": "https://asktug.com/t/tidb/1773"
+                },
+                {
+                    "name": "4. TiDB 追番手账(番外) TiDB Server 内核原理学习笔记",
+                    "href": "https://asktug.com/t/tidb-tidb-server/2033"
+                }
+            ]
+        },
+        {
+            "name": "侯圣文",
+            "avatar": "/images/community/organization/user-group/tmc/houshengwen.png",
+            "company": "贝壳找房",
+            "title": "技术总监",
+            "links": [
+                {
+                    "name": "1. TiDB 实战优化之 SQL 常见问题与优化案例",
+                    "href": "https://asktug.com/t/topic/33657"
+                },
+                {
+                    "name": "2. (Talk) TiDB 实战优化之 SQL 常见问题与优化案例",
+                    "href": "https://asktug.com/t/tug-tidb/1500"
+                },
+                {
+                    "name": "3. (Talk) Oracle&TiDB 高可用技术最佳实践",
+                    "href": "https://asktug.com/t/topic/2201"
+                }
+            ]
+        },
+        {
+            "name": "火烧",
+            "avatar": "/images/community/organization/user-group/local/huoshao.png",
+            "company": "小电科技",
+            "title": "首席架构师",
+            "links": [
+                {
+                    "name": "1. TiDB 在二维火的实践及海外机房构建",
+                    "href": "https://asktug.com/t/topic/33030"
+                },
+                {
+                    "name": "2. (Talk)  TiDB 在二维火的实践及海外机房构建",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                }
+            ]
+        },
+        {
+            "name": "常彦德",
+            "avatar": "/images/community/organization/user-group/local/changyande.png",
+            "company": "UCloud",
+            "title": "副经理",
+            "links": [
+                {
+                    "name": "1. TiDB 在 UCloud 公有云上的实践",
+                    "href": "https://asktug.com/t/tidb-ucloud/1115"
+                },
+                {
+                    "name": "2. (Talk) TiDB 在 UCloud 公有云上的实践",
+                    "href": "https://asktug.com/t/tug-tidb-cloud/1041"
+                },
+                {
+                    "name": "3. (Talk) TiDB Service 高可用架构",
+                    "href": "https://asktug.com/t/topic/2201"
+                }
+            ]
+        },
+        {
+            "name": "高海涛",
+            "avatar": "/images/community/organization/user-group/content/gaohaitao.png",
+            "company": "美团点评",
+            "title": "RD",
+            "links": [
+                {
+                    "name": "1. TiDB 之 DDL 学习总结",
+                    "href": "https://asktug.com/t/tidb-ddl/2036"
+                },
+                {
+                    "name": "2. 使pt-kill和pt-query-digest工具兼容TiDB",
+                    "href": "https://asktug.com/t/pt-kill-pt-query-digest-tidb/2022"
+                },
+                {
+                    "name": "3. PD的时钟服务——TSO",
+                    "href": "https://asktug.com/t/pd-tso/2026"
+                },
+                {
+                    "name": "4. DM在Docker环境部署安装",
+                    "href": "https://asktug.com/t/dm-docker/2027"
+                }
+            ]
+        },
+        {
+            "name": "吕磊",
+            "avatar": "/images/community/organization/user-group/mva/lvlei.png",
+            "company": "美团点评",
+            "title": "高级 DBA",
+            "links": [
+                {
+                    "name": "1. TiDB 在摩拜单车的深度实践及应用",
+                    "href": "https://pingcap.com/cases-cn/user-case-mobike-2/"
+                },
+                {
+                    "name": "2. TiDB MVCC 多版本保存机制及其对性能的影响",
+                    "href": "https://asktug.com/t/tidb-mvcc/1350"
+                },
+                {
+                    "name": "3. 直击备份痛点：基于 TiDB Binlog 的快速时间点恢复",
+                    "href": "https://mp.weixin.qq.com/s/EmHPOVnYXTl0xy069OEcRw"
+                }
+            ]
+        },
+        {
+            "name": "许超",
+            "avatar": "/images/community/organization/user-group/mva/xuchao.png",
+            "company": "VIPKID",
+            "title": "资深 DBA 工程师",
+            "links": [
+                {
+                    "name": "1. VIPKID 的高可用架构设计与实践",
+                    "href": "https://asktug.com/t/topic/33656"
+                },
+                {
+                    "name": "2. (Talk) TiDB 在VIPKID 的展望",
+                    "href": "https://pingcap.com/community-cn/devcon2019/"
+                },
+                {
+                    "name": "3. (Talk) VIPKID 的高可用架构设计与实践",
+                    "href": "https://asktug.com/t/topic/2201"
+                }
+            ]
+        },
+        {
+            "name": "刘光亮",
+            "avatar": "/images/community/organization/user-group/mva/liuguangliang.png",
+            "company": "丰巢科技",
+            "title": "中间件负责人",
+            "links": [
+                {
+                    "name": "1. TiDB new feature max_execution_time",
+                    "href": "https://asktug.com/t/tidb-new-feature-max-execution-time/309"
+                },
+                {
+                    "name": "2. TiDB 在丰巢核心支付平台百亿级数据的深度实践",
+                    "href": "https://mp.weixin.qq.com/s/eVgKrHZBsppE02SMXbbJ4Q"
+                },
+                {
+                    "name": "3. (Talk) 丰巢支付平台迁移之旅",
+                    "href": "https://mp.weixin.qq.com/s/GigCkrY0gCcgSD_Vn1gRoA"
+                }
+            ]
+        },
+        {
+            "name": "旋凯",
+            "avatar": "/images/community/organization/user-group/mva/xuankai.png",
+            "company": "58 集团",
+            "title": "高级 DBA",
+            "links": [
+                {
+                    "name": "1. 58 集团的数据库技术选型思路",
+                    "href": "https://asktug.com/t/topic/1784"
+                },
+                {
+                    "name": "2. Elastic Stack处理TiDB慢日志",
+                    "href": "https://asktug.com/t/elastic-stack-tidb/2051"
+                },
+                {
+                    "name": "3. (Talk) 58 集团的数据库技术选型思路",
+                    "href": "https://asktug.com/t/tug/1043"
+                }
+            ]
+        },
+        {
+            "name": "傅绍峰",
+            "avatar": "/images/community/organization/user-group/mva/fushaofeng.png",
+            "company": "新东方",
+            "title": "数据服务团队负责人",
+            "links": [
+                {
+                    "name": "1. TiDB 在新东方业务前台及中台的落地",
+                    "href": "https://asktug.com/t/topic/2766"
+                },
+                {
+                    "name": "2. (Talk) 新东方新一代报名系统数据库选型",
+                    "href": "https://pingcap.com/community-cn/devcon2019/"
+                },
+                {
+                    "name": "3. (Talk) TiDB 在新东方业务前台及中台的落地",
+                    "href": "https://pingcap.com/community-cn/techday2019/"
+                }
+            ]
+        }
+    ],
 
     "architecture": {
         "developer_group": [

@@ -170,10 +170,10 @@
           </div>
 
           <div class="developer-group-members user-group-members">
-              <div class="member-header user">User Group 成员</div>
+              <div class="member-header user">User Group</div>
               <div class="member-list">
                   <div class="member-list">
-                      <div class="member-type user-type">Leader</div>
+                      <div class="member-type user-type">TUG Management Committee（TUG 管理委员会，简称 TMC）</div>
                       <div class="flex-lists members user-divider">
                         {{- range $idx, $i := .Site.Data.community_organization.user_members.leader -}}
                           <div class="member flex-lists {{if $i.githubID }}member-hover{{ end }}">
@@ -196,9 +196,32 @@
                           </div>
                         {{- end -}}
                       </div>
-                      <div class="member-type user-type">Co-Leader</div>
+                      <div class="member-type user-type">Content Team Leader（内容组负责人）</div>
                       <div class="flex-lists members user-divider">
-                        {{- range $idx, $i := .Site.Data.community_organization.user_members.co_leader -}}
+                        {{- range $idx, $i := .Site.Data.community_organization.user_members.content -}}
+                          <div class="member flex-lists {{if $i.githubID }}member-hover{{ end }}">
+                            {{- if $i.githubID -}}
+                              <a href="{{ $i.link }}" target="_blank">
+                                  <img class="lazy avatar" data-original="{{ $i.avatar }}" src="/images/svgs/loader-spinner.svg" alt="avatar"/>
+                              </a>
+                              <a href="{{ $i.link}}" target="_blank"target="_blank" class="member-info">
+                                <p>{{ $i.name }}</p>
+                                <p>{{ $i.title }}</p>
+                                <div class="github-icon user-github-icon"><p>{{ $i.githubID }}</p></div>
+                              </a>
+                            {{- else -}}
+                              <img class="lazy avatar" data-original="{{ $i.avatar }}" src="/images/svgs/loader-spinner.svg" alt="avatar"/>
+                              <div class="member-info">
+                                  <p>{{ $i.name }}</p>
+                                  <p>{{ $i.title }}</p>
+                              </div>
+                            {{- end -}}
+                          </div>
+                        {{- end -}}
+                      </div>
+                      <div class="member-type user-type">Local Team Leader（区域组负责人）</div>
+                      <div class="flex-lists members user-divider">
+                        {{- range $idx, $i := .Site.Data.community_organization.user_members.local -}}
                           <div class="member flex-lists {{if $i.githubID }}member-hover{{ end }}">
                             {{- if $i.githubID -}}
                               <a href="{{ $i.link }}" target="_blank">
@@ -241,6 +264,35 @@
                           </div>
                         </div>
                   </div>
+              </div>
+            </div>
+
+
+            <div class="tidb-mva-2019">
+              <h2 class="header centerd">2019 年度 TiDB MVA</h2>
+              <p class="centerd">TiDB MVA (Most Valuable Advocate) 通过分享优质的技术内容，帮助大家更好地使用 TiDB，是经过认证的技术先锋，享受极高的社区荣誉。</p>
+              <div class="list">
+                {{ range $mva := .Site.Data.community_organization.mva2019 }}
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="left">
+                      <img class="avatar" src="{{ $mva.avatar }}" alt="{{ $mva.name }}" />
+                    </div>
+                    <div class="right">
+                      <div class="name">{{ $mva.name }}</div>
+                      <div class="extra-info">
+                        <div class="company">{{ $mva.company }}</div>
+                        <div class="title">{{ $mva.title }}</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="links">
+                    {{ range $link := $mva.links }}
+                      <a target="_blank" href="{{ $link.href }}">{{ $link.name }}</a>
+                    {{ end }}
+                  </div>
+                </div>
+                {{ end }}
               </div>
             </div>
       </div>
