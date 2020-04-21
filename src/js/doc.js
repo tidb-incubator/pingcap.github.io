@@ -36,6 +36,7 @@ function processStickyTree() {
         $(a)
           .parent()
           .addClass('active')
+        window.location.href = $(a).attr('href')
       }
     },
   })
