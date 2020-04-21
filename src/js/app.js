@@ -54,8 +54,8 @@ function initialSearch(lang, docs_type) {
   if (urlParams.has('q')) {
     $('#search-input').val(urlParams.get('q'))
     const client = algoliasearch(
-      'YTQ9N1XXRW',
-      '234d680da52cc6cc13c6d3d70d58852b'
+      'P26ZK3KDAD',
+      'e3ee7a1d1072755f37c1b3b01b73b768'
     )
     // community plan AppID and search API key
     // const client = algoliasearch('BH4D9OD16A', 'ad5e63b76a221558bdc65ab1abbec7a2');
