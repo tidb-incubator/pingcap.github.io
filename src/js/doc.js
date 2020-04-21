@@ -26,8 +26,10 @@ function processStickyTree() {
   $('.st_tree').show()
   // Handle click events
   $('.st_tree').SimpleTree({
-    click: a => {
-      if ($(a).attr('href') != '#') {
+    click: (e, a) => {
+      const href = $(a).attr('href')
+
+      if (href !== '#') {
         $(a)
           .parent()
           .parent()
@@ -36,7 +38,12 @@ function processStickyTree() {
         $(a)
           .parent()
           .addClass('active')
-        window.location.href = $(a).attr('href')
+
+        if (e.metaKey) {
+          window.open(href, '_blank')
+        } else {
+          window.location.href = href
+        }
       }
     },
   })

@@ -11,7 +11,7 @@ $(function() {
     SimpleTree: function(options) {
       var option = $.extend(
         {
-          click: function(a) {},
+          click: function(e, a) {},
         },
         options
       )
@@ -55,7 +55,7 @@ $(function() {
 
       this.find('li').click(function(e) {
         const $this = $(this)
-        option.click($this.find('a')[0])
+        option.click(e, $this.find('a')[0])
         $this.toggleClass('open')
 
         const $ul = $this.children('ul')
