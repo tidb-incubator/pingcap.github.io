@@ -30,7 +30,7 @@ image: /images/pingcap-opengraph.jpg
 
     ```shell
     source .bash_profile
-    ``` 
+    ```
 
 3. Start the cluster in the current session:
 
@@ -41,6 +41,7 @@ image: /images/pingcap-opengraph.jpg
         ```shell
         tiup playground
         ```
+
     - If you want to specify the TiDB version and the number of the instances of each component, run a command like this:
 
         {{< copyable "shell-regular" >}}
@@ -48,7 +49,7 @@ image: /images/pingcap-opengraph.jpg
         ```shell
         tiup playground v4.0.0-rc --db 2 --pd 3 --kv 3 --monitor
         ```
-    
+
         The command downloads a v4.0.0-rc cluster to the local machine and starts it.
 
         `--monitor` means that the monitoring component is also deployed.
@@ -73,9 +74,9 @@ image: /images/pingcap-opengraph.jpg
 
 ### Homebrew install instructions:
 
-1. Install [Homebrew](https://brew.sh/)
+1. Install [Homebrew](https://brew.sh/).
 
-2. Install TiDB
+2. Install TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -89,7 +90,7 @@ image: /images/pingcap-opengraph.jpg
     brew install tidb-server
     ```
 
-3. Start TiDB
+3. Start TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -97,7 +98,7 @@ image: /images/pingcap-opengraph.jpg
     tidb-server
     ```
 
-4. If you would like to connect a MySQL client to TiDB
+4. If you would like to connect a MySQL client to TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -108,14 +109,14 @@ image: /images/pingcap-opengraph.jpg
     {{< copyable "shell-regular" >}}
 
     ```shell
-    brew install mysql-client
+    mysql -h 127.0.0.1 -P4000 -uroot
     ```
 
 ### DBdeployer instructions:
 
-1. Install [DBdeployer](https://github.com/datacharmer/dbdeployer#Installation)
+1. Install [DBdeployer](https://github.com/datacharmer/dbdeployer#Installation).
 
-2. Install MySQL 5.7
+2. Install MySQL 5.7:
 
     {{< copyable "shell-regular" >}}
 
@@ -129,7 +130,7 @@ image: /images/pingcap-opengraph.jpg
     dbdeployer unpack mysql-5.7.25-macos10.14-x86_64.tar.gz
     ```
 
-3. Install TiDB
+3. Install TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -173,7 +174,7 @@ image: /images/pingcap-opengraph.jpg
 
     ```shell
     source .bash_profile
-    ``` 
+    ```
 
 3. Start the cluster in the current session:
 
@@ -184,6 +185,7 @@ image: /images/pingcap-opengraph.jpg
         ```shell
         tiup playground
         ```
+
     - If you want to specify the TiDB version and the number of the instances of each component, run a command like this:
 
         {{< copyable "shell-regular" >}}
@@ -191,7 +193,7 @@ image: /images/pingcap-opengraph.jpg
         ```shell
         tiup playground v4.0.0-rc --db 2 --pd 3 --kv 3 --monitor
         ```
-    
+
         The command downloads a v4.0.0-rc cluster to the local machine and starts it.
 
         `--monitor` means that the monitoring component is also deployed.
@@ -216,9 +218,9 @@ image: /images/pingcap-opengraph.jpg
 
 ### Homebrew install instructions:
 
-1. Install [Homebrew](https://brew.sh/)
+1. Install [Homebrew](https://brew.sh/).
 
-2. Install TiDB
+2. Install TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -232,7 +234,7 @@ image: /images/pingcap-opengraph.jpg
     brew install tidb-server
     ```
 
-3. Start TiDB
+3. Start TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -240,7 +242,7 @@ image: /images/pingcap-opengraph.jpg
     tidb-server
     ```
 
-4. If you would like to connect a MySQL client to TiDB
+4. If you would like to connect a MySQL client to TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -251,39 +253,39 @@ image: /images/pingcap-opengraph.jpg
     {{< copyable "shell-regular" >}}
 
     ```shell
-    brew install mysql-client
+    mysql -h 127.0.0.1 -P4000 -uroot
     ```
 
 ### DBdeployer instructions:
 
-1. Install [DBdeployer](https://github.com/datacharmer/dbdeployer#Installation)
+1. Install [DBdeployer](https://github.com/datacharmer/dbdeployer#Installation).
 
-2. Install MySQL 5.7
+2. Install MySQL 5.7:
 
     {{< copyable "shell-regular" >}}
 
     ```shell
-    curl -LO https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.25-macos10.14-x86_64.tar.gz
+    dbdeployer remote get mysql-5.7.25
     ```
 
     {{< copyable "shell-regular" >}}
 
     ```shell
-    dbdeployer unpack mysql-5.7.25-macos10.14-x86_64.tar.gz
+    dbdeployer unpack mysql-5.7.25.tar.xz
     ```
 
-3. Install TiDB
+3. Install TiDB:
 
     {{< copyable "shell-regular" >}}
 
     ```shell
-    curl -O https://download.pingcap.org/tidb-master-darwin-amd64.tar.gz
+    wget https://download.pingcap.org/tidb-master-linux-amd64.tar.gz
     ```
 
     {{< copyable "shell-regular" >}}
 
     ```shell
-    dbdeployer unpack mysql-5.7.25-macos10.14-x86_64.tar.gz
+    dbdeployer unpack tidb-master-linux-amd64.tar.gz --unpack-version=3.0.0
     ```
 
     {{< copyable "shell-regular" >}}
@@ -296,11 +298,11 @@ image: /images/pingcap-opengraph.jpg
     <img src="https://download.pingcap.com/images/download-tidb/windows-icon.png" alt="icon"/>
 </div>
 
-### HHomebrew install instructions (via Windows Subsystem for Linux):
+### Homebrew install instructions (via Windows Subsystem for Linux):
 
-1. Install [Homebrew](https://brew.sh/)
+1. Install [Homebrew](https://brew.sh/).
 
-2. Install TiDB
+2. Install TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -314,7 +316,7 @@ image: /images/pingcap-opengraph.jpg
     brew install tidb-server
     ```
 
-3. Start TiDB
+3. Start TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -322,7 +324,7 @@ image: /images/pingcap-opengraph.jpg
     tidb-server
     ```
 
-4. If you would like to connect a MySQL client to TiDB
+4. If you would like to connect a MySQL client to TiDB:
 
     {{< copyable "shell-regular" >}}
 
@@ -333,5 +335,5 @@ image: /images/pingcap-opengraph.jpg
     {{< copyable "shell-regular" >}}
 
     ```shell
-    brew install mysql-client
+    mysql -h 127.0.0.1 -P4000 -uroot
     ```
