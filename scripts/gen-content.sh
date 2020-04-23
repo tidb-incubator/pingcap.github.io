@@ -42,6 +42,14 @@ do
     done
 done
 
+
+cp $en_tmp_docs_path/tidb-in-kubernetes/$stable_version_tag/$index_file $en_tmp_docs_path/tidb-in-kubernetes/
+cp $cn_tmp_docs_path/tidb-in-kubernetes/$stable_version_tag/$index_file $cn_tmp_docs_path/tidb-in-kubernetes/
+
+cp $en_tmp_docs_path/tidb-data-migration/$stable_version_tag/$index_file $en_tmp_docs_path/tidb-data-migration
+cp $cn_tmp_docs_path/tidb-data-migration/$stable_version_tag/$index_file $cn_tmp_docs_path/tidb-data-migration
+
+
 node scripts/gen-nav.js 'content/docs/stable/TOC.md' 'data/docs_tidb_stable_toc.json' '/docs/stable' 'fullpath'
 node scripts/gen-nav.js 'content/docs/dev/TOC.md' 'data/docs_tidb_dev_toc.json' '/docs/dev' 'fullpath'
 node scripts/gen-nav.js 'content/docs/v2.1/TOC.md' 'data/docs_tidb_v21_toc.json' '/docs/v2.1' 'fullpath'
