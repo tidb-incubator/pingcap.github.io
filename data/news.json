@@ -1,5 +1,11 @@
 [
   {
+    "title": "Chaos Mesh — A Solution for System Resiliency on Kubernetes",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/chaos-mesh-a-chaos-engineering-solution-for-system",
+    "date": "2020-04-22"
+  },
+  {
     "title": "Choosing the Right Database for Your Applications",
     "logo": "/images/news/dzone-logo.png",
     "link": "https://dzone.com/articles/choosing-the-right-database-for-your-applications",
