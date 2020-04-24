@@ -1,15 +1,15 @@
 {{- define "headTpl" -}}
-    <style type="text/css" media="screen">
-        .st_tree {
-            display: none;
-        }
-    </style>
-    {{- partial "head/preload-css" (dict "href" "https://download.pingcap.com/style/github-markdown.css") -}}
-    {{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
-    {{$.Scratch.Set "nav_active" "docs"}}
-    {{$.Scratch.Set "data_i18_cn" true }}
-    {{$.Scratch.Set "data_i18_link" "/docs/" }}
-    {{$.Scratch.Set "metaTitle" "TiDB 官方用户文档"}}
+<style type="text/css" media="screen">
+    .st_tree {
+        display: none;
+    }
+</style>
+{{- partial "head/preload-css" (dict "href" "https://download.pingcap.com/style/github-markdown.css") -}}
+{{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
+{{$.Scratch.Set "nav_active" "docs"}}
+{{$.Scratch.Set "data_i18_cn" true }}
+{{$.Scratch.Set "data_i18_link" "/docs/" }}
+{{$.Scratch.Set "metaTitle" "TiDB 官方用户文档"}}
 {{- end -}}
 
 {{- define "main" -}}
@@ -45,13 +45,13 @@
 
 {{ $current_version := default "stable" (index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0) }}
 <div class="live-poster-mobile"><a href="http://t.cn/A6Pgdo1D" target="_blank"><img class="lazy"
-    src="/images/live-poster-mobile.jpg"></a></div>
+            src="/images/live-poster-mobile.jpg"></a></div>
 <div class="doc">
     <div class="container">
         {{ if eq $docs_repo "docs" }}
-            {{ $.Scratch.Add "data_i18_link" (trim $current_version "/") }}
+        {{ $.Scratch.Add "data_i18_link" (trim $current_version "/") }}
         {{ else }}
-            {{ $.Scratch.Add "data_i18_link" (print (replace $docs_type "_" "-") "/" $current_version )}}
+        {{ $.Scratch.Add "data_i18_link" (print (replace $docs_type "_" "-") "/" $current_version )}}
         {{ end }}
         {{ $multi_level_url := cond (isset .Params "multi_level_url") .Params.multi_level_url ""}}
         {{ partial "navs/docs-nav.html" (dict "global" . "lang_prefix" "docs_cn_" "cv" $current_version "sv" $docs_stable_version "tv" $docs_total_versions "docs_type" $docs_type "title_prefix" $title_prefix) }}
@@ -72,18 +72,18 @@
             <div id="smart_toc_wrapper"></div>
             <div class="live-poster-pc"><img class="lazy" src="/images/live-poster-pc.jpg"></div>
             <p class="new-version-release"><a href="https://pingcap.com/blog-cn/core-competence-of-future-database/ "
-                onclick="trackViews('blog-cn-core-competence-of-future-database/ ', 'core_competence_of_future_database_view')">第一期直播回顾：未来数据库应具备什么核心能力？</a>
+                    onclick="trackViews('blog-cn-core-competence-of-future-database/ ', 'core_competence_of_future_database_view')">第一期直播回顾：未来数据库应具备什么核心能力？</a>
             </p>
             <p class="new-version-release"><a href="http://pingcaptidb.mikecrm.com/WywFDVX" target="_blank"
-                onclick="trackViews('tidb4.0-release-notes-on-docs-cn', 'tidb4.0_signup_form_view')">TiDB 4.0 RC
-                版本全新发布，欢迎点击试用垂询</a></p>
+                    onclick="trackViews('tidb4.0-release-notes-on-docs-cn', 'tidb4.0_signup_form_view')">TiDB 4.0
+                    全面升级，最高性能提升 44 倍，欢迎报名参加 4.0 官方上线一对一支持计划，更有免费认证课程赠送。</a></p>
         </div>
     </div>
 </div>
 {{- end -}}
 
 {{- define "footJS" -}}
-    <script type="text/javascript" src="/js/vendor/lazyload.min.js"></script>
-    <script type="text/javascript" src="/js/doc.js"></script>
-    <script type="text/javascript" src="/js/anchor.js"></script>
+<script type="text/javascript" src="/js/vendor/lazyload.min.js"></script>
+<script type="text/javascript" src="/js/doc.js"></script>
+<script type="text/javascript" src="/js/anchor.js"></script>
 {{- end -}}
