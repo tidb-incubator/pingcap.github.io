@@ -38,8 +38,7 @@ function processStickyTree() {
         $(a)
           .parent()
           .addClass('active')
-
-        if (e.metaKey) {
+        if (e.metaKey || e.ctrlKey) {
           window.open(href, '_blank')
         } else {
           window.location.href = href
@@ -190,7 +189,6 @@ function processTags(showMoreList) {
 //       })
 //     })
 // }
-
 
 function tabCheckedInDocs() {
   const hash = decodeURIComponent(location.hash)
