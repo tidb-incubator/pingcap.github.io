@@ -44,9 +44,6 @@
 {{ end }}
 
 {{ $current_version := default "stable" (index (findRE "(v\\d+\\.\\d+|dev|stable)" .RelPermalink) 0) }}
-
-<div class="live-poster-mobile"><a href="http://t.cn/A6Pgdo1D" target="_blank"><img class="lazy"
-            src="/images/live-poster-mobile.jpg"></a></div>
 <div class="doc" id="list_page">
     <div class="container">
         {{ if eq $docs_repo "docs" }}
@@ -73,10 +70,6 @@
             {{- partial "archives/request-docs-changes.html" (dict "global" . "repo" $docs_repo "isCn" true "link" .Permalink "docs_type" $docs_type "sv" $docs_stable_version "multi_level_url" $multi_level_url "isCn" true) -}}
             <p class="toc-title">本页导航</p>
             <div id="smart_toc_wrapper"></div>
-            <div class="live-poster-pc"><img class="lazy" src="/images/live-poster-pc.jpg"></div>
-            <p class="new-version-release"><a href="https://pingcap.com/blog-cn/core-competence-of-future-database/ "
-                    onclick="trackViews('blog-cn-core-competence-of-future-database/ ', 'core_competence_of_future_database_view')">第一期直播回顾：未来数据库应具备什么核心能力？</a>
-            </p>
             <p class="new-version-release"><a href="http://pingcaptidb.mikecrm.com/WywFDVX" target="_blank"
                     onclick="trackViews('tidb4.0-release-notes-on-docs-cn', 'tidb4.0_signup_form_view')">TiDB 4.0
                     全面升级，最高性能提升 44 倍，欢迎报名参加 4.0 官方上线一对一支持计划，通过后，更有认证考试资格赠送。</a></p>
