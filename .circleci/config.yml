@@ -84,38 +84,6 @@ jobs:
               sh ./scripts/push-gh-pages.sh;
             fi
 
-      # Start to sync assets
-      - run:
-          name: Download cloud_assets_utils
-          command: |
-            curl -L https://github.com/pingcap/cloud-assets-utils/releases/download/v0.2.0/cloud_assets_utils-ubuntu-latest -o cloud_assets_utils
-            chmod +x cloud_assets_utils
-            sudo mv cloud_assets_utils /usr/local/bin/cloud-assets-utils
-
-      - run:
-          name: Configure qshell
-          command: |
-            curl http://devtools.qiniu.com/qshell-linux-x64-v2.4.1.zip -o qshell.zip
-            unzip qshell.zip
-            sudo mv qshell-linux-x64-v2.4.1 /usr/local/bin/qshell
-            qshell account ${QINIU_ACCESS_KEY} ${QINIU_SECRET_KEY} test
-      - run:
-          name: Configure awscli
-          command: |
-            sudo pip3 install awscli
-            printf "%s\n" ${AWS_ACCESS_KEY} ${AWS_SECRET_KEY} ${AWS_REGION} "json" | aws configure
-
-      - run: cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} static -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs/dev && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/dev -cdn-refresh https://download.pingcap.com/
-      # - run: mv content/docs/stable content/docs/v4.0 && cd content/docs/v4.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/stable -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs/v2.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/v2.1 -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs/v3.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/v3.1 -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs/v3.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs/v3.0 -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs-cn/dev && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/dev -cdn-refresh https://download.pingcap.com/
-      # - run: mv content/docs-cn/stable content/docs-cn/v4.0 && cd content/docs-cn/v4.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/stable -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs-cn/v2.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/v2.1 -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs-cn/v3.1 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/v3.1 -cdn-refresh https://download.pingcap.com/
-      # - run: cd content/docs-cn/v3.0 && cloud-assets-utils verify-and-sync -qiniu true -qiniu-bucket ${QINIU_BUCKET_NAME} -aws true -aws-bucket ${AWS_BUCKET_NAME} media -replace-first-path-to images/docs-cn/v3.0 -cdn-refresh https://download.pingcap.com/
   preview:
     machine:
       image: ubuntu-1604:201903-01

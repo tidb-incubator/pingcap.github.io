@@ -17,7 +17,7 @@ except NameError:
 
 abs_hyper_link_pattern = re.compile(r'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}')
 image_rel_src_pattern = re.compile(r'^[\.\/]*media\/')
-doc_version_pattern = re.compile(r'\/(v\d+\.\d+|stable|dev)\/')
+doc_version_pattern = re.compile(r'\/(v\d+\.\d+|stable|dev)')
 docs_type_pattern = re.compile(r'(docs|docs-cn)\/(tidb-in-kubernetes|tidb-data-migration)')
 
 file_path = sys.argv[1]
@@ -48,9 +48,9 @@ for img in soup.find_all('img'):
     if src:
         if (not abs_hyper_link_pattern.match(src)) and image_rel_src_pattern.match(src):
             _src = re.sub(r'[\.\/]*media\/', '/', src, count=0, flags=0)
-            if (docs_type_pattern.match(folder)):
-                folder = re.sub(r'(docs\/|docs-cn\/)', '', folder)
-            _src = 'https://download.pingcap.com/images/' + folder + default_version + _src
+            if (doc_version_pattern.search(folder)):
+                folder = re.sub(r'\/(v\d+\.\d+|stable|dev)', '', folder)
+            _src = 'https://download.pingcap.com/images/' + folder + _src
             img['data-original']= _src
             img['src'] = '/images/svgs/loader-spinner.svg'
             img['class'] = 'lazy'
