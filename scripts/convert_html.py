@@ -50,6 +50,8 @@ for img in soup.find_all('img'):
             _src = re.sub(r'[\.\/]*media\/', '/', src, count=0, flags=0)
             if (doc_version_pattern.search(folder)):
                 folder = re.sub(r'\/(v\d+\.\d+|stable|dev)', '', folder)
+                if (docs_type_pattern.match(folder)):
+                    folder = re.sub(r'(docs|docs-cn)\/', '', folder)
             _src = 'https://download.pingcap.com/images/' + folder + _src
             img['data-original']= _src
             img['src'] = '/images/svgs/loader-spinner.svg'
