@@ -1,5 +1,11 @@
 [
   {
+    "title": "How to Back Up and Restore a 10-TB Cluster at 1+ GB/s",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/how-to-back-up-and-restore-a-10-tb-cluster-at-1-gb",
+    "date": "2020-05-08"
+  },
+  {
     "title": "Quickly Find Rust Program Bottlenecks Online Using a Go Tool",
     "logo": "/images/news/dzone-logo.png",
     "link": "https://dzone.com/articles/quickly-find-rust-program-bottlenecks-online-using",
