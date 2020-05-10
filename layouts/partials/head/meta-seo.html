@@ -9,9 +9,9 @@
 {{- end -}}
 
 {{- if isset .Params "image" -}}
-    {{- $.Scratch.Add "image" (.Params.image | absURL ) -}}
+    {{- $.Scratch.Add "image" (.Params.image ) -}}
 {{- else -}}
-    {{- $.Scratch.Add "image" ("/images/pingcap-opengraph.jpg" | absURL) -}}
+    {{- $.Scratch.Add "image" ("/images/pingcap-opengraph.jpg") -}}
 {{- end -}}
 
 {{ $.Scratch.Set "ogTitle" "" }}
@@ -46,7 +46,11 @@
 <meta name="twitter:description" content="{{ $.Scratch.Get "summary" }}">
 <meta name="twitter:title" content="{{ .Title }} | {{ $.Scratch.Get "ogTitle" }}">
 <meta name="twitter:site" content="@pingcap">
-<meta name="twitter:image" content="{{ $.Scratch.Get "image" }}">
+{{- if eq ($.Scratch.Get "nav_active") "blog" }}
+<meta name="twitter:image" content="https://download.pingcap.com/{{ $.Scratch.Get "image" }}">
+{{- else -}}
+<meta name="twitter:image" content="https://pingcap.com/{{ $.Scratch.Get "image" }}">
+{{- end -}}
 <meta name="twitter:creator" content="@pingcap">
 
 <!-- Start of CrazyEgg Embed Code -->
