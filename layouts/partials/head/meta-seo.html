@@ -47,9 +47,9 @@
 <meta name="twitter:title" content="{{ .Title }} | {{ $.Scratch.Get "ogTitle" }}">
 <meta name="twitter:site" content="@pingcap">
 {{- if eq ($.Scratch.Get "nav_active") "blog" }}
-<meta name="twitter:image" content="https://download.pingcap.com/{{ $.Scratch.Get "image" }}">
+<meta name="twitter:image" content="https://download.pingcap.com{{ $.Scratch.Get "image" }}">
 {{- else -}}
-<meta name="twitter:image" content="https://pingcap.com/{{ $.Scratch.Get "image" }}">
+<meta name="twitter:image" content="https://pingcap.com{{ $.Scratch.Get "image" }}">
 {{- end -}}
 <meta name="twitter:creator" content="@pingcap">
 
