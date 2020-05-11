@@ -3,6 +3,16 @@
     "name": "Internet",
     "children": [
       {
+        "name": "VNG",
+        "industry": "Mobile Payment",
+        "websiteLink": "https://en.wikipedia.org/wiki/VNG_Corporation",
+        "link": "https://pingcap.com/success-stories/tidb-at-zalopay-infrastructure-lesson-learned/",
+        "logo": "/images/customers/vng-logo.png",
+        "scale": "100+ million online users",
+        "isShow": true,
+        "summary": "As VNG's business developed, their infrastructure became an obstacle to their growth. Then they chose TiDB as the core database for their ZaloPay app and used it to store their critical data. Now, VNG has 20+ TiDB nodes in their production environment."
+      },
+      {
         "name": "Shopee",
         "industry": "E-Commerce",
         "websiteLink": "https://en.wikipedia.org/wiki/Shopee",
@@ -197,7 +207,6 @@
         "websiteLink": "https://www.neteasegames.com/",
         "link": "https://pingcap.com/success-stories/why-we-chose-a-distributed-sql-database-alongside-mysql-to-break-down-data-silos/",
         "scale": "280+ games with millions of DAU",
-        "isShow": true,
         "summary": "As one of the biggest players in China's online gaming market, NetEase Games has deployed TiDB in the production environment to serve billing applications. With TiDB, NetEase Games is able to gain insights from data and create value for their users. They also plan to move more services to TiDB in the future."
       },
       {
