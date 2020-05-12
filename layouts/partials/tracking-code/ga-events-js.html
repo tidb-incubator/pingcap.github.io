@@ -20,7 +20,8 @@ var trackViews = function(btn_type, event_category) {
   ga('send', 'event', {
     'eventCategory': eventCategory,
     'eventAction': 'click',
-    'eventLabel': event_label
+    'eventLabel': event_label,
+    'transport': 'beacon'
   });
 }
 </script>
