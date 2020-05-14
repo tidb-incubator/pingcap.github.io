@@ -1,5 +1,17 @@
 [
   {
+    "title": "Simulating Clock Skew in K8s With Chaos Mesh",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/simulating-clock-skew-in-k8s-without-affecting-oth",
+    "date": "2020-05-12"
+  },
+  {
+    "title": "SQL Plan Management With TiDB: A Review",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/sql-plan-management-never-worry-about-slow-queries",
+    "date": "2020-05-12"
+  },
+  {
     "title": "How to Back Up and Restore a 10-TB Cluster at 1+ GB/s",
     "logo": "/images/news/dzone-logo.png",
     "link": "https://dzone.com/articles/how-to-back-up-and-restore-a-10-tb-cluster-at-1-gb",
