@@ -49,15 +49,6 @@
         "summary": "As India's largest e-commerce site for booking entertainment tickets online, BookMyShow has deployed TiDB in the production environment. With TiDB, BookMyShow has experienced increased uptime and availability. Meanwhile, operational and maintenance cost has been reduced by 30% and no engineer needs to be fully dedicated to database operations anymore."
       },
       {
-        "name": "Shopee",
-        "industry": "E-Commerce",
-        "websiteLink": "https://en.wikipedia.org/wiki/Shopee",
-        "link": "https://pingcap.com/success-stories/tidb-in-shopee/",
-        "logo": "/images/customers/shopee-logo.png",
-        "scale": "millions of users in 7 regions",
-        "summary": "As the leading e-commerce platform in Southeast Asia and Taiwan, Shopee has deployed two TiDB clusters totalling 60 nodes in the risk control and audit log systems."
-      },
-      {
         "name": "Zhihu",
         "industry": "Media and Entertainment",
         "link": "https://pingcap.com/success-stories/lesson-learned-from-queries-over-1.3-trillion-rows-of-data-within-milliseconds-of-response-time-at-zhihu/",
