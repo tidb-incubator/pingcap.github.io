@@ -596,5 +596,20 @@
       "github": "http://github.com/redis-force/tisearch",
       "medal": "https://download.pingcap.com/images/hackathon2019/gift.svg"
     }
+  ],
+
+  "reviews_2019": [
+    {
+      "link": "/community-cn/hackathon2018/",
+      "image": "https://download.pingcap.com/images/hackathon2019/hack18-review-img.png",
+      "outbound": false,
+      "alt": "hackathon 2018 banner"
+    },
+    {
+      "link": "http://gohack2017.golangfoundation.org/",
+      "image": "https://download.pingcap.com/images/hackathon2019/hack17-review-img.png",
+      "outbound": true,
+      "alt": "hackathon 2017 banner"
+    }
   ]
 }

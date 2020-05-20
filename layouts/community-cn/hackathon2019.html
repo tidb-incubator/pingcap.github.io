@@ -231,17 +231,8 @@
        
     </section>
 
-    <section>
-        <h2 class="section-title">往期回顾</h2>
-        <div class="reviews-list">
-            <a href="/community-cn/hackathon2018/" class="review-item">
-                <img class="lazy" data-original="https://download.pingcap.com/images/hackathon2019/hack18-review-img.png" src="/images/svgs/loader-spinner.svg" alt="hackathon 2018 banner" />
-            </a>
-            <a href="http://gohack2017.golangfoundation.org/" class="review-item" target="_blank">
-                <img class="lazy" data-original="https://download.pingcap.com/images/hackathon2019/hack17-review-img.png" src="/images/svgs/loader-spinner.svg" alt="hackathon 2017 banner" />
-            </a>
-        </div>
-    </section>
+    {{- partial "community-cn/activities-review.html" (dict "review_posts" .Site.Data.hackathon.reviews_2019) -}}
+
 </div>
 {{- end -}}
 

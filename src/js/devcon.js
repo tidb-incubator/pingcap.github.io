@@ -371,6 +371,48 @@ $(document).ready(function() {
     }
   })
 
+  $('.schedule-table .collapsable').click(function() {
+    if (selEle) {
+      selEle.removeClass('selected-bg')
+      selEle.children()[3].innerText = '+'
+    }
+
+    $(this).addClass('selected-bg')
+    if ($(this).next()[0].style.display == 'none') {
+      $('.detail-block').hide()
+      $(this)
+        .next()
+        .show()
+      $(this).children('td')[3].innerText = '-'
+    } else {
+      $(this)
+        .next()
+        .hide()
+      $(this).removeClass('selected-bg')
+      $(this).children('td')[3].innerText = '+'
+    }
+
+    selEle = $(this)
+  })
+
+  $('.date').click(function() {
+    console.log('date clicked', $(this).hasClass('date1'))
+    $('.date').removeClass('is-active')
+    $(this).addClass('is-active')
+
+    switch ($(this).hasClass('date1')) {
+      case true:
+        console.log('hello', $('.day1'))
+        $('.day1').removeClass('hide-schedule')
+        $('.day2').addClass('hide-schedule')
+        break
+      default:
+        $('.day1').addClass('hide-schedule')
+        $('.day2').removeClass('hide-schedule')
+        break
+    }
+  })
+
   $('.subtitle-pr').click(handlePRConCollapse)
 
   $('.subtitle-guide').click(handleGuideConCollapse)
