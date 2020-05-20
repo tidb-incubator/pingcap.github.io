@@ -716,7 +716,7 @@
           "time": "18:15 - 18:35",
           "talk_title": "TiDB 在智能制造 MES 系统的实践",
           "speaker": "汤凌菲",
-          "company": "光迅",
+          "company": "光迅科技",
           "talk_detail": [
             "1.智能制造面临的数据处理挑战；",
             "2.解决之道 —— 引入 TiDB；",
