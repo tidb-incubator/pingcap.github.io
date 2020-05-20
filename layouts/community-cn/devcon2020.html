@@ -49,7 +49,7 @@ DevCon 2020
             <img src="/images/community/devcon2020/el-side.svg" />
         </div>
         <section class="dc20-agenda">
-            <h1 class="dc20-title">会议日程</h1>
+            <h1 class="dc20-title" id="dc20-agenda-table">会议日程</h1>
             <div class="dates">
                 <div class="date date1 is-active">DAY 1 - 2020.06.06</div>
                 <div class="date date2">DAY 2 - 2020.06.07</div>
@@ -86,6 +86,8 @@ DevCon 2020
             {{- partial "community-cn/devcon2020-schedule-table.html" (dict "schedule" .Site.Data.devcon.devcon2020_day1_schedule "global" . "date" "day1") -}}
 
             {{- partial "community-cn/devcon2020-schedule-table.html" (dict "schedule" .Site.Data.devcon.devcon2020_day2_schedule "global" . "date" "day2") -}}
+
+            <div class="switch-date-btn date2">DAY2 日程</div>
         </section>
     </div>
 

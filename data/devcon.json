@@ -339,10 +339,17 @@
         },
         {
           "time": "16:05 - 16:25",
-          "talk_title": "",
-          "speaker": "",
-          "talk_detail": [],
-          "TBA": true
+          "talk_title": "TiDB 在快消品行业供应链系统的应用实践",
+          "speaker": "易南伟",
+          "talk_detail": [
+            "深圳华创智信科技有限公司自主研发了快速消费品行业的数字化供应链管理。",
+            "该数字化供应链管理覆盖了快速消费品行业的原料生产、加工、包装、运输、分销、销售到售后服务等的大部分环节，帮助企业了解和把握需求信号和及时作出精确的预测，对需求进行分析和制定出可行的需求计划，并迅速地对需求信号作出反应，从而提高整个供应链的效率与效益。",
+            "改造前系统架构 - 采用 MySQL 分库分表",
+            "采用 MySQL 中间件进行分库分表。分库分表后，跨库一致性问题，都是使用最终一致性，代码维护繁琐；表加字段麻烦，每个库每个表都要加；新增节点需要进行停机、然后迁移数据，停机迁移对线上用户造成实时的读写影响。",
+            "改造后的系统架构 - 引入 TiDB 替换 MySQL",
+            "为从根本上解决以上问题，技术团队决定通过增加部署一套高性能的数据库系统，以解决当前业务的痛点。 最终从满足业务需求、降低切换成本和减少运维成本等角度考虑，选择了分布式关系型数据库－TiDB 作为业务的首选事务型数据库。"
+          ],
+          "company": "华润创业"
         },
         {
           "time": "16:25 - 16:45",
@@ -515,7 +522,7 @@
           "time": "10:00 - 10:20",
           "talk_title": "TiKV Contributor 的进阶之路 —— Engine SIG 方向",
           "speaker": "陈付",
-          "company": "一点资讯",
+          "company": "TiKV Maintainer",
           "talk_detail": [
             "主要介绍本人参与 TiKV 开源项目开发历程，包括社区初接触、RawKV 性能优化、加入 engine sig 并开展 rocksdb/rust-rocksdb 相关工作和 VerKV 提案与开发等，其中也会分享 TiKV 在一点资讯生产环境上线过程中遇到的多方面问题和解决方案。最后，分享从 TiKV contributor 到 TiKV maintainer 过程中的心得体会和参与社区工作的总结，以及 TiKV 社区吸引人的地方。"
           ]
@@ -524,7 +531,7 @@
           "time": "10:20 - 10:40",
           "talk_title": "BigTable on TiKV",
           "speaker": "孙晓光",
-          "company": "知乎",
+          "company": "TiKV Maintainer",
           "talk_detail": [
             "得益于 TiKV 优秀的架构，TiDB 以完备的 SQL 支持和强大的可扩展性在众多领域得到了广泛的应用，在 NewSQL 领域成绩斐然。而在许多特定领域 NoSQL 仍然充满着旺盛的生机，让我们一同探讨 TiKV 和 BigTable 的组合能够迸发出什么样的火花。"
           ]
@@ -552,7 +559,7 @@
           "time": "11:30-11:45",
           "talk_title": "作为 TiKV Committer，我是如何参与社区的",
           "speaker": "庄天翼",
-          "company": "阿里巴巴",
+          "company": "TiKV Committer",
           "talk_detail": [
             "本次 talk 将介绍我是如何与 TiKV 结缘，并从一名 contributor 成长为一个 committer。也会分享一些难忘的经历，希望可以给大家参与社区带来一些帮助。"
           ]
@@ -568,7 +575,7 @@
           "time": "11:55-12:10",
           "talk_title": "Drainer 的定制化与使用",
           "speaker": "高海涛",
-          "company": "美团点评",
+          "company": "TiDB Reviewer",
           "talk_detail": [
             "目前 Drainer 仅支持下游是 MySQL，Kafka，file，pb。但在公司内部，通常有将 binlog 同步到公司内部系统组件的需求，此时 Drainer 无法满足。因此我们在 Drainer 基础上进行了扩展，使 Drainer 有被定制化的能力，大大增加了其扩展性，能够满足公司内部需求。本 Talk 主要介绍 Drainer 扩展化的设计实现与定制化方法"
           ]
@@ -577,7 +584,7 @@
           "time": "12:10-12:25",
           "talk_title": "参与 TiDB 社区初级指南",
           "speaker": "刘东坡",
-          "company": "Morningstar",
+          "company": "TiDB Contributor",
           "talk_detail": [
             "在 Talent Plan 中用 GitHub 社区资源（GitBook + GitHub Actions）科学高效完成作业，熟悉社区协作流程和工具。Talnet Plan 到 TiDB 社区，从简单的 issue 开始！"
           ]
@@ -849,13 +856,13 @@
     {
       "name": "常彦德",
       "avatar": "/images/community/devcon2020/speakers/changyande.png",
-      "title": "存储组件产品部副经理",
+      "title": "存储组件产品部负责人",
       "company": "UCloud"
     },
     {
       "name": "陈付",
       "avatar": "/images/community/devcon2020/speakers/chenfu.png",
-      "title": "分布式存储工程师",
+      "title": "TiKV Maintainer",
       "company": "一点资讯"
     },
     {
@@ -910,7 +917,7 @@
     {
       "name": "高海涛",
       "avatar": "/images/community/devcon2020/speakers/gaohaitao.png",
-      "title": "后端开发",
+      "title": "TiDB Reviewer",
       "company": "美团点评"
     },
     {
@@ -995,7 +1002,7 @@
     {
       "name": "刘东坡",
       "avatar": "/images/community/devcon2020/speakers/liudongpo.png",
-      "title": "前端工程师",
+      "title": "TiDB Contributor",
       "company": "Morningstar"
     },
     {
@@ -1038,8 +1045,7 @@
       "name": "刘宇",
       "avatar": "/images/community/devcon2020/speakers/liuyu.png",
       "title": "资深架构师",
-      "company": "天翼支付",
-      "noAvatar": true
+      "company": "天翼支付"
     },
     {
       "name": "李振环",
@@ -1104,7 +1110,7 @@
     {
       "name": "孙晓光",
       "avatar": "/images/community/devcon2020/speakers/sunxiaoguang.png",
-      "title": "技术平台负责人",
+      "title": "TiKV Maintainer",
       "company": "知乎"
     },
     {
@@ -1118,7 +1124,7 @@
       "name": "汤凌菲",
       "avatar": "/images/community/devcon2020/speakers/tanglingfei.png",
       "title": "资深软件工程师",
-      "company": "光迅"
+      "company": "光迅科技"
     },
     {
       "name": "唐刘",
@@ -1252,8 +1258,7 @@
       "name": "易南伟",
       "avatar": "/images/community/devcon2020/speakers/yinanwei.png",
       "title": "资深架构师",
-      "company": "华润创业",
-      "noAvatar": true
+      "company": "华润创业"
     },
     {
       "name": "余军",
@@ -1295,9 +1300,8 @@
     {
       "name": "张亿皓",
       "avatar": "/images/community/devcon2020/speakers/zhangyihao.png",
-      "title": "",
-      "company": "小红书",
-      "noAvatar": true
+      "title": "基础技术部资深开发工程师",
+      "company": "小红书"
     },
     {
       "name": "赵海军",
@@ -1320,7 +1324,7 @@
     {
       "name": "庄天翼",
       "avatar": "/images/community/devcon2020/speakers/zhuangtianyi.png",
-      "title": "PolarDB 技术专家",
+      "title": "TiKV Committer",
       "company": "阿里巴巴"
     },
     {

@@ -116,7 +116,8 @@
 
         .dc20-agenda {
             text-align: center;
-            margin-top: 4rem;
+            margin: 4rem auto 4rem;
+            position: relative;
 
             .dates {
                 display: flex;
@@ -236,6 +237,20 @@
                         justify-content: start;
                     }
                 }
+            }
+
+            .switch-date-btn {
+                position: absolute;
+                border-radius: 30px;
+                padding: 10px 2rem;
+                background: linear-gradient(to right bottom, #03d5bc, #0c52fc);
+                transform: translateX(-50%);
+                left: 50%;
+                width: 200px;
+                bottom: -1rem;
+                color: @M1;
+                cursor: pointer;
+                font-size: @p;
             }
         }
     }

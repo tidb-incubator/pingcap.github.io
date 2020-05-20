@@ -31,10 +31,8 @@
         <tr class="{{ if $j.talk_detail }}collapsable{{ end }}">
             <td>{{ $j.time }}</td>
             <td>{{ $j.talk_title }}</td>
-            {{- if and $j.company (ne $j.company "PingCAP") -}}
+            {{- if and $j.company -}}
             <td><span class="speaker">{{ $j.speaker }} | </span>{{ $j.company }}</td>
-            {{- else if and $j.company (eq $j.company "PingCAP") -}}
-            <td>{{ $j.speaker }}<span class="speaker"> | {{ $j.company }}</span></td>
             {{- else -}}
             <td>{{ $j.speaker }}</td>
             {{- end -}}

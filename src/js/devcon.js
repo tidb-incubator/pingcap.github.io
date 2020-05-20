@@ -396,19 +396,52 @@ $(document).ready(function() {
   })
 
   $('.date').click(function() {
-    console.log('date clicked', $(this).hasClass('date1'))
     $('.date').removeClass('is-active')
     $(this).addClass('is-active')
 
     switch ($(this).hasClass('date1')) {
       case true:
-        console.log('hello', $('.day1'))
         $('.day1').removeClass('hide-schedule')
         $('.day2').addClass('hide-schedule')
+        $('.switch-date-btn').addClass('date2')
+        $('.switch-date-btn').removeClass('date1')
+        $('.switch-date-btn')[0].innerText = 'DAY2 日程'
         break
       default:
         $('.day1').addClass('hide-schedule')
         $('.day2').removeClass('hide-schedule')
+        $('.switch-date-btn').addClass('date1')
+        $('.switch-date-btn').removeClass('date2')
+
+        $('.switch-date-btn')[0].innerText = 'DAY1 日程'
+        break
+    }
+  })
+
+  $('.switch-date-btn').click(function() {
+    $('.date').removeClass('is-active')
+    $('html, body').animate(
+      {
+        scrollTop: $('#dc20-agenda-table').offset().top,
+      },
+      1000
+    )
+    switch ($(this).hasClass('date1')) {
+      case true:
+        $('.date1').addClass('is-active')
+        $('.day1').removeClass('hide-schedule')
+        $('.day2').addClass('hide-schedule')
+        $(this).removeClass('date1')
+        $(this).addClass('date2')
+        $(this)[0].innerText = 'DAY2 日程'
+        break
+      default:
+        $('.date2').addClass('is-active')
+        $('.day1').addClass('hide-schedule')
+        $('.day2').removeClass('hide-schedule')
+        $(this).removeClass('date2')
+        $(this).addClass('date1')
+        $(this)[0].innerText = 'DAY1 日程'
         break
     }
   })
