@@ -858,8 +858,7 @@
       "name": "陈龙",
       "avatar": "/images/community/devcon2020/speakers/chenlong.png",
       "title": "鲲鹏计算产品部生态经理，高级工程师",
-      "company": "华为",
-      "noAvatar": true
+      "company": "华为"
     },
     {
       "name": "陈振东",
@@ -1249,15 +1248,13 @@
       "name": "余军",
       "avatar": "/images/community/devcon2020/speakers/yujun.png",
       "title": "解决方案事业部总经理",
-      "company": "PingCAP",
-      "noAvatar": true
+      "company": "PingCAP"
     },
     {
       "name": "余梦杰",
       "avatar": "/images/community/devcon2020/speakers/yumengjie.png",
       "title": "合伙人、执行副总裁",
-      "company": "PingCAP",
-      "noAvatar": true
+      "company": "PingCAP"
     },
     {
       "name": "张帆",
