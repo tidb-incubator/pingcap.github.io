@@ -122,6 +122,7 @@
           "time": "13:00 - 13:20",
           "talk_title": "技术方案精讲（1）TiDB 金融级备份及多中心容灾",
           "speaker": "余军",
+          "company": "PingCAP",
           "talk_detail": []
         },
         {
@@ -280,7 +281,10 @@
           "time": "13:30 - 13:50",
           "talk_title": "技术方案精讲（2）TiDB 异构数据库复制的最佳实践",
           "speaker": "秦天爽",
-          "talk_detail": []
+          "company": "PingCAP",
+          "talk_detail": [
+            "现有业务系统的分布式改造，其中一个难点在于数据库的迁移。迁移使用全量还是增量？在线还是离线？使用现成的工具还是开发作业？用户往往面对多种选择。这里将和大家分享 PingCAP 团队在多年的实施经验中积攒的大量异构平台迁移经验，以及数据库复制技术的更多应用场景。"
+          ]
         },
         {
           "time": "13:50 - 14:20",
@@ -351,7 +355,7 @@
           "time": "16:45 - 17:05",
           "talk_title": "TiDB 在车好多的实践过程与思考",
           "speaker": "汪涉洋",
-          "company": "车好多（瓜子二手车、毛豆新车母公司）",
+          "company": "车好多集团",
           "talk_detail": [
             "TiDB 在瓜子其实从开始搭建集群到现在，已经快有一年半了。 目前在一部分 MySQL 大表 adhoc 和毛豆新车部分在线业务有落地，但离能在车好多充分挖掘潜力还有不少事情要做。",
             "期间我们在  MySQL 切 TiDB 的实施过程，使用 DM（TiDB Data Migration）同步 binlog ， 部署 TiDB 的方案优化提升资源利用率 ，TiDB  jsontype 性能测试等技术点上有一些积累和思考。 然后在集团，一项新的存储技术如何从技术、运维、落地等逐步在公司业务研发中建立信任感也有值得分享的点。"
@@ -417,6 +421,7 @@
           "time": "9:30 - 9:50",
           "talk_title": "TiDB 合作伙伴生态体系构建",
           "speaker": "余梦杰",
+          "company": "PingCAP",
           "talk_detail": []
         },
         {
@@ -444,6 +449,7 @@
           "time": "10:30 - 10:45",
           "talk_title": "Why HTAP Matters?",
           "speaker": "马晓宇",
+          "company": "PingCAP",
           "talk_detail": []
         },
         {
@@ -466,6 +472,7 @@
           "time": "11:25 - 11:40",
           "talk_title": "Chaos Practice in PingCAP",
           "speaker": "唐刘",
+          "company": "PingCAP",
           "talk_detail": [
             "构建一个分布式数据库是非常困难的，因为我们要保证用户数据安全，不能丢失，损坏等。在 PingCAP，我们做了非常多的测试来保证 TiDB 的安全性，其中就包括 Chaos Engineering。在本次分享，我们聊聊 PingCAP 的测试理念，Chaos 实践，介绍基于 K8s 上的 Chaos 平台 - Chaos Mesh，以及告诉大家如何使用 Chaos Mesh 来集成并测试自己的业务。"
           ]
@@ -492,6 +499,7 @@
           "time": "9:00 - 9:40",
           "talk_title": "Have Fun with 1000+ developers",
           "speaker": "姚维",
+          "company": "PingCAP",
           "talk_detail": [
             "TiDB 开发者社区经过 5 年的发展，目前已经收获来自世界各地的一千名 Contributor。在过去的一年中，为了贡献者在社区中获得更有趣，更有归属感的体验。TiDB 社区推出了 SIG（Special Interest Group） 以及 WG（Working Group）组织用以提高社区协作的效率。也推出了一系列的社区挑战赛，让大家能在贡献的同时收获荣誉以及社区周边。TiDB 社区也持续投入资源给大家带来更好的学习体验，推出了 Talent Plan 2.0 课程，无论是否接触过数据库开发，都可以在最短的时间学习数据库内核知识，加入开发者社区。"
           ]
@@ -500,6 +508,7 @@
           "time": "9:40 - 10:00",
           "talk_title": "荣誉时刻",
           "speaker": "姚维",
+          "company": "PingCAP",
           "talk_detail": []
         },
         {
@@ -583,6 +592,7 @@
           "time": "13:30 - 13:50",
           "talk_title": "技术方案精讲（3）TiDB on Kubernetes 最佳实践",
           "speaker": "吴叶磊",
+          "company": "PingCAP",
           "talk_detail": []
         },
         {
@@ -717,11 +727,12 @@
           "time": "13:30 - 13:50",
           "talk_title": "技术方案精讲（4）基于 TiSpark 的海量数据批量处理技术",
           "speaker": "杨哲轩",
+          "company": "PingCAP",
           "talk_detail": []
         },
         {
           "time": "13:50 - 14:20",
-          "talk_title": "TiDB 在哔哩哔哩的实践 2.0",
+          "talk_title": "TiDB 在 bilibili 的实践 2.0",
           "speaker": "王旭，张雯",
           "company": "bilibili",
           "talk_detail": []
@@ -1075,7 +1086,7 @@
     {
       "name": "秦天爽",
       "avatar": "/images/community/devcon2020/speakers/qintianshuang.png",
-      "title": "S&A Principal Solutions Architect",
+      "title": "解决方案架构团队架构总监",
       "company": "PingCAP"
     },
     {
@@ -1137,7 +1148,7 @@
       "name": "汪涉洋",
       "avatar": "/images/community/devcon2020/speakers/wangsheyang.png",
       "title": "大数据团队技术经理",
-      "company": "车好多（瓜子二手车、毛豆新车母公司）"
+      "company": "车好多集团"
     },
     {
       "name": "王旭",
