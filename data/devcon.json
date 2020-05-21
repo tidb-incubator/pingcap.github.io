@@ -472,7 +472,9 @@
           "speaker": "朱友志",
           "company": "中通快递",
           "talk_detail": [
-            "快递行业的突飞猛进，数据激增，无论以前单机的性能多么强已经支持不了数量增长和访问的压力，更满足不了日益多元的数据分析需求。中通大数据团队 2018 年开始接触 TiDB，经过多轮测试，敏锐的感知到 TiDB 在 TP 和 AP 不同场景下的强大功能，完成了部分核心业务去“O”，摆脱 Oracle Exadata 一体机单机的瓶颈限制。2019 年“双 11”扛住了 QPS 12w+ 的峰值，并且一套集群同时完成 TP 和 AP 的业务，中通将继续在 TiDB 上落地更多的业务场景。"
+            "近几年，快递行业的业务量突飞猛进，数据激增，无论以前单机的性能多么强大都已经支持不了数量增长和访问压力，更满足不了日益多元化的数据分析需求。",
+            "中通大数据团队 18 年开始接触 TiDB，多轮测试敏锐的感知到 TiDB 在 TP 和 AP 不同场景的强大功能，完成了部分核心业务去“O”，摆脱 Oracle Exadata 一体机单机的瓶颈限制。",
+            "19 年双 11 扛住了QPS 12w+ 的峰值，并且一套集群同时完成 TP 和 AP 的业务，中通将继续在 TiDB 上落地更多的业务场景。"
           ]
         },
         {
@@ -1092,7 +1094,7 @@
     {
       "name": "秦天爽",
       "avatar": "/images/community/devcon2020/speakers/qintianshuang.png",
-      "title": "解决方案架构团队架构总监",
+      "title": "解决方案事业部架构总监",
       "company": "PingCAP"
     },
     {
@@ -1117,8 +1119,7 @@
       "name": "谭恒亮",
       "avatar": "/images/community/devcon2020/speakers/tanhengliang.png",
       "title": "云平台技术专家",
-      "company": "小鹏汽车",
-      "noAvatar": true
+      "company": "小鹏汽车"
     },
     {
       "name": "汤凌菲",
