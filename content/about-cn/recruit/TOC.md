@@ -5,10 +5,9 @@
 - Engineering
   - [分布式存储系统研发经理](engineering/tikv-engineer.md)
   - [分布式调度研发工程师](engineering/pd-engineer.md)
-  - [数据库内核开发-优化器](engineering/optimizer-engineer.md)
-  - [Real-Time Analytics 研发工程师](engineering/real-time-analytics-engineer.md)
+  - [数据库内核开发（优化器方向）](engineering/optimizer-engineer.md)
+  - [分析引擎研发工程师](engineering/real-time-analytics-engineer.md)
   - [TiDB 研发工程师](engineering/tidb-engineer.md)
-  - [OLAP 引擎研发工程师](engineering/olap-engineer.md)
   - [Tools 研发工程师](engineering/tools-engineer.md)
   - [Cloud 研发工程师](engineering/cloud-engineer.md)
   - [前端开发工程师](engineering/fe-engineer.md)
