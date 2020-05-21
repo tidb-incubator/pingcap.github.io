@@ -446,7 +446,7 @@
         {
           "time": "10:10 - 10:30",
           "talk_title": "TiDB 在 U-Next ARM 平台上的应用与实践",
-          "speaker": "丁伟，黄必荣",
+          "speaker": "丁炜，黄必荣",
           "company": "U-Next",
           "talk_detail": [
             "TiDB 在 ARM 平台的落地实践及 TiDB 在 U-Next 的数据分析运用。"
@@ -899,7 +899,7 @@
       "company": "PingCAP"
     },
     {
-      "name": "丁伟",
+      "name": "丁炜",
       "avatar": "/images/community/devcon2020/speakers/dingwei.png",
       "title": "Senior Engineer",
       "company": "U-Next"
