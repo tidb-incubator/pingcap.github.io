@@ -395,7 +395,11 @@
           "talk_title": "TiDB 在马蜂窝中的应用实践和启发",
           "speaker": "胡国青",
           "company": "马蜂窝",
-          "talk_detail": []
+          "talk_detail": [
+            "主要结合公司的服务化数据库系统——在设计、研发和运营以及维护过程中遇到的挑战来展开：",
+            "1. 服务化 TiDB 的设计优势是为研发屏蔽 TiDB 的底层运维细节，通过可视化界面或 API 就可获取 TiDB 服务，不需关注资源分配[资源可行性分析]、部署、迁移、扩容、监控及宕机处理等细节；",
+            "2. 服务化 TiDB 的另一个优势是资源的统一控制和管理，确保环境的一致性，为运维自动化奠定基础，兼而有效降低硬件和人力资源。"
+          ]
         },
         {
           "time": "17:45 - 17:55",
@@ -606,7 +610,9 @@
           "talk_title": "技术方案精讲（3）TiDB on Kubernetes 最佳实践",
           "speaker": "吴叶磊",
           "company": "PingCAP",
-          "talk_detail": []
+          "talk_detail": [
+            "随着 Kubernetes(k8s) 的全面成熟，越来越多的组织开始大规模地基于 k8s 构建基础设施层。然而，考虑到数据库在架构中的核心地位与 k8s 在有状态应用编排上的短板，仍有不少组织认为在 k8s 上运行核心数据库会带来颇高的风险。事实上，在 Kubernetes 上运行 TiDB 不仅能实现企业技术栈的统一，降低维护成本，还能带来更高的可用性与安全性。本次分享将介绍 TiDB 在 Kubernetes 上的运维管理系统 TiDB Operator，再从各类故障场景入手剖析 TiDB on Kubernetes 如何实现高效的故障自愈并保障数据安全。最后，我们会分享来自国内外一线公司的 TiDB Operator 生产环境案例，并总结出一套 TiDB on Kubernetes 最佳实践。"
+          ]
         },
         {
           "time": "13:50 - 14:20",
@@ -741,7 +747,9 @@
           "talk_title": "技术方案精讲（4）基于 TiSpark 的海量数据批量处理技术",
           "speaker": "杨哲轩",
           "company": "PingCAP",
-          "talk_detail": []
+          "talk_detail": [
+            "说起批处理，你脑海里蹦出来的第一个词是什么？是分片么？是麻烦么？是太慢了么？现在如果告诉你，批处理不用在忍受这些的痛苦，借助 Spark 分布式计算框架的能力用统一的视角高效处理数据，再写回 TiDB 中，同时还能够保证数据的 ACID特性，你会觉得这不可能么？本次分享将会揭秘基于 TiSpark 的海量数据批量处理技术的实现和使用方法。"
+          ]
         },
         {
           "time": "13:50 - 14:20",
@@ -1080,7 +1088,7 @@
     {
       "name": "Munenori Hirakawa",
       "avatar": "/images/community/devcon2020/speakers/munenorihirakawa.png",
-      "title": "",
+      "title": "Senior Manager at Product Tech Division",
       "company": "PayPay"
     },
     {
