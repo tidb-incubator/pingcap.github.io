@@ -140,6 +140,7 @@
           "time": "13:40 - 14:00",
           "talk_title": "TiDB at PayPay : How we migrated in 3 months",
           "speaker": "Munenori Hirakawa",
+          "company": "PayPay",
           "talk_detail": [
             "PayPay is the No.1 share mobile payment company in Japan. In 1.5 years since the service started, the number of users reached 28 million and the number of payment transactions reached 1 billion. In the rapid growth, we have migrated the most mission-critical database which is managing payment transactions to TiDB in March with just three months of preparation. I will talk about why we chose TiDB and how we achieved the migration."
           ]
