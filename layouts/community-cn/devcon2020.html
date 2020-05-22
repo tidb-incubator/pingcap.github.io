@@ -103,7 +103,7 @@ DevCon 2020
                             alt="Tutor avator" />
                     </div>
                     <div class="name">{{ $i.name }}</div>
-                    <div class="title">{{ $i.company }} | {{ $i.title }}</div>
+                    <div class="title">{{ $i.company }} {{ if $i.title }}| {{ $i.title }}{{ end }}</div>
                 </div>
                 {{- end -}}
                 {{- end -}}

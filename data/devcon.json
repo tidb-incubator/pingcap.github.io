@@ -123,7 +123,9 @@
           "talk_title": "技术方案精讲（1）TiDB 金融级备份及多中心容灾",
           "speaker": "余军",
           "company": "PingCAP",
-          "talk_detail": []
+          "talk_detail": [
+            "从金融行业关系数据库大规模应用伊始，灾备与容灾就成为了对数据库的刚性要求。分布式数据库在提供强大扩展能力的同时，也提供了不同于传统单机数据库的灾备与容灾能力。TiDB 针对不同的灾备容灾需求，提供了多种灵活可靠的金融级保障方案，可靠的支撑金融业务的安全稳定运行。本次分享会介绍 TiDB 的多种灾备与容灾方案与实践案例。"
+          ]
         },
         {
           "time": "13:20 - 13:40",
@@ -136,10 +138,11 @@
         },
         {
           "time": "13:40 - 14:00",
-          "talk_title": "",
-          "speaker": "",
-          "talk_detail": [],
-          "TBA": true
+          "talk_title": "TiDB at PayPay : How we migrated in 3 months",
+          "speaker": "Munenori Hirakawa",
+          "talk_detail": [
+            "PayPay is the No.1 share mobile payment company in Japan. In 1.5 years since the service started, the number of users reached 28 million and the number of payment transactions reached 1 billion. In the rapid growth, we have migrated the most mission-critical database which is managing payment transactions to TiDB in March with just three months of preparation. I will talk about why we chose TiDB and how we achieved the migration."
+          ]
         },
         {
           "time": "14:00 -14:20",
@@ -461,7 +464,7 @@
         },
         {
           "time": "10:45 - 11:05",
-          "talk_title": "DataHub 架构转型助力小红书业务转型",
+          "talk_title": "TiDB HTAP 助力小红书业务升级",
           "speaker": "张亿皓",
           "company": "小红书",
           "talk_detail": []
@@ -1072,6 +1075,12 @@
       "avatar": "/images/community/devcon2020/speakers/maxiaoyu.png",
       "title": "实时分析产品负责人",
       "company": "PingCAP"
+    },
+    {
+      "name": "Munenori Hirakawa",
+      "avatar": "/images/community/devcon2020/speakers/munenorihirakawa.png",
+      "title": "",
+      "company": "PayPay"
     },
     {
       "name": "彭兴",
