@@ -443,7 +443,9 @@
           "talk_title": "TiDB 合作伙伴生态体系构建",
           "speaker": "余梦杰",
           "company": "PingCAP",
-          "talk_detail": []
+          "talk_detail": [
+            "2020 年 PingCAP 合作伙伴生态体系构建全面启动，基于 TiDB 社区，秉承开放平等的全新社区化合作伙伴生态理念，产业生态合作、解决方案合作、联合技术中心等众多计划百花齐放，本次分享主要把我们生态体系的理念、整体框架和一些在前几个月的落地成绩向大家做一次汇报。"
+          ]
         },
         {
           "time": "9:50 - 10:10",
@@ -1242,7 +1244,7 @@
     {
       "name": "许登峰",
       "avatar": "/images/community/devcon2020/speakers/xudengfeng.png",
-      "title": "首席架构师",
+      "title": "资深架构师",
       "company": "北大医信"
     },
     {
