@@ -311,7 +311,9 @@
           "talk_title": "Shopee Chat 系统迁移 TiDB 最佳实践",
           "speaker": "彭义，刘春辉",
           "company": "Shopee",
-          "talk_detail": []
+          "talk_detail": [
+            "Chat 系统是 Shopee 的关键子系统之一，为买家和卖家提供了直接沟通的工具和平台支持。开发团队和 DBA 团队通力合作，花费了一年时间把 Shopee Chat 系统后端数据存储组件从一个巨大的 MySQL 集群 + 一个内部开发的文件系统服务迁移到了 一个 TiDB 集群 + 一个 TiKV 集群上。本次分享将介绍此次迁移的过程和我们的一些经验心得。"
+          ]
         },
         {
           "time": "15:20 - 15:30",
@@ -322,10 +324,14 @@
         },
         {
           "time": "15:30 - 15:40",
-          "talk_title": "TiDB 在云集电商平台的业务落地",
+          "talk_title": "社交电商的数据库架构选型之路",
           "speaker": "皮雪锋",
           "company": "云集",
-          "talk_detail": []
+          "talk_detail": [
+            "1.背景：是什么让我们选择了 TiDB？",
+            "2.现状：TiDB 给我们带来了哪些惊喜？",
+            "3.展望：未来会有更多的惊喜吗？"
+          ]
         },
         {
           "time": "15:40 - 15:50",
@@ -357,10 +363,10 @@
         },
         {
           "time": "16:25 - 16:45",
-          "talk_title": "",
-          "speaker": "",
+          "talk_title": "数据库，从集中式到分布式的演进",
+          "speaker": "侯圣文",
           "talk_detail": [],
-          "TBA": true
+          "company": "贝壳找房"
         },
         {
           "time": "16:45 - 17:05",
@@ -465,7 +471,9 @@
           "talk_title": "Why HTAP Matters?",
           "speaker": "马晓宇",
           "company": "PingCAP",
-          "talk_detail": []
+          "talk_detail": [
+            "HTAP 是一个比较新的概念，表示数据库有能力应付交易和分析两种不同业务。HTAP 数据库相比传统方案有何优势？为何 HTAP 数据库难以实现？本次分享将会介绍 TiDB HTAP 架构的实现原理，如何解决两种不同设计方向的冲突。也会为大家分享实际业务如果利用 HTAP 来简化架构，加强实时性和一致性，为更高效敏捷的业务建设赋能。"
+          ]
         },
         {
           "time": "10:45 - 11:05",
@@ -842,7 +850,9 @@
           "talk_title": "TiDB 如何快速应对突增流量",
           "speaker": "傅少峰",
           "company": "新东方",
-          "talk_detail": []
+          "talk_detail": [
+            "灵活和强大的 TiDB 在线弹性扩展能力以及完善的 SQL 支持，让我们的数据库基础架构能从容的应对业务突增并发量和数据量，是传统的分库分表架构不具备的灵活优势。"
+          ]
         },
         {
           "time": "17:45 - 18:05",
@@ -951,6 +961,12 @@
       "avatar": "/images/community/devcon2020/speakers/hezhiyong.png",
       "title": "资深云数据库工程师",
       "company": "平安科技"
+    },
+    {
+      "name": "侯圣文",
+      "avatar": "/images/community/devcon2020/speakers/houshengwen.png",
+      "title": "技术总监",
+      "company": "贝壳找房"
     },
     {
       "name": "黄必荣",
