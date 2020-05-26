@@ -8,6 +8,22 @@
                 "title": "知乎 | 技术平台负责人",
                 "githubID": "sunxiaoguang",
                 "tag": "TiKV"
+            },
+            {
+                "avatar": "https://download.pingcap.com/images/community/organization/chenfu.png",
+                "link": "https://github.com/fredchenbj",
+                "name": "陈付",
+                "title": "一点资讯 | 分布式存储工程师",
+                "githubID": "fredchenbj",
+                "tag": "TiKV"
+            },
+            {
+                "avatar": "https://download.pingcap.com/images/community/organization/lidaobing.png",
+                "link": "https://github.com/lidaobing",
+                "name": "李道兵",
+                "title": "京东智联云 | 高级总监",
+                "githubID": "lidaobing",
+                "tag": "TiKV"
             }
         ],
         "committer": [
