@@ -39,7 +39,7 @@
                     <div class="layout-text-on-hover">
                         <a href="{{ .RelPermalink }}" class="link-abs"></a>
                         <div class="image">
-                            <img class="lazy" width="100%" data-original="{{.Params.image|default .Site.Data.meetup.default_cover}}" src="/images/svgs/loader-spinner.svg" alt="cover">
+                            <img class="lazy" width="100%" data-original="https://download.pingcap.com{{.Params.image|default .Site.Data.meetup.default_cover}}" src="/images/svgs/loader-spinner.svg" alt="cover">
                         </div>
                         <div class="text">
                             <h3 class="inner-title"> {{.Date.Format "2006-01-02"}} </h3>

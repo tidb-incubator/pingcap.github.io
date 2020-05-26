@@ -299,7 +299,7 @@
         },
         {
           "time": "14:20 - 14:50",
-          "talk_title": "TiDB 在百胜中国业务中台与数据中台的应用实践",
+          "talk_title": "TiDB 在百胜中台的应用实践",
           "speaker": "吴剑锋",
           "company": "百胜中国",
           "talk_detail": [
@@ -635,7 +635,7 @@
         },
         {
           "time": "14:20 - 14:40",
-          "talk_title": "TiDB DM 实战分享",
+          "talk_title": "TiDB 在 360 的落地及 DM 实战干货分享",
           "speaker": "贺磊",
           "company": "奇虎 360",
           "talk_detail": [
@@ -716,7 +716,9 @@
           "talk_title": "UCloud TiDB 公有云服务探索",
           "speaker": "常彦德",
           "company": "UCloud",
-          "talk_detail": []
+          "talk_detail": [
+            "将 TiDB 运行在 UCloud 公有云上，结合 UCloud 公有云的优势，让用户以非常低廉的成本在两分钟内即可拥有生产级 TiDB 服务。近期我们又推出了新一代 TiDB 服务，将会带来哪些变化，本次 talk 将作详细讲解。"
+          ]
         },
         {
           "time": "17:35 - 17:55",
@@ -1373,7 +1375,9 @@
     "/images/community/devcon2020/sponsors/juejin.png",
     "/images/community/devcon2020/sponsors/oschina.png",
     "/images/community/devcon2020/sponsors/infoq.png",
+    "/images/community/devcon2020/sponsors/segmentfault.png",
     "/images/community/devcon2020/sponsors/tgo.png",
+    "/images/community/devcon2020/sponsors/it168.png",
     "/images/community/devcon2020/sponsors/motianlun.png"
   ],
   "instructors_2019": [
