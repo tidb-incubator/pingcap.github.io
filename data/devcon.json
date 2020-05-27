@@ -198,7 +198,7 @@
           "time": "15:25 - 15:45",
           "talk_title": "TiDB 在银行批处理场景中的实践",
           "speaker": "薛春雨",
-          "company": "神州数码",
+          "company": "神州信息",
           "talk_detail": [
             "银行的日终批量处理业务场景复杂，待处理的数据量大，在考虑应用架构的同时，需要兼顾 TiDB 数据库的特性，以实现整体执行时间的可控。"
           ]
@@ -775,7 +775,9 @@
           "talk_title": "TiDB 在腾讯 PCG 内部云平台的实践",
           "speaker": "郑智辉",
           "company": "腾讯",
-          "talk_detail": []
+          "talk_detail": [
+            "主要介绍 TiDB 在 PCG 内部云平台提供关系型数据库的使用经验，内容包括：自动化运维的实现，平台周边管理功能介绍例如备份、慢查询、资源管理等方面的思考，以及运营过程中遇到的坑点和问题分享。"
+          ]
         },
         {
           "time": "14:50 - 15:10",
@@ -1258,7 +1260,7 @@
       "name": "薛春雨",
       "avatar": "/images/community/devcon2020/speakers/xuechunyu.png",
       "title": "基础架构专家",
-      "company": "神州数码"
+      "company": "神州信息"
     },
     {
       "name": "徐嘉埥",
