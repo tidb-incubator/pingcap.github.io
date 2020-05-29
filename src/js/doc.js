@@ -367,7 +367,7 @@ $(document).ready(function() {
   })
 
   // Copy to Clipboard
-  if ($('.doc').length > 0) {
+  if ($('.doc').length > 0 || $('.blog').length > 0) {
     if ($('.copyable-code-block').length) {
       $('.copyable-code-block').each(function() {
         if ($(this).next('div.highlight')[0]) {
