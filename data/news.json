@@ -1,5 +1,11 @@
 [
   {
+    "title": "Large Transactions in TiDB",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/large-transactions-in-tidb",
+    "date": "2020-05-28"
+  },
+  {
     "title": "Simulating Clock Skew in K8s With Chaos Mesh",
     "logo": "/images/news/dzone-logo.png",
     "link": "https://dzone.com/articles/simulating-clock-skew-in-k8s-without-affecting-oth",
