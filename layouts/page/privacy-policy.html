@@ -1,6 +1,7 @@
 {{- define "headTpl" -}}
     {{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
-    {{ $.Scratch.Set "metaTitle" "TiDB" }}
+    {{$.Scratch.Set "data_i18_cn" true }}
+    {{$.Scratch.Set "data_i18_link" "/en/privacy-policy/" }}
 {{- end -}}
 
 {{- define "main" -}}
@@ -9,4 +10,8 @@
         <div class="archive" style="margin: 0 auto;"><div class="content markdown-body">{{- .Content -}}</div></div>
     </div>
 </div>
+{{- end -}}
+
+{{- define "footJS" -}}
+    <script type="text/javascript" src="/js/anchor.js"></script>
 {{- end -}}
