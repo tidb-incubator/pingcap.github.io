@@ -680,14 +680,21 @@
           ]
         },
         {
-          "time": "16:00 - 16:15",
+          "time": "16:00 - 16:20",
+          "talk_title": "TiDB 助力燃气中台建设",
+          "speaker": "张含宇",
+          "company": "新奥燃气",
+          "talk_detail": []
+        },
+        {
+          "time": "16:20 - 16:35",
           "talk_title": "",
           "speaker": "",
           "talk_detail": [],
           "break": true
         },
         {
-          "time": "16:15 - 16:35",
+          "time": "16:35 - 16:55",
           "talk_title": "中移物联网在车联网场景的 TiDB 探索和实现",
           "speaker": "薛超",
           "company": "中移物联网有限公司",
@@ -696,20 +703,13 @@
           ]
         },
         {
-          "time": "16:35 - 16:55 ",
+          "time": "16:55 - 17:15",
           "talk_title": "TiDB 在 WPS 中的应用",
           "speaker": "岑启超",
           "company": "金山办公",
           "talk_detail": [
             "金山办公在各办公化场景的 OLTP 实践上一直以来有过多样的数据库方案。而随着用户日趋成熟的在线办公习惯，用户海量文档数据对服务质量和稳定性带来非常大的考验。为了解决持续增长的数据所带来机器维护&运维成本问题，金山办毅然选择了 TiDB 来作为分布式数据库的落地方案，并一直“痛苦&快乐”地践行着。"
           ]
-        },
-        {
-          "time": "16:55 - 17:15",
-          "talk_title": "TiDB 助力燃气中台建设",
-          "speaker": "张含宇",
-          "company": "新奥燃气",
-          "talk_detail": []
         },
         {
           "time": "17:15 - 17:35",
@@ -768,7 +768,9 @@
           "talk_title": "TiDB 在 bilibili 的实践 2.0",
           "speaker": "王旭，张雯",
           "company": "bilibili",
-          "talk_detail": []
+          "talk_detail": [
+            "TiDB 在 bilibili 应用于主站社区点赞收藏，直播包裹道具，电商用户订单分析，游戏广告推送，视频云直播流，数据平台等多个子业务线。在不同业务场景需求的分析和落地的过程中，TiDB 的高可用 & 水平扩展特性帮助支持业务快速增长，分布式特性帮助 DBA 维护变更集群对业务透明无感。期待 TiDB 4.0 带来更多新特性，帮助我们更好的支持业务发展。"
+          ]
         },
         {
           "time": "14:20 - 14:50",
@@ -880,7 +882,7 @@
     {
       "name": "岑启超",
       "avatar": "/images/community/devcon2020/speakers/cenqichao.png",
-      "title": "高级程序开发",
+      "title": "开发经理",
       "company": "金山办公"
     },
     {
