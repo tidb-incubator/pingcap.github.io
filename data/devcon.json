@@ -1220,7 +1220,7 @@
         },
         {
           "time": "14:20 - 14:50",
-          "talk_title": "TiDB 在腾讯 PCG 内部云平台的实践",
+          "talk_title": "TiDB 在腾讯内部云平台的实践",
           "speaker": "郑智辉",
           "company": "腾讯",
           "talk_detail": [
@@ -1664,7 +1664,7 @@
         },
         {
           "time": "14:20 - 14:50",
-          "talk_title": "TiDB in Tencent PCG Internal Cloud Platform",
+          "talk_title": "TiDB in Tencent Internal Cloud Platform",
           "speaker": "Zhihui ZHENG",
           "company": "Tencent",
           "talk_detail": [
