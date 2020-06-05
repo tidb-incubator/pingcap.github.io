@@ -8,14 +8,16 @@
         </div>
     </div>
     <ul class="ul-base">
-        <li class="docs-type-selector {{ if eq $nav_active "docs"}}sel{{end}}" id="docsTypeSelector">
+        <!-- <li class="docs-type-selector {{ if eq $nav_active "docs"}}sel{{end}}" id="docsTypeSelector">
             <p class="header-doc-nav">文档</p>
             <div class="header-dropdown-menu" id="docsTypeSelectorItem">
                 <a class="header-dropdown-item" href="/docs-cn/stable/" onclick="trackViews('navbar-tidb-docs', 'docs-cn_view')">TiDB</a>
                 <a class="header-dropdown-item" href="/docs-cn/tidb-in-kubernetes/stable/" onclick="trackViews('navbar-operator-docs', 'docs-cn_view')">TiDB in Kubernetes</a>
                 <a class="header-dropdown-item" href="/docs-cn/tidb-data-migration/stable/" onclick="trackViews('navbar-dm-docs', 'docs-cn_view')">TiDB Data Migration (DM)</a>
             </div>
-        </li>
+        </li> -->
+
+        <li {{ if eq $nav_active "docs"}}class="sel"{{end}}><a href="https://docs.pingcap.com/zh/tidb/v4.0/">文档</a></li>
         <li {{ if eq $nav_active "cases"}}class="sel"{{end}}><a href="/cases-cn">案例</a></li>
         <li {{ if eq $nav_active "community"}}class="sel"{{end}}><a href="/community-cn">社区</a></li>
         <li {{ if eq $nav_active "blog"}}class="sel"{{end}}><a href="/blog-cn">博客</a></li>
