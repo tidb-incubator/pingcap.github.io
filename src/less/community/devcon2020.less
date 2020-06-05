@@ -47,6 +47,10 @@
         }
     }
 
+    .devcon2020-banner-en {
+        background: url('/images/community/devcon2020/hero-pc-en.jpg') no-repeat;
+    }
+
     .activity-breif,
     .dc20-agenda,
     .support-medias {
@@ -202,7 +206,7 @@
                             }
                         }
 
-                        .large-size{
+                        .large-size {
                             font-size: @p * 1.1;
                         }
                     }
@@ -219,6 +223,29 @@
                             text-align: left;
                             padding: 1rem;
                         }
+
+                        .venue-lists {
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+
+                            .watch-link {
+                                font-size: @p;
+                                color: @light-blue;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            @media only screen and (max-width: 414px) {
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                    .venue-detail-en {
+                        margin-bottom: 2rem;
                     }
 
                     @media only screen and (max-width: 414px) {
@@ -258,8 +285,8 @@
     .schedule {
         text-align: left;
         margin-bottom: 2rem;
-        padding-top:100px;
-        margin-top:-100px;
+        padding-top: 100px;
+        margin-top: -100px;
 
         .venue-title {
             font-size: @subtitle;
@@ -464,7 +491,7 @@
         background-size: cover;
         color: @M1;
         margin-top: 4rem;
-        padding-top:100px;
+        padding-top: 100px;
 
         section {
             max-width: 1048px;
@@ -493,6 +520,20 @@
             height: auto;
         }
 
+    }
+
+    .sign-up-en {
+        p {
+            margin-bottom: 1rem;
+
+            a {
+                text-decoration: underline;
+
+                &:hover {
+                    color: @light-blue;
+                }
+            }
+        }
     }
 
     .reviews {

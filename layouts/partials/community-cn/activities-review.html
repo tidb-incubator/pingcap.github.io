@@ -3,7 +3,7 @@
     {{ if ne .type "devcon2020" }}
     <h2 class="section-title">往期回顾</h2>
     {{ else }}
-    <h1 class="dc20-title">往期回顾</h1>
+    <h1 class="dc20-title">{{if .isCn }}往期回顾{{ else }}Highlights from previous DevCons{{end}}</h1>
     {{ end }}
     <div class="reviews-list">
         {{- range $idx, $i := $review_posts -}}

@@ -405,7 +405,13 @@ $(document).ready(function() {
         $('.day2').addClass('hide-schedule')
         $('.switch-date-btn').addClass('date2')
         $('.switch-date-btn').removeClass('date1')
-        $('.switch-date-btn')[0].innerText = 'DAY2 日程'
+
+        if ($('.devCon-cn').length > 0) {
+          $('.switch-date-btn')[0].innerText = 'DAY2 日程'
+        } else {
+          $('.switch-date-btn')[0].innerText = 'DAY2 Schedule'
+        }
+
         break
       default:
         $('.day1').addClass('hide-schedule')
@@ -413,7 +419,12 @@ $(document).ready(function() {
         $('.switch-date-btn').addClass('date1')
         $('.switch-date-btn').removeClass('date2')
 
-        $('.switch-date-btn')[0].innerText = 'DAY1 日程'
+        if ($('.devCon-cn').length > 0) {
+
+          $('.switch-date-btn')[0].innerText = 'DAY1 日程'
+        } else {
+          $('.switch-date-btn')[0].innerText = 'DAY1 Schedule'
+        }
         break
     }
   })
@@ -431,9 +442,14 @@ $(document).ready(function() {
         $('.date1').addClass('is-active')
         $('.day1').removeClass('hide-schedule')
         $('.day2').addClass('hide-schedule')
+        console.log('ad', $('.devCon-cn'))
         $(this).removeClass('date1')
         $(this).addClass('date2')
-        $(this)[0].innerText = 'DAY2 日程'
+        if ($('.devCon-cn').length > 0) {
+          $(this)[0].innerText = 'DAY2 日程'
+        } else {
+          $('.switch-date-btn')[0].innerText = 'DAY2 Schedule'
+        }
         break
       default:
         $('.date2').addClass('is-active')
@@ -441,7 +457,11 @@ $(document).ready(function() {
         $('.day2').removeClass('hide-schedule')
         $(this).removeClass('date2')
         $(this).addClass('date1')
-        $(this)[0].innerText = 'DAY1 日程'
+        if ($('.devCon-cn').length > 0) {
+          $(this)[0].innerText = 'DAY1 日程'
+        } else {
+          $('.switch-date-btn')[0].innerText = 'DAY1 Schedule'
+        }
         break
     }
   })

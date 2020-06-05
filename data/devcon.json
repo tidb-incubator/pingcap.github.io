@@ -61,6 +61,75 @@
       }
     ]
   },
+  "venues_2020_en": {
+    "day1": [
+      {
+        "time": "9:30 - 12:00",
+        "venues": [
+          {
+            "name": "Main Forum and TiDB 4.0 Release",
+            "id": "day1-1",
+            "icon": "/images/community/devcon2020/el-main.svg",
+            "link": "http://live.bilibili.com/4630260", 
+            "main": true
+          }
+        ]
+      },
+      {
+        "time": "13:00 - 18:20",
+        "venues": [
+          {
+            "name": "Finance Session",
+            "id": "day1-2",
+            "icon": "/images/community/devcon2020/el-finance.svg",
+            "link": "http://live.bilibili.com/4630260"
+          },
+          {
+            "name": "E-commerce / Logistics / New Retail / Mobility Session",
+            "id": "day1-3",
+            "icon": "/images/community/devcon2020/el-business.svg",
+            "link": "https://live.bilibili.com/22225816"
+          }
+        ]
+      }
+    ],
+    "day2": [
+      {
+        "time": "9:00 - 12:25",
+        "venues": [
+          {
+            "name": "Partner Ecosystem and New Product Features Session",
+            "id": "day2-1",
+            "icon": "/images/community/devcon2020/el-developer.svg",
+            "link": "https://live.bilibili.com/22225816"
+          },
+          {
+            "name": "Developer Community Session",
+            "id": "day2-2",
+            "icon": "/images/community/devcon2020/el-product.svg",
+            "link": "http://live.bilibili.com/4630260"
+          }
+        ]
+      },
+      {
+        "time": "13:30 - 18:25",
+        "venues": [
+          {
+            "name": "Telecommunications/Energy/Manufacturing/High-tech Sessions",
+            "id": "day2-3",
+            "icon": "/images/community/devcon2020/el-service.svg",
+            "link": "Watch http://live.bilibili.com/4630260"
+          },
+          {
+            "name": "Education / Video / Information Session",
+            "id": "day2-4",
+            "icon": "/images/community/devcon2020/el-education.svg",
+            "link": "https://live.bilibili.com/22225816"
+          }
+        ]
+      }
+    ]
+  },
   "devcon2020_day1_schedule": [
     {
       "name": "主论坛暨 TiDB 4.0 发布",
@@ -433,6 +502,376 @@
       ]
     }
   ],
+  "devcon2020_day1_schedule_en": [
+    {
+      "name": "Main Forum and TiDB 4.0 Release",
+      "id": "day1-1",
+      "schedules": [
+        {
+          "time": "9:30 - 9:50",
+          "talk_title": "Opening Keynote",
+          "speaker": "Max LIU",
+          "talk_detail": []
+        },
+        {
+          "time": "9:50 - 10:20",
+          "talk_title": "TiDB 4.0 - The Future is Now",
+          "speaker": "Siddon TANG",
+          "talk_detail": [
+            "TiDB 4.0 finally ushered in the release of the GA version. It not only has a lot of improvements in performance, usability, stability etc., but also marks an important milestone for TiDB to become a \"future database\". In this sharing, we will introduce you the important features in TiDB 4.0 such as Real-Time HTAP and Serverless."
+          ]
+        },
+        {
+          "time": "10:20 - 10:40",
+          "talk_title": "Database-as-a-Service: TiDB Cloud",
+          "speaker": "Ken LIU",
+          "talk_detail": [
+            "TiDB is cloud-native by nature, which means only on the cloud can TiDB fully wields flexible scheduling and greatly cuts the total cost of ownership. Users can create a TiDB cluster in minutes with a few clicks. After that, complex operations and maintenance are left to PingCAP's experts. Users only need to focus on their own business development. With the release of TiDB 4.0, we will officially launch the fully-managed TiDB Cloud service in June and will take the lead in supporting AWS/GCP public clouds. In this sharing, let's take a peek at TiDB DBaaS."
+          ]
+        },
+        {
+          "time": "10:40 - 11:00",
+          "talk_title": "TiDB’s Scale-out at Global Scope",
+          "speaker": "Li Shen",
+          "talk_detail": [
+            "Over the past year, PingCAP has gradually expanded TIDB's footsteps around the world, connecting TiDB to the world in perspectives of community, business and academic. Here, I would like to share with you what we've accomplished in the past year and what we've learned about the global market."
+          ]
+        },
+        {
+          "time": "11:00 - 11:30",
+          "talk_title": "Empower Yourself in TiDB Community",
+          "speaker": "Dylan CUI",
+          "talk_detail": [
+            "Over the past year, we have formally incorporated user ecosystem into the community governance framework. In terms of developer ecosystem, we've also explored better collaboration and honor promotion system. After 5 years of continuous development, TiDB community has received feedback and suggestions from thousands of contributors and paid users from different industries around the world. The community also hopes to nurture every enthusiastic participant and grow with everyone. All for community, community for all. If you want to know the story behind TiDB community, join us at DevCon 2020."
+          ]
+        },
+        {
+          "time": "11:30 -12:00",
+          "talk_title": "What's Next: the Technical Roadmap for TiDB",
+          "speaker": "Ed HUANG",
+          "talk_detail": [
+            "Earlier in a live broadcasting I mentioned that TIDB's development over the past few years has been like \"playing a big game\". After five years of tempering, it has finally begun to show its edges in version 4.0. What are the next steps for TiDB, especially what are the major technical highlights, at a time when the technology and community base is already well established? In this sharing, I will give some directional thoughts and a technical perspective for the next big version of TiDB."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Finance Session",
+      "id": "day1-2",
+      "schedules": [
+        {
+          "time": "13:00 - 13:20",
+          "talk_title": "Techinical Solutions (1): Financial-level Backup and Geo-distributed Disaster Recovery in TiDB",
+          "speaker": "Joe YU",
+          "company": "PingCAP",
+          "talk_detail": [
+            "Since relational databases are widely used in the financial industry, backups and disaster recovery have become the rigid requirements for the database. The distributed database not only provides powerful scalability, but also provides backups and disaster recovery which differ from the traditional stand-alone database. According to different backups and disaster recovery needs, TiDB provides a variety of flexible and reliable financial-level security solutions to reliably support the safe and stable operation of financial business. In this sharing, I will introduce them in detail."
+          ]
+        },
+        {
+          "time": "13:20 - 13:40",
+          "talk_title": "Distributed Database in Core Banking Business System",
+          "speaker": "Zhigang WANG",
+          "company": "Everbright Bank",
+          "talk_detail": [
+            "The technical framework of domestic commercial banks has been evolving continuously. At the same time, the characteristics of banking also set higher standard for the stability, reliability and credibility of information system components. With the introduction of distributed technologies from the Internet to banking information systems, how to control the trade-off between the benefits and risks? How is the application development of distributed database in the core banking business system? Here, I will share with you what Everbright Bank has practiced and reflected on in the field of distributed database."
+          ]
+        },
+        {
+          "time": "13:40 - 14:00",
+          "talk_title": "TiDB at PayPay : How we migrated in 3 months",
+          "speaker": "Munenori Hirakawa",
+          "company": "PayPay",
+          "talk_detail": [
+            "PayPay is the No.1 share mobile payment company in Japan. In 1.5 years since the service started, the number of users reached 28 million and the number of payment transactions reached 1 billion. In the rapid growth, we have migrated the most mission-critical database which is managing payment transactions to TiDB in March with just three months of preparation. I will talk about why we chose TiDB and how we achieved the migration."
+          ]
+        },
+        {
+          "time": "14:00 -14:20",
+          "talk_title": "TiDB with Yillion Bank's Core Banking System",
+          "speaker": "Xiuhong LU",
+          "company": "Yillion Ban",
+          "talk_detail": [
+            "Yillion Bank has implemented TiDB in the core banking business after careful exploration and practices. In terms of independent control of key data in the core banking scenarios, Yillion Bank has accumulated valuable experience in developing evaluation system, testing scheme and application adaptation of the distributed open source database."
+          ]
+        },
+        {
+          "time": "14:20 - 14:40",
+          "talk_title": "TiDB in WeBank's Core Scenarios",
+          "speaker": "Panpan HU",
+          "company": "WeBank",
+          "talk_detail": [
+            "WeBank has been using TiDB for more than a year. This sharing mainly introduces two aspects, one is TiDB's access to WeBank's core business scenarios and future plans; the other is to introduce WeBank's exploration in optimization and innovation of TiDB, including optimization of DM (TiDB Data Migration) tool, exploration of ARM platform, trials of TiDB Cloud and testing of TiFlash, etc."
+          ]
+        },
+        {
+          "time": "14:40 -14:55",
+          "talk_title": "TiDB in Mashang Consumer Finance‘s Containerization of General Ledger System",
+          "speaker": "Yinlong LI",
+          "company": "Mashang Consumer Finance",
+          "talk_detail": [
+            "Mashang Consumer Finance started investigating the distributed database TiDB in early 2018, and by the end of 2019, it had run all TiDB clusters on Kubernetes. In this sharing, I will introduce how Mashang Consumer Finance applies TiDB."
+          ]
+        },
+        {
+          "time": "14:55 -15:10",
+          "talk_title": "TiDB with Lakala Payment: Real-time Risk Management and Data Hub",
+          "speaker": "Xiyuan TANG",
+          "company": "Lakala Payment",
+          "talk_detail": [
+            "Build a real-time financial risk management and data hub with TiDB and its tooling ecosystem;",
+            "Empower TiFlash with data analysis capability using TiDB as a trading system;",
+            "Integrate data encryption by expanding Raft learners to serve as an event driver to link marketing and risk management systems, etc."
+          ]
+        },
+        {
+          "time": "15:10 - 15:25",
+          "talk_title": "Open Source Database Operation and Maintenance System Construction in Financial Industry",
+          "speaker": "Heng LI",
+          "company": "Actionsky",
+          "talk_detail": [
+            "1. Understanding of open source database",
+            "2. Collaboration with PingCAP",
+            "3. Intergration and product roadmap"
+          ]
+        },
+        {
+          "time": "15:25 - 15:45",
+          "talk_title": "TiDB in Bank's Batch Processing Scenarios",
+          "speaker": "Chunyu XUE",
+          "company": "TECHO Telecom",
+          "talk_detail": [
+            "The bank's end-of-day batch processing business scenario is complex and the amount of data to be processed is large. While considering the application architecture, it is necessary to take into account the characteristics of TiDB to achieve controllable overall execution time."
+          ]
+        },
+        {
+          "time": "15:45 - 16:05",
+          "talk_title": "Build a Database User Ecosystem in the Financial Industry: TUG Financial Group Established",
+          "speaker": "",
+          "talk_detail": []
+        },
+        {
+          "time": "16:05 - 16:25",
+          "talk_title": "TiZabbix: Application of TiDB in Zabbix Monitoring Solution",
+          "speaker": "Yu HAN",
+          "company": "Bank of China",
+          "talk_detail": [
+            "Zabbix is a time-tested open source monitoring solution that has long been used in production environment. However, the native solution generally uses MySQL as the back-end storage and therefore cannot cope with larger-scale monitoring. TiDB is MySQL-compatible and can replace MySQL to enhance Zabbix's large-scale monitoring capabilities, thereby implementing the new monitoring solution—TiZabbix. TiZabbix has successfully achieved 10000+ monitoring objects and 16 Terabytes of data storage queries by optimizing the monitoring implementation logic to make up for the differences between TiDB and MySQL."
+          ]
+        },
+        {
+          "time": "16:25 - 16:45",
+          "talk_title": "Large-scale Application of TiDB in the Financial Industry",
+          "speaker": "Zhendong CHEN",
+          "company": "Bank of Beijing",
+          "talk_detail": []
+        },
+        {
+          "time": "16:45 - 17:05",
+          "talk_title": "TiDB in Ping An Technology's Internet Insurance Business System",
+          "speaker": "Zhiyong HE",
+          "company": "Ping An Technology",
+          "talk_detail": [
+            "It has been 2 years since Ping An Technology implements TiDB. This time I will mainly share some of the gains and thoughts of using TiDB."
+          ]
+        },
+        {
+          "time": "17:05 - 17:20",
+          "talk_title": "How Lufax Replaced Oracle Database in Financial Core Scenarios",
+          "speaker": "Yingjie WANG",
+          "company": "Lufax",
+          "talk_detail": [
+            "I will share with you how we migrate from Oracle database to TiDB."
+          ]
+        },
+        {
+          "time": "17:20 - 17:35",
+          "talk_title": "Multi-source Architecture for Insurance Business Systems in the Era of Targeted Insurance",
+          "speaker": "Jiansen ZHANG",
+          "company": "Sinosoft",
+          "talk_detail": []
+        },
+        {
+          "time": "17:35 - 17:50",
+          "talk_title": "Using TiDB as the Merchant Platform Core Database in ZaloPay",
+          "speaker": "Tan To Nguyen Duy",
+          "company": "ZaloPay",
+          "talk_detail": []
+        },
+        {
+          "time": "17:50 - 18:05",
+          "talk_title": "TiDB and Real-time Data Processing Platform",
+          "speaker": "Zhenhuan LI",
+          "company": "Beike Finance",
+          "talk_detail": [
+            "In this sharing, I will talk about how Beike Finance use TiDB for real-time data processing ever since 2018, including transmitting the data from multiple databases at the source to TiDB for data aggregation analysis and constructing the real-time data processing platform."
+          ]
+        },
+        {
+          "time": "18:05 - 18:20",
+          "talk_title": "Choosing the Right Distributed Database for Lexin",
+          "speaker": "Houqi LAI",
+          "company": "LexinFintech",
+          "talk_detail": []
+        }
+      ]
+    },
+    {
+      "name": "E-commerce / Logistics / New Retail / Mobility Session",
+      "id": "day1-3",
+      "schedules": [
+        {
+          "time": "13:30 - 13:50",
+          "talk_title": "Technical Solutions (2): Best Practices of Replication Between Different Databases in TiDB",
+          "speaker": "Tianshuang QIN",
+          "company": "PingCAP",
+          "talk_detail": [
+            "One of the difficulties in the distributed transformation of existing business systems is database migration. Is the migration full or incremental? Online or offline? Use ready-made tools or development work? Users often face multiple choices. Here we will share with you the massive migration experience accumulated by PingCAP team over many years of practices, as well as more application scenarios of database replication technology."
+          ]
+        },
+        {
+          "time": "13:50 - 14:20",
+          "talk_title": "Moving Towards Cloud Native: Operation and Maintenance of TiDB",
+          "speaker": "Xiao HUANG",
+          "company": "Meituan-Dianping",
+          "talk_detail": []
+        },
+        {
+          "time": "14:20 - 14:50",
+          "talk_title": "TiDB in Yum China's Business Hub and Data Hub",
+          "speaker": "Jianfeng WU",
+          "company": "Yum China",
+          "talk_detail": [
+            "With the rapid development of Yum China's digital business, on the road to building its own business hub and data hub, Yum China faces increasing scenario requirements and accrues application practices for distributed databases, especially new HTAP databases. TiDB products have already landed in Yum China's important business, effectively supporting the rapid development of the business. In the future, we expect TiDB to have a richer set of applications at Yum China, while also contributing to the TiDB community. "
+          ]
+        },
+        {
+          "time": "14:50 - 15:20",
+          "talk_title": "Shopee Chat System's Migration to TiDB Best Practices",
+          "speaker": "Yi PENG & Chunhui LIU",
+          "company": "Shopee",
+          "talk_detail": [
+            "The Chat system is one of Shopee's key subsystems, providing buyers and sellers with tools and platform support for direct communication. The development team and the DBA team spent a year migrating the back-end data storage components of the Shopee Chat system from a huge MySQL cluster + an internally developed file system service to a TiDB. This talk will introduce the migration process and our experiences."
+          ]
+        },
+        {
+          "time": "15:20 - 15:30",
+          "talk_title": "How to Choose the Right Database in Car-hailing Industry",
+          "speaker": "Xing PENG",
+          "company": "CaoCao Mobility",
+          "talk_detail": []
+        },
+        {
+          "time": "15:30 - 15:40",
+          "talk_title": "Selecting the Right Database Architecture for the Social E-commerce Platform",
+          "speaker": "Xuefeng PI",
+          "company": "Yunji",
+          "talk_detail": [
+            "1. Background: Why TiDB?",
+            "2. Status: Surprises TiDB brought to us?",
+            "3. Outlook:  More surprises in the future?"
+          ]
+        },
+        {
+          "time": "15:40 - 15:50",
+          "talk_title": "From MyCAT to TiDB",
+          "speaker": "Jun SHEN",
+          "company": "Yimi Dida",
+          "talk_detail": []
+        },
+        {
+          "time": "15:50 - 16:05",
+          "talk_title": "",
+          "speaker": "",
+          "talk_detail": [],
+          "break": true
+        },
+        {
+          "time": "16:05 - 16:25",
+          "talk_title": "TiDB with Supply Chain System in FMCG Industry",
+          "speaker": "Nanwei YI",
+          "talk_detail": [
+            "Shenzhen Huachuang Zhixin Technology Co., Ltd. independently developed the digital supply chain management in the FMCG industry.",
+            "This digital supply chain management covers most of the raw material production, processing, packaging, transportation, distribution, sales, and after-sales services of the FMCG industry, helping companies understand and grasp demand signals and make accurate forecasts in time, analyze the demand and make feasible demand plan, and respond to the demand signal quickly, thus improving the efficiency and benefit of the whole supply chain.",
+            "System architecture before transformation: using MySQL sharding",
+            "Adopt MySQL middleware to shard databases and tables. After sharding, the cross-database consistency is the final consistency, and the code maintenance is cumbersome; adding fields in tables is troublesome, and each table in each schema must be added; adding new nodes needs to shut down the system and then migrate the data; outage migration has real-time read-write impact on online users.",
+            "System architecture after transformation: introducing TiDB",
+            "The technical team decided to deploy a high-performance database system to solve the pain points of the current business. Finally, from the perspective of satisfying business requirements, reducing migration costs, and reducing operation and maintenance costs, TiDB was selected as the preferred transactional database for business."
+          ],
+          "company": "CR Enterprise"
+        },
+        {
+          "time": "16:25 - 16:45",
+          "talk_title": "Evolution from Centralized Database to Distributed Database (TBD)",
+          "speaker": "Shengwen HOU",
+          "talk_detail": [],
+          "company": "Beike"
+        },
+        {
+          "time": "16:45 - 17:05",
+          "talk_title": "Using TiDB in Chehaoduo",
+          "speaker": "Sheyang WANG",
+          "company": "Chehaoduo",
+          "talk_detail": [
+            "It has been almost a year and a half since using TiDB in Guazi. At present, some online business of some MySQL big tables adhoc and Maodou have landed, but there are still many things to do before fully exploiting the potential in the Chehaoduo.",
+            "During migrating from MySQL to TiDB, we have gained some experience and thoughts, such as using DM (TiDB Data Migration) to replicate the binlogs, deploying TiDB solutions to optimize resource utilization and TiDB jsontype performance testing. Inside Chehaoduo, we'd to share how a new storage technology can gradually build trust in the company's business research and development."
+          ]
+        },
+        {
+          "time": "17:05 - 17:25",
+          "talk_title": "New Features of TiDB 4.0 in the E-Commerce Industry",
+          "speaker": "Haodong JI",
+          "company": "Zhuanzhuan",
+          "talk_detail": [
+            "Zhuan Zhuan has started to use and investigate TiDB since v1.0. At present, TiDB is mainly used to deal with sharding involved business scenarios. The goal is to simplify the service business logic, make R&D focus on business logic development, and improve the overall development efficiency. Until the release of TiDB 4.0 RC, I saw many landmark functions which solved some business problems during the testing process. In this sharing, I mainly introduce some new features and experiences."
+          ]
+        },
+        {
+          "time": "17:25 - 17:35",
+          "talk_title": "Observability of TiDB based on Elastic Stack",
+          "speaker": "Bin WEI",
+          "company": "Puxiang Technology",
+          "talk_detail": [
+            "TiDB is widely used in the core business scenarios due to its powerful distributed processing performance and increasingly perfect HTAP capabilities. With the increase in the number of TiDB clusters and nodes, the timely follow-up of monitoring work such as monitoring, alarming, and analysis for these clusters will largely determine TiDB's service quality. For this topic, we will share with you how to achieve observability of TiDB  based on Elastic Stack from multiple dimensions such as metric, logging, and Tracing, so as to improve TiDB's service quality."
+          ]
+        },
+        {
+          "time": "17:35 - 17:45",
+          "talk_title": "TiDB in Mafengwo: Practice and Insights",
+          "speaker": "Guoqing HU",
+          "company": "Mafengwo",
+          "talk_detail": [
+            "I will elaborate on the basis of our service database system (including the challenges encountered in the design, development, operation and maintenance): ",
+            "1. The design advantage of service-oriented TiDB is to shield the underlying operation and maintenance details of TiDB for R&D. TiDB services can be obtained through a visual interface or API without paying attention to resource allocation [resource feasibility analysis], deployment, migration, expansion, monitoring and details such as downtime handling;",
+            "2. Another advantage of service-oriented TiDB is the unified control and management of resources, ensuring the consistency of the environment, laying the foundation for operation and maintenance automation, and effectively reducing hardware and human resources."
+          ]
+        },
+        {
+          "time": "17:45 - 17:55",
+          "talk_title": "Large-scale O&M of TiDB in Zhongtong Express ",
+          "speaker": "Jiang CAI",
+          "company": "ZTO Express",
+          "talk_detail": [
+            "1. Why introduce TiDB to ZTO Express",
+            "2. Preparation before going online",
+            "3. Current usage",
+            "4. What's to expect in the future"
+          ]
+        },
+        {
+          "time": "17:55 - 18:05",
+          "talk_title": "How I Met with TiDB",
+          "speaker": "Peng TIAN",
+          "company": "JDD",
+          "talk_detail": [
+            "1. How did I encounter TiDB and what excellent features attracted me;",
+            "2. How do I learn TiDB;",
+            "3. What difficulties were encountered in the process of learning and practicing TiDB."
+          ]
+        }
+      ]
+    }
+  ],
   "devcon2020_day2_schedule": [
     {
       "name": "合作伙伴生态及新产品特性 专题论坛",
@@ -751,7 +1190,7 @@
         {
           "time": "18:35 - 18:55",
           "talk_title": "基于 TiDB 的清结算中台系统应用",
-          "speaker": "陈浩，田鑫",
+          "speaker": "陈浩",
           "company": "汉得信息",
           "talk_detail": []
         }
@@ -790,7 +1229,7 @@
         },
         {
           "time": "14:50 - 15:10",
-          "talk_title": "TiDB 的选择和实践 ",
+          "talk_title": "TiDB 的选择和实践",
           "speaker": "李文杰",
           "company": "网易互娱",
           "talk_detail": [
@@ -879,6 +1318,450 @@
       ]
     }
   ],
+  "devcon2020_day2_schedule_en": [
+    {
+      "name": "Partner Ecosystem and New Product Features Session",
+      "id": "day2-1",
+      "schedules": [
+        {
+          "time": "9:30 - 9:50",
+          "talk_title": "TiDB Partner Ecosystem Construction",
+          "speaker": "Jason YU",
+          "company": "PingCAP",
+          "talk_detail": [
+            "In 2020, the construction of the partner ecosystem is fully launched. Based on the TiDB community and in line with the new community philosophies of being open and equal, we come up with variable projects such as industrial ecological cooperation, solution cooperation, and joint technology centers. In this sharing, I will mainly focus on the philosophies of our ecosystem, the overall framework and some achievements in last few months."
+          ]
+        },
+        {
+          "time": "9:50 - 10:10",
+          "talk_title": "In-depth Practice in the Database Field Based on Kunpeng Multi-core Concurrency & Hardware Acceleration",
+          "speaker": "Long CHEN",
+          "company": "Huawei",
+          "talk_detail": [
+            "1. Share the development status of Kunpeng ARM's ecosystem, especially the software ecosystem built on it;",
+            "2. The Complete Kunpeng Developer Kit helps developers to simplify the software transfer process;",
+            "3. How to make the database run faster based on Kun Peng multi-core concurrent feature;",
+            "4. TIDB + Kunpeng Joint Test Program and deep practice of performance optimization."
+          ]
+        },
+        {
+          "time": "10:10 - 10:30",
+          "talk_title": "TiDB in U-Next ARP Platform",
+          "speaker": "Wei DING & Birong HUANG",
+          "company": "U-Next",
+          "talk_detail": [
+            "The implementation of TiDB on ARM platform and the data analysis of TiDB on U-Next."
+          ]
+        },
+        {
+          "time": "10:30 - 10:45",
+          "talk_title": "Why HTAP Matters?",
+          "speaker": "Shawn MA",
+          "company": "PingCAP",
+          "talk_detail": [
+            "HTAP is a relatively new concept, indicating that the database has the ability to deal with transactions and analysis businesses. What are the advantages of the HTAP database compared to traditional solutions? Why is the HTAP database difficult to implement? In this sharing, I will introduce the implementation principles of TiDB HTAP architecture and how to solve the conflict between two different design directions. In addition, I will share with you how to use HTAP in actual businesses to simplify the architecture, enhance instantaneity and consistency, and empower business development with efficiency and agility."
+          ]
+        },
+        {
+          "time": "10:45 - 11:05",
+          "talk_title": "TiDB HTAP Powers Business Transformation of Xiaohongshu",
+          "speaker": "Yihao ZHANG",
+          "company": "Xiaohongshu",
+          "talk_detail": []
+        },
+        {
+          "time": "11:05 - 11:25",
+          "talk_title": "HTAP in ZTO Express: From Exadata to TiDB",
+          "speaker": "Youzhi ZHU",
+          "company": "ZTO Express",
+          "talk_detail": [
+            "In recent years, the business volume of express industry is booming, and data volume has surged. No matter how strong the performance of the stand-alone machine was before, it can no longer support the growth and access pressure, nor can it meet the increasing diversified data analysis needs.",
+            "ZTO Big data team has been using TiDB since 2018. Several rounds of tests have keenly sensed the powerfulness of TiDB in different scenarios, and therefore some core businesses have got rid of the bottleneck restriction of Oracle Exadata all-in-one machine.",
+            "In the last Double Eleven Festival, the system successfully withstand 120,000 queries per second. Also, a set of clusters are deployed for both TP and AP services. ZTO will continue to land more business scenarios using TIDB."
+          ]
+        },
+        {
+          "time": "11:25 - 11:40",
+          "talk_title": "Chaos Practice in PingCAP",
+          "speaker": "Siddon TANG",
+          "company": "PingCAP",
+          "talk_detail": [
+            "Building a distributed database is very difficult because we have to make sure that the user data is secure. At PingCAP, we did a lot of testing, including Chaos Engineering, to sure the security of TiDB. In this sharing, we talk about PingCAP's testing philosophy, Chaos practices. We'll also introduce Chaos Mesh, a Chaos Engineering platform based on K8s, and how to use Chaos Mesh to test against your application."
+          ]
+        },
+        {
+          "time": "11:40 - 12:00",
+          "talk_title": "Xpeng Motors and Chaos Mesh™",
+          "speaker": "Hengliang TAN",
+          "company": "Xpeng Motors",
+          "talk_detail": [
+            "1. Why choose Chaos Mesh™?",
+            "2. How to land Chaos Mesh™ at the early stage?",
+            "3. How to issue PR to achieve usability and security?",
+            "4. How does it fit in the automotive industry?"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Developer Community Session",
+      "id": "day2-2",
+      "schedules": [
+        {
+          "time": "9:00 - 9:40",
+          "talk_title": "Have Fun with 1000+ developers",
+          "speaker": "Wink YAO",
+          "company": "PingCAP",
+          "talk_detail": [
+            "After 5 years of development, the TiDB developer community has already attracted 1,000 Contributors from all over the world. Over the past year, for contributors to have a more fun and engaging experience in the community, TiDB community has launched SIG (Special Interest Group) and WG (Working Group) to improve the efficiency of community collaboration. A series of challenges have also been launched, so that everyone can reap honors and exclusive prizes while contributing. The TiDB community has also continued to invest resources to bring a better learning experience to everyone with Talent Plan 2.0 course, which allows you to learn about the core of the database and join the developer community in the shortest possible time, regardless of whether you have been exposed to database development or not."
+          ]
+        },
+        {
+          "time": "9:40 - 10:00",
+          "talk_title": "Hall of Fame",
+          "speaker": "Wink YAO",
+          "company": "PingCAP",
+          "talk_detail": []
+        },
+        {
+          "time": "10:00 - 10:20",
+          "talk_title": "Becoming a TiKV Maintainer",
+          "speaker": "Fu CHEN",
+          "company": "TiKV Maintainer",
+          "talk_detail": [
+            "I will introduce how I participate in the development of TiKV project, including the initial contact with the community, RawKV performance optimization, joining the Engine SIG and carrying out RocksDB / Rust-rocksdb related work and VerKV proposals and development, etc. I will also share various problems and solutions encountered in the online process of TiKV in the production environment. Finally, I will share the story behind becoming a TiKV maintainer."
+           ]
+        },
+        {
+          "time": "10:20 - 10:40",
+          "talk_title": "BigTable on TiKV",
+          "speaker": "Xiaoguang SUN",
+          "company": "TiKV Maintainer",
+          "talk_detail": [
+            "Thanks to TiKV's excellent architecture, TiDB has been widely used in many fields with complete SQL support and strong scalability, and has achieved great results in the field of NewSQL. In many specific areas, NoSQL is still full of vitality. Let us discuss what kind of spark can be bursting out of the combination of TiKV and BigTable."
+          ]
+        },
+        {
+          "time": "10:40 - 11:05",
+          "talk_title": "Collaboration with University: Cutting-edge Research and Talent Training",
+          "speaker": "Jiguang WAN",
+          "company": "Wuhan National Laboooratory for Optooelectronics",
+          "talk_detail": [
+            "Data Storage and Application Lab of Huazhong University of Science and Technology has cooperated closely with PingCAP in the research of Intel-based new NVM storage devices and flexible scheduling of intelligent cloud databases.",
+            "In terms of talent training, we also cooperated with the Talent Plan project to organize students of HUST to organize multiple online and offline learning activities, and cultivated many outstanding talents with equal emphasis on academic and industrial practice for the distributed database."
+          ]
+        },
+        {
+          "time": "11:05-11:30",
+          "talk_title": "Collaboration with University: Take the DiffKV Project as an Example",
+          "speaker": "Yongkun LI",
+          "company": "USTC ",
+          "talk_detail": [
+            "In recent years, key-value storage system has been widely studied and used as a storage engine for database applications to achieve better horizontal expansion. In this sharing, I will first introduce the system design of DiffKV, in particular how it balances data writing, single-point querying, range querying, and storage overhead. On this basis, I will take DiffKV as an example to share the implementation process of DiffKV in TiKV, and how to manage the cooperation between schools and enterprises."
+          ]
+        },
+        {
+          "time": "11:30-11:45",
+          "talk_title": "How I Engage with the Community as a TiKV Committer",
+          "speaker": "Tenny ZHUANG",
+          "company": "TiKV Committer",
+          "talk_detail": [
+            "In this sharing, I will introduce how I encountered TiKV and grew from a contributor to a committer. I will also share some unforgettable experiences, hoping to bring some help to everyone participating in the community."
+          ]
+        },
+        {
+          "time": "11:45-11:55",
+          "talk_title": "Database Testing Approaches: Taking TiDB as an Example",
+          "speaker": "Manuel Rigger",
+          "company": "ETH Zurich",
+          "talk_detail": []
+        },
+        {
+          "time": "11:55-12:10",
+          "talk_title": "Customization and Usage for Drainer",
+          "speaker": "Haitao GAO",
+          "company": "TiDB Reviewer",
+          "talk_detail": [
+            "Currently, Drainer only supports MySQL, Kafka, file, pb in the downstream. But within the company, there is a need to replicate the binlog to the internal system components, which Drainer cannot meet. Therefore, we have expanded Drainer to make it customizable, which greatly increased its scalability. This sharing mainly introduces the design, implementation and customization of the extensibility of Drainer."
+          ]
+        },
+        {
+          "time": "12:10-12:25",
+          "talk_title": "Get Started with TiDB Community",
+          "speaker": "Dongpo LIU",
+          "company": "TiDB Contributor",
+          "talk_detail": [
+            "Walk from Talnet Plan to the TiDB community, starting with a simple issue!"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Telecommunications/Energy/Manufacturing/High-tech Sessions",
+      "id": "day2-3",
+      "schedules": [
+        {
+          "time": "13:30 - 13:50",
+          "talk_title": "Technical solutions (3) TiDB Best Practice on Kubernetes ",
+          "speaker": "Yelei WU",
+          "company": "PingCAP",
+          "talk_detail": [
+            "As Kubernetes (K8s) becomes increasingly mature, more and more organizations begin to build large-scale infrastructure layers on K8s. However, considering the core position of the database in the architecture and the shortcomings of K8s’s orchestration in the stateful application, many still hold the thought that running the core database on K8s could be risky. In fact, running TiDB on K8s can not only unify the enterprise technology stack, reduce maintenance costs, but also make the stack highly available and secure. In this talk, I will introduce TiDB Operator, the operation and maintenance management system of TiDB on K8s, and then analyze how TiDB achieves efficient self-healing and ensure data security from various failures on K8s. Finally, I will share some cases where TiDB Operator is used in the production environment of the first-tier companies at home and abroad, and summarize the best practices of TiDB on K8s."
+          ]
+        },
+        {
+          "time": "13:50 - 14:20",
+          "talk_title": "TiDB in China Telecom Wing Payment",
+          "speaker": "Yu LIU",
+          "company": "Wing Payment",
+          "talk_detail": [
+            "Since introduced to China Telecom Wing Payment in 2018, TiDB has been gradually expanded rom peripheral application to core business scenarios. In this talk, I will share the business scenarios we experienced when we use TiDB  in TP and HTAP applications, and our prospects for the future."
+          ]
+        },
+        {
+          "time": "14:20 - 14:40",
+          "talk_title": "TiDB DM in Action",
+          "speaker": "Lei HE",
+          "company": "Qihoo 360",
+          "talk_detail": [
+            "DM (TiDB Data Migration) is already familiar to those who have used it. So I will talk about some issues encountered in the process of using DM in the production environment, which may help you bypass these issues in advance, We will also cover how to take cluster performance jitter tuning resulted from data migration."
+          ]
+        },
+        {
+          "time": "14:40 - 15:00",
+          "talk_title": "Apply TiDB in Power Grid Operation Control Management and Spot Trading",
+          "speaker": "Libo YANG",
+          "company": "State Grid Hebei Electric Power Supply",
+          "talk_detail": []
+        },
+        {
+          "time": "15:00 - 15:20",
+          "talk_title": "TiDB in Wind Power IIoT Health Management Platform",
+          "speaker": "Siyang JU",
+          "company": "WeiRuida",
+          "talk_detail": [
+            "In this talk, I will talk about how to build a data storage architecture for the health management big data platform of  wind power equipment using TiDB, and how to use TiDB for visual analysis on health  wind power equipment health."
+          ]
+        },
+        {
+          "time": "15:20 - 15:40",
+          "talk_title": "Choosing the Right Database for the Next Generation Medical Data Center",
+          "speaker": "Dengfeng XU",
+          "company": "Peking University Medical Trust",
+          "talk_detail": [
+            "With the popularity of Peking University Medical Trust clinical data centers in hospitals, storage databases are under increasing pressure. The application not only needs to deal with small amounts of queries for clinical research, but also needs to process data batches reported to superior organizations, as well as complex queries for scientific research. Therefore, it is difficult for the traditional relational databases to meet the increasingly demanding requirements from the application. By applying TiDB, Peking University Medical Trust Data Center has laid a solid foundation for building a future-oriented leading architecture in the medical field."
+          ]
+        },
+        {
+          "time": "15:40 -16:00",
+          "talk_title": "TiDB in Li Xiang Automotive",
+          "speaker": "Haijun ZHAO",
+          "company": "Lixiang Automotive",
+          "talk_detail": [
+            "TiDB has been used in the production environment of LiXiang Automotives for more than a year. In this talk, I will briefly talk about how we use it, mainly including three aspects:",
+            "1. The scenarios where TiDB is used in Lixiang Automotive",
+            "2. LiXiang in TiDB ecosystem, focusing on DM (TiDB Data Migration)",
+            "3. Some of the problems  we encountered and the corresponding solutions"
+          ]
+        },
+        {
+          "time": "16:00 - 16:20",
+          "talk_title": "Power the Energy Integration Hub by TiDB",
+          "speaker": "Hanyu ZHANG",
+          "company": "ENN Energy",
+          "talk_detail": []
+        },
+        {
+          "time": "16:20 - 16:35",
+          "talk_title": "",
+          "speaker": "",
+          "talk_detail": [],
+          "break": true
+        },
+        {
+          "time": "16:35 - 16:55",
+          "talk_title": "TiDB in Internet of Vehicles",
+          "speaker": "Chao XUE",
+          "company": "China Mobile Internet of Things",
+          "talk_detail": [
+            "In this talk, I will introduce how we apply TiDB to the Internet of Vehicles business of the Digital Product Department of China Mobile IoT Corporation. The main features of this scenario are high concurrency and high write. Our business has experienced the migration from Oracle RAC to MyCAT + MySQL cluster. At present, the driving trajectory module is being verified in TiDB and is progressing smoothly. I will also introduce some issues encountered during the application process."
+          ]
+        },
+        {
+          "time": "16:55 - 17:15",
+          "talk_title": "TiDB in WPS",
+          "speaker": "Qichao CEN",
+          "company": "Kingsoft Office",
+          "talk_detail": [
+            "Kingsoft Office has always been open to different database solutions when it comes to OLTP in various office scenarios. With the maturity of online office habits, the massive documents generated by users has posed a great challenge to service quality and stability. To lower the machine maintenance and operation costs brought by the continuously growing data, Kingsoft Office chose TiDB as its distributed database solution."
+          ]
+        },
+        {
+          "time": "17:15 - 17:35",
+          "talk_title": "TiDB Public Cloud Service in UCloud ",
+          "speaker": "Yande CHANG",
+          "company": "UCloud",
+          "talk_detail": []
+        },
+        {
+          "time": "17:35 - 17:55",
+          "talk_title": "Intelligent Enterprise Transformation Empowered by Domestic Software",
+          "speaker": "Liuyuan CHEN",
+          "company": "Yonyou",
+          "talk_detail": [
+            "In 32 years of development, Yonyou never stop practicing. By adhering to the guidelines of listening to customers, respecting of technology, and thriving in the ecosystem, we have provided domestic software services for millions of customers. We are committed to driving forward the commercial digitalization and society advancement through independent and controllable software made in China."
+          ]
+        },
+        {
+          "time": "17:55 - 18:15",
+          "talk_title": "Distributed Database Practice Based on TiDB from Unicom Big Data",
+          "speaker": "Zhizheng CHEN",
+          "company": "Unicom Big Data",
+          "talk_detail": []
+        },
+        {
+          "time": "18:15 - 18:35",
+          "talk_title": "Use TiDB in Intelligent Manufacturing MES System",
+          "speaker": "Lingfei TANG",
+          "company": "Accelink Technologies",
+          "talk_detail": [
+            "1. Data processing challenges faced by intelligent manufacturing;",
+            "2. The solution - introduction of TiDB;",
+            "3. Applying TiDB in Accelink;",
+            "4. Summary and prospect."
+          ]
+        },
+        {
+          "time": "18:35 - 18:55",
+          "talk_title": "Apply TiDB in Middle-Platform of Clearing and Settlement Systems",
+          "speaker": "Hao CHEN",
+          "company": "HAND Enterprise Solutions",
+          "talk_detail": []
+        }
+      ]
+    },
+    {
+      "name": "Education / Video / Information Session",
+      "id": "day2-4",
+      "schedules": [
+        {
+          "time": "13:30 - 13:50",
+          "talk_title": "Technical solutions (4) Batch Processing Technology Based on TiSpark",
+          "speaker": "Zhexuan YANG",
+          "company": "PingCAP",
+          "talk_detail": [
+            "With the power of Spark's distributed computing framework, the data is written back to TiDB after being processed efficiently from a unified perspective, while the ACID characteristics of the data are ensured. In my sharing, I will talk about the implementation of the batch processing of massive data based on TiSpark."
+          ]
+        },
+        {
+          "time": "13:50 - 14:20",
+          "talk_title": "TiDB in Bilibili 2.0",
+          "speaker": "Xu WANG & Wen ZHANG",
+          "company": "bilibili",
+          "talk_detail": [
+            "TiDB is widely adopted in multiple sub-business lines in Bilibili, powering scenarios such as “Like” and “Favorite”, live streaming package props, analyzing e-commerce users’ orders, promoting game ads, video live streaming, and data platform. Featuring high availability and horizontal scalability, TiDB has sufficiently supported our fast business growth in our demanding scenarios. We are looking forward to TiDB 4.0 with more new features to better support our businesses."
+          ]
+        },
+        {
+          "time": "14:20 - 14:50",
+          "talk_title": "TiDB in Tencent PCG Internal Cloud Platform",
+          "speaker": "Zhihui ZHENG",
+          "company": "Tencent",
+          "talk_detail": [
+            "I will introduce how we use TiDB in the PCG internal cloud platform from the following aspects: the implementation of automated operations,  management functions of the platform, including backup, slow query, resource management and so on. And I will share some experiences about how we addressed the issues we encountered in daily operations as well."
+          ]
+        },
+        {
+          "time": "14:50 - 15:10",
+          "talk_title": "Why We Choose TiDB",
+          "speaker": "Wenjie LI",
+          "company": "NetEase Games",
+          "talk_detail": [
+            "TiDB is MySQL compatible, and has solved our pain points in scalability, performance, and sharding in the billing department of NetEase Games. Since adopted in 2017, TiDB has demonstrated great advantages in its framework. We plan to expand its application scenarios in NetEase Games in the future.",
+            "In this talk, we will share with you some thoughts on database selection and practical experience in using TiDB for your reference and communication. We hope to contribute more to the development of TiDB community and the improvement of the ecosystem."
+          ]
+        },
+        {
+          "time": "15:10 - 15:30",
+          "talk_title": "How TiDB Help the Transformation of \"evaluation technology\" in People Yuqing",
+          "speaker": "Wei FENG",
+          "company": "People Yuqing",
+          "talk_detail": []
+        },
+        {
+          "time": "15:30 - 15:50",
+          "talk_title": "TiDB 4.0 in VIPKID",
+          "speaker": "Chao XU",
+          "company": "VIPKID",
+          "talk_detail": []
+        },
+        {
+          "time": "15:50 - 16:05",
+          "talk_title": "",
+          "speaker": "",
+          "talk_detail": [],
+          "break": true
+        },
+        {
+          "time": "16:05 - 16:25",
+          "talk_title": "TiDB in Video Service with High-speed Growth ",
+          "speaker": "Boshuai ZHU",
+          "company": "IQIYI",
+          "talk_detail": []
+        },
+        {
+          "time": "16:25 - 16:45",
+          "talk_title": "Using Distributed Database in Financial Information Service",
+          "speaker": "Chao LI",
+          "company": "Xinhua Finance",
+          "talk_detail": [
+            "1. Introduce China Economic and Social Council;",
+            "2. Why TiDB;",
+            "3. How we use TiDB;",
+            "4. Problems encountered during migration;",
+            "5. Future planning;",
+            "6. Expectations"
+          ]
+        },
+        {
+          "time": "16:45 - 17:05",
+          "talk_title": "TiDB in PalFish",
+          "speaker": "Jiang LIU",
+          "company": "伴鱼英语",
+          "talk_detail": [
+            "PalFish is a fast growing K-12 education platform. We replace TiDB with MongoDB because TiDB meets our demands in growth with features such as ACID transactions support, high availability, and horizontal scalability. ",
+            "My sharing includes some issues we encountered when applying TiDB and how we solved them. I will also cover the development of supporting automation tools and processes.a"
+          ]
+        },
+        {
+          "time": "17:05 - 17:25",
+          "talk_title": "How We Migrate to TiDB from SQL Server",
+          "speaker": "Fan ZHANG",
+          "company": "Autohome",
+          "talk_detail": [
+            "In this talk, I will share with you our case in Autohome on how we migrated seamlessly from SQL Server to the TiDB, including comprehensive aspects such as the business background, migration solutions, data replication, business transformation, migration effects, and other related development. Hope you can get something from our case."
+          ]
+        },
+        {
+          "time": "17:25 - 17:45",
+          "talk_title": "How to Quickly Responds to Bursts of Traffic with TiDB",
+          "speaker": "Shaofeng FU",
+          "company": "New Oriental",
+          "talk_detail": [
+            "TiDB has flexible and powerful online elastic scalability and completely supports SQL, which is an advantage compared to traditional sharding architectures. Thanks to these features,  our database infrastructure can cope with the surging data volume and concurrency brought by the sudden increase of business."
+          ]
+        },
+        {
+          "time": "17:45 - 18:05",
+          "talk_title": "TiDB 4.0 in Overseas Live Streaming Industry",
+          "speaker": "Jiajing XU",
+          "company": "Bigo",
+          "talk_detail": []
+        }
+      ]
+    }
+  ],
+
   "instructors_2020": [
     {
       "name": "蔡江",
@@ -1064,7 +1947,7 @@
     {
       "name": "刘寅",
       "avatar": "/images/community/devcon2020/speakers/liuyin.png",
-      "title": "TiDB 云产品负责人",
+      "title": "VP & General Manager of DBaaS Solution Team",
       "company": "PingCAP"
     },
     {
@@ -1214,7 +2097,7 @@
     {
       "name": "王英杰",
       "avatar": "/images/community/devcon2020/speakers/wangyingjie.png",
-      "title": "数据架构团队负责人 ",
+      "title": "数据架构团队负责人",
       "company": "陆金所"
     },
     {
@@ -1380,6 +2263,510 @@
       "avatar": "/images/community/devcon2020/speakers/zhuboshuai.png",
       "title": "资深数据库架构师",
       "company": "爱奇艺"
+    }
+  ],
+  
+  "instructors_2020_en": [
+    {
+      "name": "Jiang CAI",
+      "avatar": "/images/community/devcon2020/speakers/caijiang.png",
+      "title": "Senior Operations Engineer",
+      "company": "ZTO Express"
+    },
+    {
+      "name": "Qichao CEN",
+      "avatar": "/images/community/devcon2020/speakers/cenqichao.png",
+      "title": "Development Manager",
+      "company": "Kingsoft Office"
+    },
+    {
+      "name": "Yande CHANG",
+      "avatar": "/images/community/devcon2020/speakers/changyande.png",
+      "title": "Head of Storage Components Product Department",
+      "company": "UCloud"
+    },
+    {
+      "name": "Fu CHEN",
+      "avatar": "/images/community/devcon2020/speakers/chenfu.png",
+      "title": "TiKV Maintainer",
+      "company": "Yidian Zixun"
+    },
+    {
+      "name": "Liuyuan CHEN",
+      "avatar": "/images/community/devcon2020/speakers/chenliuyuan.png",
+      "title": "General Manager of Data Intelligence",
+      "company": "Yonyou"
+    },
+    {
+      "name": "Long CHEN",
+      "avatar": "/images/community/devcon2020/speakers/chenlong.png",
+      "title": "Senior Engineer & Ecological Manager, Kunpeng Computing Department",
+      "company": "Huawei"
+    },
+    {
+      "name": "Zhendong CHEN",
+      "avatar": "/images/community/devcon2020/speakers/chenzhendong.png",
+      "title": "Software Development Engineer",
+      "company": "Bank of Beijing"
+    },
+    {
+      "name": "Zhizheng CHEN",
+      "avatar": "/images/community/devcon2020/speakers/chenzhizheng.png",
+      "title": "Unicom System Integration Project Manager",
+      "company": "Unicom Big Data"
+    },
+    {
+      "name": "Dylan CUI",
+      "avatar": "/images/community/devcon2020/speakers/cuiqiu.png",
+      "title": "Co-founder",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Wei DING",
+      "avatar": "/images/community/devcon2020/speakers/dingwei.png",
+      "title": "Senior Engineer",
+      "company": "U-Next"
+    },
+    {
+      "name": "Wei FENG",
+      "avatar": "/images/community/devcon2020/speakers/fengwei.png",
+      "title": "CTO",
+      "company": "People Yuqing"
+    },
+    {
+      "name": "New Oriental",
+      "avatar": "/images/community/devcon2020/speakers/fushaofeng.png",
+      "title": "Head of Database",
+      "company": "New Oriental"
+    },
+    {
+      "name": "Haitao GAO",
+      "avatar": "/images/community/devcon2020/speakers/gaohaitao.png",
+      "title": "TiDB Reviewer",
+      "company": "Meituan Dianping "
+    },
+    {
+      "name": "Yu HAN",
+      "avatar": "/images/community/devcon2020/speakers/hanyu.png",
+      "title": "IT Operations Engineer",
+      "company": "Bank of China"
+    },
+    {
+      "name": "Lei HE",
+      "avatar": "/images/community/devcon2020/speakers/helei.png",
+      "title": "Senior DBA",
+      "company": "Qihoo 360"
+    },
+    {
+      "name": "Zhiyong HE",
+      "avatar": "/images/community/devcon2020/speakers/hezhiyong.png",
+      "title": "Senior Cloud Database Engineer",
+      "company": "Ping An Technology"
+    },
+    {
+      "name": "Shengwen HOU",
+      "avatar": "/images/community/devcon2020/speakers/houshengwen.png",
+      "title": "Technical Director",
+      "company": "Beike"
+    },
+    {
+      "name": "Birong HUANG",
+      "avatar": "/images/community/devcon2020/speakers/huangbirong.png",
+      "title": "Senior Engineer",
+      "company": "U-Next"
+    },
+    {
+      "name": "Ed HUANG",
+      "avatar": "/images/community/devcon2020/speakers/huangdongxu.png",
+      "title": "Co-founder & CTO",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Xiao HUANG",
+      "avatar": "/images/community/devcon2020/speakers/huangxiao.png",
+      "title": "DBA",
+      "company": "Meituan-Dianping"
+    },
+    {
+      "name": "Guoqing HU",
+      "avatar": "/images/community/devcon2020/speakers/huguoqing.png",
+      "title": "DBA Team Lead",
+      "company": "Mafengwo"
+    },
+    {
+      "name": "Panpan HU",
+      "avatar": "/images/community/devcon2020/speakers/hupanpan.png",
+      "title": "Database Platform Lead",
+      "company": "WeBank"
+    },
+    {
+      "name": "Siyang JU",
+      "avatar": "/images/community/devcon2020/speakers/jusiyang.png",
+      "title": "Product Manager of Big Data Platform Department",
+      "company": "WeiRuida"
+    },
+    {
+      "name": "Houqi LAI",
+      "avatar": "/images/community/devcon2020/speakers/laihouqi.png",
+      "title": "Senior DBA",
+      "company": "LexinFintech",
+      "noAvatar": true
+    },
+    {
+      "name": "Chao LI",
+      "avatar": "/images/community/devcon2020/speakers/lichao.png",
+      "title": "Manager of Technology Center in Business Unit",
+      "company": "Xinhua Finance"
+    },
+    {
+      "name": "Heng LI",
+      "avatar": "/images/community/devcon2020/speakers/liheng.png",
+      "title": "CEO",
+      "company": "Actionsky"
+    },
+    {
+      "name": "Chunhui LIU",
+      "avatar": "/images/community/devcon2020/speakers/liuchunhui.png",
+      "title": "DBA",
+      "company": "Shopee"
+    },
+    {
+      "name": "Dongpo LIU",
+      "avatar": "/images/community/devcon2020/speakers/liudongpo.png",
+      "title": "TiDB Contributor",
+      "company": "Morningstar"
+    },
+    {
+      "name": "Jiang LIU",
+      "avatar": "/images/community/devcon2020/speakers/liujiang.png",
+      "title": "Head of Database",
+      "company": "PalFish English"
+    },
+    {
+      "name": "Max LIU",
+      "avatar": "/images/community/devcon2020/speakers/liuqi.png",
+      "title": "Co-founer & CEO CEO",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Ken LIU",
+      "avatar": "/images/community/devcon2020/speakers/liuyin.png",
+      "title": "VP & General Manager of DBaaS Solution Team",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Wenjie LI",
+      "avatar": "/images/community/devcon2020/speakers/liwenjie.png",
+      "title": "Database Engineer",
+      "company": "NetEase Games"
+    },
+    {
+      "name": "Yinlong LI",
+      "avatar": "/images/community/devcon2020/speakers/liyinlong.png",
+      "title": "Cloud Database Containerization Lead",
+      "company": "Mashang Consumer Finance"
+    },
+    {
+      "name": "Yongkun LI",
+      "avatar": "/images/community/devcon2020/speakers/liyongkun.png",
+      "title": "Associate Professor, School of Computer Science and Technology",
+      "company": "USTC"
+    },
+    {
+      "name": "Yu LIU",
+      "avatar": "/images/community/devcon2020/speakers/liuyu.png",
+      "title": "Senior Architect",
+      "company": "Wing Payment"
+    },
+    {
+      "name": "Zhenhuan LI",
+      "avatar": "/images/community/devcon2020/speakers/lizhenhuan.png",
+      "title": "Data Platform Director",
+      "company": "Beike Finance"
+    },
+    {
+      "name": "Xiuhong LU",
+      "avatar": "/images/community/devcon2020/speakers/luxiuhong.png",
+      "title": "Deputy General Manager of Technology O&M Department",
+      "company": "Yillion Bank"
+    },
+    {
+      "name": "Manuel Rigger",
+      "avatar": "/images/community/devcon2020/speakers/mannuelrigger.png",
+      "title": "Postdoctoral Researcher in the Advanced Software Technologies (AST) Lab",
+      "company": "ETH Zurich"
+    },
+    {
+      "name": "Shawn MA",
+      "avatar": "/images/community/devcon2020/speakers/maxiaoyu.png",
+      "title": "Manager of Real-time Analysis Products",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Munenori Hirakawa",
+      "avatar": "/images/community/devcon2020/speakers/munenorihirakawa.png",
+      "title": "Senior Manager at Product Tech Division",
+      "company": "PayPay"
+    },
+    {
+      "name": "Xing PENG",
+      "avatar": "/images/community/devcon2020/speakers/pengxing.png",
+      "title": "Database Manager",
+      "company": "CaoCao Mobility"
+    },
+    {
+      "name": "Yi PENG",
+      "avatar": "/images/community/devcon2020/speakers/pengyi.png",
+      "title": "Developer",
+      "company": "Shopee"
+    },
+    {
+      "name": "Xuefeng PI",
+      "avatar": "/images/community/devcon2020/speakers/pixuefeng.png",
+      "title": "Supply Chain R&D Manager",
+      "company": "Yunji"
+    },
+    {
+      "name": "Tianshuang QIN",
+      "avatar": "/images/community/devcon2020/speakers/qintianshuang.png",
+      "title": "S&A Principal Solutions Architect",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Jun SHEN",
+      "avatar": "/images/community/devcon2020/speakers/shenjun.png",
+      "title": "Senior DBA",
+      "company": "Yimi Dida"
+    },
+    {
+      "name": "Li Shen",
+      "avatar": "/images/community/devcon2020/speakers/shenli.png",
+      "title": "VP of Engineering",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Xiaoguang SUN",
+      "avatar": "/images/community/devcon2020/speakers/sunxiaoguang.png",
+      "title": "TiKV Maintainer",
+      "company": "Zhihu"
+    },
+    {
+      "name": "Hengliang TAN",
+      "avatar": "/images/community/devcon2020/speakers/tanhengliang.png",
+      "title": "Cloud Platform Technical Expert",
+      "company": "Xpeng Motors"
+    },
+    {
+      "name": "Lingfei TANG",
+      "avatar": "/images/community/devcon2020/speakers/tanglingfei.png",
+      "title": "Senior Software Engineer",
+      "company": "Accelink Technologies"
+    },
+    {
+      "name": "Siddon TANG",
+      "avatar": "/images/community/devcon2020/speakers/tangliu.png",
+      "title": "Chief Architect",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Xiyuan TANG",
+      "avatar": "/images/community/devcon2020/speakers/tangxiyuan.png",
+      "title": "Infrastructure Architect",
+      "company": "Lakala Payment"
+    },
+    {
+      "name": "Tan To Nguyen Duy",
+      "avatar": "/images/community/devcon2020/speakers/tantonguyenduy.png",
+      "title": "DevOps Engineer",
+      "company": "ZaloPay"
+    },
+    {
+      "name": "Peng TIAN",
+      "avatar": "/images/community/devcon2020/speakers/tianpeng.png",
+      "title": "Senior DBA",
+      "company": "JDD"
+    },
+    {
+      "name": "Sheyang WANG",
+      "avatar": "/images/community/devcon2020/speakers/wangsheyang.png",
+      "title": "Technical Manager of Big Data Team",
+      "company": "Chehaoduo"
+    },
+    {
+      "name": "Xu WANG",
+      "avatar": "/images/community/devcon2020/speakers/wangxu.png",
+      "title": "Senior Engineer in Master Station Technical Center",
+      "company": "bilibili"
+    },
+    {
+      "name": "Yingjie WANG",
+      "avatar": "/images/community/devcon2020/speakers/wangyingjie.png",
+      "title": "Director of Data Architecture Team",
+      "company": "Lufax"
+    },
+    {
+      "name": "Zhigang WANG",
+      "avatar": "/images/community/devcon2020/speakers/wangzhigang.png",
+      "title": " Database Operations Manager",
+      "company": "Everbright Bank"
+    },
+    {
+      "name": "Jiguang WAN",
+      "avatar": "/images/community/devcon2020/speakers/wanjiguang.png",
+      "title": "Professor of the Key Laboratory of Data Storage System",
+      "company": "Wuhan National Laboooratory for Optooelectronics "
+    },
+    {
+      "name": "Bin WEI",
+      "avatar": "/images/community/devcon2020/speakers/weibin.png",
+      "title": "CTO",
+      "company": "Puxiang Technology"
+    },
+    {
+      "name": "Jianfeng WU",
+      "avatar": "/images/community/devcon2020/speakers/wujianfeng.png",
+      "title": "Deputy Directoor of Architecture, Information Technology Department",
+      "company": "Yum China"
+    },
+    {
+      "name": "Yelei WU",
+      "avatar": "/images/community/devcon2020/speakers/wuyelei.png",
+      "title": "Cloud Engineer",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Chao XU",
+      "avatar": "/images/community/devcon2020/speakers/xuchao.png",
+      "title": "Senior DBA Engineer",
+      "company": "VIPKID"
+    },
+    {
+      "name": "Dengfeng XU",
+      "avatar": "/images/community/devcon2020/speakers/xudengfeng.png",
+      "title": "Senior Architect",
+      "company": "Peking University Medical Trust"
+    },
+    {
+      "name": "Chao XUE",
+      "avatar": "/images/community/devcon2020/speakers/xuechao.png",
+      "title": "Senior Database DevOps Engineer",
+      "company": "China Mobile Internet of Things"
+    },
+    {
+      "name": "Chunyu XUE",
+      "avatar": "/images/community/devcon2020/speakers/xuechunyu.png",
+      "title": "Infrastructure Expert",
+      "company": "TECHO Telecom"
+    },
+    {
+      "name": "Jiajing XU",
+      "avatar": "/images/community/devcon2020/speakers/xujiaqing.png",
+      "title": "DBA",
+      "company": "Bigo"
+    },
+    {
+      "name": "Libo YANG",
+      "avatar": "/images/community/devcon2020/speakers/yanglibo.png",
+      "title": "Director of Automation Department of Control Center",
+      "company": "State Grid Hebei Electric Power Supply",
+      "noAvatar": true
+    },
+    {
+      "name": "Zhexuan YANG",
+      "avatar": "/images/community/devcon2020/speakers/yangzhexuan.png",
+      "title": "Senior Solution Architect",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Wink YAO",
+      "avatar": "/images/community/devcon2020/speakers/yaowei.png",
+      "title": "General Manager of TiDB Community Operations",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Haodong JI",
+      "avatar": "/images/community/devcon2020/speakers/jihaodong.png",
+      "title": "Database Manager",
+      "company": "Zhuanzhuan"
+    },
+    {
+      "name": "Nanwei YI",
+      "avatar": "/images/community/devcon2020/speakers/yinanwei.png",
+      "title": "CR Enterprise",
+      "company": "Senior Architect"
+    },
+    {
+      "name": "Joe YU",
+      "avatar": "/images/community/devcon2020/speakers/yujun.png",
+      "title": "Manager of Solution & Arcihtecture Department",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Jason YU",
+      "avatar": "/images/community/devcon2020/speakers/yumengjie.png",
+      "title": "Executive Vice President",
+      "company": "PingCAP"
+    },
+    {
+      "name": "Fan ZHANG",
+      "avatar": "/images/community/devcon2020/speakers/zhangfan.png",
+      "title": "Engineer",
+      "company": "Autohome"
+    },
+    {
+      "name": "Hanyu ZHANG",
+      "avatar": "/images/community/devcon2020/speakers/zhanghanyu.png",
+      "title": "Head of Database Technoloty in Operation and Maintenance Team",
+      "company": "ENN Energy",
+      "noAvatar": true
+    },
+    {
+      "name": "Jiansen ZHANG",
+      "avatar": "/images/community/devcon2020/speakers/zhangjiansen.png",
+      "title": "Technical Director",
+      "company": "Sinosoft"
+    },
+    {
+      "name": "Wen ZHANG",
+      "avatar": "/images/community/devcon2020/speakers/zhangwen.png",
+      "title": "DBA in Basic Technology Department",
+      "company": "bilibili"
+    },
+    {
+      "name": "Yihao ZHANG",
+      "avatar": "/images/community/devcon2020/speakers/zhangyihao.png",
+      "title": "Senior Development Engineer, InfrastructureTechnology Department",
+      "company": "Xiaohongshu"
+    },
+    {
+      "name": "Haijun ZHAO",
+      "avatar": "/images/community/devcon2020/speakers/zhaohaijun.png",
+      "title": "Head of Database Technology",
+      "company": "Lixiang Automotive"
+    },
+    {
+      "name": "Zhihui ZHENG",
+      "avatar": "/images/community/devcon2020/speakers/zhengzhihui.png",
+      "title": "DevOps Engineer",
+      "company": "Tencent"
+    },
+    {
+      "name": "Youzhi ZHU",
+      "avatar": "/images/community/devcon2020/speakers/zhuyouzhi.png",
+      "title": "Big Data Architect",
+      "company": "ZTO Express"
+    },
+    {
+      "name": "Tenny ZHUANG",
+      "avatar": "/images/community/devcon2020/speakers/zhuangtianyi.png",
+      "title": "TiKV Committer",
+      "company": "Alibaba"
+    },
+    {
+      "name": "Boshuai ZHU",
+      "avatar": "/images/community/devcon2020/speakers/zhuboshuai.png",
+      "title": "Senior Database Architect",
+      "company": "IQIYI"
     }
   ],
   "support_meida2020": [

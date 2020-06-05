@@ -7,9 +7,9 @@
     <div class="venue-title">{{ $i.name }}</div>
     <table class="schedule-table">
         <tr class="head">
-            <td>时间</td>
-            <td>议题</td>
-            <td>演讲嘉宾</td>
+            <td>{{if .isCn }}时间{{else}}Time{{end}}</td>
+            <td>{{if .isCn }}议题{{else}}Topic{{end}}</td>
+            <td>{{if .isCn }}演讲嘉宾{{else}}Speaker{{end}}</td>
             <td></td>
         </tr>
         {{- range $idx2, $j := $i.schedules -}}
@@ -17,14 +17,14 @@
         <tr>
             <td>{{ $j.time }}</td>
             <td colspan="3">
-                <p class="TBA">敬请期待</p>
+                <p class="TBA">{{if .isCn }}敬请期待{{else}}TBA{{end}}</p>
             </td>
         </tr>
         {{- else if $j.break -}}
         <tr>
             <td>{{ $j.time }}</td>
             <td colspan="3">
-                <p class="TBA">【中场休息】</p>
+                <p class="TBA">{{if .isCn }}【中场休息】{{else}}Half Time{{end}}</p>
             </td>
         </tr>
         {{- else -}}
