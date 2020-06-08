@@ -23,6 +23,7 @@
   - [首席项目经理](business/chief-project-manager.md)
   - [资深/高级/中级 TiDB 交付 DBA](business/tidb-delivery-dba.md)
   - [资深渠道合作总监](business/channel-sales-director.md)
+  - [Customer Success Engineer](business/customer-success-engineer.md)
 - User Ecosystem
   - [资深互联网架构师](user-ecosystem/internet-architect.md)
   - [用户生态技术运营](user-ecosystem/user-ecosystem-technical-operations.md)
