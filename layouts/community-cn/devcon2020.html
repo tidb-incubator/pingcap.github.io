@@ -27,9 +27,9 @@ DevCon 2020
 {{- define "main" -}}
 <div class="devCon devCon2020 devCon-cn">
     <div class="banner__section devcon2020-banner">
-        <a class="sigup-btn" href="#sign-up">
-            立即报名
-        </a>
+        <div class="sigup-btn" href="#sign-up" style="cursor: not-allowed;">
+            活动已结束
+        </div>
     </div>
 
     <section class="activity-breif">
@@ -121,7 +121,7 @@ DevCon 2020
     </section>
 
 
-    <div class="sign-up" id="sign-up">
+    <!-- <div class="sign-up" id="sign-up">
         <section>
             <h1 class="dc20-title">立即报名</h1>
             <p>
@@ -135,7 +135,7 @@ DevCon 2020
             <img class="lazy" src="/images/svgs/loader-spinner.svg"
                 data-original="/images/community/devcon2020/qrCode.jpg" />
         </section>
-    </div>
+    </div> -->
 
     <div class="reviews">
         {{- partial "community-cn/activities-review.html" (dict "review_posts" .Site.Data.devcon.reviews_2019 "type" "devcon2020") -}}
