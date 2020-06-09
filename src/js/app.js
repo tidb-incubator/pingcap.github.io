@@ -169,10 +169,13 @@ function initialSearch(lang, docs_type) {
 
 // process search ui
 function processSearch() {
-  initialSearch(
-    $('#search-input').data('lang'),
-    $('#search-input').data('type')
-  )
+  if ($('#search-input').data('lang') == 'en') {
+    initialSearch(
+      $('#search-input').data('lang'),
+      $('#search-input').data('type')
+    )
+  }
+
   // Hide search suggestions dropdown menu on focusout
   $('#search-input').focusout(function() {
     $('.ds-dropdown-menu').hide()
