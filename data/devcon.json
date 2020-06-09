@@ -70,7 +70,6 @@
             "name": "Main Forum and TiDB 4.0 Release",
             "id": "day1-1",
             "icon": "/images/community/devcon2020/el-main.svg",
-            "link": "http://live.bilibili.com/4630260", 
             "main": true
           }
         ]
@@ -81,14 +80,12 @@
           {
             "name": "Finance Session",
             "id": "day1-2",
-            "icon": "/images/community/devcon2020/el-finance.svg",
-            "link": "http://live.bilibili.com/4630260"
+            "icon": "/images/community/devcon2020/el-finance.svg"
           },
           {
             "name": "E-commerce / Logistics / New Retail / Mobility Session",
             "id": "day1-3",
-            "icon": "/images/community/devcon2020/el-business.svg",
-            "link": "https://live.bilibili.com/22225816"
+            "icon": "/images/community/devcon2020/el-business.svg"
           }
         ]
       }
@@ -100,14 +97,12 @@
           {
             "name": "Partner Ecosystem and New Product Features Session",
             "id": "day2-1",
-            "icon": "/images/community/devcon2020/el-developer.svg",
-            "link": "https://live.bilibili.com/22225816"
+            "icon": "/images/community/devcon2020/el-developer.svg"
           },
           {
             "name": "Developer Community Session",
             "id": "day2-2",
-            "icon": "/images/community/devcon2020/el-product.svg",
-            "link": "http://live.bilibili.com/4630260"
+            "icon": "/images/community/devcon2020/el-product.svg"
           }
         ]
       },
@@ -117,14 +112,12 @@
           {
             "name": "Telecommunications/Energy/Manufacturing/High-tech Sessions",
             "id": "day2-3",
-            "icon": "/images/community/devcon2020/el-service.svg",
-            "link": "Watch http://live.bilibili.com/4630260"
+            "icon": "/images/community/devcon2020/el-service.svg"
           },
           {
             "name": "Education / Video / Information Session",
             "id": "day2-4",
-            "icon": "/images/community/devcon2020/el-education.svg",
-            "link": "https://live.bilibili.com/22225816"
+            "icon": "/images/community/devcon2020/el-education.svg"
           }
         ]
       }
@@ -1860,12 +1853,6 @@
       "company": "平安科技"
     },
     {
-      "name": "侯圣文",
-      "avatar": "/images/community/devcon2020/speakers/houshengwen.png",
-      "title": "技术总监",
-      "company": "贝壳找房"
-    },
-    {
       "name": "黄必荣",
       "avatar": "/images/community/devcon2020/speakers/huangbirong.png",
       "title": "Senior Engineer",
@@ -2181,7 +2168,7 @@
     },
     {
       "name": "冀浩东",
-      "avatar": "/images/community/devcon2020/speakers/yihaodong.png",
+      "avatar": "/images/community/devcon2020/speakers/jihaodong.png",
       "title": "数据库负责人",
       "company": "转转"
     },
@@ -2248,7 +2235,7 @@
     },
     {
       "name": "朱友志",
-      "avatar": "/images/community/devcon2020/speakers/zhiyouzhi.png",
+      "avatar": "/images/community/devcon2020/speakers/zhuyouzhi.png",
       "title": "大数据架构师",
       "company": "中通快递"
     },
@@ -2362,12 +2349,6 @@
       "avatar": "/images/community/devcon2020/speakers/hezhiyong.png",
       "title": "Senior Cloud Database Engineer",
       "company": "Ping An Technology"
-    },
-    {
-      "name": "Shengwen HOU",
-      "avatar": "/images/community/devcon2020/speakers/houshengwen.png",
-      "title": "Technical Director",
-      "company": "Beike"
     },
     {
       "name": "Birong HUANG",

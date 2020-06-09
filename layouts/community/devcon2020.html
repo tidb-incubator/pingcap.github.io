@@ -26,9 +26,9 @@ DevCon 2020
 {{- define "main" -}}
 <div class="devCon devCon2020">
     <div class="banner__section devcon2020-banner devcon2020-banner-en">
-        <!-- <a class="sigup-btn" href="#sign-up">
-            Watch DevCon 2020 Live
-        </a> -->
+        <a class="sigup-btn" href="https://slack.tidb.io/invite?team=tidb-community&channel=everyone&ref=pingcap" target="_blank">
+            Join TiDB Community
+        </a>
     </div>
 
     <section class="activity-breif">
@@ -70,8 +70,6 @@ DevCon 2020
                                     <img src="{{ $j.icon }}" alt="{{ $j.name }}">
                                     <p class="{{ if $j.main }}large-size{{ end }}">{{ $j.name }}</p>
                                 </a>
-
-                                <a class="watch-link" href="{{ $j.link }}" target="_blank"><p>Watch</p></a>
                             </div>
                             {{- end -}}
                         </div>
@@ -90,7 +88,6 @@ DevCon 2020
                                     <img src="{{ $j.icon }}" alt="{{ $j.name }}">
                                     <p>{{ $j.name }}</p>
                                 </a>
-                                <a class="watch-link" href="{{ $j.link }}" target="_blank"><p>Watch</p></a>
                             </div>
                             {{- end -}}
                         </div>
@@ -134,29 +131,6 @@ DevCon 2020
             {{- end -}}
         </div>
     </section>
-
-
-    <div class="sign-up sign-up-en" id="sign-up">
-        <section>
-            <h1 class="dc20-title">Register </h1>
-            <p>
-                No registering is required, as the schedule has been fixed already. Simply mark the session you are
-                interested in and click the link below at the right time to watch it live.
-            </p>
-            <p>
-                <a href="#dc20-agenda-table">Watch
-                    DevCon Live</a>
-            </p>
-            <p>
-                Join us in the <a href="https://tidbcommunity.slack.com/archives/C0143HYTR5Y"
-                    target="_blank">#devcon-2020</a> channel
-                on slack to share your thoughts and get related materials. Videos with English subtitles will be
-                uploaded to the PingCAP <a href="https://www.youtube.com/channel/UCuq4puT32DzHKT5rU1IZpIA"
-                    target="_blank">youtube</a>
-                channel later. Stay tuned!
-            </p>
-        </section>
-    </div>
 
     <div class="reviews">
         {{- partial "community-cn/activities-review.html" (dict "review_posts" .Site.Data.devcon.reviews_2019 "type" "devcon2020" "isCn" false) -}}
