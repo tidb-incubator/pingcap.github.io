@@ -71,7 +71,7 @@
                 <div class="control">
                     <label class="checkbox" onclick="clickbox()">
                         <input type="checkbox" id="protocol-checked">
-                        我同意<a href="/licenses"> PingCAP 社区软件许可协议</a>。
+                        我同意<a href="/licenses"> PingCAP 社区软件许可协议</a>与<a href="/privacy-policy">隐私协议</a>。
                     </label>
                 </div>
                 <div class="download-btn">
@@ -120,7 +120,7 @@
         }
 
         if (!boxChecked) {
-            errArr.push('必须同意 PingCAP 社区软件许可协议')
+            errArr.push('必须同意 PingCAP 社区软件许可协议与隐私协议。')
         }
 
         if (errArr.length == 0) {
