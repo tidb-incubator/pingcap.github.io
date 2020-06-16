@@ -13,7 +13,7 @@
 
 {{- define "main" -}}
 <div class="download-cn">
-    <div class="enterprise-wrapper">
+    <div class="community-wrapper">
         <div class="tidb-logo">
             <img class="lazy" src="/images/download-cn/tidb-logo.png" />
         </div>
@@ -31,37 +31,24 @@
                     </div>
                 </div>
 
-                <div class="form-field">
-                    <div class="dropdown version">
-                        <div class="dropdown-trigger">
-                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                <span id="version">选择 TiDB 版本</span>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                            <div class="dropdown-content">
-                                <div class="dropdown-item">
-                                    v4.0.0
-                                </div>
-                            </div>
+                <div class="form-field community-download">
+                    <div class="select-wrapper">
+                        <div class="select">
+                            <select id="version" onChange="handleVersionChange()">
+                                <option value="" disabled selected class="disabled">选择 TiDB 版本</option>
+                                <option>v4.0.0</option>
+                                <option>v4.0.1</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="dropdown package">
-                        <div class="dropdown-trigger">
-                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                <span id="package">选择软件下载包</span>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                            <div class="dropdown-content">
-                                <div class="dropdown-item">
-                                    tidb-community-server
-                                </div>
-                                <div class="dropdown-item">
-                                    tidb-community-toolkit
-                                </div>
-                            </div>
+                    <div class="select-wrapper">
+                        <div class="select">
+                            <select id="package" onChange="handlePackageChange()">
+                                <option value="" disabled selected class="disabled">选择软件下载包</option>
+                                <option>tidb-community-server</option>
+                                <option>tidb-community-toolkit</option>
+                            </select>
                         </div>
                     </div>
 
@@ -86,7 +73,8 @@
         <div class="more-info">
             <div class="title">查看更多信息</div>
             <div class="items">
-                <p><a href="https://docs.pingcap.com/zh/tidb/v4.0/production-deployment-using-tiup" target="_blank">如何安装</a></p>
+                <p><a href="https://docs.pingcap.com/zh/tidb/v4.0/production-deployment-using-tiup"
+                        target="_blank">如何安装</a></p>
                 <p><a href="https://docs.pingcap.com/zh/tidb/v4.0/upgrade-tidb-using-tiup" target="_blank">如何升级</a></p>
                 <p><a href="https://docs.pingcap.com/zh/tidb/v4.0/release-notes" target="_blank">Release Note</a></p>
             </div>
@@ -104,18 +92,26 @@
     });
 </script>
 <script type="text/javascript">
+    let selPkg = $('#package').val()
+    let selVersion = $('#version').val()
+    let termChecked = $("#protocol-checked").prop('checked')
+    const packageDesc = {
+        "tidb-community-server": "获取 TiDB 一键安装离线包",
+        "tidb-community-toolkit": "获取 TiDB 工具包"
+    }
+
     function validateForm() {
         $('.wrong-tips').css('display', 'none')
-        const version = $('#version')[0].innerText
-        const package = $('#package')[0].innerText
+        const version = $('#version').val()
+        const package = $('#package').val()
         const boxChecked = $("#protocol-checked").prop('checked')
         $('.tips')[0].innerText = ''
         let errArr = []
-        if (version == '选择 TiDB 版本') {
+        if (!version) {
             errArr.push('请选择 TiDB 版本')
         }
 
-        if (package == '选择软件下载包') {
+        if (!package) {
             errArr.push('请选择下载软件包')
         }
 
@@ -144,52 +140,39 @@
         }
     }
 
+    function genDownloadURL() {
+        if (selPkg && selVersion && termChecked) {
+            const url = 'https://download.pingcap.org/' + selPkg + '-' + selVersion + '-linux-amd64.tar.gz'
+            $('.allow-download').attr('href', url)
+            $('.allow-download').attr('download', 'tidb-community-toolkit')
+            $('.allow-download').css('display', 'block')
+            $('.disallow-download').css('display', 'none')
+        } else {
+            $('.allow-download').css('display', 'none')
+            $('.disallow-download').css('display', 'initial')
+        }
+    }
+
     function clickbox() {
+        termChecked = $("#protocol-checked").prop('checked')
+        genDownloadURL()
         validateForm()
     }
 
-    $(document).ready(function () {
-        $('.dropdown').click(function () {
-            $('.dropdown').not(this).removeClass('is-active')
-            $(this).toggleClass('is-active')
-        })
+    function handlePackageChange() {
+        selPkg = $('#package').val()
+        $('.package-desc').css('display', 'block')
+        $('.package-desc')[0].innerText = packageDesc[selPkg]
+        console.log('packageDesc[selPkg]', packageDesc[selPkg])
+        genDownloadURL()
+        validateForm()
+    }
 
-        $(document).on('click', function (event) {
-            var $trigger = $('.dropdown');
-            if ($trigger !== event.target && !$trigger.has(event.target).length) {
-                $('.dropdown').removeClass('is-active');
-            }
-        });
+    function handleVersionChange() {
+        selVersion = $('#version').val()
+        genDownloadURL()
+        validateForm()
+    }
 
-        $('.version .dropdown-item').click(function () {
-            $('#version')[0].innerText = $(this)[0].innerText
-            $('#version').css('opacity', '1')
-            validateForm()
-        })
-
-        $('.package .dropdown-item').click(function () {
-            $('#package')[0].innerText = $(this)[0].innerText
-            switch ($(this)[0].innerText) {
-                case "tidb-community-server":
-                    console.log()
-                    $('.allow-download').attr('href', 'https://download.pingcap.org/tidb-community-server-v4.0.0-linux-amd64.tar.gz')
-                    $('.allow-download').attr('download', 'tidb-community-server')
-                    $('.package-desc').css('display', 'block')
-                    $('.package-desc')[0].innerText = '获取 TiDB 一键安装离线包'
-                    break;
-                case "tidb-community-toolkit":
-                    $('.allow-download').attr('href', 'https://download.pingcap.org/tidb-community-toolkit-v4.0.0-linux-amd64.tar.gz')
-                    $('.allow-download').attr('download', 'tidb-community-toolkit')
-                    $('.package-desc').css('display', 'block')
-                    $('.package-desc')[0].innerText = '获取 TiDB 工具包'
-                    break;
-                default:
-                    $('.allow-download').attr('href', '/')
-                    break;
-            }
-            $('#package').css('opacity', '1')
-            validateForm()
-        })
-    })
 </script>
 {{- end -}}
