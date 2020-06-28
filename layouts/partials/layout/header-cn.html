@@ -1,7 +1,7 @@
 {{ $nav_active := $.Scratch.Get "nav_active" }}
 <header role="navigation" class="fixed-top">
     <div class="container">
-        <a class="nav-brand" href="/index.html"><img src="/images/pingcap-logo.png" alt="PingCAP"></a>
+        <a class="nav-brand" href="/zh"><img src="/images/pingcap-logo.png" alt="PingCAP"></a>
         <div class="nav-wrapper">
             <div class="navigation">
                 <ul>
@@ -18,7 +18,7 @@
                             <a class="header-dropdown-item" href="/docs-cn/tidb-data-migration/stable/"
                                 onclick="trackViews('navbar-dm-docs', 'docs-cn_view')">TiDB Data Migration (DM)</a>
                         </div> -->
-                        <a class="header-doc-nav" href="https://docs.pingcap.com/" target="_blank">文档</a>
+                        <a class="header-doc-nav" href="https://docs.pingcap.com/zh" target="_blank">文档</a>
                     </li>
                     <li {{ if eq $nav_active "cases"}}class="sel" {{end}}><a href="/cases-cn">案例</a></li>
                     <li {{ if eq $nav_active "community"}}class="sel" {{end}}><a href="/community-cn">社区</a></li>
