@@ -1,187 +1,165 @@
 ---
 type: page
 title: Privacy Policy
-layout: privacy-policy
+image: /images/pingcap-opengraph.jpg
 ---
 
-# PingCAP 隐私声明
+# PingCAP Privacy Statement
 
-**生效时间：** 2020 年 6 月 1 日
+**Effective:** June 1, 2020
 
-北京平凯星辰科技发展有限公司（下称“PingCAP”，PingCAP 与其关联方以下合称“PingCAP 集团”，“我们”，“我们的”或“我们”）了解到，隐私对于我们网站（我们的“网站”）的访问者以及我们产品和服务的用户（我们的“产品”）极为重要。本隐私政策解释了当您使用链接到本隐私声明的网站和产品时，我们如何收集，使用和共享您的个人信息。
+Beijing PingCAP Xingchen Technology and Development Co., Ltd. (hereinafter referred as “PingCAP”, PingCAP and its affiliates hereinafter referred as “PingCAP Group”，” “we,” “our,” or “us”) understand that privacy is important to visitors to our websites (our “Sites”) and users of our products and services (our “Products”). This Privacy Statement explains how we collect, use, and share your personal information when you use the Sites and Products that link to this Privacy Statement.
 
-本隐私政策不适用于显示或链接到其他隐私声明的网站或产品。本声明也不适用于 PingCAP 代表他们处理客户数据的情况；我们对此类数据的收集和处理受我们与这些客户达成的协议约束。
+This Privacy Statement does not apply to Sites or Products that display or link to different privacy statements. This Statement also does not apply where PingCAP processes the data of our customers on their behalf; our collection and processing of such data is governed by our agreements with those customers.
 
-单击下面的链接跳转到对应内容：
+**Click on the links below to jump to each section:**
 
-1. [我们收集的个人信息](#%E6%88%91%E4%BB%AC%E6%94%B6%E9%9B%86%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF)
-2. [我们收集的产品遥测数据](#%E6%88%91%E4%BB%AC%E6%94%B6%E9%9B%86%E7%9A%84%E4%BA%A7%E5%93%81%E9%81%A5%E6%B5%8B%E6%95%B0%E6%8D%AE)
-3. [我们对 Cookie 和类似技术的使用](#%E6%88%91%E4%BB%AC%E5%AF%B9-cookie-%E5%92%8C%E7%B1%BB%E4%BC%BC%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BD%BF%E7%94%A8)
-4. [我们对个人信息的使用](#%E6%88%91%E4%BB%AC%E5%AF%B9%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E7%9A%84%E4%BD%BF%E7%94%A8)
-5. [个人信息管理的权利与方法](#%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%9A%84%E6%9D%83%E5%88%A9%E4%B8%8E%E6%96%B9%E6%B3%95)
-6. [信息的披露](#%E4%BF%A1%E6%81%AF%E7%9A%84%E6%8A%AB%E9%9C%B2)
-7. [我们如何存储和保护个人信息](#%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E5%AD%98%E5%82%A8%E5%92%8C%E4%BF%9D%E6%8A%A4%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF)
-8. [事先征得授权同意的例外](#%E4%BA%8B%E5%85%88%E5%BE%81%E5%BE%97%E6%8E%88%E6%9D%83%E5%90%8C%E6%84%8F%E7%9A%84%E4%BE%8B%E5%A4%96)
-9. [处理未成年人的个人信息](#%E5%A4%84%E7%90%86%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF)
-10. [个人信息如何在全球范围转移](#%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E5%A6%82%E4%BD%95%E5%9C%A8%E5%85%A8%E7%90%83%E8%8C%83%E5%9B%B4%E8%BD%AC%E7%A7%BB)
-11. [本隐私政策如何更新](#%E6%9C%AC%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0)
-12. [如何联系我们](#%E5%A6%82%E4%BD%95%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC)
+1. [PERSONAL INFORMATION WE COLLECT](#personal-information-we-collect)
+2. [OUR USE OF COOKIES AND SIMILAR TECHNOLOGIES](#our-use-of-cookies-and-similar-technologies)
+3. [OUR USE OF PERSONAL INFORMATION](#our-use-of-personal-information)
+4. [SHARING OF PERSONAL INFORMATION](#sharing-of-personal-information)
+5. [YOUR CHOICES ABOUT PERSONAL INFORMATION](#your-choices-about-personal-information)
+6. [HOW WE STORE AND PROTECT PERSONAL INFORMATION](#how-we-store-and-protect-personal-information)
+7. [EUROPEAN DATA PROTECTION RIGHTS](#european-data-protection-rights)
+8. [CHANGES TO OUR PRIVACY STATEMENT](#changes-to-our-privacy-statement)
+9. [HOW TO CONTACT US](#how-to-contact-us)
 
-## 我们收集的个人信息
+## PERSONAL INFORMATION WE COLLECT
 
-您直接提供的信息。我们会收集和存储您在使用我们的产品时通过我们的网站直接提供给我们的个人信息，以及通过其他方式（例如通过客户支持请求，通过社交媒体进行互动，参与调查或晋升，求职，在我们的网站上以及活动中下载白皮书时。我们收集的信息包括，例如，
+Information you provide directly. We collect and store personal information that you directly provide us through our Site, when using our Products, and other ways, such as through a customer support request, through interactions on social media, participation in a survey or promotion, application for a job, when downloading white papers on our Sites, and at events. Information we collect includes, for example,
 
-- 联系信息：您的姓名，电子邮件地址，电话号码，邮寄地址，帐单邮寄地址和用户名。
-- 人口统计数据：您的职务，公司名称，城市，省份和国家。
-- 内容和通讯：您在表格上的任何“自由文本”框中输入的任何数据，聊天表格中的评论以及在社交媒体和其他平台（例如 GitHub 和 Twitter）上通过电话或 IM 服务（例如，微信，Slack 等）。
+- **Contact information:** your name, email address, phone number, mailing address, billing address,and user names.
+- **Demographic data:** your job title, company name, city, state, and country.
+- **Content and communications:** any data you enter into any ‘free text’ boxes on our forms, comments in our chat forms, and communications with us on social media and other platforms (like GitHub and Twitter), through phone, or messaging services (like Slack).
+- **Payment information:** your credit card numbers and other payment information. Our third party payment processors (like Stripe) collect this information if you purchase our Products, such as online training, cloud services, or software subscriptions.
 
-**信息自动收集。** 如下面的“我们对 Cookie 和其他技术的使用”和“产品遥测数据”部分中进一步所述，当您使用我们的网站或产品时，我们和我们的第三方合作伙伴会自动收集某些类型的设备和使用信息。我们收集的信息包括，例如：
+**Information collected automatically.** As further described in the “Our Use of Cookies and Other Technologies” and “Product telemetry data” sections below, we and our third-party partners automatically collect certain types of device and usage information when you use our Sites or Products. Information we collect includes, for example:
 
-- 地理位置数据：当您访问我们的网站并使用我们的产品时，我们会根据您的设备设置收集地理位置数据。例如，我们可能会使用 IP 地址得出您的大致位置
-- 标识符和设备信息：当您访问我们的网站时，您的设备的操作系统，设备标识符，客户 ID 和其他设备信息，用户代理字符串，Internet 协议（IP）地址，访问时间，浏览器类型以及详细记录您与之交互的日志数据我们的网站（例如，点击次数，浏览的页面，搜索到的信息）以及您访问我们网站之前和之后访问的网站（即引荐来源标头）都会自动记录下来。当您提交支持票证时，我们将从您的浏览器的用户代理字符串中接收数据，其中包括设备信息，浏览器信息，操作系统信息，城市，省份，国家和 IP 地址。
+- **Geolocation data:** Depending on your device settings, we collect geolocation data when you visit our Sites and use our Products. For example, we may derive your general location using IP address
+- **Identifiers and device information:** When you visit our Site, your device’s operating system, device identifier, customer ID and other device information, user agent string, Internet Protocol (IP) address, access times, browser type, and log data detailing your interactions with our Site (e.g., number of clicks, pages viewed, information searched for), and the website you visited before and after coming to our Site (i.e., referrer header) are logged automatically. When you submit a support ticket, we receive data from the user agent string of your browser, which includes device information, browser information, OS information, city, state, country, and IP address
 
-**推论。** 我们从收集到的数据中推断出有关您和您的公司的新信息，包括使用自动方式生成有关您可能的偏好，服务和产品需求或其他特征的信息。例如，我们根据您的 IP 地址推断您的城市，省和国家/地区位置
+**Product telemetry data.** When you use our Products, we may also collect certain telemetry data and other data about your usage, including your IP Address and other unique identifiers in combination with information about the version of our software you are running and how it is configured, to collect and aggregate certain diagnostic and analytics information. We may combine this information with information you provide when you download our Products or provide to customer support, including the name of your organization or company.
 
-**通过社交媒体和其他平台收集的信息。** 当您通过各种第三方平台与我们互动时，我们会收到有关您的信息，例如，通过加入我们的 Slack 社区或 Google 小组，在 Facebook 上喜欢我们，在 LinkedIn，GitHub 或 Meetup 上建立联系，在 Twitter 上关注我们 或在 Facebook，Twitter 或 LinkedIn 上共享我们网站上的内容。我们与这些第三方平台交换的数据可能取决于您在这些平台上的隐私设置。在参与之前，您应该查看并考虑调整您在第三方网站和服务上的隐私设置。不要通过这些平台向我们提供任何敏感的个人数据。我们不对这些第三方平台的数据保护和使用实践负责。请查看他们的隐私声明，以了解他们如何使用您的信息。
+When we collect product telemetry data , we take appropriate steps to pseudonymise the IP addresses before it is stored . We employ technical and organizational measures to prevent the reconstitution of IP addresses or reversal of pseudonymization that would allow attribution of the data to a specific individual, including segregating or not collecting any additional information that may be used for attribution. We store the pseudonymized data for 2 years
 
-## 我们收集的产品遥测数据
+The resulting pseudonymised data is used by us on behalf of our customers to (i) maintain and improve TiDB products, and (ii) inform users whether they are running the latest version of PingCAP products.
 
-当您使用我们的产品时，我们可能还会收集某些遥测数据和其他有关您的使用情况的数据，包括您的 IP 地址和其他唯一标识符，以及有关您正在运行的我们软件版本以及配置方式的信息，以收集和使用汇总某些诊断和分析信息。我们可能会将这些信息与您在下载我们的产品或提供给客户支持时提供的信息（包括您的组织或公司的名称）结合起来。您可以按照以下“选择”部分中所述以及适用产品文档中的进一步说明，关闭遥测数据的收集。
+We collect several data within product telemetry data as below :
 
-当我们收集产品遥测数据时，我们直接通过哈希方法假名处理产品遥测数据中的 IP 地址信息，我们不会保留产品遥测数据中任何 IP 地址信息，我们仅保留产品遥测数据发送端的 IP 地址，同时产品遥测数据存储不超过 2 年，产品遥测数据将安全的存储在我们的私有环境中，不会暴露在任何共有网络环境或者云端。
+- TiDB cluster related hardware information
+- TiDB cluster topology information
+- TiDB cluster software version information
+- TiDB cluster configuration information(Only the config items , config values are excluded)
+- TiDB cluster components information
+- TiDB cluster maintainence operation consumed time
 
-我们代表用户使用由此产生的假名数据来（i）维护和改进 TiDB, TiFlash 等 PingCAP 官方对用户正式提供的产品（ii）通知用户他们是否正在运行最新稳定版本的产品。
+**Inferences.** We infer new information about you and your company from data we collect, including using automated means to generate information about your likely preferences, your service and product needs or other characteristics. For example, we infer your city, state, and country location based on your IP address
 
-以下为我们搜集的产品遥测数据类别：
+**Information collected through social media and other platforms.\*\*** We receive information about you when you engage with us through various third-party platforms, for example, by joining our Slack community or Google group, liking us on Facebook, connecting on LinkedIn, GitHub, or Meetup, followingus on Twitter or Instagram, registering for training through WooCommerce, or sharing content from our Site on Facebook, Twitter, or LinkedIn. The data we exchange with these third-party platforms may depend upon your privacy settings with these platforms. You should review and consider adjusting your privacy settings on third-party websites and services before engaging. Do not provide us with any sensitive personal data through these platforms. We are not responsible for the data protection and use practices of these third-party platforms. Please see their privacy statements to learn how they use your information.
 
-- 集群相关硬件信息
-- 集群相关拓扑信息
-- 集群相关软件版本信息
-- 集群配置信息(仅搜集配置项，不包含配置值)
-- 集群节点的组件信息
-- 集群运维操作耗时信息
+**Third-party sources.** We may occasionally receive your personal information from third party sources including our affiliates, marketing and research partners, and companies. Users of our Products may also provide your personal information when they identify you as a billing, support, or technical contact, or when inviting you to use our Products or attend our events. If you integrate or link a third-party service with our Sites or Products we may receive personal information about you from that third-party service based upon the settings and permissions you've established with such third party service, and that third party service's privacy practices
 
-## 我们对 COOKIE 和类似技术的使用
+The types of information we collect from third parties may include contact information, demographic data, and content and communications. We use this information to maintain and improve the accuracy of the records we hold about you, identify new customers, and provide a more tailored advertising experience. We may combine this information with other information we collect about you through our Sites and Products
 
-我们的网站和相关的在线服务使用 Cookie 和类似技术来启用某些功能并帮助收集有关您的访问的信息。“ Cookie”是小型文本文件，通常包含一个唯一的字母和数字字符串，由站点存储在您的硬盘驱动器上。当您使用相同的浏览器返回站点时，站点可以读取 cookie，从而随着时间的推移收集有关您的使用情况的信息。除其他事项外，我们使用 Cookie 和其他技术来查看哪些区域和功能很受欢迎并计算访问次数，这有助于我们改善网站，产品和您的体验。
+When you are asked to provide personal information, you may decline. But if you choose not to provide information that is necessary to provide certain Products, those Products may not be available or function correctly
 
-网络信标。 我们可能会使用 Web 信标收集信息。网络信标是可以在我们的网站，产品或电子邮件中使用的电子图像。我们使用 Web 信标发送 Cookie，统计访问次数，了解使用情况和广告系列的有效性，并告知是否已打开电子邮件并对其采取了行动。
+## OUR USE OF COOKIES AND SIMILAR TECHNOLOGIES
 
-分析和广告。我们与第三方合作，提供与我们的网站和产品有关的分析和广告服务。这些第三方使用 Cookie，Web 信标或类似技术随时间推移以及跨第三方网站和移动应用程序从我们网站和产品的访问者自动收集上述某些信息，以进行分析和广告发布。我们使用分析信息来分析和改善我们的服务。我们的广告合作伙伴会使用这些信息来了解您的兴趣，并向您展示有关我们和他人的产品和服务的相关广告。
+Our Sites and related online services use cookies and similar technologies to enable certain functionality and help collect information about your visit. “Cookies” are small text files, typically containing a unique string of letters and numbers, stored on your hard drive by a Site. When you return to the Site using the same browser, the Site can read the cookie and thereby gather information about your usage over time. Among other things, we use cookies and other technology to see which areas and features are popular and to count visits, which helps us to improve our Site, our Products, and your experience.
 
-有关基于在线兴趣的广告，我们对 Cookie 的使用和其他类似的跟踪技术以及许多第三方如何选择不将您的信息用于这些目的的其他信息，请参阅我们的 Cookie 声明。
+**Web Beacons.** We may collect information using Web beacons. Web beacons are electronic images that may be used on our Site, Products, or in our emails. We use Web beacons to deliver cookies, count visits, understand usage and campaign effectiveness, and to tell if an email has been opened and acted upon.
 
-## 我们对个人信息的使用
+**Analytics and Advertising.** We work with third parties to provide analytics and advertising services in connection with our Sites and Products. These third parties use cookies, web beacons, or similar technologies to automatically collect some of the information described above from visitors of our Sites and Products over time and across third party Websites and mobile applications for purposes of analytics and advertising. We use the analytics information to analyze and improve our services. Our advertising partners use the information to try to understand your interests and show you relevant advertising about products and services from and on behalf of us and others.
 
-通常，我们会在获得您同意的情况下收集和处理有关您的个人信息，以提供您使用的产品，运营我们的网站和业务，履行我们的合同和法律义务，保护我们的系统和客户的安全或履行其他义务所必需的本隐私声明和我们给您的通知中所述的合法权益。
+For additional information about online interest-based advertising, our use of cookies and other similar tracking technologies, and how to opt-out of having your information used for these purposes by many of these third-parties, please see our Cookie Notice.
 
-例如，我们可以将上面描述的任何个人信息类别用于：
+## OUR USE OF PERSONAL INFORMATION
 
-- 运营，维护和改善我们的内部运营，系统，站点和产品
-- 了解您和您的喜好，以增强您使用我们的网站和产品的体验和乐趣，提供建议，征求反馈，并更好地向您宣传和广告
-- 监视和分析用户与我们的网站和产品的互动，以识别趋势，使用情况和活动 ​​ 模式
-- 回应您的意见和问题，并提供技术支持或客户服务，
-- 提供并交付您要求的产品
-- 遵守适用的法律，法规或规章，合作并捍卫法律主张和审计
-- 与您交流有关促销，即将发生的事件以及有关 PingCAP 和我们的合作伙伴提供的产品和服务的其他新闻的信息
-- 计划和举办公司活动
-- 保护网站和产品，并调查和制止欺诈，未经授权或非法的活动。
+In general, we collect and process personal information about you with your consent, as necessary to provide the Products you use, operate our Sites and business, meet our contractual and legal obligations,protect the security of our systems and our customers, or fulfil other legitimate interests as described in this Privacy Statement and in our notices to you.
 
-## 个人信息管理的权利与方法
+For example, we may use any of the categories of personal information we describe above to:
 
-**访问，更正或删除。** 如果您希望请求访问，更正或删除我们持有的任何个人信息，或者我们更改您使用信息的方式（在适用法律允许的情况下，我们保留向您收取费用的权利），请在此处或通过电子邮件将您的请求发送到 legal@pingcap.com。但是，我们可能会拒绝不合理，法律禁止或适用法律不要求其履行的请求。
+- Operate, maintain and improve our internal operations, systems, Sites, and Products
+- Understand you and your preferences to enhance your experience and enjoyment using our Sites and Products, to provide recommendations, to solicit feedback, and to better market and advertise to you
+- Monitor and analyze user interactions with our Sites and Products to identify trends, usage, and activity patterns
+- Respond to your comments and questions and provide technical support or customer service,
+- Provide and deliver the Products you request
+- Comply with applicable laws, rules, or regulations and cooperate and defend legal claims and audits
+- Communicate with you about promotions, upcoming events, and other news about products and services offered by PingCAP and our partners
+- Plan and host corporate events
+- Protect the Site and Products, and investigate and deter against fraudulent, unauthorized, or illegal activity.
 
-**如何控制您的通讯偏好。** 您可以通过以下方式停止接收来自我们的促销电子邮件：单击此类电子邮件中提供的“取消订阅链接”，或通过以下列出的联系方式与我们联系。此外，您可以在我们的“首选项中心”中更改首选项。我们将尽一切努力迅速处理所有退订请求。如果您选择退出，我们可能仍会向您发送交易通讯（例如，非促销电子邮件，例如有关您注册参加的培训和活动以及技术或安全通知的电子邮件）。
+## SHARING OF PERSONAL INFORMATION
 
-**Cookie。** 大多数 Web 浏览器默认设置为接受 Cookie。如果愿意，通常可以将浏览器设置为删除 cookie 并拒绝 cookie。如果您选择删除拒绝 Cookie，则可能会影响我们网站或其他产品的某些功能或服务。上面“ Cookies”部分中介绍了与通过使用 cookie 和类似技术收集的信息有关的其他选择。有关特定的选择退出链接以及管理您对第一方和第三方 Cookie 的偏好，请参阅我们的 Cookie 声明。
+We may share your personal information with your consent. We may also share any of the categories of personal information we describe above:
 
-**分析和在线广告。** 我们的第三方分析和广告合作伙伴可能会为您提供选择退出某些信息收集的选项。有关他们为您提供的适用选择的更多信息，请参见上面的“ Cookies”部分和我们的 Cookie 声明。
+- Among our affiliates, which include companies owned by or under common ownership of PingCAP, all of which will be required to use your personal information as described in this Privacy Statement
+- With our partners and other third parties, such as our sponsors and cosponsors of events, whose information we believe may be relevant to you or research and advisory firms whose reports are offered through our Sites (subject to applicable laws)
+- With third-party vendors and other service providers that we use to provide payment processing, reselling services, support ticket portals, secure transfer software, cloud hosting, video conference services, marketing automation platforms, project management tools, registration services, learning management services, collaboration and communication tools, data backup services, and professional services
+- With other parties in connection with a company transaction, such as a merger, sale of company assets or shares, reorganization, financing, change of control or acquisition of all or a portion of our business or assets by another company or third party, or in the event of a bankruptcy, dissolution, or related or similar proceedings
+- As required by law or subpoena or if we reasonably believe that such action is necessary to comply with the law or the reasonable requests of law enforcement, to enforce our Terms of Use or other agreements or to protect the security or integrity of our Sites and Products, and/or to exercise or protect the rights, property, or personal safety of PingCAP, our customers, users, or others.
 
-**遥测数据的搜集功能管理。**
-我们为您提供了方便的功能来关闭/启用/查看/重置遥测数据搜集功能，具体如下：
-通过使用 TiUP 工具，执行 `tiup telemetry disable` 来关闭遥测数据采集功能。
-通过使用 TiUP 工具，执行 `tiup telemetry enable` 来启用遥测数据采集功能。
-通过使用 TiUP 工具，执行 `tiup telemetry reset` 来重置遥测数据采集功能，该操作会生成新的追踪标识符。
-通过使用 TiUP 工具，执行 `tiup telemetry status` 来查看遥测数据采集功能启用/停止的状态。
+We may also share aggregated or deidentified data with third parties (subject to applicable laws).
 
-**不跟踪。** Web 浏览器信号和其他类似机制（例如“请勿跟踪”）可以通过多种方式指示您选择禁用跟踪，并且尽管我们和其他人为您提供了本隐私声明中所述的选择，但我们目前尚无遵守这些机制。
+## YOUR CHOICES ABOUT PERSONAL INFORMATION
 
-## 信息的披露
+**Access, correction, or deletion.** If you wish to request access, correction, or deletion of any of your personal information held by us or a change in the way we use your information (for which we reserve the right to charge you a fee, as permitted by applicable law), please submit your request here or by email to info@pingap.com. However, we may decline requests that are unreasonable, prohibited by law, or are not required to be honored by applicable law.
 
-未经您同意，我们不会与任何无关第三方分享您的信息，以下情形除外：
-我们可能将您的信息与我们的关联公司、第三方服务提供商、承包商及代理分享，仅用作改善您访问和使用我们网站的体验及使用我们产品的体验之用途。
-如我们与任何上述第三方分享您的信息，我们将努力确保第三方在使用您的信息时遵守本声明及我们要求其遵守的其他适当的保密和安全措施。
+**How to control your communications preferences.** You can stop receiving promotional emails from us by clicking on the “unsubscribe link” provided in such emails or by contacting us at the contact details set forth below. In addition, you can make changes to your preferences in our Preference Center. We make every effort to promptly process all unsubscribe requests. If you opt out, we may still send you transactional communications (e.g., non-promotional emails such as emails about training and events you registered to attend and technical or security notices).
 
-随着我们业务的持续发展，我们以及我们的关联公司有可能进行合并、收购、资产转让或类似的交易，您的信息有可能作为此类交易的一部分而被转移。我们将遵守相关法律法规的要求，在转移前通知您，确保信息在转移时的机密性，以及变更后继续履行相应责任和义务。
+**Cookies.** Most Web browsers are set to accept cookies by default. If you prefer, you can usually set your browser to remove cookies and to reject cookies. If you choose to remove reject cookies, this could affect certain features or services of our Site or other Products. Other choices related to information collected through the use of cookies and similar technologies are described in the “Cookies” section above. For specific opt out links and to manage your preferences in relation to first and third party cookies please see our Cookie Notice.
 
-我们还可能因以下原因而披露您的信息：
+**Analytics and online advertising.** Our third-party analytics and advertising partners may provide you with options to opt-out of certain information collection. For more information about the applicable choices they provide you, please see the “Cookies” section above and our Cookie Notice.
 
-- 遵守适用的法律法规等有关规定。
-- 遵守法院判决、裁定或其他法律程序的规定。
-- 遵守相关政府机关或其他有权机关的要求。
-- 我们有理由确信需遵守法律法规等有关规定。
-- 为执行相关服务协议或本隐私声明、维护社会公共利益、处理投诉/纠纷，保护我们的客户、我们或我们的关联公司、其他用户或雇员的人身和财产安全或合法权益所合理必需的用途。
-- 经过您合法授权的情形。
+**How to control collection of telemetry data.** If you prefer that we do not collect certain telemetry data, including IP Address, through TiDB tools - TiUP,, you can manage the collection of this data as follows:
 
-如我们因上述原因而披露您的信息，我们将在遵守法律法规相关规定及本声明的基础上及时告知您。
+- By using `tiup telemetry disable` to turn off and disable collecting telemetry data。
+- By using `tiup telemetry enable` to turn on and enable collecting telemetry data。
+- By using `tiup telemetry reset` to reset the collecting function and generate new unique tracing identifier。
+- By using `tiup telemetry status` to verify the status (on/off) of collecting function。
 
-## 我们如何存储和保护个人信息
+**Do Not Track.** There are many ways through which web browser signals and other similar mechanisms (for example, “Do Not Track”) can indicate your choice to disable tracking, and, while we and others give you choices described in this Privacy Statement, we do not currently honor these mechanisms.
 
-我们搜集的有关您的信息保存在 PingCAP 位于中国大陆的服务器。
-通常，我们仅在为您提供服务期间保留您的信息，保留时间不会超过满足相关使用目的所必须的时间。
+## HOW WE STORE AND PROTECT PERSONAL INFORMATION
 
-但在下列情况下，且仅出于下列情况相关的目的，我们有可能需要较长时间保留您的信息或部分信息：
+**Storage and processing.** Your information collected through the Sites and our Products may be stored and processed in any country in which PingCAP or its subsidiaries, affiliates, or service providers maintain facilities including your region, the United States, Australia, Canada, and the European Economic Area (including the United Kingdom). Our processing locations are chosen in order to operate efficiently, to improve performance, and to create redundancies in order to protect the data in the event of an outage or other problem. We take steps designed to ensure that the data we collect under this Privacy Statement is processed according to the provisions of this Privacy Statement and applicable law wherever the data is located.
 
-- 遵守适用的法律法规等有关规定。
-- 遵守法院判决、裁定或其他法律程序的要求。
-- 遵守相关政府机关或其他有权机关的要求。
-- 我们有理由确信需遵守法律法规等有关规定。
-- 为执行相关服务协议或本隐私声明、维护社会公共利益、处理投诉/纠纷，保护我们的客户、我们或我们的关联公司、其他用户或雇员的人身和财产安全或合法权益所合理必需的用途。
+**International data transfers.** When we transfer personal information from the European Economic Area (including the United Kingdom) and from Switzerland to the United States or other countries which have not been determined by the European Commission to have laws that provide an adequate level of data protection, we use legal mechanisms, including contracts, designed to help ensure your rights and protections. Specifically, our website servers are located in the United States and our affiliates, partners, third parties and service providers operate in the United States, European Economic Area, Canada, and Australia. This means when we collect your personal information we may process it in any of these countries. However, we have taken appropriate safeguards to require that your personal information will remain protected in accordance with this Privacy Statement. The safeguard PingCAP primarily relies upon is the European Commission-approved standard contractual data protection clauses. For more information about these mechanisms, please contact us using the contact details provided in the “How to contact us” section below.
 
-我们努力保障信息安全，以防信息的丢失、不当使用、未经授权阅览或披露。
+**Keeping your information safe.** PingCAP cares about the security of your information and takes reasonable and appropriate technical and organizational measures designed to prevent loss, misuse, and unauthorized access, disclosure, alteration, and destruction of personal information. However, no security system is impenetrable, and we cannot guarantee the security of our systems or your information.
 
-- 我们使用各种安全技术以保障信息的安全。例如，我们将通过服务器多备份、密码加密等安全措施，防止信息泄露、毁损、丢失。
-- 我们建立严格的管理制度和流程以保障信息的安全。例如，我们严格限制访问信息的人员范围，并进行审计，要求他们遵守保密义务。
-- 我们重视信息安全合规工作，以业界先进的解决方案充分保障您的信息安全。但请您理解，由于技术的限制以及可能存在的各种恶意手段，在互联网环境下，即便竭尽所能加强安全措施，也不可能始终保证信息百分之百的安全。您需要了解，您接入我们的服务所用的系统和通讯网络，有可能因我们可控范围外的因素而出现问题。若发生个人信息泄露等安全事件，我们会启动应急预案，阻止安全事件扩大，按照《国家网络安全事件应急预案》等有关规定及时上报，并以发送邮件、推送通知、公告等形式告知您相关情况，并向您给出安全建议。
+**Lawful basis for processing personal information (EEA only).** If you are located in the European Economic Area (EEA), PingCAP, Inc., is the data controller of your information.
 
-## 事先征得授权同意的例外
+Our legal basis for collecting and using the personal information above will depend on the personal information concerned and the specific context in which we collect it. However, we will normally collect personal information only where we have your consent to do so, where we need the personal information to perform a contract with you, or where the processing is in our legitimate interests and not overridden by your data protection interests or fundamental rights and freedoms. In some cases, we may also have a legal obligation to collect personal information from you.
 
-以下情形中，共享、转让、公开披露您的个人信息无需事先征得您的授权同意：
+If we ask you to provide personal information to comply with a legal requirement or to perform a contract with you, we will indicate this at the relevant time and advise you whether the provision of your personal information is mandatory or not (as well as the possible consequences, if any, if you do not provide your personal information). Similarly, if we collect and use your personal information in reliance on our legitimate interests (or those of a third party), we will indicate to you at the relevant time what those legitimate interests are.
 
-1. 与国家安全、国防安全有关的；
-2. 与公共安全、公共卫生、重大公共利益有关的；
-3. 与犯罪侦查、起诉、审判和判决执行等有关的；
-4. 出于维护您或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；
-5. 您自行向社会公众公开的个人信息；
-6. 从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。
-7. 根据法律规定，共享、转让经去标识化处理的个人信息，且确保数据接收方无法复原并重新识别个人信息主体的，不属于个人信息的对外共享、转让及公开披露行为，对此类数据的保存及处理将无需另行向您通知并征得您的同意。
+If you have questions about the legal basis for processing or want to find out more please contact us using the details at the end of this Privacy Statement.
 
-## 处理未成年人的个人信息
+**Retention.** We retain personal information for as long as we have an ongoing legitimate business need to do so. For example, we retain your account information for as long as your account is active or as needed to provide you with Products you have requested or authorized, including maintaining and improving the performance of the Products and protecting system security. We also retain personal data as needed to maintain appropriate business and financial records, protect our legal interests, resolve disputes, or comply with legal or regulatory requirements. When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will store your personal information using appropriate security measures and take appropriate steps designed to isolate it from any further processing until deletion is possible.
 
-如果没有父母或监护人的同意，未成年人不得创建自己的用户账号。如您为未成年人的，建议您请您的父母或监护人仔细阅读本隐私政策，并在征得您的父母或监护人同意的前提下使用我们的服务或向我们提供信息。
-对于经父母或监护人同意使用我们的产品或服务而收集未成年人个人信息的情况，我们只会在法律法规允许、父母或监护人明确同意或者保护未成年人所必要的情况下使用、共享、转让或披露此信息。
+## EUROPEAN DATA PROTECTION RIGHTS
 
-## 个人信息如何在全球范围转移
+If the processing of personal data about you is subject to European Union data protection law, you have certain rights with respect to that data:
 
-我们在中华人民共和国境内运营中收集和产生的个人信息及产品遥测数据信息，均存储在中国境内，以下情形除外：
-法律法规有明确规定；
-获得您的明确授权。
-针对以上情形，我们会确保依据本隐私政策对您的个人信息提供足够的保护。
+- You may request access to, and correction or erasure of, personal information
+- If automated processing of your personal data is based on a contract with you or your consent, you have certain rights to data portability
+- If the processing of personal information is based on your consent, you have a right to withdraw consent at any time for future processing
+- You have a right to object to, or obtain a restriction of, the processing of personal information under certain circumstances.
+  To make such requests, contact us by email at the address below. You also have the right to lodge a complaint with a supervisory authority, but we encourage you to first contact us with any questions or concerns.
 
-## 本隐私政策如何更新
+## CALIFORNIA PRIVACY RIGHTS
 
-我们的隐私政策可能变更。未经您明确同意，我们不会限制您按照本隐私政策所应享有的权利。我们会发布对隐私政策所做的任何变更。对于重大变更，我们还会提供更为显著的通知。
+The California Consumer Privacy Act (“CCPA”), provides California residents with the following rights:
 
-本政策所指的重大变更包括但不限于：
+Right to know and right to delete. You may request a copy of the personal information we have collected, used, disclosed, and sold about you over the past twelve (12) months. We identify the categories of personal information we collect, the purposes for collection, the sources of personal information, and any information disclosed and shared in this Privacy Statement. You may also request that we delete certain personal information we have about you. You may “request to know” or “request to delete” your personal information by contacting us at legal@pingcap.com. Please know that any such request is subject to our ability to verify your identity and any exceptions provided under applicable laws.
 
-- 我们的服务模式发生重大变化。如处理个人信息的目的、处理的个人信息类型、个人信息的使用方式等；
-- 我们在控制权等方面发生重大变化。如并购重组等引起的信息控制者变更等；
-- 个人信息共享、转让或公开披露的主要对象发生变化；
-- 您参与个人信息处理方面的权利及其行使方式发生重大变化；
-- 我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化；
-- 个人信息安全影响评估报告表明存在高风险。
-- 我们还会将本隐私权政策的旧版本在 PingCAP 官方网站存档，供您查阅。
+Right to opt out. As discussed in this Privacy Statement, our advertising and analytics providers may collect your IP address, cookie ID, and mobile ID when you use our websites, and such vendors may further share your information to provide similar advertising or analytics services to their other customers. PingCAP does not generally sell information as the terms “sale” or “sell” are traditionally understood. However, making a California resident’s personal information (including IP addresses, cookies IDs, and mobile IDs) available to third parties as described above may broadly be considered a “sale” under the CCPA. You can opt-out of third party tracking on our websites as described in our Cookie Notice.
 
-## 如何联系我们
+## CHANGES TO OUR PRIVACY STATEMENT
 
-如您对本政策或其他相关事宜有疑问，请根据我们提供的指引，填写相关资料，将您的问题发送至 legal@pingcap.com 或 通过 https://pingcap.com/about-cn/ 联系我们。我们将尽快审核所涉问题，并在验证您的用户身份后的三十天内予以回复。
+PingCAP may modify or update this Privacy Statement from time to time to reflect the changes in our business and practices, and so you should review this page periodically. If we make any changes to this Privacy Statement, we will notify you by changing the "Last Updated" date above. If we make any material changes, we will provide you with additional notice or obtain consent as may be required by applicable law.
+
+## HOW TO CONTACT US
+
+If you have any questions, complaints, or concerns about how your information is handled, please email us at legal@pingcap.com. Our main address is PingCAP, Inc., 2955 Campus Drive #110, San Mateo, CA 94403, USA.

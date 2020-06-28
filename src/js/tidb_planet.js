@@ -267,12 +267,7 @@ $(function() {
 
   $('.modal-overlay').on('click', function(e) {
     if ($(this).hasClass('active')) {
-      // const _target = e.target
-      // console.log('current target', e.target)
-      // console.log('current delegateTarget', e.delegateTarget)
       if (_.isEqual(e.target, e.delegateTarget)) closeModal()
-      // e.preventDefault()
-      // e.stopPropagation()
     }
   })
 

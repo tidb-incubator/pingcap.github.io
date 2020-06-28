@@ -442,7 +442,6 @@ $(document).ready(function() {
         $('.date1').addClass('is-active')
         $('.day1').removeClass('hide-schedule')
         $('.day2').addClass('hide-schedule')
-        console.log('ad', $('.devCon-cn'))
         $(this).removeClass('date1')
         $(this).addClass('date2')
         if ($('.devCon-cn').length > 0) {

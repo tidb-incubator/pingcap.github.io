@@ -2,6 +2,7 @@
 {{- partial "head/preload-css" (dict "href" "https://download.pingcap.com/style/github-markdown.css") -}}
 {{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
 {{ $.Scratch.Set "metaTitle" "TiDB" }}
+{{$.Scratch.Set "data_i18_cn" true }}
 {{$.Scratch.Set "data_i18_link" "/privacy-policy/" }}
 {{- end -}}
 

@@ -58,7 +58,7 @@
                 <div class="control">
                     <label class="checkbox" onclick="clickbox()">
                         <input type="checkbox" id="protocol-checked">
-                        我同意<a href="/licenses"> PingCAP 社区软件许可协议</a>与<a href="/privacy-policy">隐私协议</a>。
+                        我同意<a href="/licenses"> PingCAP 社区软件许可协议</a>与<a href="/zh/privacy-policy">隐私协议</a>。
                     </label>
                 </div>
                 <div class="download-btn">
@@ -163,7 +163,6 @@
         selPkg = $('#package').val()
         $('.package-desc').css('display', 'block')
         $('.package-desc')[0].innerText = packageDesc[selPkg]
-        console.log('packageDesc[selPkg]', packageDesc[selPkg])
         genDownloadURL()
         validateForm()
     }

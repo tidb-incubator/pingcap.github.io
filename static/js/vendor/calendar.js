@@ -20,7 +20,6 @@ var Calendar = function(model, options, date){
     ModelChange: model
   };
 
-  // console.log('options:', options)
   // Overwriting default values
   for(var key in options){
     this.Options[key] = typeof options[key]=='string'?options[key].toLowerCase():options[key];
@@ -95,7 +94,6 @@ function createCalendar(calendar, element, adjuster){
         //prevent losing var adj value (for whatever reason that is happening)
         (function () {
           var adj = (i-4);
-          //x.addEventListener('click', function(){createCalendar(calendar, element, adj);console.log('kk', adj);} );
           x.addEventListener('click', function(){
             typeof calendar.Options.ModelChange == 'function'?calendar.Model = calendar.Options.ModelChange():calendar.Model = calendar.Options.ModelChange;
             createCalendar(calendar, element, adj);} );
@@ -230,7 +228,6 @@ function createCalendar(calendar, element, adjuster){
             var a = document.createElement('a');
             a.setAttribute('href', '#');
             a.innerHTML += calendar.Model[n].Title;
-            // console.log('a is', a)
             if(calendar.Options.EventClick){
               var z = calendar.Model[n].Link;
               if(typeof calendar.Model[n].Link != 'string'){

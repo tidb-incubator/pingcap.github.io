@@ -118,3 +118,6 @@ dist
 dist/
 baseof.html
 gulp-build.log
+
+*/.DS_Store
+.DS_Store

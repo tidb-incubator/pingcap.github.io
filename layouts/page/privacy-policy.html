@@ -1,8 +1,7 @@
 {{- define "headTpl" -}}
 {{- partial "head/preload-css" (dict "href" "https://download.pingcap.com/style/github-markdown.css") -}}
 {{- partial "head/preload-css" (dict "href" "/css/doc.css") -}}
-{{$.Scratch.Set "data_i18_cn" true }}
-{{$.Scratch.Set "data_i18_link" "/en/privacy-policy/" }}
+{{$.Scratch.Set "data_i18_link" "/zh/privacy-policy/" }}
 {{- end -}}
 
 {{- define "main" -}}
