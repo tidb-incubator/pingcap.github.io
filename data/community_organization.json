@@ -1270,10 +1270,10 @@
                 "slack_link": "https://join.slack.com/t/tidbcommunity/shared_invite/enQtNzc0MzI4ODExMDc4LWYwYmIzMjZkYzJiNDUxMmZlN2FiMGJkZjAyMzQ5NGU0NGY0NzI3NTYwMjAyNGQ1N2I2ZjAxNzc1OGUwYWM0NzE"
             },
             {
-                "title": "TiDB Expression SIG ",
-                "desc": "Expression SIG 涵盖了 TiDB 表达式的实现，专注于 TiDB 函数和操作符的开发和维护，SIG 参与的事项包括但不限于：支持新功能、改善性能、修复 bug。",
-                "github_link": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-expr",
-                "slack_link": "https://join.slack.com/t/tidbcommunity/shared_invite/enQtNzc0MzI4ODExMDc4LWYwYmIzMjZkYzJiNDUxMmZlN2FiMGJkZjAyMzQ5NGU0NGY0NzI3NTYwMjAyNGQ1N2I2ZjAxNzc1OGUwYWM0NzE"
+                "title": "TiDB Scheduling SIG",
+                "desc": "Scheduling SIG 以打造智能、高效、高可用、可扩展的分布式系统为目标。主要工作内容包括集群中心化管理，优化资源分配策略，智能调度，高可用容灾等。",
+                "github_link": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-scheduling",
+                "slack_link": "https://slack.tidb.io/invite?team=tidb-community&channel=sig-scheduling&ref=pingcap-website-docs-zh"
             }
         ]
         
