@@ -4,7 +4,7 @@
 {{ $.Scratch.Set "data_i18_link" "/" }}
 {{ $.Scratch.Set "data_i18_cn" true }}
 {{ $.Scratch.Set "no_footer" true }}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.css">
+{{- partial "head/preload-css" (dict "href" "/css/vendor/swiper.css") -}}
 {{- end -}}
 
 {{- define "main" -}}
@@ -377,7 +377,7 @@
 {{- end -}}
 
 {{- define "footJS" -}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/js/swiper.min.js"></script>
+<script type="text/javascript" src="/js/vendor/swiper.min.js"></script>
 <script type="text/javascript">
     var slides_per_view, slides_per_group, pagination_one, pagination_two, pagination_three
 

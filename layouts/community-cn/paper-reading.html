@@ -8,7 +8,7 @@
     {{ $.Scratch.Set "data_i18_cn" true }}
     {{ $.Scratch.Set "data_i18_link" "/community/organization" }}
     {{ partial "head/preload-css" (dict "href" "/css/community/paper-reading.css") }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.css">
+    {{- partial "head/preload-css" (dict "href" "/css/vendor/swiper.css") -}}
 {{- end -}}
 
 {{- define "main" -}}
@@ -102,6 +102,6 @@
 {{- end -}}
 
 {{- define "footJS" -}}
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/swiper.min.js"></script>
     <script type="text/javascript" src="/js/carousel.js"></script>
 {{- end -}}
