@@ -1,5 +1,11 @@
 [
   {
+    "title": "PingCAP Announces TiDB Cloud, Bringing Fully-Managed TiDB Service to AWS and GCP",
+    "logo": "/images/news/cision-logo.png",
+    "link": "https://www.prnewswire.com/news-releases/pingcap-announces-tidb-cloud-bringing-fully-managed-tidb-service-to-aws-and-gcp-301082155.html",
+    "date": "2020-06-23"
+  },
+  {
     "title": "TiDB Dashboard: Easier Troubleshooting for Distributed Databases",
     "logo": "/images/news/dzone-logo.png",
     "link": "https://dzone.com/articles/tidb-dashboard-easier-troubleshooting-for-distribu",
