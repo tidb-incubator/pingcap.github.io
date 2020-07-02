@@ -1,5 +1,6 @@
 ---
 type: page
+layout: privacy-policy
 title: Privacy Policy
 image: /images/pingcap-opengraph.jpg
 ---
