@@ -1,5 +1,11 @@
 [
   {
+    "title": "Cluster Diagnostics: Troubleshoot Cluster Issues Using Only SQL Queries",
+    "logo": "/images/news/dzone-logo.png",
+    "link": "https://dzone.com/articles/cluster-diagnostics-troubleshoot-cluster-issues-us-6",
+    "date": "2020-07-06"
+  },
+  {
     "title": "PingCAP Announces TiDB Cloud, Bringing Fully-Managed TiDB Service to AWS and GCP",
     "logo": "/images/news/cision-logo.png",
     "link": "https://www.prnewswire.com/news-releases/pingcap-announces-tidb-cloud-bringing-fully-managed-tidb-service-to-aws-and-gcp-301082155.html",
