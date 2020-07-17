@@ -1202,7 +1202,7 @@
             {
                 "name": "Maintainer",
                 "desc": "The planner and designer of the project; Maintainers are generated from Committers and have the right to merge branches into the master.",
-                "link": "/community/developer-group/#maintainer"
+                "link": "https://github.com/pingcap/community/tree/master/architecture#maintainer"
             },
             {
                 "name": "Committer",
