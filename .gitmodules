@@ -18,44 +18,4 @@
 	path = content/tidb-academy
 	url = git@github.com:pingcap/private-tidb-academy.git
 	shallowed = true
-[submodule "content/docs-cn/v2.1"]
-	path = content/docs-cn/v2.1
-	url = https://github.com/pingcap/docs-cn
-	shallowed = true
-	branch = release-2.1
-[submodule "content/docs-cn/dev"]
-	path = content/docs-cn/dev
-	url = https://github.com/pingcap/docs-cn
-	shallowed = true
-[submodule "content/docs-cn/v3.1"]
-	path = content/docs-cn/v3.1
-	url = https://github.com/pingcap/docs-cn
-	shallowed = true
-	branch = release-3.1
-[submodule "content/docs-cn/v3.0"]
-	path = content/docs-cn/v3.0
-	url = https://github.com/pingcap/docs-cn
-	shallowed = true
-	branch = release-3.0
-[submodule "content/docs-cn/v4.0"]
-	path = content/docs-cn/v4.0
-	url = https://github.com/pingcap/docs-cn
-	branch = release-4.0
-[submodule "content/docs-cn/tidb-data-migration/dev"]
-	path = content/docs-cn/tidb-data-migration/dev
-	url = https://github.com/pingcap/docs-dm
-[submodule "content/docs-cn/tidb-data-migration/v1.0"]
-	path = content/docs-cn/tidb-data-migration/v1.0
-	url = https://github.com/pingcap/docs-dm
-	branch = release-1.0
-[submodule "content/docs-cn/tidb-in-kubernetes/dev"]
-	path = content/docs-cn/tidb-in-kubernetes/dev
-	url = https://github.com/pingcap/docs-tidb-operator
-[submodule "content/docs-cn/tidb-in-kubernetes/v1.0"]
-	path = content/docs-cn/tidb-in-kubernetes/v1.0
-	url = https://github.com/pingcap/docs-tidb-operator
-	branch = release-1.0
-[submodule "content/docs-cn/tidb-in-kubernetes/v1.1"]
-	path = content/docs-cn/tidb-in-kubernetes/v1.1
-	url = https://github.com/pingcap/docs-tidb-operator
-	branch = release-1.1
+

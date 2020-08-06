@@ -25,34 +25,7 @@ replace_dist_html_link() {
   fi
 }
 
-cn_tmp_docs_path="dist/docs-cn"
-en_tmp_docs_path="dist/docs"
-tidb_docs_versions=(stable dev v2.1 v3.1 v3.0)
-operator_docs_versions=(stable dev v1.0)
-dm_docs_versions=(stable dev)
 misc_repos=(blog-cn blog meetup weekly)
-
-python scripts/convert_html.py "$cn_tmp_docs_path/index.html" "docs-cn"
-
-start_time=$(date +%H%M%S)
-echo "start time" $start_time
-for v in "${tidb_docs_versions[@]}"
-do
-  echo "$cn_tmp_docs_path/$v"
-  replace_dist_html_link "$cn_tmp_docs_path/$v" "docs-cn/$v" &
-done
-
-for v in "${operator_docs_versions[@]}"
-do 
-  echo "$cn_tmp_docs_path/tidb-in-kubernetes/$v"
-  replace_dist_html_link "$cn_tmp_docs_path/tidb-in-kubernetes/$v" "docs-cn/tidb-in-kubernetes/$v" &
-done
-
-for v in "${dm_docs_versions[@]}"
-do
-  echo "$cn_tmp_docs_path/tidb-data-migration/$v"
-  replace_dist_html_link "$cn_tmp_docs_path/tidb-data-migration/$v" "docs-cn/tidb-data-migration/$v" &
-done
 
 for repo in "${misc_repos[@]}"
 do 
@@ -78,11 +51,7 @@ rm_images_from_media_docs() {
 }
 
 # mv blog-cn/cases-cn in media to dist/images
-rm_images_from_media_docs docs-cn/v2.1
-rm_images_from_media_docs docs-cn/dev
-rm_images_from_media_docs docs-cn/stable
-rm_images_from_media_docs docs-cn/v3.1
-rm_images_from_media_docs docs-cn/v3.0
+
 rm_images_from_media_docs blog-cn
 rm_images_from_media_docs blog
 rm_images_from_media_docs weekly

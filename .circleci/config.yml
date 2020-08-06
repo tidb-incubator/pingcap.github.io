@@ -35,10 +35,6 @@ jobs:
           command: npm run build
           no_output_timeout: 20m
 
-      - run:
-         name: consolidate duplicate URLs
-         command: bash ./scripts/consolidate-duplicate-urls.sh
-
       - deploy:
           name: 'Publish Website Could LA_1_HOST'
           command : |
