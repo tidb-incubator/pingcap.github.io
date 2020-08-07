@@ -1,14 +1,16 @@
 ---
 title: Content Strategist
-season: 2020 校招 
+season: 2021 校招 
 tags:
   - Campus
-location: 北京
+location: 北京，上海，广州，深圳，杭州，成都，特别优秀可 Remote
 avatar: writer
 position: true
 aliases:
+  - /recruit/campus/campus-2020-content-strategist/
   - /recruit/campus/campus-2019-content-strategist/
   - /about-cn/recruit-cn/campus/campus-2019-content-strategist/
+summary: Communicate with the engineering team and write, review and update technical documents, tutorials and blogs;Building and developing brand awareness in technical communities and social media;Assist in preparing and refining the marketing collaterals;
 ---
 
 # Content Strategist
@@ -27,7 +29,7 @@ aliases:
 
 6. Detail-oriented with sharp eyes and good troubleshooting skills;
 
-7. Comfortable in a fast-paced environment and with meeting deadlines.
+7. Comfortable in a fast-paced environment and with meeting deadlines;
 
 **Responsibilities:**
 
@@ -35,7 +37,7 @@ aliases:
 
 2. Building and developing brand awareness in technical communities and social media;
 
-3. Assist in preparing and refining the marketing collaterals.
+3. Assist in preparing and refining the marketing collaterals;
 
 **待遇：**
 
@@ -47,4 +49,4 @@ hire@pingcap.com
 
 **工作地点：**
 
-北京
+北京，上海，广州，深圳，杭州，成都，特别优秀可 Remote

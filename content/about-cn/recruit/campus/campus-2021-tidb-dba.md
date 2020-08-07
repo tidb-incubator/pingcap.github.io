@@ -1,14 +1,16 @@
 ---
 title: TiDB DBA
-season: 2020 校招 
+season: 2021 校招 
 tags:
   - Campus
 location: 北京
 avatar: support
 position: true
 aliases:
+  - /recruit-cn/campus/campus-2020-ops-engineer/
   - /recruit-cn/campus/campus-2019-ops-engineer/
   - /about-cn/recruit/campus/campus-2019-ops-engineer/
+summary: 负责对客户进行 TiDB 项目实施、技术支持，包括配置管理、升级、扩容、备份、数据迁移等工作；负责用户 TiDB 集群监控、故障响应、问题跟踪及性能分析处理；负责与用户进行需求沟通、技术培训，介绍 TiDB 的原理、使用方式、最佳实践等；研究 TiDB，对某细分方向，如 TiDB 自动化管理、SQL 优化、故障诊断等有持续产出和贡献。
 ---
 
 # 数据库工程师
@@ -33,6 +35,8 @@ aliases:
 
 4. 高度的责任心、良好的沟通技巧和团队合作精神。
 
+5. 此职位为实习转正职位，大四应届生优先，每周至少能实习 3 天以上，实习期半年或以上优先 ，实习优秀者有很大机会录用；
+
 **加分项:**
 
 1. 拥抱开源，对前沿技术有浓厚的热情和探索欲望，有开源项目经历；
@@ -43,7 +47,9 @@ aliases:
 
 **待遇：**
 
-8K - 15K，13薪 + 奖金，优秀者可面议
+实习期间薪资： 200/天，福利： 1500 元餐补/月
+
+转正后：8K - 15K，13薪 + 奖金，优秀者可面议
 
 **联系方式：**
 
@@ -51,4 +57,4 @@ hire@pingcap.com
 
 **工作地点：**
 
-北京
+深圳 
