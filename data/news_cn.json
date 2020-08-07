@@ -1,8 +1,16 @@
-[
-  { "name": "Go中国",
-    "title": "PingCAP 刘奇：成就了世界级产品梦想的 Gopher ",
+[ 
+  { 
+    "name": "开源中国",
+    "title": "聊聊数据库的未来，写在 PingCAP 成立五周年前夕",
+    "logo": "/images/news/oschinalogo.jpg",
+    "link": "https://my.oschina.net/zhaiyuan/blog/3223379",
+    "date": "2020-04-07"
+  },
+  {
+    "name": "Go中国",
+    "title": "PingCAP 刘奇：成就了世界级产品梦想的 Gopher",
     "logo": "https://download.pingcap.com/images/news/go-china.png",
-    "link": "https://mp.weixin.qq.com/s/DdxWDcKzPhNABDh-pMv7Rw",
+    "link": "https://www.sohu.com/a/368235477_657921",
     "date": "2020-01-21"
   },
   { 
