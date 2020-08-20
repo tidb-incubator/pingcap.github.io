@@ -203,6 +203,11 @@
 
     iframe {
       max-width: 100% !important;
+
+      &#youtube-video {
+        width: 100%;
+        height: 450px;
+      }
     }
 
     .highlight {
@@ -849,6 +854,14 @@ a.letter::before {
 
     .blogArticle__container {
       padding: 0;
+    }
+
+    .markdown-body {
+      iframe {
+        &#youtube-video {
+          height: 230px;
+        }
+      }
     }
   }
 
