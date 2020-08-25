@@ -1,14 +1,6 @@
 {
     "banners": [
         {
-            "link": "https://pingcap.com/community-cn/tidb-bug-hunting/",
-            "gaTrackEventClass": "tidb-bug-hunting_view",
-            "gaTrackEventLabel": "homepage-tidb-bug-hunting",
-            "img": "https://download.pingcap.com/images/community/activities/bug-hunting-mobile.jpg",
-            "alt": "TiDB Hug Hunting banner",
-            "newTab": false
-        },
-        {
             "link": "https://university.pingcap.com/",
             "gaTrackEventClass": "pingcap-university_view",
             "gaTrackEventLabel": "homepage-university-banner",
