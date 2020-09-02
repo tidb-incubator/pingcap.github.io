@@ -60,3 +60,4 @@
 - General & Administrative
   - [招聘主管](general-administrative/hr-manager.md)
   - [分公司行政主管](general-administrative/office-admin.md)
+  - [法务专员／主管](general-administrative/inhouse-legal.md)
