@@ -25,7 +25,7 @@
   - [高级行业方案架构师](business/senior-solution-architect.md)
   - [资深商务经理](business/senior-business-manager.md)
   - [资深行业销售总监](business/sales-director.md)
-  - [资深销售经理（TiDB, Cloud](business/global-sales-manager.md)
+  - [资深销售经理（TiDB, Cloud）](business/global-sales-manager.md)
   - [海外资深商务经理](business/global-senior-business-manager.md)
   - [资深售前技术总监](business/presales-director.md)
   - [首席项目经理](business/chief-project-manager.md)
