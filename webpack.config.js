@@ -24,6 +24,7 @@ module.exports = {
     tidb_performance_challenge: pathJoinSrcJs('tidb_performance_challenge'),
     tidb_usability_challenge: pathJoinSrcJs('tidb_usability_challenge'),
     tidb_4_challenge: pathJoinSrcJs('tidb_4_challenge'),
+    high_performance_tidb_challenge: pathJoinSrcJs('high_performance_tidb_challenge'),
   },
   output: {
     path: path.join(__dirname, 'dist', 'js'),
