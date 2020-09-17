@@ -10,6 +10,7 @@
   - [TiDB 研发工程师](engineering/tidb-engineer.md)
   - [Tools 研发工程师](engineering/tools-engineer.md)
   - [Cloud 研发工程师](engineering/cloud-engineer.md)
+  - [Cloud 研发工程师（Operator）](engineering/cloud-operator-engineer.md)
   - [前端开发工程师](engineering/fe-engineer.md)
   - [Chaos Mesh 研发工程师](engineering/chaosmesh-engineer.md)
   - [研发工程师 - 测试基础设施开发](engineering/test-develop-engineer.md)
