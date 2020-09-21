@@ -24,6 +24,7 @@
   - [资深安全工程师](engineering/security-engineer.md)
 - Business
   - [高级行业方案架构师](business/senior-solution-architect.md)
+  - [高级解决方案架构师](business/senior-solution-architect-overseas.md)
   - [资深商务经理](business/senior-business-manager.md)
   - [资深行业销售总监](business/sales-director.md)
   - [资深销售经理（TiDB, Cloud）](business/global-sales-manager.md)
