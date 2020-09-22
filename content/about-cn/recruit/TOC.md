@@ -40,6 +40,7 @@
   - [PingCAP University 培训专家](user-ecosystem/tidb-training-expert.md)
   - [资深/高级/中级 TiDB DBA](user-ecosystem/tidb-dba.md)
   - [社区 BD 总监](user-ecosystem/bd-director.md)
+  - [数据分析师](user-ecosystem/bi.md)
 - Product & Design
   - [数据库产品经理](product-design/database-product-manager.md)
   - [网站产品经理](product-design/website-product-manager.md)
