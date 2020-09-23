@@ -1,7 +1,7 @@
 ---
 title:  数据分析师
 tags:
-  - UserEcosystem
+  - User Ecosystem
 location: 北京/上海/杭州/成都/深圳/广州
 avatar: business
 position: true
