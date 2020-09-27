@@ -836,6 +836,57 @@ section {
     }
 }
 
+.partners {
+    .partners-body {
+        width: 67%;
+        margin: 0 auto;
+        text-align: center;
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+            font-weight: 500;
+            color: @C5;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                border-bottom: 27px solid #ff5670;
+                width: 20%;
+                height: 50%;
+                z-index: -1;
+                transform: translateX(-50%);
+            }
+        }
+
+        .ucloud {
+            margin-bottom: 4rem;
+        }
+
+        .sponsor-type {
+            font-size: 20px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .logo-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 1rem auto;
+
+            img {
+                width: auto;
+                height: 70px;
+                margin: 10px 9%;
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .learning-materials {
         .learning-card {
@@ -1238,5 +1289,9 @@ section {
                 width: 50%;
             }
         }
+    }
+
+    .partners .partners-body .logo-list img {
+        width: 50%;
     }
 }
