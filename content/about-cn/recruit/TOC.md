@@ -70,3 +70,4 @@
   - [招聘主管](general-administrative/hr-manager.md)
   - [分公司行政主管](general-administrative/office-admin.md)
   - [法务专员／主管](general-administrative/inhouse-legal.md)
+  - [知识产权法务专家](general-administrative/Intellectual-property-legal.md)
