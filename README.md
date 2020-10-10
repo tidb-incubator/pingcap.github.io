@@ -39,7 +39,7 @@
 * 支持自定义排序的全文搜索
 * 完善的响应式布局
 
-### Strcture
+### Structure
 
 ![architecture](doc/media/website.png)
 
