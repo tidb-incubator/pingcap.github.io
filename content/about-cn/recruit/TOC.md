@@ -36,7 +36,10 @@
   - [Inside Sales](business/commercial-sales.md)
   - [Sales Development Representative](business/commercial-sdr.md)
 - Solution & Architecture
-  - [高级行业方案架构师](solution-architecture/senior-solution-architect.md)
+  - [高级应用架构师 (Java 方向)](solution-architecture/senior-solution-architect-java.md)
+  - [高级数据库架构师](solution-architecture/senior-solution-architect-db.md)
+  - [行业高级架构师 (金融方向)](solution-architecture/senior-solution-architect-f.md)
+  - [行业高级架构师 (零售/物流/制造/电商方向)](solution-architecture/senior-solution-architect-mul.md)
 - User Ecosystem
   - [资深互联网架构师](user-ecosystem/internet-architect.md)
   - [用户生态技术运营](user-ecosystem/user-ecosystem-technical-operations.md)
