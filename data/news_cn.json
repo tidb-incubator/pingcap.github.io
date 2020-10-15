@@ -1,5 +1,26 @@
-[ 
-  { 
+[
+  {
+    "name": "IT168",
+    "title": "北京银行和平凯星辰获得 2020 年度亚洲银行家大奖",
+    "logo": "/images/news/it168-logo.png",
+    "link": "http://software.it168.com/a2020/0914/6324/000006324509.shtml",
+    "date": "2020-09-14"
+  },
+  {
+    "name": "极客公园",
+    "title": "PingCAP 开源分布式数据库 TiDB 论文入选 VLDB",
+    "logo": "/images/news/geekpark-logo.png",
+    "link": "https://www.geekpark.net/news/265370",
+    "date": "2020-09-04"
+  },
+  {
+    "name": "infoQ",
+    "title": "TiKV 正式从 CNCF 毕业，旨在为云原生时代构建分布式系统",
+    "logo": "/images/news/infoqlogo.png",
+    "link": "https://www.infoq.cn/article/xUwubxr5OHf3j1VszVo3",
+    "date": "2020-09-03"
+  },
+  {
     "name": "开源中国",
     "title": "聊聊数据库的未来，写在 PingCAP 成立五周年前夕",
     "logo": "/images/news/oschinalogo.jpg",
@@ -13,9 +34,9 @@
     "link": "https://www.sohu.com/a/368235477_657921",
     "date": "2020-01-21"
   },
-  { 
+  {
     "name": "清科集团",
-    "title": "PingCAP 入选 2019 中国最具投资价值企业风云榜 50 强", 
+    "title": "PingCAP 入选 2019 中国最具投资价值企业风云榜 50 强",
     "logo": "https://download.pingcap.com/images/news/qingkejituan.jpeg",
     "link": "https://news.pedaily.cn/201910/447492.shtml",
     "date": "2019-10-18"
@@ -29,17 +50,17 @@
   },
   {
     "name": "InfoQ",
-    "title":"PingCAP 唐刘：如何利用混沌工程打造健壮的分布式系统？" ,     
-    "logo": "/images/news/infoqlogo.png",     
+    "title": "PingCAP 唐刘：如何利用混沌工程打造健壮的分布式系统？",
+    "logo": "/images/news/infoqlogo.png",
     "link": "https://www.infoq.cn/article/EEKM947YbboGtD_zQuLw?from=timeline&isappinstalled=0",
-    "date": "2019-07-18"   
+    "date": "2019-07-18"
   },
   {
     "name": "开源中国",
     "title": "TiDB 3.0 GA！大幅提升稳定性和性能",
     "logo": "/images/news/oschinalogo.jpg",
     "link": "https://mp.weixin.qq.com/s/WJusYwRd1ZdOQSJ75MndwA",
-    "date": "2019-06-29" 
+    "date": "2019-06-29"
   },
   {
     "name": "InfoQ",
@@ -92,7 +113,7 @@
   },
   {
     "name": "搜狐",
-    "title": "PingCAP 与京东云联合发布分布式云数据库 Cloud-TiDB" ,
+    "title": "PingCAP 与京东云联合发布分布式云数据库 Cloud-TiDB",
     "logo": "/images/news/sohu.com-logo.jpg",
     "link": "http://www.sohu.com/a/240505035_736949",
     "date": "2018-07-11"
