@@ -873,30 +873,30 @@ section {
 }
 
 .partners {
+    .title {
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+        font-weight: 500;
+        color: @C5;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            border-bottom: 27px solid #ff5670;
+            width: 20%;
+            height: 50%;
+            z-index: -1;
+            transform: translateX(-50%);
+        }
+    }
+
     .partners-body {
         width: 67%;
         margin: 0 auto;
         text-align: center;
-
-        .title {
-            text-align: center;
-            font-size: 2.5rem;
-            letter-spacing: 5px;
-            font-weight: 500;
-            color: @C5;
-
-            &::before {
-                content: '';
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                border-bottom: 27px solid #ff5670;
-                width: 20%;
-                height: 50%;
-                z-index: -1;
-                transform: translateX(-50%);
-            }
-        }
 
         .ucloud {
             margin-bottom: 4rem;
@@ -1181,6 +1181,10 @@ section {
     }
 
     .judges {
+        .title::before {
+            width: 20%;
+        }
+
         .judge-list {
             .judge {
                 margin: 1rem;
@@ -1347,7 +1351,15 @@ section {
         }
     }
 
-    .partners .partners-body .logo-list img {
-        width: 100%;
+    .partners .partners-body {
+        .title {
+            &::before {
+                width: 50%;
+            }
+        }
+
+        .logo-list img {
+            width: 100%;
+        }
     }
 }
