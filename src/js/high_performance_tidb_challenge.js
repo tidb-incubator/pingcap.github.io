@@ -28,7 +28,7 @@ function renderData() {
           ).appendTo('#ranking-list')
         })
     } else {
-      $('<div>本排行榜积分更新时间为 2020.9.17 至 2020.11.15 </div>').appendTo(
+      $('<div>本排行榜积分更新时间为 2020.9.17 至 2020.12.04 </div>').appendTo(
         '#ranking-list'
       )
     }
