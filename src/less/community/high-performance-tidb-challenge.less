@@ -41,6 +41,15 @@ section {
             z-index: -1;
         }
     }
+
+    .title-en {
+        font-size: 2rem;
+        letter-spacing: 0px;
+
+        &::before {
+            border-bottom: 20px solid @C1;
+        }
+    }
 }
 
 .hero-body,
@@ -81,12 +90,22 @@ section {
                 }
             }
 
+            .date-en {
+                font-weight: 600;
+            }
+
             .title {
                 margin: 3.5rem 0 1.5rem;
                 font-size: 3.5rem;
                 color: @C5;
                 font-weight: 500;
                 letter-spacing: 5px;
+            }
+
+            .title-en {
+                letter-spacing: 0;
+                font-size: 3rem;
+                font-weight: 600;
             }
 
             .subtitle {
@@ -279,6 +298,10 @@ section {
         }
     }
 
+    .title-en::before {
+        width: 30%;
+    }
+
     .steps {
         display: flex;
         flex-flow: row wrap;
@@ -348,6 +371,10 @@ section {
             bottom: -75%;
             z-index: 2;
 
+            .close {
+                cursor: pointer;
+            }
+
             .grading-title {
                 font-size: 20px;
                 font-weight: 600;
@@ -383,10 +410,6 @@ section {
                     left: 0;
                 }
             }
-        }
-
-        .grading-btn:hover+.grading {
-            display: block;
         }
     }
 }
@@ -721,11 +744,11 @@ section {
     }
 
     .medal2 {
-        background-image: url(https://download.pingcap.com/images/community/high-performance-tidb/medal2.svg);
+        background-image: url(https://download.pingcap.com/images/community/high-performance-tidb/medal3.svg);
     }
 
     .medal3 {
-        background-image: url(https://download.pingcap.com/images/community/high-performance-tidb/medal3.svg);
+        background-image: url(https://download.pingcap.com/images/community/high-performance-tidb/medal2.svg);
     }
 
     .normal-rank {
@@ -862,6 +885,16 @@ section {
         }
     }
 
+    .title-en {
+        letter-spacing: 0px;
+        font-size: 2rem;
+
+        &::before {
+            border-bottom: 20px solid #ff5670;
+            width: 60%;
+        }
+    }
+
     .cards {
         padding-top: 4rem;
 
@@ -894,6 +927,16 @@ section {
             height: 50%;
             z-index: -1;
             transform: translateX(-50%);
+        }
+    }
+
+    .title-en {
+        font-size: 2rem;
+        letter-spacing: 0px;
+
+        &::before {
+            width: 20%;
+            border-bottom: 20px solid #ff5670;
         }
     }
 
