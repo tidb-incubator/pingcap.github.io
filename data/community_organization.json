@@ -516,11 +516,11 @@
         "ambassador_1": [
             "卞新栋 | 凤凰网",
             "常彦德 | UCloud",
-            "陈付 | 一点资讯", 
+            "陈付 | 一点资讯",
             "陈阳 | bilibili",
             "成达舜 | 微拍堂",
             "代加成 | 聚美集团",
-            "代晓磊 | 360", 
+            "代晓磊 | 360",
             "杜振强 | 美团点评",
             "范坤鹏 | 哗啦啦",
             "傅少峰 | 新东方"
@@ -576,7 +576,8 @@
             "张亿皓 | 小红书",
             "赵海军 | 车和家",
             "郑赫扬 | 学乐云",
-            "郑智辉 | 腾讯"
+            "郑智辉 | 腾讯",
+            "胡然 | 龙湖地产"
         ]
     },
 
@@ -1270,7 +1271,7 @@
                 "slack_link": "https://slack.tidb.io/invite?team=tidb-community&channel=sig-scheduling&ref=pingcap-website-docs-zh"
             }
         ]
-        
+
     },
 
     "wg": {
@@ -1314,7 +1315,7 @@
                 "slack_link": "https://join.slack.com/t/tidbcommunity/shared_invite/enQtNzc0MzI4ODExMDc4LWYwYmIzMjZkYzJiNDUxMmZlN2FiMGJkZjAyMzQ5NGU0NGY0NzI3NTYwMjAyNGQ1N2I2ZjAxNzc1OGUwYWM0NzE"
             }
         ]
-        
+
     },
 
     "wg_en": {
@@ -1410,7 +1411,7 @@
             }
         ]
     },
-    
+
     "active_contributor": {
         "role": "Active Contributor",
         "id": "active-contributor",
@@ -1519,7 +1520,7 @@
             }
         ]
     },
-    
+
     "active_contributor_en": {
         "role": "Active Contributor",
         "id": "active-contributor",
