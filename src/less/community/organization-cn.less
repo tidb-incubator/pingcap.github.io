@@ -19,6 +19,8 @@
 @comBtnColor: #956D8F;
 
 .community-organization {
+  min-height: 80vh;
+
   .container {
     max-width: 1124px;
   }
@@ -397,6 +399,7 @@ button.branchBtn.userBtn.orgBtn.tr {
 
         p {
           margin-left: 2rem;
+          width: max-content;
         }
       }
     }
@@ -447,12 +450,23 @@ button.branchBtn.userBtn.orgBtn.tr {
       box-shadow: 0 2px 5px #c4c4c4;
     }
 
-    .name {
+    .name,
+    .github-link,
+    .slack-link {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       left: 15%;
-      width: 40%;
+    }
+
+    .github-link {
+      left: unset;
+      right: 20%;
+    }
+
+    .slack-link {
+      left: unset;
+      right: 10%;
     }
 
     .name-en {
@@ -479,6 +493,11 @@ button.branchBtn.userBtn.orgBtn.tr {
     .githubID {
       padding: 13px;
     }
+  }
+
+  .contributor-info-cn {
+    justify-content: space-around;
+    align-items: center;
   }
 
   .contributor-item {
@@ -535,6 +554,35 @@ button.branchBtn.userBtn.orgBtn.tr {
       }
     }
   }
+}
+
+.developer-sig {
+  margin-top: calc(~'@{navHeight} + 5rem');
+  padding-bottom: 3rem;
+  background-color: white;
+
+  @media (max-width: 1024px) {
+    margin-top: calc(~'@{navHeight} + 8rem') !important;
+  }
+
+  @media (max-width: 798px) {
+    margin-top: calc(~'@{navHeight} + 5rem') !important;
+  }
+
+  .loader-spinner {
+    text-align: center;
+    background-color: white;
+  }
+}
+
+.back-to-sigs {
+  padding-bottom: 2rem;
+  color: #2977c7;
+  background-color: white;
+}
+
+.sig-tag {
+  margin-left: 0 !important;
 }
 
 .tag {
@@ -905,7 +953,7 @@ button.branchBtn.userBtn.orgBtn.tr {
 
     img {
       margin-left: 23%;
-      width: 15px !important;
+      width: 20px !important;
     }
 
     .github-icon {
@@ -1031,7 +1079,7 @@ button.branchBtn.userBtn.orgBtn.tr {
       align-items: center;
       width: 33.33333%;
       height: 200px;
-      
+
       &:hover {
         .card {
           opacity: 0;
