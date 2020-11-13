@@ -9,11 +9,11 @@
             "newTab": false
         },
         {
-            "link": "/community-cn/high-performance-tidb-challenge",
-            "gaTrackEventClass": "high-performance-tidb-challenge_view",
-            "gaTrackEventLabel": "homepage-hptc",
-            "img": "https://download.pingcap.com/images/community/activities/high-performance-tidb-challenge-mobile.png",
-            "alt": "High Performance TiDB Challenge banner",
+            "link": "/community-cn/careers/join",
+            "gaTrackEventClass": "community-careers_view",
+            "gaTrackEventLabel": "homepage-community-careers",
+            "img": "https://download.pingcap.com/images/home-careers-carousel.jpg",
+            "alt": "Community careers",
             "newTab": false
         }
     ]

@@ -4,7 +4,7 @@
     {{- end -}}
 
     <div class="card__avatar">
-        {{ $avatarPath := delimit (slice (delimit (slice "/images/svgs/avatar" (.avatar | default "engineer")) "-") "svg") "." }}
+        {{ $avatarPath := delimit (slice (delimit (slice "/images/community/careers/" (.avatar | default "zhihu")) "") "png") "." }}
         <img src="{{- $avatarPath -}}" alt="avatar-{{- .avatar -}}" />
     </div>
 

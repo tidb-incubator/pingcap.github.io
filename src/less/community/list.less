@@ -71,6 +71,7 @@
 
     .btns {
       display: flex;
+      flex-flow: row wrap;
       justify-content: space-between;
       padding-right: 3rem;
 
@@ -87,16 +88,16 @@
       .community-btns {
         border: 1px solid white;
         color: white;
-        width: 190px;
+        width: 170px;
         font-size: 0.8rem;
         padding: 14px;
-        margin-top: 3rem;
+        margin-top: 2rem;
         background: none;
         position: relative;
         cursor: pointer;
 
         .arrow {
-          width: 16px;
+          width: 13px;
           position: absolute;
           opacity: 0;
           top: 50%;
@@ -112,7 +113,7 @@
         &:hover {
           .arrow {
             opacity: 1;
-            left: 12px;
+            left: 10px;
           }
 
           .btn-text {
@@ -532,7 +533,7 @@
 
       .btns {
         .community-btns {
-          width: 180px;
+          width: 170px;
           font-size: 0.8rem;
 
           .arrow {
@@ -708,7 +709,7 @@
           width: 156px;
           font-size: 0.8rem;
           padding: 12px;
-          margin-top: 0;
+          margin-top: 1rem;
         }
       }
     }
@@ -1009,6 +1010,7 @@
 
       .btns {
         padding-right: 0;
+        justify-content: space-around;
 
         .community-btns {
           margin-top: 1rem;

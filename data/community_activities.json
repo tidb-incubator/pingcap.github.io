@@ -1,11 +1,19 @@
 {
   "activities": [
     {
+      "name": "Community Careers",
+      "active_image_pc": "https://download.pingcap.com/images/community/activities/community-careers.jpg",
+      "active_image_mobile" : "https://download.pingcap.com/images/community/activities/community-careers-mobile.jpg",
+      "summary": "",
+      "active": true,
+      "link": "/community-cn/careers/join"
+    },
+    {
       "name": "High Performance TiDB Challenge",
       "active_image_pc": "https://download.pingcap.com/images/community/activities/high-performance-tidb-challenge.png",
       "active_image_mobile" : "https://download.pingcap.com/images/community/activities/high-performance-tidb-challenge-mobile.png",
-      "summary": "",
-      "active": true,
+      "summary": "TiDB 性能挑战赛由 TiDB 社区主办，专属于全球开发者与技术爱好者的挑战赛是。本届赛事聚焦性能提升。只要你对 TiDB 性能优化感兴趣，了解 TiDB 设计与实现，都可以来组队参赛。",
+      "active": false,
       "link": "/community-cn/high-performance-tidb-challenge"
     },
     {
