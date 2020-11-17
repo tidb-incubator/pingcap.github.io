@@ -1,19 +1,35 @@
 {
     "banners": [
         {
-            "link": "https://webinar2020.pingcap.com/index.html",
-            "gaTrackEventClass": "webinar2020-finance_view",
-            "gaTrackEventLabel": "homepage-webinar-finance",
-            "img": "https://download.pingcap.com/images/webinar2020-finance.jpg",
-            "alt": "Webinar 2020 Financing",
-            "newTab": false
-        },
-        {
             "link": "/community-cn/careers/join",
             "gaTrackEventClass": "community-careers_view",
             "gaTrackEventLabel": "homepage-community-careers",
             "img": "https://download.pingcap.com/images/home-careers-carousel.jpg",
             "alt": "Community careers",
+            "newTab": false
+        },
+        {
+            "link": "https://university.pingcap.com/",
+            "gaTrackEventClass": "pingcap-university_view",
+            "gaTrackEventLabel": "homepage-university-banner",
+            "img": "https://download.pingcap.com/images/university-carousel-img.png",
+            "alt": "PingCAP University banner",
+            "newTab": true
+        },
+        {
+            "link": "https://asktug.com/t/topic/33760/2",
+            "gaTrackEventClass": "asktug_view",
+            "gaTrackEventLabel": "homepage-asktug-banner",
+            "img": "https://download.pingcap.com/images/home-asktug-carousel.jpg",
+            "alt": "AskTGU banner",
+            "newTab": true
+        },
+        {
+            "link": "https://pingcap.com/cases-cn/user-message-2019/",
+            "gaTrackEventClass": "user_message_2019_view",
+            "gaTrackEventLabel": "homepage-user-message-2019-banner",
+            "img": "https://download.pingcap.com/user-message-2019-banner.png",
+            "alt": "User message 2019 banner",
             "newTab": false
         }
     ]
