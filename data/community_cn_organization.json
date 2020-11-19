@@ -33,8 +33,8 @@
     },
     {
       "sig_name": "scheduling",
-      "channel": "https://slack.tidb.io/invite?team=tidb-community&channel=sig-scheduling&ref=website",
-      "sig_url": "https://slack.tidb.io/invite?team=tikv-wg&channel=sig-scheduling&ref=website"
+      "channel": "https://slack.tidb.io/invite?team=tikv-wg&channel=sig-scheduling&ref=website",
+      "sig_url": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-scheduling"
     },
     {
       "sig_name": "transaction",
