@@ -114,7 +114,7 @@
     {
       "name": "TiDB 故障模拟器",
       "intro": "基于 gRPC 的透明代理，同时提供错误注入/网络分区/及信息流展示功能。",
-      "github_repo": "https://github.com/zhouqiang-cl/hack"
+      "github_repo": ""
     },
     {
       "name": "Ticache",
@@ -416,7 +416,7 @@
       "image": "https://download.pingcap.com/images/moments/hack2018-12.jpg"
     }
   ],
-  
+
   "reviews_2018": [
     {
       "title": "Go Hack 2017",
