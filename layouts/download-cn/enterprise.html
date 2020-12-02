@@ -51,6 +51,12 @@
                         </div>
                     </div>
                 </form>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox" id="protocol-checked">
+                        我同意<a href="/zh/privacy-policy">隐私协议</a>。
+                    </label>
+                </div>
                 <button class="button submit" onclick="submit()">提交</button>
                 <div class="wrong-tips">错误提示：<span class="tips"></span></div>
             </div>
@@ -114,6 +120,12 @@
         } else if (company.length > 255) {
             errArr.push('公司名称长度不得超过 255 个字符')
         }
+
+        // check protocal box
+        if (!$('#protocol-checked').is(':checked')) {
+            errArr.push('必须同意 PingCAP 隐私协议')
+        }
+
 
         return errArr
     }
