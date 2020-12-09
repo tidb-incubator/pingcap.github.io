@@ -1,7 +1,7 @@
 {
     "banners": [
         {
-            "link": "https://university.pingcap.com/courses/TiDB%204.0%20%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97",
+            "link": "https://university.pingcap.com/courses?categories=TiDB-4",
             "gaTrackEventClass": "tidb-4-courses_view",
             "gaTrackEventLabel": "tidb-4-courses",
             "img": "/images/home-tidb-4-courses-carousel.jpg",
