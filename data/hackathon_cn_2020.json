@@ -300,6 +300,18 @@
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-broadview.png",
         "link": "http://www.broadview.com.cn/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-chaosMesh.png",
+        "link": "https://chaos-mesh.org/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-tikv.png",
+        "link": "https://tikv.org/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-csdn.png",
+        "link": "https://www.csdn.net/"
       }
     ]
   },
