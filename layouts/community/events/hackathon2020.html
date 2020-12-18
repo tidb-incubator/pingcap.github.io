@@ -118,7 +118,7 @@
 
 	<section class="hackathon2020__section">
         <h2 class="section__title uppercase" id="prize-pool">Prize Pool</h2>
-        <div class="list-flex container">
+        <div class="list-flex container prize-container">
             {{- range $idx, $i := .Site.Data.hackathon_2020.awards -}}
                 <div class="award-card en" data-name="{{ $i.award }}" data-team="{{ $i.team_numbers }}"></div>
             {{- end -}}

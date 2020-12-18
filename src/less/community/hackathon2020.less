@@ -483,6 +483,11 @@
   margin: 1em 0;
 }
 
+.prize-container {
+  justify-content: left;
+  padding: 1em .75em !important;
+}
+
 .award-card {
   position: relative;
   width: 24em;
@@ -570,6 +575,12 @@
     }
   }
 
+  &:nth-child(7) {
+    &:hover {
+      background-image: url('https://download.pingcap.com/images/community/hackathon2020/bg-award-card-7-hover.svg');
+    }
+  }
+
   &.en {
     &:nth-child(1):hover {
       background-image: url('https://download.pingcap.com/images/community/hackathon2020/bg-award-card-1-hover-en.svg');
@@ -593,6 +604,10 @@
 
     &:nth-child(6):hover {
       background-image: url('https://download.pingcap.com/images/community/hackathon2020/bg-award-card-6-hover-en.jpg');
+    }
+
+    &:nth-child(7):hover {
+      background-image: url('https://download.pingcap.com/images/community/hackathon2020/bg-award-card-7-hover-en.svg');
     }
   }
 }

@@ -102,6 +102,13 @@
       "gift": "Divoom 点音 Evo 蓝牙音箱",
       "medal": "https://download.pingcap.com/images/hackathon2019/gift.svg",
       "bg": "https://download.pingcap.com/images/hackathon2019/gift-bg.png"
+    },
+    {
+      "award": "CNCF 特别奖",
+      "team_numbers": "1 支队伍",
+      "gift": "KubeCon 2021 门票+交通",
+      "medal": "https://download.pingcap.com/images/hackathon2019/gift.svg",
+      "bg": "https://download.pingcap.com/images/hackathon2019/gift-bg.png"
     }
   ],
 
