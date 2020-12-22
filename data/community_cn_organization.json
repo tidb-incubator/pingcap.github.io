@@ -44,9 +44,9 @@
   ],
   "tidb": [
     {
-      "sig_name": "ddl",
-      "channel": "https://slack.tidb.io/invite?team=tidb-community&channel=sig-ddl&ref=website",
-      "sig_url": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-ddl"
+      "sig_name": "sql-infra",
+      "channel": "https://slack.tidb.io/invite?team=tidb-community&channel=sig-sql-infra&ref=website",
+      "sig_url": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-sql-infra"
     },
     {
       "sig_name": "diagnosis",
