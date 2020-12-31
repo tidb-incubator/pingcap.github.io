@@ -57,6 +57,11 @@
       "name": "张雁飞",
       "title": "青云 QingCloud 数据库高级技术专家",
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/zhangyanfei.png"
+    },
+    {
+      "name": "李钰",
+      "title": "Apache Flink & Apache HBase PMC",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/liyu.png"
     }
   ],
 
@@ -317,8 +322,16 @@
         "link": "https://tikv.org/"
       },
       {
-        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-csdn.svg",
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-csdn.png",
         "link": "https://www.csdn.net/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-alauda.png",
+        "link": "https://www.alauda.cn/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-cnbpa.png",
+        "link": "https://www.cnbpa.org/"
       }
     ]
   },

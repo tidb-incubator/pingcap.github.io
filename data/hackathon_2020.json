@@ -57,6 +57,11 @@
       "name": "Yanfei Zhang",
       "title": "Senior Database Expert at QingCloud",
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/zhangyanfei.png"
+    },
+    {
+      "name": "Yu Li",
+      "title": "Apache Flink & Apache HBase PMC",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/liyu.png"
     }
   ],
 
@@ -286,7 +291,7 @@
         "link": "https://www.cncf.io/"
       },
       {
-        "img": "/images/community/hackathon2020/logo-zhihu.png",
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-zhihu.png",
         "link": "https://www.zhihu.com/"
       },
       {
@@ -320,6 +325,26 @@
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-broadview.png",
         "link": "http://www.broadview.com.cn/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-chaosMesh.png",
+        "link": "https://chaos-mesh.org/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-tikv.png",
+        "link": "https://tikv.org/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-csdn.png",
+        "link": "https://www.csdn.net/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-alauda.png",
+        "link": "https://www.alauda.cn/?lang=EN"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-cnbpa.png",
+        "link": "https://www.cnbpa.org/"
       }
     ]
   }
