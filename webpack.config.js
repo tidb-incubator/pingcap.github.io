@@ -4,21 +4,31 @@ const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const isDev = process.env.NODE_ENV === 'development'
-
-// dynamic add js files to entry object
-const entryObj = glob
-  .sync(path.join(__dirname, './src/js/*.js'))
-  .reduce((entries, path) => {
-    let arr = path.split('/')
-    entries[arr[arr.length - 1]] = path
-    return entries
-  }, {})
+const pathJoinSrcJs = name => path.join(__dirname, 'src', 'js', name)
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
-  entry: entryObj,
+  entry: {
+    app: pathJoinSrcJs('app'),
+    doc: pathJoinSrcJs('doc'),
+    about: pathJoinSrcJs('about'),
+    recruit: pathJoinSrcJs('recruit'),
+    tidb_planet: pathJoinSrcJs('tidb_planet'),
+    devcon: pathJoinSrcJs('devcon'),
+    community: pathJoinSrcJs('community'),
+    tidb_planet_user: pathJoinSrcJs('tidb_planet_user'),
+    multi_slides_carousel: pathJoinSrcJs('multi_slides_carousel'),
+    carousel: pathJoinSrcJs('carousel'),
+    video_on_modal: pathJoinSrcJs('video_on_modal'),
+    anchor: pathJoinSrcJs('anchor'),
+    tidb_performance_challenge: pathJoinSrcJs('tidb_performance_challenge'),
+    tidb_usability_challenge: pathJoinSrcJs('tidb_usability_challenge'),
+    tidb_4_challenge: pathJoinSrcJs('tidb_4_challenge'),
+    high_performance_tidb_challenge: pathJoinSrcJs('high_performance_tidb_challenge'),
+    developer_sig: pathJoinSrcJs('developer_sig'),
+    hackathon2020: pathJoinSrcJs('hackathon2020'),
+  },
   output: {
-    filename: '[name]',
     path: path.join(__dirname, 'dist', 'js'),
     publicPath: '/js/',
   },
