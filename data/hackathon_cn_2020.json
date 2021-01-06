@@ -114,6 +114,13 @@
       "gift": "KubeCon 2021 门票+交通",
       "medal": "https://download.pingcap.com/images/hackathon2019/gift.svg",
       "bg": "https://download.pingcap.com/images/hackathon2019/gift-bg.png"
+    },
+    {
+      "award": "最具市场潜力奖",
+      "team_numbers": "1 支队伍",
+      "gift": "万元精彩大奖",
+      "medal": "https://download.pingcap.com/images/hackathon2019/gift.svg",
+      "bg": "https://download.pingcap.com/images/hackathon2019/gift-bg.png"
     }
   ],
 
