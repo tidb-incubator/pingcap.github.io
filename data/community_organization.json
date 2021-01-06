@@ -1259,15 +1259,15 @@
                 "slack_link": "https://join.slack.com/t/tikv-wg/shared_invite/enQtNTUyODE4ODU2MzI0LWVlMWMzMDkyNWE5ZjY1ODAzMWUwZGVhNGNhYTc3MzJhYWE0Y2FjYjliYzY1OWJlYTc4OWVjZWM1NDkwN2QxNDE"
             },
             {
-                "title": "TiDB DDL SIG",
-                "desc": "DDL SIG 主要负责 TiDB DDL 和 parser 及其相关模块的开发和维护。工作内容包括对 DDL 模块和 parser 模块进行稳定性、性能、与 MySQL 的兼容性等方面的提升。",
-                "github_link": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-ddl",
+                "title": "TiDB SQL Infra SIG",
+                "desc": "SQL Infra SIG 主要负责 TiDB DDL 和 parser 及其相关模块的开发和维护。工作内容包括对 DDL 模块和 parser 模块进行稳定性、性能、与 MySQL 的兼容性等方面的提升。",
+                "github_link": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-sql-infra",
                 "slack_link": "https://join.slack.com/t/tidbcommunity/shared_invite/enQtNzc0MzI4ODExMDc4LWYwYmIzMjZkYzJiNDUxMmZlN2FiMGJkZjAyMzQ5NGU0NGY0NzI3NTYwMjAyNGQ1N2I2ZjAxNzc1OGUwYWM0NzE"
             },
             {
                 "title": "TiDB Scheduling SIG",
                 "desc": "Scheduling SIG 以打造智能、高效、高可用、可扩展的分布式系统为目标。主要工作内容包括集群中心化管理，优化资源分配策略，智能调度，高可用容灾等。",
-                "github_link": "https://github.com/pingcap/community/tree/master/special-interest-groups/sig-scheduling",
+                "github_link": "https://github.com/tikv/community/tree/master/sig/scheduling",
                 "slack_link": "https://slack.tidb.io/invite?team=tidb-community&channel=sig-scheduling&ref=pingcap-website-docs-zh"
             }
         ]
