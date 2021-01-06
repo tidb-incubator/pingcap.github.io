@@ -175,6 +175,14 @@
 					<img class="lazy" data-original="{{ $i.img }}" src="/images/svgs/loader-spinner.svg" alt="sponsor logo">
 				</a>
             {{- end -}}
+		</div>
+		<h3 class="sponsor-type">Investor Support</h3>
+        <div class="list-flex container partners-list">
+            {{- range $idx, $i := .Site.Data.hackathon_2020.partners.investor -}}
+			<a href="{{ $i.link }}" target="_blank" rel="noopener noreferrer">
+				<img class="lazy" data-original="{{ $i.img }}" src="/images/svgs/loader-spinner.svg" alt="sponsor logo">
+			</a>
+            {{- end -}}
         </div>
         <h3 class="sponsor-type uppercase">community support</h3>
         <div class="list-flex container partners-list">

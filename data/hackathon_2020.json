@@ -288,6 +288,12 @@
         "link": "https://www.qingcloud.com/"
       }
     ],
+    "investor": [
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-yunqi.svg",
+        "link": "http://www.yunqi.vc"
+      }
+    ],
     "community": [
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-elastic.png",
@@ -352,10 +358,6 @@
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-cnbpa.png",
         "link": "https://www.cnbpa.org/"
-      },
-      {
-        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-yunqi.svg",
-        "link": "http://www.yunqi.vc"
       }
     ]
   }

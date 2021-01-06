@@ -175,6 +175,14 @@
 				</a>
             {{- end -}}
         </div>
+		<h3 class="sponsor-type">投资机构支持</h3>
+        <div class="list-flex container partners-list">
+            {{- range $idx, $i := .Site.Data.hackathon_cn_2020.partners.investor -}}
+			<a href="{{ $i.link }}" target="_blank" rel="noopener noreferrer">
+				<img class="lazy" data-original="{{ $i.img }}" src="/images/svgs/loader-spinner.svg" alt="sponsor logo">
+			</a>
+            {{- end -}}
+        </div>
         <h3 class="sponsor-type">社区及企业支持</h3>
         <div class="list-flex container partners-list">
             {{- range $idx, $i := .Site.Data.hackathon_cn_2020.partners.community -}}
@@ -182,7 +190,7 @@
 				<img class="lazy" data-original="{{ $i.img }}" src="/images/svgs/loader-spinner.svg" alt="sponsor logo">
 			</a>
             {{- end -}}
-        </div>
+		</div>
 	</section>
 
 	<section class="hackathon2020__section">
