@@ -339,12 +339,28 @@
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-cnbpa.png",
         "link": "https://www.cnbpa.org/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-ecloud.svg",
+        "link": "https://ecloud.10086.cn/home/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-epay.svg",
+        "link": "https://www.bestpay.com.cn/"
       }
     ],
     "investor": [
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-yunqi.svg",
         "link": "http://www.yunqi.vc"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-huachuang.svg",
+        "link": "http://www.chinagrowthcapital.com/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-ggv.svg",
+        "link": "https://www.ggvc.com/"
       }
     ]
   },
