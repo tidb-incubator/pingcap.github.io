@@ -3,16 +3,6 @@
 {{$.Scratch.Set "data_i18_cn" true }}
 {{$.Scratch.Set "data_i18_link" "/about" }}
 {{- partial "head/preload-css" (dict "href" "/css/about.css") -}}
-<!-- <style type="text/css">
-    .amap-logo,
-    .amap-copyright {
-        display: none !important;
-    }
-    .amap-icon img {
-        width: 100%;
-        height: 100%;
-    }
-    </style> -->
 {{- end -}}
 
 {{- define "footJS" -}}
@@ -49,6 +39,13 @@
         <img src="https://download.pingcap.com/images/about-banner.png" alt="About banner" />
     </div>
 </section>
+
+<section class="navbar-sticky">
+    <div class="container">
+        <a href="#contact-us"></a>
+    </div>
+</section>
+
 <section class="about-company">
     <div class="container">
         <div class="desc">
@@ -73,29 +70,8 @@
 <section class="about-timeline">
     <div class="container">
         <h2 class="title">发展历程</h2>
-        <div class="time-line">
-            <div class="start-node"></div>
-            {{- range $idx, $event := .Site.Data.company_timeline -}}
-            <div class="event {{ if and (not $event.year_node) (not (modBool $idx 2)) }}line-without-year-right{{ end}}
-                  {{ if and $event.year_node (not (modBool $idx 2)) }}line-with-year-right{{ end}}
-                  {{ if and $event.year_node (modBool $idx 2) }}line-with-year-left{{ end}}
-                  {{ if and (not $event.year_node) (modBool $idx 2) }}line-without-year-left{{ end}}">
-                {{- if $event.year_node -}}
-                <div class="node-with-year">{{ $event.year_node }}</div>
-                {{- else -}}
-                <div class="node-without-year"></div>
-                {{- end -}}
-                <div class="event-detail">
-                    <div class="time"> {{ $event.time }}</div>
-                    <div class="detail">
-                        {{- range $idx, $i := $event.event_detail -}}
-                        <p>{{ if gt (len $event.event_detail) 1 }}-{{ end }} {{ $i }}</p>
-                        {{- end -}}
-                    </div>
-                </div>
-            </div>
-            {{- end -}}
-        </div>
+        <img class="pc-timeline" src="/images/about-timeline.svg" alt="timeline" />
+        <img class="mobile-timeline" src="/images/about-mobile-timeline.svg" alt="timeline" />
     </div>
 </section>
 <section class="intro-video">
@@ -162,8 +138,9 @@
     </div>
 </section>
 
-<section class="about-contact">
+<section class="about-contact" id="contact-us">
     <div class="container">
+        <a href="#contact-us"></a>
         <h2 class="title">联系我们</h2>
         <div class="info">
             <div class="col-1">
@@ -199,7 +176,8 @@
             <div class="col-2">
                 <div class="item">
                     <p class="office-name">电话</p>
-                    <p>+86 010-53326356</p>
+                    <p>4006790886</p>
+                    <p>8610-58400041</p>
                 </div>
                 <div class="item">
                     <p class="office-name">技术及商务咨询</p>
@@ -253,7 +231,8 @@
         <div class="info-2">
             <div class="item">
                 <span class="office-name">电话：</span>
-                <span>+86 010-53326356</span>
+                <span>4006790886，</span>
+                <span>8610-58400041</span>
             </div>
             <div class="item">
                 <span class="office-name">技术及上商务咨询：</span>
@@ -279,8 +258,7 @@
             <a class="link" href="https://job.pingcap.com/" target="_blank"
                 onclick="trackViews('about-cn-join-us-bottom', 'recruit_view')">
                 <button class="round-corner-btn">
-                    <span
-                        class="arrow">{{ partial "svgs/icon-right-arrow.svg" (dict "fill" "white" "width" 16 "height" 16 ) }}</span>
+                    <span class="arrow">{{ partial "svgs/icon-right-arrow.svg" (dict "fill" "white" "width" 16 "height" 16 ) }}</span>
                     <span class="text">加入我们</span>
                 </button>
             </a>

@@ -183,6 +183,10 @@ footer {
         color: rgba(255, 255, 255, 0.7);
         font-weight: 300;
 
+        &.tel-li {
+          margin-left: 30px;
+        }
+
         a {
           width: 9em;
           color: inherit;
@@ -191,6 +195,12 @@ footer {
           svg {
             fill: #fff;
             margin-right: 11px;
+          }
+
+          &.tel {
+            &:hover svg {
+              fill: @themeBlue;
+            }
           }
 
           &.twitter {
@@ -259,11 +269,11 @@ footer {
   }
 }
 
-@media (min-width: 880px) {
-  footer {
-    height: @pcFooterHeight;
-  }
-}
+// @media (min-width: 880px) {
+//   footer {
+//     height: @pcFooterHeight;
+//   }
+// }
 
 @media (max-width: 879px) {
   footer {
