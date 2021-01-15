@@ -29,9 +29,9 @@
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/liyulai.png"
     },
     {
-      "name": "陈现麟",
-      "title": "伴鱼技术中台 & 数据中台负责人",
-      "avatar": "https://download.pingcap.com/images/community/hackathon2020/chenxianlin.png"
+      "name": "徐成选",
+      "title": "伴鱼基础架构负责人",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/xuchengxuan.png"
     },
     {
       "name": "唐刘",
@@ -372,6 +372,10 @@
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-epay.svg",
         "link": "https://www.bestpay.com.cn/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-qiping.svg",
+        "link": "https://tech.pingan.com/"
       }
     ],
     "investor": [

@@ -29,9 +29,9 @@
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/liyulai.png"
     },
     {
-      "name": "Xianlin Chen",
-      "title": "Head of Technology Hub at PalFish",
-      "avatar": "https://download.pingcap.com/images/community/hackathon2020/chenxianlin.png"
+      "name": "Chengxuan Xu",
+      "title": "Head of Infrastructure at PalFish",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/xuchengxuan.png"
     },
     {
       "name": "Siddon Tang",
@@ -399,6 +399,10 @@
       {
         "img": "https://download.pingcap.com/images/community/hackathon2020/logo-epay.svg",
         "link": "https://www.bestpay.com.cn/"
+      },
+      {
+        "img": "https://download.pingcap.com/images/community/hackathon2020/logo-qiping.svg",
+        "link": "https://tech.pingan.com/"
       }
     ]
   }
