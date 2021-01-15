@@ -34,11 +34,6 @@
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/chenxianlin.png"
     },
     {
-      "name": "黄东旭",
-      "title": "PingCAP 联合创始人兼 CTO",
-      "avatar": "https://download.pingcap.com/images/community/hackathon2020/huangdongxu.png"
-    },
-    {
       "name": "唐刘",
       "title": "PingCAP 首席架构师",
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/tangliu.png"
@@ -62,6 +57,36 @@
       "name": "李钰",
       "title": "Apache Flink & Apache HBase PMC",
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/liyu.png"
+    },
+    {
+      "name": "谢佳",
+      "title": "华创资本企业软件投资负责人",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/xiejia.png"
+    },
+    {
+      "name": "陈昱",
+      "title": "云启资本董事总经理",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/chenyu.png"
+    },
+    {
+      "name": "白珅",
+      "title": "TiDB Committer ",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/baikun.png"
+    },
+    {
+      "name": "王贺",
+      "title": "TiDB Committer",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/wanghe.png"
+    },
+    {
+      "name": "杨文",
+      "title": "TUG 华南区 Leader",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/yangwen.png"
+    },
+    {
+      "name": "韩明聪",
+      "title": "TiDB Committer",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/hanmingcong.png"
     }
   ],
 

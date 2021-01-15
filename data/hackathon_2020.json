@@ -34,11 +34,6 @@
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/chenxianlin.png"
     },
     {
-      "name": "Ed Huang",
-      "title": "CTO & Cofounder at PingCAP",
-      "avatar": "https://download.pingcap.com/images/community/hackathon2020/huangdongxu.png"
-    },
-    {
       "name": "Siddon Tang",
       "title": "Chief Engineer at PingCAP",
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/tangliu.png"
@@ -62,6 +57,36 @@
       "name": "Yu Li",
       "title": "Apache Flink & Apache HBase PMC",
       "avatar": "https://download.pingcap.com/images/community/hackathon2020/liyu.png"
+    },
+    {
+      "name": "Jia Xie",
+      "title": "Head of Enterprise Software Investment at China Growth Capital",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/xiejia.png"
+    },
+    {
+      "name": "Yu Chen",
+      "title": "Managing Director at Yunqi Partners",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/chenyu.png"
+    },
+    {
+      "name": "Kun Bai",
+      "title": "TiDB Committer ",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/baikun.png"
+    },
+    {
+      "name": "He Wang",
+      "title": "TiDB Committer",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/wanghe.png"
+    },
+    {
+      "name": "Wen Yang",
+      "title": "TUG leader of Southeast China",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/yangwen.png"
+    },
+    {
+      "name": "Mingcong Han",
+      "title": "TiDB Committer",
+      "avatar": "https://download.pingcap.com/images/community/hackathon2020/hanmingcong.png"
     }
   ],
 
