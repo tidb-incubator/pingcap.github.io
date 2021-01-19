@@ -39,3 +39,5 @@
 - 知乎
   - [微服务平台开发工程师](zhihu/microservice-engineer.md)
   - [大数据实时处理平台研发工程师](zhihu/real-time-engineer.md)
+- 中国移动云能力中心
+  - [数据库内核研发](chinamobile/engineer.md)
