@@ -175,8 +175,8 @@
       "time": "2020.12.15-2021.1.10",
       "detail": "Submit the application form before 18:00, Jan 10 (China Standard Time). Attach your program RFC document with the program description in the application form. Each RFC submitted before Jan 10 will be reviewed and commented by the TiDB Hackathon Technical Committee.",
       "align_left": true,
-      "btn_link": "https://forms.pingcap.com/f/tidb-hackathon-2020",
-      "btn_text": "Application form"
+      "btn_text": "REGISTRATION CLOSED",
+      "disabled": true
     },
     {
       "step": "2",

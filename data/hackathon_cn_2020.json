@@ -175,8 +175,8 @@
       "time": "12 月 15 日-1 月 10 日",
       "detail": "选手可以在表单中提交自己的项目说明与 RFC 设计，1 月 10 日之前提交的 RFC 都将由 TiDB Hackathon 技术委员会进行 Review 并返回指导意见。",
       "align_left": true,
-      "btn_link": "https://forms.pingcap.com/f/tidb-hackathon-2020",
-      "btn_text": "报名表单"
+      "btn_text": "报名截止",
+      "disabled": true
     },
     {
       "step": "2",
