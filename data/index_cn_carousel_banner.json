@@ -1,6 +1,14 @@
 {
     "banners": [
         {
+            "link": "https://github.com/pingcap/community/tree/master/incubator",
+            "gaTrackEventClass": "tidb-incubator-incubator_view",
+            "gaTrackEventLabel": "tidb-incubator-program",
+            "img": "https://download.pingcap.com/images/community/activities/home-incubator-program-carousel.svg",
+            "alt": "TiDB Incubator Program",
+            "newTab": true
+        },
+        {
             "link": "/community-cn/hackathon2020",
             "gaTrackEventClass": "tidb-hackathon-2020_view",
             "gaTrackEventLabel": "tidb-hackathon-2020",
