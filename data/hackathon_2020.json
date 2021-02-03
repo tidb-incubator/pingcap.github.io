@@ -299,6 +299,81 @@
     }
   ],
 
+  "winners_2020": [
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-first.png",
+      "award": "FIRST PLACE",
+      "project_name": "' or 0=0 or '",
+      "project_intro": "Team ' or 0=0 or ' developed a User Defined Function (UDF) engine for TiDB to help users write complex execution logics of custom functions and directly perform computing on the database.",
+      "github": "https://github.com/tidb-hackathon-2020-wasm-udf",
+      "rfc": "https://docs.google.com/document/d/1TdZJR9vkVgfvpiirhruQKnu7pLYfK6jEhZWkZctAov4/edit"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-cto.png",
+      "award": "SECOND PLACE & CTO SPECIAL",
+      "project_name": "B.A.D",
+      "project_intro": "Team B.A.D developed a Visual Studio Code extension to make developing and tuning TiDB a breeze.",
+      "github": "https://github.com/dragonly/ticode",
+      "rfc": "https://gist.github.com/dragonly/dfe1d5c9ecb50eb4fc460a663a5d5076"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-second.png",
+      "award": "SECOND PLACE",
+      "project_name": "TiGraph",
+      "project_intro": "Team TiGraph implemented a graph schema in TiDB to make TiDB a hybrid multi-mode database of TP,  AP, and Graph.",
+      "github": "https://github.com/tigraph/tidb",
+      "rfc": "https://docs.google.com/document/d/1KHOAYJLim-A7YMOVZvZUc1PIxXDmT6nk0fQ5GNiU0T8/edit"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-third.png",
+      "award": "THIRD PLACE",
+      "project_name": "zh.md",
+      "project_intro": "Team zh.md developed an automated stylelint for Chinese technical documents to speed up review, improve overall doc quality, and encourage engineers to write more.",
+      "github": "https://github.com/zh-md/zh.md",
+      "rfc": "https://github.com/WPH95/zh.md/blob/main/PROPOSAL.md"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-yunqi.png",
+      "award": "THIRD PLACE & BEST MARKET POTENTIAL (YUNQI PARTNERS)",
+      "project_name": "Mods",
+      "project_intro": "Team Mods developed GPU accelerated TiDB for analytical queries to improve the performance of CPU-intensive analytical workloads, such as joins, aggregations, etc.",
+      "github": "https://github.com/zanmato1984/cura https://github.com/windtalker/tidb/tree/tidb_cura",
+      "rfc": "https://gist.github.com/zanmato1984/520400e0426ca18ef3711355ac930e86"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-huachuang-marketing.png",
+      "award": "BEST MARKET POTENTIAL (ChinaGrowthCapital)",
+      "project_name": "Ti-Improve",
+      "project_intro": "Team Ti-Improve developed an AWS native testing framework to reduce the cost of testing and improve testing diversity.",
+      "github": "https://docs.google.com/document/d/1bgbI0hVkWRtIe_jFSc_Kx0IfbPu15MOyRY7TtW2e6xI/edit",
+      "rfc": "https://github.com/titaas"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-cncf.png",
+      "award": "CNCF SPECIAL",
+      "project_name": "森海飞霞",
+      "project_intro": "Team 森海飞霞 applied dynamic copysets to TiKV to lower the frequency of data loss in Cloud TiKV when the three copies of the same dataset are damaged at the same time.",
+      "github": "https://github.com/Yisaer/pd/tree/support_elastic_copyset",
+      "rfc": "https://docs.google.com/document/d/1emQUIJ_ayczFCWNvVVgzdGY8n6LSyE7fDC5tXb5ZjmI/edit"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-ggv-marketing.png",
+      "award": "BEST MARKET POTENTIAL (GGV CAPITAL)",
+      "project_name": "hundundm",
+      "project_intro": "Team hundundm integrated BI analytics tools into TiDB Dashboard to help DBAs directly analyze cluster status and analysts perform data visualization analysis based on TiDB reports.",
+      "github": "https://github.com/HunDunDM/tidb-dashboard/tree/TiBI/master",
+      "rfc": "https://docs.google.com/document/d/1-yuJ3GLrrRqFC1YFBAzQ56ppTGvbtVNJgIf_jPvXa6c/edit"
+    },
+    {
+      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-popularity.png",
+      "award": "BEST POPULARITY",
+      "project_name": "TiFlink",
+      "project_intro": "Team TiFlink integrated Flink stream batch capabilities with TiKV to better connect Flink and TiDB/TiKV and help TiDB support materialized view function.",
+      "github": "https://github.com/TiFlink/TiFlink",
+      "rfc": "https://docs.google.com/document/d/1ksdPxk4WLIzTJmy7pPh37JrsoBSuJy8uK28rABWQYa0/edit"
+    }
+  ],
+
   "sponsors": [
     {
       "img": "https://download.pingcap.com/images/community/hackathon2020/logo-flink.png",
