@@ -2,7 +2,7 @@
 title: 数据库内核研发
 tags:
   - 中国移动云能力中心
-location: 北京
+location: 苏州
 avatar: chinamobile
 position: true
 ---
