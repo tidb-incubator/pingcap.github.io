@@ -45,3 +45,6 @@
   - [DBA - TiDB 专岗](zhangmen/dba.md)
 - 易车网
   - [DBA](yichewang/dba.md)
+- 建信金科
+  - [分布式数据库 DBA 和 SQL 应用分析师](ccb/dba.md)
+  - [分布式数据库内核和系统研发工程师](ccb/engineer.md)
