@@ -2,7 +2,7 @@
 title: 分布式数据库 DBA 和 SQL 应用分析师
 tags:
   - 建信金科
-location: 北京
+location: 全国
 avatar: ccb
 position: true
 ---
