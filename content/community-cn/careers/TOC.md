@@ -42,7 +42,9 @@
 - 中国移动云能力中心
   - [数据库内核研发](chinamobile/engineer.md)
 - 掌门
-  - [DBA - TiDB 专岗](zhangmen/dba.md)
+  - [DBA - TiDB 专岗](zhangmen/dba-tidb.md)
+  - [K8S 容器运维工程师](zhangmen/dba-k8s.md)
+  - [TiDB - MySQL 运维工程师](zhangmen/dba-mysql.md)
 - 易车网
   - [DBA](yichewang/dba.md)
 - 建信金科
