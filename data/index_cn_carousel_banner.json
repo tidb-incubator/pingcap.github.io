@@ -1,20 +1,20 @@
 {
     "banners": [
         {
+            "link": "/community-cn/hacking-camp-2021-season-1",
+            "gaTrackEventClass": "tidb-hacking-camp-2021-s1_view",
+            "gaTrackEventLabel": "tidb-hacking-camp-2021-s1",
+            "img": "https://download.pingcap.com/images/community/activities/home-tidb-hacking-camp-2021-carousel.png",
+            "alt": "TiDB Hacking Camp 2021",
+            "newTab": false
+        },
+        {
             "link": "https://github.com/pingcap/community/tree/master/incubator",
             "gaTrackEventClass": "tidb-incubator-incubator_view",
             "gaTrackEventLabel": "tidb-incubator-program",
             "img": "https://download.pingcap.com/images/community/activities/home-incubator-program-carousel.svg",
             "alt": "TiDB Incubator Program",
             "newTab": true
-        },
-        {
-            "link": "/community-cn/hackathon2020",
-            "gaTrackEventClass": "tidb-hackathon-2020_view",
-            "gaTrackEventLabel": "tidb-hackathon-2020",
-            "img": "https://download.pingcap.com/images/community/activities/home-tidb-hackathon-2020-carousel.jpg",
-            "alt": "TiDB Hackathon 2020",
-            "newTab": false
         },
         {
             "link": "https://university.pingcap.com/courses?categories=TiDB-4",

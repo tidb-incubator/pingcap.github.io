@@ -21,7 +21,9 @@ function processDate() {
   const today =
     date.getFullYear() + '.' + (date.getMonth() + 1) + '.' + date.getDate()
   const milestones = ['2021.1.10', '2021.1.11', '2021.1.16', '2021.1.17']
-  const moments = $('.moment-item')
+  const hackingCampMilestones = ['2021.3.14', '2021.3.21', '2021.4.26', '2021.4.29']
+  const moments = $('.hackathon-moment-item')
+  const hackingMoments = $('.hacking-camp-moment')
 
   if (today <= milestones[0]) {
     // ~ 2020.1.10
@@ -35,6 +37,20 @@ function processDate() {
   } else {
     // 2021.1.17 ~
     $(moments[3]).addClass('active')
+  }
+
+  if (today <= hackingCampMilestones[0]) {
+    // ~ 2021.02.23
+    $(hackingMoments[0]).addClass('active')
+  } else if (today < hackingCampMilestones[2]) {
+    // 2021.03.15 ~ 2021.03.20
+    $(hackingMoments[1]).addClass('active')
+  } else if (today < hackingCampMilestones[3]) {
+    // 2021.04.20 ~ 2021.04.25
+    $(hackingMoments[2]).addClass('active')
+  } else {
+    // 2021.04.28 ~
+    $(hackingMoments[3]).addClass('active')
   }
 }
 
