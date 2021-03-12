@@ -29,7 +29,7 @@
 					<a href="#timeline">Hacking Camp 时间线</a>
 				</li>
 				<li class="navbar__item">
-					<a href="#partners">支持企业及社区</a>
+					<a href="#partners">赞助合作</a>
 				</li>
 			</ul>
 		</div>
@@ -113,7 +113,7 @@
         <div class="list-flex container partners-list hacking-camp">
 			{{- range $idx, $i := .Site.Data.hacking_camp_2021_s1.exclusive -}}
 				<a href="{{ $i.link }}" target="_blank" rel="noopener noreferrer">
-					<img class="lazy" data-original="{{ $i.img }}" src="/images/svgs/loader-spinner.svg" alt="sponsor logo">
+					<img class="lazy exclusive" data-original="{{ $i.img }}" src="/images/svgs/loader-spinner.svg" alt="sponsor logo">
 				</a>
             {{- end -}}
         </div>
