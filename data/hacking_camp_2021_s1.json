@@ -100,12 +100,12 @@
 
   "sponsors1": [
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-future-cap.png",
-      "link": "https://www.future-cap.com/china/"
-    },
-    {
       "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-ggv-capital.png",
       "link": "https://www.ggvchina.com/"
+    },
+    {
+      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-future-cap.png",
+      "link": "https://www.future-cap.com/china/"
     }
   ],
   "sponsors2": [
