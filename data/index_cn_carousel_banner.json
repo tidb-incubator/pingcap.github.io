@@ -1,5 +1,12 @@
 {
-    "banners": [
+    "banners": [{
+        "link": "https://job.pingcap.com/Campus",
+        "gaTrackEventClass": "job-campus-2021_view",
+        "gaTrackEventLabel": "job-campus-2021",
+        "img": "https://download.pingcap.com/images/community/activities/campus-job-2021.jpg",
+        "alt": "TiDB Campus Job 2021",
+        "newTab": true
+    },
         {
             "link": "/community-cn/hacking-camp-2021-season-1",
             "gaTrackEventClass": "tidb-hacking-camp-2021-s1_view",
