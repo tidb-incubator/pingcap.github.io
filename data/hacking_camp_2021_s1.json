@@ -1,6 +1,42 @@
 {
   "judges": [
     {
+      "name": "熊飞",
+      "team_name": "经纬中国合伙人",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/xiongfei.png",
+      "word": "风起于青萍之末。星星之火可以燎原。祝各个项目在Camp中快速迭代升级，成为社区乃至所有开发者的必备产品。"
+    },
+    {
+      "name": "吴陈尧",
+      "team_name": "GGV 纪源资本执行董事",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/wuchenxiao.png",
+      "word": "风起于青萍之末。星星之火可以燎原。祝各个项目在Camp中快速迭代升级，成为社区乃至所有开发者的必备产品"
+    },
+    {
+      "name": "刘洪清",
+      "team_name": "Juicedata CEO",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/liuhongqing.png",
+      "word": "JuiceFS 跟 TiDB 有很多相似点，好奇它们能够碰撞出怎样的火花，Happy Hacking！"
+    },
+    {
+      "name": "黄明明",
+      "team_name": "明势资本创始合伙人",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/huangmingming.png",
+      "word": "开源改变世界，开发者定义开源，我们一起开玩。"
+    },
+    {
+      "name": "于真真",
+      "team_name": "初心资本执行董事",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/yuzhenzhen.png",
+      "word": "我们感知到了开源的魅力，并无比期待开源的世界，希望在 Hacking Camp 中找到中国开源的新生力量。"
+    },
+    {
+      "name": "刘洋",
+      "team_name": "Flomesh CTO/联合创始人",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/liuyang.png",
+      "word": "作为 PingCAP 的老朋友，一直认为 TiDB 是中国最好的开源社区之一。希望与大家一起，将 TiDB/TiKV 发展为产品的基础设施。Open Source Rocks!"
+    },
+    {
       "name": "马晓宇",
       "team_name": "' or 0=0 or '",
       "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/maxiaoyu.png",
@@ -97,8 +133,11 @@
       "link": "https://www.matrixpartners.com.cn/index.php/zh/"
     }
   ],
-
   "sponsors1": [
+    {
+      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-ggv-capital.png",
+      "link": "https://www.ggvchina.com/"
+    },
     {
       "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-future-cap.png",
       "link": "https://www.future-cap.com/china/"
@@ -109,12 +148,12 @@
       "bigImg": true
     },
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-ggv-capital.png",
-      "link": "https://www.ggvchina.com/"
-    },
-    {
       "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-juicefs.png",
       "link": "https://juicefs.com/"
+    },
+    {
+      "img": "/images/community/hacking-camp-2021-s1/logo-flomesh.svg",
+      "link": "http://flomesh.cn/"
     }
   ],
   "sponsors2": [
