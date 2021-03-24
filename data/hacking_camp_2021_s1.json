@@ -65,6 +65,12 @@
       "team_name": "Ti-Improve",
       "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/fengliyuan.png",
       "word": "希望 Ti-Improve 能尽快落地，极大地 Improve 我们整个社区研发测试效率。"
+    },
+    {
+      "name": "|> 10HUG",
+      "team_name": "10Fund Hacker User Group",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/10hug.png",
+      "word": "希望更多 PingCAP Hacking Camp 一样的活动帮助中国开发者释放超级生产力。We are re-coding the world."
     }
   ],
   "winners": [
@@ -148,11 +154,16 @@
       "bigImg": true
     },
     {
+      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-10fund.png",
+      "link": "http://www.10fund.com/",
+      "bigImg": true
+    },
+    {
       "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-juicefs.png",
       "link": "https://juicefs.com/"
     },
     {
-      "img": "/images/community/hacking-camp-2021-s1/logo-flomesh.svg",
+      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-flomesh.svg",
       "link": "http://flomesh.cn/"
     }
   ],
