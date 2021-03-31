@@ -25,7 +25,7 @@
 - 虎牙
   - [DBA 工程师](huya/dba.md)
 - 理想汽车
-  - [高级/资深 DBA](lixiangqiche/dba.md)
+  - [数据库平台高级开发工程师](lixiangqiche/engineer.md)
 - 涂鸦智能
   - [golang 资深工程师](tuyazhineng/senior-golang-engineer.md)
   - [golang 开发工程师](tuyazhineng/golang-engineer.md)
