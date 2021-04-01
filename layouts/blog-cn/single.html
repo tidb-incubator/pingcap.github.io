@@ -51,7 +51,7 @@
                         </li>
                     </ul>
                     <div class="blog-text">{{- .Content -}}</div>
-                    {{ if .Params.katex }}{{ partial "archives/katex.html" . }}{{ end }}
+                    {{ if .Params.katex }}{{ partial "archives/math.html" . }}{{ end }}
                 </div>
                 {{- partial "archives/post-share-cn.html" . -}}
             </div>
