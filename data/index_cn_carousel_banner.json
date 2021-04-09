@@ -1,12 +1,21 @@
 {
-    "banners": [{
-        "link": "https://job.pingcap.com/Campus",
-        "gaTrackEventClass": "job-campus-2021_view",
-        "gaTrackEventLabel": "job-campus-2021",
-        "img": "https://download.pingcap.com/images/community/activities/campus-job-2021.jpg",
-        "alt": "TiDB Campus Job 2021",
-        "newTab": true
-    },
+    "banners": [
+        {
+            "link": "/campaign/tidb-v5.0/",
+            "gaTrackEventClass": "campaign_tidb-v5.0_view",
+            "gaTrackEventLabel": "campaign-tidb-v5.0",
+            "img": "https://download.pingcap.com/images/campaign/tidb-v5.0/homepage-banner.jpg",
+            "alt": "Campaign TiDB v5.0",
+            "newTab": false
+        },
+        {
+            "link": "https://job.pingcap.com/Campus",
+            "gaTrackEventClass": "job-campus-2021_view",
+            "gaTrackEventLabel": "job-campus-2021",
+            "img": "https://download.pingcap.com/images/community/activities/campus-job-2021.jpg",
+            "alt": "TiDB Campus Job 2021",
+            "newTab": true
+        },
         {
             "link": "/community-cn/hacking-camp-2021-season-1",
             "gaTrackEventClass": "tidb-hacking-camp-2021-s1_view",
