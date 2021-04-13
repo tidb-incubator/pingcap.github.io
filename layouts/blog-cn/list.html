@@ -15,7 +15,7 @@
     <div class="blog">
         <div class="container">
         {{- $posts := where (where (where (where (where .Site.Pages "Section" "blog-cn") ".Params.title" "!=" nil) ".Params.category" "!=" "case") ".Params.category" "!=" "community reading") ".Params.category" "!=" "devcon" -}}
-        {{- partial "navs/tags-nav.html" (dict "type" "list" "title" "热门标签" "posts" $posts "rss" "/blog-cn/index.xml" "global" .) -}}
+        {{- partial "navs/tags-nav.html" (dict "type" "list" "title" "热门标签" "posts" $posts "rss" "/blog-cn/index.xml" "global" . "prefixHref" "/blog-cn/") -}}
         {{- partial "archives/list.html" (dict "posts" $posts.ByDate.Reverse "hasMetaData" "true" "hasBrief" "true"  "listType" "blog-cn" "global" .) -}}
         </div>
     </div>

@@ -18,7 +18,7 @@
                 {{- partial "archives/sticky-tree.html" (dict "tree" .Site.Data.cases_cn_toc "title" "用户案例") -}}
             {{- else -}}
                 {{- $posts := where (where (where (where (where .Site.Pages "Section" "blog-cn") ".Params.title" "!=" nil) ".Params.category" "!=" "case") ".Params.category" "!=" "community reading") ".Params.category" "!=" "devcon" -}}
-                {{- partial "navs/tags-nav.html" (dict "type" "single" "title" "热门标签" "posts" $posts "rss" "/blog-cn/index.xml" "global" .) -}}
+                {{- partial "navs/tags-nav.html" (dict "type" "single" "title" "热门标签" "posts" $posts "rss" "/blog-cn/index.xml" "prefixHref" "/blog-cn/" "global" .) -}}
             {{- end -}}
             <div class="archive">
                 <div class="content markdown-body">
