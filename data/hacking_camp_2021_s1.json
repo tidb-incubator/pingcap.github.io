@@ -183,6 +183,10 @@
     {
       "img": "https://download.pingcap.com/images/community/hackathon2020/logo-palfish.png",
       "link": "https://www.ipalfish.com/"
+    },
+    {
+      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-gitee.png",
+      "link": "https://gitee.com"
     }
   ]
 }
