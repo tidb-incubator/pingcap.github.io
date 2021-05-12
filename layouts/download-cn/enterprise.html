@@ -92,7 +92,7 @@
         $('.tips')[0].innerText = ''
         let errArr = []
         const phoneRegx = /^1[3456789]\d{9}$/
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const re = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
         // check name validation
         if (name == '') {
@@ -110,7 +110,7 @@
 
         if (email == '') {
             errArr.push('邮箱为必填选项')
-        } else if (!re.test(String(email).toLowerCase())){
+        } else if (!re.test(String(email).toLowerCase())) {
             errArr.push('请输入正确邮箱')
         }
 
@@ -125,8 +125,6 @@
         if (!$('#protocol-checked').is(':checked')) {
             errArr.push('必须同意 PingCAP 隐私协议')
         }
-
-
         return errArr
     }
 
@@ -148,6 +146,15 @@
                 },
                 error: function (err) {
                     console.log('Submit form failed', err)
+                    if (err.status === 400) {
+                        const parseErr = JSON.parse(err.responseText)
+                        let errArr = []
+                        Object.values(parseErr["errors"]).forEach(e => (errArr.push(e)))
+                        $('.wrong-tips').css('display', 'block')
+                        $('.wrong-tips .tips').append(
+                            errArr.map(e => '<span>' + e + '</span>').join('，')
+                        )
+                    }
                 }
             })
         } else {
