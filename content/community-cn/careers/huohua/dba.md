@@ -1,7 +1,7 @@
 ---
 title: 高级 DBA 工程师
 tags:
-  - 火花思维科技发展有限公司
+  - 火花思维
 location: 北京
 avatar: huohua
 position: true
