@@ -2,7 +2,6 @@
 
 ## 目录
 
-
 - Paypay
   - [Database Administrator](paypay/dba.md)
 - Square
@@ -57,6 +56,6 @@
 - 火花思维
   - [高级 DBA 工程师](huohua/dba.md)
 - 水滴公司
-  - [大数据运维工程师](shuidi/engineer.md)
+  - [DBA 数据库工程师](shuidi/engineer.md)
 - 广州视睿科技
   - [大数据运维工程师](shirui/engineer.md)
