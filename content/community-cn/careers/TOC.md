@@ -34,8 +34,7 @@
 - 小嘿科技
   - [数据库工程师](xiaoheikeji/engineer.md)
 - 小米
-  - [DBA 工程师](xiaomi/dba.md)
-  - [分布式数据库研发（偏内核）](xiaomi/engineer.md)
+  - [DBA](xiaomi/dba.md)
 - 知乎
   - [微服务平台开发工程师](zhihu/microservice-engineer.md)
   - [大数据实时处理平台研发工程师](zhihu/real-time-engineer.md)
