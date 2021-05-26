@@ -145,12 +145,12 @@ function calcOfficePosition() {
   $('.m-shenzhen').css('right', 0.21 * mapW)
   $('.m-shenzhen').css('top', 0.42 * mapH)
 
-  $('.m-chengdu').css('right', 0.28 * mapW)
+  $('.m-chengdu').css('right', 0.24 * mapW)
   $('.m-chengdu').css('top', 0.34 * mapH)
 
   $('.m-guangzhou').css('right', 0.225 * mapW)
   $('.m-guangzhou').css('top', 0.41 * mapH)
-  
+
 }
 
 $(document).ready(function() {
