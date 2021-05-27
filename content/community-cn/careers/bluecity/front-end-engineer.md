@@ -41,3 +41,4 @@ position: true
 7. 接受并认可多元文化
 8. 熟悉使用 MySQL、Redis 等数据库
 9. 对能掌握任意一种后端编程语言（如 nodejs、php、golang、java、python）者优先
+10. 熟悉 TiDB 或者 PCTA 认证持有者优先

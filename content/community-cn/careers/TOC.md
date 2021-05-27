@@ -63,3 +63,5 @@
   - [系统运维工程师](bluecity/operations-engineer.md)
   - [前端研发工程师](bluecity/front-end-engineer.md)
   - [Golang 开发工程师](bluecity/golang-engineer.md)
+- 深科技
+  - [大数据工程师](shenkeji/engineer.md)
