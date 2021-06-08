@@ -1,14 +1,6 @@
 {
     "banners": [
         {
-            "link": "https://app.ma.scrmtech.com/meetings/meetingPc/Detail?pf_uid=19697_1864&pf_type=3&id=30819&auto_apply_meeting=1",
-            "gaTrackEventClass": "tidb-v5.0-press-conference_view",
-            "gaTrackEventLabel": "tidb-v5.0-press-conference",
-            "img": "https://download.pingcap.com/images/tidb-5.0-press-conference.jpg",
-            "alt": "TiDB v5.0 Press Conference",
-            "newTab": true
-        },
-        {
             "link": "/campaign/tidb-v5.0/",
             "gaTrackEventClass": "campaign_tidb-v5.0_view",
             "gaTrackEventLabel": "campaign-tidb-v5.0",
