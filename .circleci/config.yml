@@ -39,7 +39,6 @@ jobs:
       - image: circleci/node:14.13.0
     steps:
       - install-deps
-      - prepare-sentry
       - verify-and-build
       - persist_to_workspace:
           root: .
