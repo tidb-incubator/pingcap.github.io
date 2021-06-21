@@ -12,11 +12,15 @@
     "build": "git submodule sync; git submodule update --init --remote --recursive; npm run gen-content; export NODE_ENV=production; ./scripts/build-check-err.sh",
     "gen-content": "bash ./scripts/gen-sub-gitinfo.sh; bash ./scripts/gen-content.sh",
     "clean": "rimraf dist",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "server:reload": "pm2 reload pm2.config.js",
+    "server:start": "pm2 start pm2.config.js",
+    "deploy": "shipit production deploy"
   },
   "license": "MIT",
   "dependencies": {
-    "glob": "^7.1.6"
+    "glob": "^7.1.6",
+    "http-server": "^0.12.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
@@ -36,6 +40,8 @@
     "less-plugin-autoprefix": "^2.0.0",
     "prettier": "^1.19.1",
     "rimraf": "^2.7.1",
+    "shipit-cli": "5.3.0",
+    "shipit-deploy": "5.3.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.42.0"
   }
