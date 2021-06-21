@@ -4,7 +4,6 @@ jobs:
     docker:
       - image: circleci/node:14.13.0
     steps:
-      steps:
       - install-deps
       - prepare-sentry
       - verify-and-build
