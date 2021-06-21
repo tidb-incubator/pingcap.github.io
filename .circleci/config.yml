@@ -1,25 +1,4 @@
 version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node:14.13.0
-    steps:
-      - install-deps
-      - prepare-sentry
-      - verify-and-build
-      - persist_to_workspace:
-          root: .
-          paths:
-            - dist
-  
-  deploy:
-    docker:
-      - image: circleci/node:14.13.0
-    steps:
-      - install-deps
-      - attach_workspace:
-          at: .
-      - deploy-website
 
 commands:
   install-deps:
@@ -54,6 +33,28 @@ commands:
             ssh-keyscan "${HOST_HK_1_IP}" >> ~/.ssh/known_hosts 2>/dev/null
             npm run deploy
       
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14.13.0
+    steps:
+      - install-deps
+      - prepare-sentry
+      - verify-and-build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist
+  
+  deploy:
+    docker:
+      - image: circleci/node:14.13.0
+    steps:
+      - install-deps
+      - attach_workspace:
+          at: .
+      - deploy-website
+
 workflows:
   version: 2
   build:
