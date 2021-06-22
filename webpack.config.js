@@ -27,6 +27,7 @@ module.exports = {
     high_performance_tidb_challenge: pathJoinSrcJs('high_performance_tidb_challenge'),
     developer_sig: pathJoinSrcJs('developer_sig'),
     hackathon2020: pathJoinSrcJs('hackathon2020'),
+    devcon2021: pathJoinSrcJs('devcon2021'),
   },
   output: {
     path: path.join(__dirname, 'dist', 'js'),

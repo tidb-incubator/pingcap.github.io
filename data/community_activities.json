@@ -1,11 +1,19 @@
 {
   "activities": [
     {
+      "name": "TiDB DevCon2021",
+      "active_image_pc": "/images/community/devcon2021/entry-banner-pc.png",
+      "active_image_mobile" : "/images/community/devcon2021/entry-banner-mobile.png",
+      "summary": "",
+      "active": true,
+      "link": "/community-cn/devcon2021"
+    },
+    {
       "name": "TiDB Hacking Camp",
       "active_image_pc": "https://download.pingcap.com/images/community/activities/tidb-hacking-camp-2021-pc.png",
       "active_image_mobile" : "https://download.pingcap.com/images/community/activities/home-tidb-hacking-camp-2021-carousel.png",
-      "summary": "",
-      "active": true,
+      "summary": "2021 年 1 月结束的 TiDB 黑客马拉松中诞生了许多明星项目，如 UDF、图数据库、文档自动纠错等等，为 TiDB 构建了丰富的生态和卓越的性能提升，令人不禁感叹「社区的力量」。为了让这些项目能够真正落地，继续在社区中发光发热，TiDB 社区联合经纬中国举办了第一期 hacking camp，旨在帮助项目团队一起制定合理的后续计划和商业方向，并将向社区公开阶段性成果。",
+      "active": false,
       "link": "/community-cn/hacking-camp-2021-season-1"
     },
     {
