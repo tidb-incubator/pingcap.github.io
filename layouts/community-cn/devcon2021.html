@@ -151,19 +151,19 @@ DevCon 2021
     <section class="devcon2021-sponsors">
         <div class="container">
             <h2 id="sponsors" class="section-title">赞助合作</h2>
+            <h3>黄金赞助</h3>
+            <div class="medias">
+                {{- range $idx, $i := .Site.Data.devcon.support_meida2021_gold -}}
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                {{- end -}}
+            </div>
             <h3>白银赞助</h3>
             <div class="medias">
-                {{- range $idx, $i := .Site.Data.devcon.support_meida2021 -}}
+                {{- range $idx, $i := .Site.Data.devcon.support_meida2021_silver -}}
                 <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
                 {{- end -}}
             </div>
-            <!-- <h3>金牌赞助</h3>
-            <div class="medias">
-                {{- range $idx, $i := .Site.Data.devcon.support_meida2020 -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
-                {{- end -}}
-            </div>
-            <h3>银牌赞助</h3>
+            <!-- <h3>银牌赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2020 -}}
                 <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />

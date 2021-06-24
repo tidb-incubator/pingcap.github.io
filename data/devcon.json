@@ -2960,9 +2960,11 @@
     "/images/community/devcon2020/sponsors/it168.png",
     "/images/community/devcon2020/sponsors/motianlun.png"
   ],
-  "support_meida2021": [
+  "support_meida2021_gold": [
+    "/images/community/devcon2021/logo-future-capital.png"
+  ],
+  "support_meida2021_silver": [
     "/images/community/devcon2021/logo-ggv.png",
-    "/images/community/devcon2021/logo-future-capital.png",
     "/images/community/devcon2021/logo-suse.png",
     "/images/community/devcon2021/logo-showmebug.png"
   ],
