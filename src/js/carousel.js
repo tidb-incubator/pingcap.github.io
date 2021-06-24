@@ -37,7 +37,7 @@ $(document).ready(function() {
     $('.swiper-pagination').hide()
   }
 
-  if (window.location.pathname == '/community-cn/paper-reading/') {
+  if (window.location.pathname == '/events/paper-reading/') {
     processDateExpiration()
   }
 })

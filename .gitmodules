@@ -10,8 +10,8 @@
 	path = content/tidb-academy
 	url = git@github.com:pingcap/private-tidb-academy.git
 	shallowed = true
-[submodule "content/archived/meetup"]
-	path = content/archived/meetup
+[submodule "content/meetup"]
+	path = content/meetup
 	url = https://github.com/tidb-incubator/meetup.git
-	shallowed = true
+	shallowed = true`
 	branch = CPT-265-migration
