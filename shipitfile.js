@@ -31,14 +31,4 @@ module.exports = shipit => {
       },
     },
   })
-
-  shipit.on('published', () => {
-    shipit.start('server:reload');
-  });
-
-  shipit.blTask('server:reload', async () => {
-    await shipit.remote(`npm run server:reload`, {
-      cwd: `${process.env.DEPLOY_SERVICE_PATH}/current`,
-    });
-  });
 }
