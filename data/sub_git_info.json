@@ -897,7 +897,7 @@
 },
 {
 "name": "content/blog-cn___tidb-source-code-reading-7.md",
-"info": "0dc3529___tiancaiamao___fix a SQL syntax error in the source code reading blog (#384)___Sat Jan 18 23:55:54 2020 -0600___0dc35296a71b037203206f830471ad22c46b4aec"
+"info": "32f65ea___GitHub___Update tidb-source-code-reading-7.md (#587)___Thu Jun 24 15:47:28 2021 +0800___32f65eaaaf03526ec04fc96e2664e9d9d95f43ee"
 },
 {
 "name": "content/blog-cn___tidb-source-code-reading-8.md",
@@ -2469,15 +2469,15 @@
 },
 {
 "name": "content/meetup___distributed-system-test-1.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___distributed-system-test-2.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___distributed-system-test-3.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___geographic-data-distribution-traffic-and-latency-halved.md",
@@ -2485,11 +2485,11 @@
 },
 {
 "name": "content/meetup___meetup-09-20160521.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-10-20160528.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-100-20190510.md",
@@ -2533,7 +2533,7 @@
 },
 {
 "name": "content/meetup___meetup-11-20160604.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-110-20190814.md",
@@ -2573,7 +2573,7 @@
 },
 {
 "name": "content/meetup___meetup-12-20160618.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-120-20191211.md",
@@ -2617,187 +2617,187 @@
 },
 {
 "name": "content/meetup___meetup-13-20160625.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-14-20160702.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-15-20160709.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-16-20160716.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-17-20160723.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-18-20160730.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-19-20160806.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-20-20190820.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-21-20160827.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-22-20160903.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-23-20160910.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-24-20160924.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-25-20161015.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-26-20161022.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-27-20161029.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-28-20161105.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-29-20161112.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-30-20161119.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-31-20161126.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-32-20161203.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-33-20161210.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-34-20161217.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-35-20161224.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-36-20170107.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-37-20170114.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-38-20170218.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-39-20170225.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-40-20170304.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-41-20170311.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-42-20170318.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-43-20170325.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-44-20170408.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-45-20170416.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-46-20170422.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-47-20170506.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-48-20170513.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-49-20170603.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-51-20170701.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-52-20170722.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-53-20170805.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-54-20170825.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-55-20170906.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-56-20170920.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-57-20171025.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-58-20171115.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-60-20171223.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-62-20180110.md",
@@ -2805,67 +2805,67 @@
 },
 {
 "name": "content/meetup___meetup-63-20180207.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-64-20180314.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-65-20180404.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-66-20180417.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-67-20180509.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-68-20180531.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-69-20180612.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-70-20180626.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-71-20180710.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-72-20180820.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-73-20180905.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-74-20180919.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-75-20181016.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-76-20181023.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-77-20181023.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-78-20181030.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___meetup-79-20181107.md",
@@ -2949,7 +2949,7 @@
 },
 {
 "name": "content/meetup___mpp-smp-tidb.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___recording.md",
@@ -2957,15 +2957,15 @@
 },
 {
 "name": "content/meetup___rust-in-tikv.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___tidb-api-union-scan.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {
 "name": "content/meetup___tidb-optimization-for-subquery.md",
-"info": "5a2bbd0___std4453___Update url___Wed Jun 23 21:36:37 2021 +0800___5a2bbd04b33c86a21f2abfefefa841ffa255d2c0"
+"info": "43b3556___std4453___CPT-252 fix: restore url___Fri Jun 25 12:36:49 2021 +0800___43b3556f5f6759006bb7489de52d92f9c97b2ee7"
 },
 {}
 ]
