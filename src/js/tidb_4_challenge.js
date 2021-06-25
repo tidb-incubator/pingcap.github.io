@@ -1,6 +1,132 @@
 const rankURL = 'https://internal.pingcap.net/bcp/api/rank/all'
 const rankSeasonURL = 'https://internal.pingcap.net/bcp/api/rank'
 
+const rankSeasonData = [
+  {
+    rank: 1,
+    season: 1,
+    type: 'team',
+    name: 'Manuel Rigger',
+    community: true,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/8',
+    score: 11700,
+    'doing-task': '',
+  },
+  {
+    rank: 2,
+    season: 1,
+    type: 'team',
+    name: 'wwar',
+    community: true,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/14',
+    score: 5950,
+    'doing-task': '',
+  },
+  {
+    rank: 3,
+    season: 1,
+    type: 'team',
+    name: '章鱼烧',
+    community: true,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/19',
+    score: 5850,
+    'doing-task': '',
+  },
+  {
+    rank: 4,
+    season: 1,
+    type: 'team',
+    name: 'YKG',
+    community: true,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/24',
+    score: 5500,
+    'doing-task': '',
+  },
+  {
+    rank: 5,
+    season: 1,
+    type: 'team',
+    name: 'AndrewDi',
+    community: true,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/9',
+    score: 4000,
+    'doing-task': '',
+  },
+  {
+    rank: 6,
+    season: 1,
+    type: 'team',
+    name: 'cars',
+    community: true,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/15',
+    score: 1700,
+    'doing-task': '',
+  },
+  {
+    rank: 7,
+    season: 1,
+    type: 'team',
+    name: 'CHJ\u0026navy',
+    community: false,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/6',
+    score: 500,
+    'doing-task': '',
+  },
+  {
+    rank: 8,
+    season: 1,
+    type: 'team',
+    name: ' jinxianqi',
+    community: true,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/7',
+    score: 500,
+    'doing-task': '',
+  },
+  {
+    rank: 9,
+    season: 1,
+    type: 'team',
+    name: 'North of Community',
+    community: false,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/17',
+    score: 500,
+    'doing-task': '',
+  },
+  {
+    rank: 10,
+    season: 1,
+    type: 'team',
+    name: 'PingCAP',
+    community: false,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/22',
+    score: 500,
+    'doing-task': '',
+  },
+  {
+    rank: 11,
+    season: 1,
+    type: 'team',
+    name: 'xiaodong-ji',
+    community: false,
+    url:
+      'https://github.com/tidb-challenge-program/bug-hunting-register/issues/10',
+    score: 50,
+    'doing-task': '',
+  },
+]
+
+const rankData = []
+
 const season = $('#ranking-switch .first')
 const history = $('#ranking-switch .second')
 const slider = $('#ranking-switch .slider')
@@ -48,10 +174,12 @@ function renderData(data) {
 }
 
 function getRankData(isSeason) {
-  let url
+  // let url
+  let data
 
   if (isSeason) {
-    url = rankSeasonURL
+    data = rankSeasonData
+    // url = rankSeasonURL
     slider.text(sliderTextSeason)
     if (window.matchMedia('(max-width: 768px)').matches) {
       slider.css('left', '1rem')
@@ -59,16 +187,20 @@ function getRankData(isSeason) {
       slider.css('left', 'calc(30% + 1rem)')
     }
   } else {
-    url = rankURL
+    // url = rankURL
+    data = rankData
     slider.text(sliderTextHistory)
     slider.css('left', 'calc(50% - 1rem)')
   }
 
-  $.getJSON(url, data => {
-    $('#ranking-list').empty()
+  // $.getJSON(url, data => {
+  //   $('#ranking-list').empty()
 
-    renderData(data)
-  })
+  //   renderData(data)
+  // })
+  $('#ranking-list').empty()
+
+  renderData(data)
 }
 
 season.on('click', () => getRankData(true))
