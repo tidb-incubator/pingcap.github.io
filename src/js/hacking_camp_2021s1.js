@@ -3,6 +3,6 @@ import { main } from './hackathon2020'
 $(document).ready(
   main({
     momentSelector: '.hacking-camp-moment',
-    milestones: ['2021.7.31', '2021.8.16', '2021.9.16', '2021.10.16'],
+    milestones: ['2021.3.14', '2021.3.21', '2021.4.26', '2021.4.29'],
   })
 )
