@@ -6,29 +6,39 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const isDev = process.env.NODE_ENV === 'development'
 const pathJoinSrcJs = name => path.join(__dirname, 'src', 'js', name)
 
+const generateEntry = filenames =>
+  filenames.reduce(
+    (acc, filename) => ({
+      ...acc,
+      [filename]: pathJoinSrcJs(filename),
+    }),
+    {}
+  )
+
 module.exports = {
   mode: isDev ? 'development' : 'production',
-  entry: {
-    app: pathJoinSrcJs('app'),
-    doc: pathJoinSrcJs('doc'),
-    about: pathJoinSrcJs('about'),
-    recruit: pathJoinSrcJs('recruit'),
-    tidb_planet: pathJoinSrcJs('tidb_planet'),
-    devcon: pathJoinSrcJs('devcon'),
-    community: pathJoinSrcJs('community'),
-    tidb_planet_user: pathJoinSrcJs('tidb_planet_user'),
-    multi_slides_carousel: pathJoinSrcJs('multi_slides_carousel'),
-    carousel: pathJoinSrcJs('carousel'),
-    video_on_modal: pathJoinSrcJs('video_on_modal'),
-    anchor: pathJoinSrcJs('anchor'),
-    tidb_performance_challenge: pathJoinSrcJs('tidb_performance_challenge'),
-    tidb_usability_challenge: pathJoinSrcJs('tidb_usability_challenge'),
-    tidb_4_challenge: pathJoinSrcJs('tidb_4_challenge'),
-    high_performance_tidb_challenge: pathJoinSrcJs('high_performance_tidb_challenge'),
-    developer_sig: pathJoinSrcJs('developer_sig'),
-    hackathon2020: pathJoinSrcJs('hackathon2020'),
-    devcon2021: pathJoinSrcJs('devcon2021'),
-  },
+  entry: generateEntry([
+    'about',
+    'anchor',
+    'app',
+    'carousel',
+    'community',
+    'devcon',
+    'devcon2021',
+    'developer_sig',
+    'doc',
+    'hackathon2020',
+    'hacking_camp_2021s2',
+    'high_performance_tidb_challenge',
+    'multi_slides_carousel',
+    'recruit',
+    'tidb_4_challenge',
+    'tidb_performance_challenge',
+    'tidb_planet',
+    'tidb_planet_user',
+    'tidb_usability_challenge',
+    'video_on_modal',
+  ]),
   output: {
     path: path.join(__dirname, 'dist', 'js'),
     publicPath: '/js/',
