@@ -135,58 +135,52 @@
   ],
   "exclusive": [
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-matrix.png",
+      "name": "matrix",
       "link": "https://www.matrixpartners.com.cn/index.php/zh/"
     }
   ],
   "sponsors1": [
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-ggv-capital.png",
-      "link": "https://www.ggvchina.com/"
-    },
-    {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-future-cap.png",
+      "name": "feature-capital",
       "link": "https://www.future-cap.com/china/"
     },
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-chuxin-capital.png",
-      "link": "http://www.chuxincapital.com/",
-      "bigImg": true
+      "name": "ggv-capital",
+      "link": "https://www.ggvchina.com/"
     },
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-10fund.png",
-      "link": "http://www.10fund.com/",
-      "bigImg": true
-    },
-    {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-juicefs.png",
+      "name": "juice-fs",
       "link": "https://juicefs.com/"
     },
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-flomesh.svg",
-      "link": "http://flomesh.cn/"
+      "name": "chuxin-capital",
+      "link": "http://www.chuxincapital.com/"
+    },
+    {
+      "name": "tenfund",
+      "link": "http://www.10fund.com/"
     }
   ],
   "sponsors2": [
     {
-      "img": "https://download.pingcap.com/images/community/hackathon2020/logo-zhihu.png",
-      "link": "https://www.zhihu.com/"
-    },
-    {
-      "img": "https://download.pingcap.com/images/community/hackathon2020/logo-tikv.png",
-      "link": "https://tikv.org/"
-    },
-    {
-      "img": "https://download.pingcap.com/images/community/hackathon2020/logo-chaosMesh.png",
-      "link": "https://chaos-mesh.org/"
-    },
-    {
-      "img": "https://download.pingcap.com/images/community/hackathon2020/logo-palfish.png",
+      "name": "palfish",
       "link": "https://www.ipalfish.com/"
     },
     {
-      "img": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/logo-gitee.png",
+      "name": "zhihu",
+      "link": "https://www.zhihu.com/"
+    },
+    {
+      "name": "chaos-mesh",
+      "link": "https://chaos-mesh.org/"
+    },
+    {
+      "name": "gitee",
       "link": "https://gitee.com"
+    },
+    {
+      "name": "tikv",
+      "link": "https://tikv.org/"
     }
   ]
 }

@@ -892,29 +892,41 @@
 }
 
 .sponsor-type {
-  margin-top: 2rem;
   font-weight: bold;
 }
 
 .partners-list {
-  img {
-    display: block;
-    height: 3em;
-    width: auto;
-    margin: 2em 4em;
+  align-items: center;
+  padding-bottom: 5rem;
 
-    &.exclusive {
-      height: 5em;
-    }
-
-    &.big-img {
-      margin: 0 2rem;
-      height: 5rem;
-    }
+  .exclusive-sponvers {
+    margin: 2rem 0 3rem;
   }
 
-  &.hacking-camp {
-    padding-bottom: 3rem;
+  .list-flex {
+    a {
+      margin: 2em 4em;
+    }
+
+    img {
+      display: block;
+      height: 3em;
+      width: auto;
+
+      &.ggv-capital,
+      &.juice-fs {
+        height: 2em;
+      }
+
+      &.tenfund {
+        height: 4em;
+      }
+
+      &.matrix,
+      &.chuxin-capital {
+        height: 5em;
+      }
+    }
   }
 }
 
