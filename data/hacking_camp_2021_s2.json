@@ -7,16 +7,10 @@
       "word": "风起于青萍之末。星星之火可以燎原。祝各个项目在Camp中快速迭代升级，成为社区乃至所有开发者的必备产品。"
     },
     {
-      "name": "吴陈尧",
-      "team_name": "GGV 纪源资本执行董事",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/wuchenxiao.png",
-      "word": "中国开源创业者要注重社区的搭建，以技术作为立身之本；从创办之初就要注重国际化，鼓励中外工程师共同参与；商业化进程视具体服务的客户群来决定，在社区形成一定的规模后就可以商业化。"
-    },
-    {
-      "name": "刘洪清",
-      "team_name": "Juicedata CEO",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/liuhongqing.png",
-      "word": "JuiceFS 跟 TiDB 有很多相似点，好奇它们能够碰撞出怎样的火花，Happy Hacking！"
+      "name": "于真真",
+      "team_name": "初心资本合伙人",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/yuzhenzhen.png",
+      "word": "我们感知到了开源的魅力，并无比期待开源的世界，希望在 Hacking Camp 中找到中国开源的新生力量。"
     },
     {
       "name": "黄明明",
@@ -25,10 +19,10 @@
       "word": "开源改变世界，开发者定义开源，我们一起开玩。"
     },
     {
-      "name": "于真真",
-      "team_name": "初心资本执行董事",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/yuzhenzhen.png",
-      "word": "我们感知到了开源的魅力，并无比期待开源的世界，希望在 Hacking Camp 中找到中国开源的新生力量。"
+      "name": "吴陈尧",
+      "team_name": "GGV 纪源资本合伙人",
+      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/wuchenxiao.png",
+      "word": "中国开源创业者要注重社区的搭建，以技术作为立身之本；从创办之初就要注重国际化，鼓励中外工程师共同参与；商业化进程视具体服务的客户群来决定，在社区形成一定的规模后就可以商业化。"
     },
     {
       "name": "刘洋",
@@ -37,40 +31,34 @@
       "word": "作为 PingCAP 的老朋友，一直认为 TiDB 是中国最好的开源社区之一。希望与大家一起，将 TiDB/TiKV 发展为产品的基础设施。Open Source Rocks!"
     },
     {
-      "name": "马晓宇",
-      "team_name": "' or 0=0 or '",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/maxiaoyu.png",
-      "word": "祝五湖四海汇聚而成的社区hacker们能在tidb项目获得快乐，让我们一起为星辰大海的旅程加油充电。"
+      "name": "王聪",
+      "team_name": "Tech Leader of TiDB team",
+      "avatar": "/images/community/hacking-camp-2021-s2/avatars/wangcong.png",
+      "word": "祝大家早日从 Hacking Camp 毕业。"
     },
     {
-      "name": "段兵",
-      "team_name": "zh.md",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/duanbing.png",
-      "word": "祝愿 zh.md 团队能帮助中文技术文档工程师提升 10 倍效率。"
+      "name": "张建",
+      "team_name": "PingCAP 研发主管",
+      "avatar": "/images/community/hacking-camp-2021-s2/avatars/zhangjian.png",
+      "word": "期望 Hacking Camp 诞生越来越多优秀的开源项目，推动应用生态发展，促进数据库技术演进，让 TiDB 的数据库生态生机勃勃！"
     },
     {
-      "name": "刘金龙",
-      "team_name": "TiDE",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/liujinlong.png",
-      "word": "Nothing's impossible and all depends on man"
+      "name": "顾亮亮",
+      "team_name": "PingCAP Database R&D Engineer",
+      "avatar": "/images/community/hacking-camp-2021-s2/avatars/guliangliang.png",
+      "word": "HugeGraph + TiKV 是一个 1+1 远远大于 2 的项目，不仅仅是两个产品简单的整合，更是两个开源社区的强强联合。"
     },
     {
-      "name": "翟玉龙",
-      "team_name": "zhangyushao",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/zhaiyulong.png",
-      "word": "让项目全力为 PingCAP 社区 “加速”，同时走向更广泛的社区，吸引更多的志同道合的伙伴一起 hacking！"
+      "name": "徐成选",
+      "team_name": "TiDB 社区 TOC 成员",
+      "avatar": "/images/community/hacking-camp-2021-s2/avatars/xuchengxuan.png",
+      "word": "JuiceFS 作为一款云原生分布式文件系统，为大数据、AI、应用上云带来了出色的存储体验，期待JuiceFS 能成为各个企业最理想的数据湖。"
     },
     {
-      "name": "冯立元",
-      "team_name": "Ti-Improve",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/fengliyuan.png",
-      "word": "希望 Ti-Improve 能尽快落地，极大地 Improve 我们整个社区研发测试效率。"
-    },
-    {
-      "name": "|> 10HUG",
-      "team_name": "10Fund Hacker User Group",
-      "avatar": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/10hug.png",
-      "word": "希望更多 PingCAP Hacking Camp 一样的活动帮助中国开发者释放超级生产力。We are re-coding the world."
+      "name": "孙晓光",
+      "team_name": "TiDB 社区 TOC 主席",
+      "avatar": "/images/community/hacking-camp-2021-s2/avatars/sunshuguang.png",
+      "word": "让 TiBigData 成为 TiDB 大数据生态的瑞士军刀。"
     }
   ],
   "winners": [
@@ -157,7 +145,7 @@
       "link": "http://www.chuxincapital.com/"
     },
     {
-      "name": "tenfund",
+      "name": "10fund",
       "link": "http://www.10fund.com/"
     }
   ],
