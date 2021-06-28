@@ -14,6 +14,7 @@
     {{- partial "head/preload-assets" . -}}
     {{- partial "head/preload-css" (dict "href" "/css/main.css") -}}
     {{- partial "head/preload-css" (dict "href" "https://download.pingcap.com/style/docsearch.min.css") -}}
+    {{- partial "head/preload-css" (dict "href" "https://tug.tidb.io/scripts/community-ui.css") -}}
     {{- partial "tracking-code/ga-events-js.html" -}}
     <script type="text/javascript">
     if (location.pathname === '/') {
@@ -79,6 +80,19 @@
     <script type="text/javascript">
         Sentry.init({ 
             dsn: 'https://3f28ed393c5545daa74496b3cdb2e9ba@sentry.io/1887163' 
+        });
+    </script>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script type="text/javascript" src="https://tug.tidb.io/scripts/community-ui.js"></script>
+    <script type="text/javascript">
+        _tidb.sharedUI.initHeaderFooter({
+            locale: 'zh',
+            title: 'TiDB Community',
+            logoSrc: 'https://tidb.io/images/community/logo.svg',
+            headerEl: document.querySelector('#header'),
+            footerEl: document.querySelector('#footer'),
         });
     </script>
 </body>

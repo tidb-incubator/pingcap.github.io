@@ -16,7 +16,7 @@ const autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] })
 
 function buildCss() {
   return src('./src/less/**/*.less')
-    .pipe(less({ plugins: [autoprefix] }))
+    .pipe(less({ plugins: [autoprefix], rootPath: '/archived' })) 
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(dest('./dist/css'))
     .pipe(browserSync.stream())
@@ -35,7 +35,7 @@ function buildJsAndTpl(cb) {
   })
 }
 
-const hugoArgsDefault = ['-d', './dist', '-s', '.', '-v']
+const hugoArgsDefault = ['-d', './dist', '-s', '.', '-v', '--config', 'config.toml']
 
 function buildSite(cb, options = []) {
   const args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault

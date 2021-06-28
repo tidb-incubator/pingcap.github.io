@@ -1,4 +1,5 @@
-baseurl = "https://pingcap.com/"
+baseurl = "/archived/"
+canonifyurls = true
 title = "SQL at Scale"
 # Do not make the url/path to lowercase
 disablePathToLower = true
