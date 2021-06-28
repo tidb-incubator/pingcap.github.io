@@ -2968,6 +2968,14 @@
     "/archived/images/community/devcon2021/logo-suse.png",
     "/archived/images/community/devcon2021/logo-showmebug.png"
   ],
+  "support_meida2021_gold": [
+    "/images/community/devcon2021/logo-future-capital.png"
+  ],
+  "support_meida2021_silver": [
+    "/images/community/devcon2021/logo-ggv.png",
+    "/images/community/devcon2021/logo-suse.png",
+    "/images/community/devcon2021/logo-showmebug.png"
+  ],
   "instructors_2019": [
     {
       "name": "刘奇",
