@@ -135,7 +135,7 @@ DevCon 2021
                 {{- if not $i.noAvatar -}}
                 <div class="tutor">
                     <div class="tutor-avatar">
-                        <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.avatar }}"
+                        <img class="lazy" src="/images/svgs/loader-spinner.svg" src="{{ $i.avatar }}"
                             alt="Tutor avator" />
                     </div>
                     <div class="name">{{ $i.name }}</div>
@@ -154,19 +154,19 @@ DevCon 2021
             <h3>黄金赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_gold -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" src="{{ $i }}" />
                 {{- end -}}
             </div>
             <h3>白银赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_silver -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" src="{{ $i }}" />
                 {{- end -}}
             </div>
             <!-- <h3>银牌赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2020 -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" src="{{ $i }}" />
                 {{- end -}}
             </div> -->
             <div class="content">
@@ -181,7 +181,7 @@ DevCon 2021
             <h2 id="sponsors" class="section-title">支持媒体</h2>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2020 -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" src="{{ $i }}" />
                 {{- end -}}
             </div>
         </div>
