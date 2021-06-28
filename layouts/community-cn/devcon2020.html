@@ -82,9 +82,9 @@ DevCon 2020
                     {{- end -}}
                 </div>
             </div>
-            {{- partial "community-cn/devcon2020-schedule-table.html" (dict "schedule" .Site.Data.devcon.devcon2020_day1_schedule "global" . "date" "day1") -}}
+            {{- partial "community-cn/devcon2020-schedule-table.html" (dict "schedule" .Site.Data.devcon.devcon2020_day1_schedule "global" . "date" "day1" "isCn" "true") -}}
 
-            {{- partial "community-cn/devcon2020-schedule-table.html" (dict "schedule" .Site.Data.devcon.devcon2020_day2_schedule "global" . "date" "day2") -}}
+            {{- partial "community-cn/devcon2020-schedule-table.html" (dict "schedule" .Site.Data.devcon.devcon2020_day2_schedule "global" . "date" "day2" "isCn" "true") -}}
 
             <div class="switch-date-btn date2">DAY2 日程</div>
         </section>

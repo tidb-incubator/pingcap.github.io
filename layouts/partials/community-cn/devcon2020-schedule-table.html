@@ -1,15 +1,30 @@
 {{ $schedule := .schedule }}
 {{ $date := .date}}
+{{ $isCn := .isCn }}
+{{ $isPreDay := .isPreDay }}
+{{ $devcon2021 := .devcon2021 }}
 
 {{- range $idx, $i := $schedule -}}
 <div class="schedule {{ if eq $date "day2" }}hide-schedule {{ end }}{{ $date }}"
     id="{{ replace (replace $i.name  "/" "-" ) " " "-" }}">
-    <div class="venue-title">{{ $i.name }}</div>
+    {{ if $devcon2021 }}
+        <div class="forum">
+            <div class="forum-title">
+                <div class="venue-title">{{ $i.name }}</div><img src="{{ $i.icon}}" />
+            </div>
+            <div class="venue-desc">{{ $i.desc }}</div>
+        </div>
+    {{ else }}
+        {{ if $i.name }}
+        <div class="venue-title">{{ $i.name }}</div>
+        {{ end }}
+    {{ end }}
+    {{ if $i.schedules }}
     <table class="schedule-table">
         <tr class="head">
-            <td>{{if .isCn }}时间{{else}}Time{{end}}</td>
-            <td>{{if .isCn }}议题{{else}}Topic{{end}}</td>
-            <td>{{if .isCn }}演讲嘉宾{{else}}Speaker{{end}}</td>
+            <td>{{if $isCn }}时间{{else}}Time{{end}}</td>
+            <td>{{if $isCn }}{{if $isPreDay}}日程{{else}}议题{{end}}{{else}}Topic{{end}}</td>
+            <td>{{if $isCn }}{{if $isPreDay}}{{else}}演讲嘉宾{{end}}{{else}}Speaker{{end}}</td>
             <td></td>
         </tr>
         {{- range $idx2, $j := $i.schedules -}}
@@ -17,14 +32,14 @@
         <tr>
             <td>{{ $j.time }}</td>
             <td colspan="3">
-                <p class="TBA">{{if .isCn }}敬请期待{{else}}TBA{{end}}</p>
+                <p class="TBA">{{if $isCn }}敬请期待{{else}}TBA{{end}}</p>
             </td>
         </tr>
         {{- else if $j.break -}}
         <tr>
             <td>{{ $j.time }}</td>
             <td colspan="3">
-                <p class="TBA">{{if .isCn }}【中场休息】{{else}}Half Time{{end}}</p>
+                <p class="TBA">{{if $isCn }}【中场休息】{{else}}Half Time{{end}}</p>
             </td>
         </tr>
         {{- else -}}
@@ -58,5 +73,6 @@
         {{- end -}}
         {{- end -}}
     </table>
+    {{ end }}
 </div>
 {{- end -}}

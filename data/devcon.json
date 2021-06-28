@@ -1,4 +1,39 @@
 {
+  "venues_2021": {
+    "day1": [
+      {
+        "time": "9:00 - 12:00",
+        "venues": [
+          {
+            "name": "开放、连接、预见 主题演讲",
+            "id": "day1-1",
+            "icon": "/images/community/devcon2021/day1-icon1.svg",
+            "main": true
+          }
+        ]
+      },
+      {
+        "time": "13:00 - 18:20",
+        "venues": [
+          {
+            "name": "业务敏捷 分论坛",
+            "id": "day1-2",
+            "icon": "/images/community/devcon2021/day1-icon2.svg"
+          },
+          {
+            "name": "实时洞察 分论坛",
+            "id": "day1-3",
+            "icon": "/images/community/devcon2021/day1-icon3.svg"
+          },
+          {
+            "name": "创新生态 分论坛",
+            "id": "day1-3",
+            "icon": "/images/community/devcon2021/day1-icon4.svg"
+          }
+        ]
+      }
+    ]
+  },
   "venues_2020": {
     "day1": [
       {
@@ -123,6 +158,97 @@
       }
     ]
   },
+  "devcon2021_day1_schedule": [
+    {
+      "name": "开放、连接、预见 主题演讲",
+      "icon": "/images/community/devcon2021/day1-icon1.svg",
+      "desc": "本次大会主论坛 PingCAP CEO 刘奇与 CTO 黄东旭将和众多外部嘉宾一起，分享他们对未来数据库产业发展的洞见，阐述开源生态的最新进展；同时，我们还将邀请开源领域的业内大咖、资深媒体人、知名投资人，共同探讨开源生态的多元思考。",
+      "id": "day1-1",
+      "schedules": [
+        {
+          "time": "9:00-10:30",
+          "talk_title": "开放、连接、预见",
+          "speaker": "刘奇",
+          "talk_detail": []
+        },
+        {
+          "time": "10:30-11:00",
+          "talk_title": "The Future of Database",
+          "speaker": "黄东旭",
+          "talk_detail": []
+        },
+        {
+          "time": "11:00-12:00",
+          "talk_title": "圆桌：开源成为企业服务新潮流",
+          "speaker": "圆桌主持人：黄东旭",
+          "talk_detail": []
+        }
+      ]
+    },
+    {
+      "name": "业务敏捷 分论坛",
+      "icon": "/images/community/devcon2021/day1-icon2.svg",
+      "desc": "本场分论坛 TiDB 将邀请大量国际用户和中国用户，分享他们如何借助 TiDB 的规模化 OLTP 能力，应对随时触发的业务高峰，保证业务敏捷性；同时，本次论坛将邀请云原生应用的前瞻客户及合作伙伴分享实战经验，共话云原生技术的未来。",
+      "id": "",
+      "schedules": []
+    },
+    {
+      "name": "实时洞察 分论坛",
+
+      "icon": "/images/community/devcon2021/day1-icon3.svg",
+      "desc": "本场分论坛为 TiDB HTAP 舞台的一次集中展示，将有超过 10 个用户和合作伙伴分享他们在 HTAP 的实战经验和创新思考，是业界少有的 HTAP 实战观察窗。",
+      "id": "",
+      "schedules": []
+    },
+    {
+      "name": "创新生态 分论坛",
+      "icon": "/images/community/devcon2021/day1-icon4.svg",
+      "desc": "本场分论坛将邀请两类 TiDB 的合作伙伴，一类为 “Built on TiDB” 的顶级 ISV 和超级用户，他们将分享 TiDB 在金融、电信、物流、互联网等行业解决方案中如何提供创新的性能，另外一类为 “TiDB+Anything” 的第三方技术厂商，他们将分享 TiDB 分布式数据库与大数据技术栈的融合数据处理的跨界方案，尤其是在异构的数据环境里数据集成、大数据融合处理、分布式数据监控等热门话题。",
+      "id": "",
+      "schedules": []
+    }
+  ],
+  "devcon2021_day2_schedule": [
+    {
+      "name": "",
+      "id": "day2-1",
+      "schedules": [
+        {
+          "time": "15:30-17:30",
+          "talk_title": "TiDB 调优竞赛",
+          "speaker": "",
+          "talk_detail": [
+            "活动介绍：TiDB 调优大赛为竞赛类活动，选手在规定的时间内对同一应用场景下的 TiDB 进行性能调优， 按照性能提升的百分比进行排名。",
+            "面向人群：熟悉 TiDB，对 TiDB 的性能优化点有一定了解的社区用户、Contributor 等。"
+          ]
+        },
+        {
+          "time": "",
+          "talk_title": "Coding 动手实验",
+          "speaker": "",
+          "talk_detail": [
+            "活动介绍：PingCAP CTO 黄东旭将手把手教你如何基于 TiDB，从前端到后端写一个有趣的小应用。",
+            "面向人群：对 Golang / React.js / TiDB 有一定了解的小伙伴们。"
+          ]
+        },
+        {
+          "time": "",
+          "talk_title": "PingCAP Education 课程体验",
+          "speaker": "",
+          "talk_detail": [
+            "活动介绍：TiDB 5.0 课程体验活动为专业培训和考试体验课。参加学员可以在 2 小时内通过学习《TiDB 5.0 快速起步》这门课程和参与现场 TiDB 5.0 知识竞赛考试，获得 TiDB 课程体验官 （TiExploer 徽章和奖品）和 PingCAP Education 专属学习课程大礼包。",
+            "面向人群：无门槛，对 TiDB 感兴趣的小伙伴们均可参与。"
+          ]
+        },
+        {
+          "time": "18:00-21:00",
+          "talk_title": "吐槽大会 & 晚宴",
+          "speaker": "",
+          "talk_detail": []
+        }
+      ]
+    }
+  ],
   "devcon2020_day1_schedule": [
     {
       "name": "主论坛暨 TiDB 4.0 发布",
@@ -2252,7 +2378,82 @@
       "company": "爱奇艺"
     }
   ],
-  
+
+  "instructors_2021": [
+    {
+      "name": "刘奇",
+      "avatar": "/images/community/devcon2021/liuqi.png",
+      "title": "创始人兼 CEO",
+      "company": "PingCAP"
+    },
+    {
+      "name": "黄东旭",
+      "avatar": "/images/community/devcon2021/huangdongxu.png",
+      "title": "联合创始人兼 CTO",
+      "company": "PingCAP"
+    },
+    {
+      "name": "朱巍",
+      "avatar": "/images/community/devcon2021/zhuwei.png",
+      "title": "中国区商业化总经理",
+      "company": "PingCAP"
+    },
+    {
+      "name": "申砾",
+      "avatar": "/images/community/devcon2021/shenli.png",
+      "title": "国际业务总经理",
+      "company": "PingCAP"
+    },
+    {
+      "name": "何宝宏",
+      "avatar": "/images/community/devcon2021/hebaohong.png",
+      "title": "云计算与大数据研究所所长",
+      "company": "中国信息通信研究院"
+    },
+    {
+      "name": "黄明明",
+      "avatar": "/images/community/devcon2021/huangmingming.png",
+      "title": "创始合伙人",
+      "company": "明势资本"
+    },
+    {
+      "name": "刘湘明",
+      "avatar": "/images/community/devcon2021/liuxiangming.png",
+      "title": "联合创始人",
+      "company": "钛媒体"
+    },
+    {
+      "name": "刘春雷",
+      "avatar": "/images/community/devcon2021/liuchunlei.png",
+      "title": "TiDB 及 DorisDB 项目负责人",
+      "company": "58 同城"
+    },
+    {
+      "name": "Reynold Xin",
+      "avatar": "/images/community/devcon2021/reynoldxin.png",
+      "title": "Co-founder & Chief Architect",
+      "company": "Databricks"
+    },
+    {
+      "name": "沈旸",
+      "avatar": "/images/community/devcon2021/shenyang.png",
+      "title": "CIO",
+      "company": "神州数码集团股份有限公司"
+    },
+    {
+      "name": "孙晓光",
+      "avatar": "/images/community/devcon2021/sunxiaoguang.png",
+      "title": "知乎基础研发架构师，TiDB 社区 TOC 主席, TiKV Maintainer",
+      "company": "知乎"
+    },
+    {
+      "name": "王志广",
+      "avatar": "/images/community/devcon2021/wangzhiguang.png",
+      "title": "Bilibili DBA，TUG 内容组 Co-leader",
+      "company": "Bilibili"
+    }
+  ],
+
   "instructors_2020_en": [
     {
       "name": "Jiang CAI",
@@ -2758,6 +2959,14 @@
     "/images/community/devcon2020/sponsors/tgo.png",
     "/images/community/devcon2020/sponsors/it168.png",
     "/images/community/devcon2020/sponsors/motianlun.png"
+  ],
+  "support_meida2021_gold": [
+    "/images/community/devcon2021/logo-future-capital.png"
+  ],
+  "support_meida2021_silver": [
+    "/images/community/devcon2021/logo-ggv.png",
+    "/images/community/devcon2021/logo-suse.png",
+    "/images/community/devcon2021/logo-showmebug.png"
   ],
   "instructors_2019": [
     {
