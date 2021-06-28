@@ -7,7 +7,7 @@
           {
             "name": "开放、连接、预见 主题演讲",
             "id": "day1-1",
-            "icon": "/archived/images/community/devcon2021/day1-icon1.svg",
+            "icon": "/images/community/devcon2021/day1-icon1.svg",
             "main": true
           }
         ]
@@ -18,17 +18,17 @@
           {
             "name": "业务敏捷 分论坛",
             "id": "day1-2",
-            "icon": "/archived/images/community/devcon2021/day1-icon2.svg"
+            "icon": "/images/community/devcon2021/day1-icon2.svg"
           },
           {
             "name": "实时洞察 分论坛",
             "id": "day1-3",
-            "icon": "/archived/images/community/devcon2021/day1-icon3.svg"
+            "icon": "/images/community/devcon2021/day1-icon3.svg"
           },
           {
             "name": "创新生态 分论坛",
             "id": "day1-3",
-            "icon": "/archived/images/community/devcon2021/day1-icon4.svg"
+            "icon": "/images/community/devcon2021/day1-icon4.svg"
           }
         ]
       }
@@ -161,7 +161,7 @@
   "devcon2021_day1_schedule": [
     {
       "name": "开放、连接、预见 主题演讲",
-      "icon": "/archived/images/community/devcon2021/day1-icon1.svg",
+      "icon": "/images/community/devcon2021/day1-icon1.svg",
       "desc": "本次大会主论坛 PingCAP CEO 刘奇与 CTO 黄东旭将和众多外部嘉宾一起，分享他们对未来数据库产业发展的洞见，阐述开源生态的最新进展；同时，我们还将邀请开源领域的业内大咖、资深媒体人、知名投资人，共同探讨开源生态的多元思考。",
       "id": "day1-1",
       "schedules": [
@@ -187,7 +187,7 @@
     },
     {
       "name": "业务敏捷 分论坛",
-      "icon": "/archived/images/community/devcon2021/day1-icon2.svg",
+      "icon": "/images/community/devcon2021/day1-icon2.svg",
       "desc": "本场分论坛 TiDB 将邀请大量国际用户和中国用户，分享他们如何借助 TiDB 的规模化 OLTP 能力，应对随时触发的业务高峰，保证业务敏捷性；同时，本次论坛将邀请云原生应用的前瞻客户及合作伙伴分享实战经验，共话云原生技术的未来。",
       "id": "",
       "schedules": []
@@ -195,14 +195,14 @@
     {
       "name": "实时洞察 分论坛",
 
-      "icon": "/archived/images/community/devcon2021/day1-icon3.svg",
+      "icon": "/images/community/devcon2021/day1-icon3.svg",
       "desc": "本场分论坛为 TiDB HTAP 舞台的一次集中展示，将有超过 10 个用户和合作伙伴分享他们在 HTAP 的实战经验和创新思考，是业界少有的 HTAP 实战观察窗。",
       "id": "",
       "schedules": []
     },
     {
       "name": "创新生态 分论坛",
-      "icon": "/archived/images/community/devcon2021/day1-icon4.svg",
+      "icon": "/images/community/devcon2021/day1-icon4.svg",
       "desc": "本场分论坛将邀请两类 TiDB 的合作伙伴，一类为 “Built on TiDB” 的顶级 ISV 和超级用户，他们将分享 TiDB 在金融、电信、物流、互联网等行业解决方案中如何提供创新的性能，另外一类为 “TiDB+Anything” 的第三方技术厂商，他们将分享 TiDB 分布式数据库与大数据技术栈的融合数据处理的跨界方案，尤其是在异构的数据环境里数据集成、大数据融合处理、分布式数据监控等热门话题。",
       "id": "",
       "schedules": []
