@@ -62,7 +62,7 @@ workflows:
           filters:
             branches:
               only:
-                - CPT-262-migrate-event-pages
+                - src
 
       - hold-for-deploy:
           type: approval
