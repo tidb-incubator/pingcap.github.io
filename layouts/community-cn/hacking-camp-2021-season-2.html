@@ -50,7 +50,7 @@
 		<h2 class="section__title" id="winners">第一期入围项目</h2>
     <div class="container">
       <p class="hackathon2020__intro">第一期 Hacking Camp 共有 6 个项目入围，分别为 HugeGraph、Doris、Juicefs、TiBigData，都是机基于 TiDB 的生态项目。感兴趣的小伙伴可以加入讨论区或为项目贡献自己的一份力量～</p>
-      <div class="list">
+      <div class="list-flex">
         {{- range $idx, $i := .Site.Data.hacking_camp_2021_s2.winners -}}
         <div class="winner-team hacking-camp">
           <div class="thumbnail">
@@ -94,7 +94,7 @@
   <section class="hackathon2020__section hackathon2020__section-awards">
     <h2 class="section__title" id="awards">奖项设置</h2>
     <div class="container">
-      <div class="list">
+      <div class="list-flex">
         {{- range $idx, $i := .Site.Data.hacking_camp_2021_s2.awards -}}
           <div class="award-card">
             <h3>{{ $i.title }}</h3>
@@ -108,7 +108,7 @@
     </div>
   </section>
 
-  <section class="hackathon2020__section">
+  <section class="hackathon2020__section hackathon2020__section-tuitors">
     <h2 class="section__title" id="judges">Hacking Camp 组委会与导师团</h2>
     <div class="container">
       <p class="hackathon2020__intro">
