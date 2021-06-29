@@ -235,7 +235,7 @@
 }
 
 .hacking-cam2021__banner {
-  background: url(https://download.pingcap.com/images/community/hacking-camp-2021-s1/banner-inner-new.png)
+  background: url('/images/community/hacking-camp-2021-s2/web-banner.svg')
     no-repeat;
   padding-top: 28%;
   position: relative;
@@ -400,12 +400,12 @@
     width: 250px;
     height: 335px;
     position: relative;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.05),
       0 0 0 1px rgba(10, 10, 10, 0.02);
 
     &.hacking-camp {
-      margin: 30px;
+      margin: 30px 15px;
       height: 280px;
     }
   }
@@ -413,7 +413,6 @@
   .list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
   }
 
   .team-info {
@@ -456,25 +455,31 @@
     width: 90%;
 
     .misc-btns {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      position: relative;
-    }
+      text-align: center;
 
-    .GitHub-repo {
-      position: relative;
-      background-color: #f7f8f9;
-      color: #4444fd;
-      border: none;
-      padding: 10px;
-      border-radius: 4px;
-      font-size: 12px;
-      cursor: pointer;
+      a {
+        display: inline-block;
+        background-color: #e9eaee;
+        color: @mainColor;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        cursor: pointer;
+        margin-right: 20px;
 
-      &:hover {
-        background-color: #4444fd;
-        color: white;
+        &:hover {
+          color: #fff;
+          background-color: #f86d78;
+        }
+
+        &:last-child {
+          margin-right: 0;
+
+          &:hover {
+            background-color: @primaryBlue;
+          }
+        }
       }
     }
   }
@@ -1106,7 +1111,7 @@
 
 @media (max-width: 428px) {
   .hacking-cam2021__banner {
-    background: url(https://download.pingcap.com/images/community/activities/home-tidb-hacking-camp-2021-carousel.png)
+    background: url('/images/community/hacking-camp-2021-s2/mobile-banner.svg')
       no-repeat;
     padding-top: 68%;
     margin-top: 3rem;

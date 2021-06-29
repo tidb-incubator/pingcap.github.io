@@ -63,44 +63,44 @@
   ],
   "winners": [
     {
-      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-first.png",
-      "project_name": "' or 0=0 or '",
-      "project_intro": "我们将为 TiDB 实现一个用户自定义函数（UDF，User Defined Function）引擎。通过 UDF 用户可以编写复杂的自定义函数执行逻辑，并在数据库上直接进行计算。 我们的 UDF 实现具有以下特性：高性能；沙盒安全，可用于 TiDB Cloud；执行逻辑丰富，甚至支持机器学习、受控的网络访问等；用户可使用多种编程语言（例如自己最熟悉的语言）编写函数逻辑；相同的 UDF 能同时在 TiDB、TiKV 和 TiFlash 上执行，最大化利用分布式资源；相同的 UDF 同时兼容 x86、ARM 等不同平台架构，TiDB Cloud 可以无负担切换到 ARM；为 MySQL 编写的 UDF 可运行在 TiDB 上；符合人行分布式数据库评测标准。",
-      "project_addr": "https://docs.google.com/presentation/d/15My6N6YNlcCoxh7wM9UuSWOQlpKN-7ey4owWEL750RM/edit#slide=id.p",
-      "btn_name": "微信交流群",
-      "btn_link": "https://img2.pingcap.com/manual/51ed3c9e-7f60-43bc-8a1d-643bba4222d1.png"
+      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "project_name": "JuiceFS",
+      "project_intro": "JuiceFS 是一个开源的分布式 POSIX 文件系统，针对云原生环境进行了设计和优化。在 JuiceFS 中，数据被持久化在对象存储（如 Amazon S3）中，而元数据可以存储在各种数据库中，如 Redis、MySQL 或 TiDB。TiKV 是一个分布式键值数据库，提供高性能和事务的API，符合ACID标准。在这个项目中，我们希望使用 TiKV 作为 JuiceFS 的一个新的元数据引擎来提高性能。",
+      "btn_name": "讨论区",
+      "project_addr": "",
+      "btn_link": ""
     },
     {
-      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-cto.png",
-      "project_name": "TiDE",
-      "project_intro": "开发一个 Visual Studio Code 插件，极大提升开发者开发和调试 TiDB 项目的体验。",
-      "project_addr": "https://github.com/tidb-incubator/tide",
-      "btn_name": "微信交流群",
-      "btn_link": "https://img.imgdb.cn/item/6046e9405aedab222c557601.png"
+      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "project_name": "HugeGraph",
+      "project_intro": "将 TiKV 作为 HugeGraph 的后端存储，构建一套具有高水平扩展能力，高性能，高稳定性的图引擎，同时也可以基于 TiKV+HugeGraph 的基础底座，融合 TiDB 在金融等市场的丰富经验，打造有价值的应用解决方案。",
+      "btn_name": "讨论区",
+      "project_addr": "",
+      "btn_link": ""
     },
     {
-      "thumbnail": "https://download.pingcap.com/images/community/hacking-camp-2021-s1/winner-zhangyushao.png",
-      "project_name": "zhangyushao",
-      "project_intro": "Boost bug fix efficiency. In this project, we identified the inefficiency in how currently TiDB bug issues are processed. After a bug issue is submitted, a developer always tries to manually reproduce the case with the provided test cases. It is not rare that an issue is automatically tagged as a bug before it is finally classified as a not a bug/cannot reproduce by another developer. Our project aims to reduce manual efforts during the mentioned process and provide the developer with more precise and concise bug information. We plan to implement a Continuous Integration (CI) tool to smartly reproduce the bug issue and to previously tag it before any manual efforts. We also expect to link each issue with an environment to facilitate the later manual recheck by the developer.",
-      "project_addr": "https://github.com/ti-community-infra/tichi/tree/issue-helper",
-      "btn_name": "微信交流群",
-      "btn_link": "https://img.imgdb.cn/item/6046e44d5aedab222c52a9b0.jpg"
+      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "project_name": "TiBigData",
+      "project_intro": "由知乎发起的 incubator 项目 TiBigData，旨在解决企业大数据场景中各项技术栈对接 TiDB 的整合问题。目前已提供 TiDB 与 Flink 和 Presto 的整合能力，并已应用在知乎的数据集成平台和 OLAP 分析场景中。TiBigData 项目属于整个 TiDB 社区，一方面希望能够惠及社区内有类似需求的用户，另一方面也希望发动社区的力量补全 TiDB 在大数据各项技术栈的支持能力，将 TiBigData 打造为 TiDB 在大数据领域的一站式解决方案。",
+      "btn_name": "讨论区",
+      "project_addr": "https://github.com/tidb-incubator/TiBigData",
+      "btn_link": ""
     },
     {
-      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-third.png",
-      "project_name": "zh.md",
-      "project_intro": "本提案提供一套侧重中文技术文档的写作风格检查与自动化管理解决方案，包括： 完整的中文文档写作风格指南： 为文档作者和审校者提供统一的文档写作参考规范中文文档分析工具和中文文档风格检测工具： 可检测存量或增量文档中的风格问题基于 GitHub 的文档管理 bot： 可以自动建立 issue 或 PR 修复存量或增量文档中的风格问题基于机器学习辅助文档写作：可以辅助生成具有统一风格的文档可明显降低文档的审查工作量、提高文档整体质量，调动工程师积极参与文档内容建设。 本提案适用于任何需要专业技术文档的项目，具有普及性。",
-      "project_addr": "https://github.com/tidb-incubator/zh.md",
-      "btn_name": "微信交流群",
-      "btn_link": "https://img2.pingcap.com/forms/8/5/8552458c708391ba638c7ef1e9de0e38ce5ccec8_ZZhsB5h.jpg"
+      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "project_name": "Doris",
+      "project_intro": "TiDB 和 Doris 都是优秀的开源关系型数据数据库。TiDB 是一款 HTAP 分布式数据库产品，Doris 更专注于 OLAP 领域，本项目将部分 OLAP 分析任务交由 Doris 来做，能够借助 Doris 的物化视图，聚合模型等优势实现高效的大规模 OLAP 分析。",
+      "btn_name": "讨论区",
+      "project_addr": "",
+      "btn_link": ""
     },
     {
-      "thumbnail": "https://download.pingcap.com/images/community/hackathon2020/winner-yunqi.png",
-      "project_name": "Ti-Improve",
-      "project_intro": "AWS native testing framework TiDB 作为一款云上数据库，其云上特性与云厂商提供的特性息息相关，如何使用领先的云厂商 aws 基础设施对 TiDB 进行全自动化的测试一直是一个难点和重点，这个 hackathon 项目完全使用 aws 的基础设施来进行测试 TiDB, 如 s3 存储备份文件，lambda 来执行具体的测试事项，aws codepipeline 来作为调度执行引擎，cloud watch 观测 TiDB 的表现，并且可以使用 chaos mesh 作为注入等",
-      "project_addr": "https://github.com/tidb-incubator/Ti-Improve",
-      "btn_name": "微信交流群",
-      "btn_link": "https://img.imgdb.cn/item/6046e4c85aedab222c52ea97.jpg"
+      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "project_name": "TiDB for PostgreSQL",
+      "project_intro": "TiDB for PostgreSQL  是神州数码发起的，开源的云原生数据库系统。旨在提供 PostgreSQL的兼容性，同时保留了 TiDB 的高可用性、弹性和可扩展性。我们希望它允许用户将现有的 PostgreSQL 客户端连接到 TiDB，并使用 PostgreSQL 特有的语法。",
+      "btn_name": "讨论区",
+      "project_addr": "",
+      "btn_link": ""
     }
   ],
   "moments": [
