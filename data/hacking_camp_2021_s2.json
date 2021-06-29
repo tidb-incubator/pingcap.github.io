@@ -121,6 +121,24 @@
       "name": "Hacking camp 毕业典礼"
     }
   ],
+  "awards": [
+    {
+      "title": "优秀毕业生（团队）",
+      "prize": "乐高编程机器人"
+    },
+    {
+      "title": "最佳应用奖（团队）",
+      "prize": "乐高编程机器人"
+    },
+    {
+      "title": "最佳人气奖（团队）",
+      "prize": "乐高编程机器人"
+    },
+    {
+      "title": "最佳社区贡献（个人）",
+      "prize": "乐高编程机器人"
+    }
+  ],
   "exclusive": [
     {
       "name": "matrix",

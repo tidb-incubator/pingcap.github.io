@@ -91,6 +91,23 @@
     </div>
   </section>
 
+  <section class="hackathon2020__section hackathon2020__section-awards">
+    <h2 class="section__title" id="awards">奖项设置</h2>
+    <div class="container">
+      <div class="list">
+        {{- range $idx, $i := .Site.Data.hacking_camp_2021_s2.awards -}}
+          <div class="award-card">
+            <h3>{{ $i.title }}</h3>
+            <p>{{ $i.prize }}</p>
+          </div>
+        {{- end -}}
+      </div>
+      <p class="hackathon2020__intro">
+        所有参与项目的贡献者都可以获得活动周边 Tshirt！
+      </p>
+    </div>
+  </section>
+
   <section class="hackathon2020__section">
     <h2 class="section__title" id="judges">Hacking Camp 组委会与导师团</h2>
     <div class="container">
