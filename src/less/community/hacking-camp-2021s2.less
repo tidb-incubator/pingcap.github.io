@@ -509,7 +509,8 @@
   }
 
   .thumbnail {
-    &, .thumbnail-img {
+    &,
+    .thumbnail-img {
       width: 100%;
       height: 167px;
       display: block;
@@ -806,19 +807,29 @@
   }
 
   .common-sponsors {
-    margin-bottom: 1.5rem;
+    .sponsor-type {
+      margin-bottom: 20px;
+    }
+
+    .list-flex {
+      min-height: 80px;
+
+      .img-wrapper {
+        margin-bottom: 20px;
+      }
+    }
+
+    margin-bottom: 20px;
   }
 
   .list-flex {
     align-items: center;
-    height: 100px;
 
-    a {
+    .img-wrapper {
       margin: 0 4em;
     }
 
     img {
-      display: block;
       height: 3em;
       width: auto;
 
