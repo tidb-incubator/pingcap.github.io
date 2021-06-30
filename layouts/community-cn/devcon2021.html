@@ -154,38 +154,39 @@ DevCon 2021
             <h3>黄金赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_gold -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
                 {{- end -}}
             </div>
             <h3>白银赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_silver -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
                 {{- end -}}
             </div>
-            <!-- <h3>银牌赞助</h3>
+            <h3>独家报名渠道</h3>
             <div class="medias">
-                {{- range $idx, $i := .Site.Data.devcon.support_meida2020 -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                {{- range $idx, $i := .Site.Data.devcon.support_meida2021_special -}}
+                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
                 {{- end -}}
-            </div> -->
-            <div class="content">
-                <p>更多合作伙伴敬请期待</p>
-                <p>如有意向赞助，欢迎联系 <a href="mailto:devcon2021@pingcap.com">devcon2021@pingcap.com</a></p>
             </div>
         </div>
     </section>
 
-    <!-- <section class="devcon2021-sponsors">
+    <section class="devcon2021-sponsors">
         <div class="container">
             <h2 id="sponsors" class="section-title">支持媒体</h2>
             <div class="medias">
-                {{- range $idx, $i := .Site.Data.devcon.support_meida2020 -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+                {{- range $idx, $i := .Site.Data.devcon.support_meida2021 -}}
+                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
                 {{- end -}}
             </div>
         </div>
-    </section> -->
+
+        <div class="content">
+            <p>更多合作伙伴敬请期待</p>
+            <p>如有意向赞助，欢迎联系 <a href="mailto:devcon2021@pingcap.com">devcon2021@pingcap.com</a></p>
+        </div>
+    </section>
 
     <section class="devcon2021-notice">
         <div class="container">
