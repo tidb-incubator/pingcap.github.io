@@ -63,7 +63,7 @@
   ],
   "winners": [
     {
-      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "thumbnail": "/images/community/hacking-camp-2021-s2/project-cover.svg",
       "project_name": "JuiceFS",
       "project_intro": "JuiceFS 是一个开源的分布式 POSIX 文件系统，针对云原生环境进行了设计和优化。在 JuiceFS 中，数据被持久化在对象存储（如 Amazon S3）中，而元数据可以存储在各种数据库中，如 Redis、MySQL 或 TiDB。TiKV 是一个分布式键值数据库，提供高性能和事务的API，符合ACID标准。在这个项目中，我们希望使用 TiKV 作为 JuiceFS 的一个新的元数据引擎来提高性能。",
       "btn_name": "讨论区",
@@ -71,7 +71,7 @@
       "btn_link": ""
     },
     {
-      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "thumbnail": "/images/community/hacking-camp-2021-s2/project-cover.svg",
       "project_name": "HugeGraph",
       "project_intro": "将 TiKV 作为 HugeGraph 的后端存储，构建一套具有高水平扩展能力，高性能，高稳定性的图引擎，同时也可以基于 TiKV+HugeGraph 的基础底座，融合 TiDB 在金融等市场的丰富经验，打造有价值的应用解决方案。",
       "btn_name": "讨论区",
@@ -79,7 +79,7 @@
       "btn_link": ""
     },
     {
-      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "thumbnail": "/images/community/hacking-camp-2021-s2/project-cover.svg",
       "project_name": "TiBigData",
       "project_intro": "由知乎发起的 incubator 项目 TiBigData，旨在解决企业大数据场景中各项技术栈对接 TiDB 的整合问题。目前已提供 TiDB 与 Flink 和 Presto 的整合能力，并已应用在知乎的数据集成平台和 OLAP 分析场景中。TiBigData 项目属于整个 TiDB 社区，一方面希望能够惠及社区内有类似需求的用户，另一方面也希望发动社区的力量补全 TiDB 在大数据各项技术栈的支持能力，将 TiBigData 打造为 TiDB 在大数据领域的一站式解决方案。",
       "btn_name": "讨论区",
@@ -87,7 +87,7 @@
       "btn_link": ""
     },
     {
-      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "thumbnail": "/images/community/hacking-camp-2021-s2/project-cover.svg",
       "project_name": "Doris",
       "project_intro": "TiDB 和 Doris 都是优秀的开源关系型数据数据库。TiDB 是一款 HTAP 分布式数据库产品，Doris 更专注于 OLAP 领域，本项目将部分 OLAP 分析任务交由 Doris 来做，能够借助 Doris 的物化视图，聚合模型等优势实现高效的大规模 OLAP 分析。",
       "btn_name": "讨论区",
@@ -95,7 +95,7 @@
       "btn_link": ""
     },
     {
-      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "thumbnail": "/images/community/hacking-camp-2021-s2/project-cover.svg",
       "project_name": "TiDB for PostgreSQL",
       "project_intro": "TiDB for PostgreSQL  是神州数码发起的，开源的云原生数据库系统。旨在提供 PostgreSQL的兼容性，同时保留了 TiDB 的高可用性、弹性和可扩展性。我们希望它允许用户将现有的 PostgreSQL 客户端连接到 TiDB，并使用 PostgreSQL 特有的语法。",
       "btn_name": "讨论区",
@@ -103,7 +103,7 @@
       "btn_link": ""
     },
     {
-      "thumbnail": "/images/community/hacking-camp-2021-s2/winners/placeholder.png",
+      "thumbnail": "/images/community/hacking-camp-2021-s2/project-cover.svg",
       "project_name": "Serverlessdb for HTAP",
       "project_intro": "Serverlessdb for HTAP 主要介绍在云上如何基于 TiDB 实现提供 Serverlessdb 服务 ，重点关注如何基于业务负载变化动态扩缩容计算存储节点，做到用户零感知。保证数据库服务过程中，始终保持业务负载和后台 资源的最佳匹配，从而帮助用户最大化节省成本。",
       "btn_name": "讨论区",
