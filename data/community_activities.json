@@ -9,10 +9,10 @@
       "link": "/community-cn/devcon2021"
     },
     {
-      "name": "TiDB Hacking Camp",
+      "name": "TiDB Hacking Camp —— 生态",
       "active_image_pc": "/images/community/hacking-camp-2021-s2/promotion-banner.svg",
       "active_image_mobile": "/images/community/hacking-camp-2021-s2/mobile-banner.svg",
-      "summary": "2021 年 1 月结束的 TiDB 黑客马拉松中诞生了许多明星项目，如 UDF、图数据库、文档自动纠错等等，为 TiDB 构建了丰富的生态和卓越的性能提升，令人不禁感叹「社区的力量」。为了让这些项目能够真正落地，继续在社区中发光发热，TiDB 社区联合经纬中国举办了第一期 hacking camp，旨在帮助项目团队一起制定合理的后续计划和商业方向，并将向社区公开阶段性成果。",
+      "summary": "本期 Hacking Camp 的主题是「生态」。对于企业来说，在 Hacking Camp 中孵化项目，可以促进和 TiDB 生态的深入融合，更有机会借助社区力量，打磨和推广自己的开源项目。对于开发者来说，通过深度参与和贡献 Hacking Camp 中的孵化项目，不仅提升技术实力，还能提高在开源社区中的影响力。",
       "active": false,
       "link": "/community-cn/hacking-camp-2021-season-2"
     },

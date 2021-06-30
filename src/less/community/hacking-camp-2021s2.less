@@ -796,17 +796,32 @@
 
   .exclusive-sponvers {
     margin: 2rem 0 3rem;
+
+    .list-flex {
+      height: 144px;
+    }
+  }
+
+  .common-sponsors {
+    margin-bottom: 1.5rem;
   }
 
   .list-flex {
+    align-items: center;
+    height: 100px;
+
     a {
-      margin: 2em 4em;
+      margin: 0 4em;
     }
 
     img {
       display: block;
       height: 3em;
       width: auto;
+
+      &.logo-feature-capital {
+        height: 2.5em;
+      }
 
       &.logo-ggv-capital,
       &.logo-juice-fs {
