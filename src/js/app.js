@@ -303,14 +303,14 @@ function getTidbContributorCount() {
 }
 
 $(document).ready(function() {
-  processHash()
+  // processHash()
 
   if ($('body').data('lang') === 'cn') dynamicAddSubscribeForm()
 
   getTidbContributorCount()
 
   // Handle hash change
-  $(window).on('hashchange', processHash)
+  // $(window).on('hashchange', processHash)
 
   // Handle window scroll event
   $(window).scroll(handleWindowScroll)
