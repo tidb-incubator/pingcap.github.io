@@ -2962,11 +2962,11 @@
   ],
   "support_meida2021_gold": [
     {
-      "img": "/images/community/devcon2021/logo-action.svg",
+      "img": "/images/community/devcon2021/logo-action.png",
       "link": "https://www.actionsky.com/"
     },
     {
-      "img": "/images/community/devcon2021/logo-yunqi.svg",
+      "img": "/images/community/devcon2021/logo-yunqi.png",
       "link": "www.yunqi.vc"
     },
     {
@@ -2990,25 +2990,25 @@
   ],
   "support_meida2021_special": [
     {
-      "img": "/images/community/devcon2021/logo-huodongxing.svg",
+      "img": "/images/community/devcon2021/logo-huodongxing.png",
       "link": "https://www.huodongxing.com/"
     }
   ],
   "support_meida2021": [
     {
-      "img": "/images/community/devcon2021/logo-infoq.svg",
+      "img": "/images/community/devcon2021/logo-infoq.png",
       "link": "https://www.infoq.cn/"
     },
     {
-      "img": "/images/community/devcon2021/logo-segmentfault.svg",
+      "img": "/images/community/devcon2021/logo-segmentfault.png",
       "link": "https://segmentfault.com/"
     },
     {
-      "img": "/images/community/devcon2021/logo-oschina.svg",
+      "img": "/images/community/devcon2021/logo-oschina.png",
       "link": "https://www.oschina.net/"
     },
     {
-      "img": "/images/community/devcon2021/logo-juejin.svg",
+      "img": "/images/community/devcon2021/logo-juejin.png",
       "link": "https://juejin.cn/"
     }
   ],
