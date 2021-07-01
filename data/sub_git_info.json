@@ -65,7 +65,7 @@
 },
 {
 "name": "content/blog-cn___behind-tidb-5.0-engineering-system-of-pingcap-1.md",
-"info": "34bf491___GitHub___update (#563)___Mon Apr 19 15:10:08 2021 +0800___34bf4915272659243b052697914127331ab6bdda"
+"info": "347ca28___GitHub___fix typo (#564)___Fri Jun 25 13:04:26 2021 +0800___347ca282ef81e381eba5e62bbbf602f545caf9db"
 },
 {
 "name": "content/blog-cn___best-practice-haproxy.md",
@@ -105,7 +105,7 @@
 },
 {
 "name": "content/blog-cn___chaos-engineering-as-a-service.md",
-"info": "dd75b1c___GitHub___Update chaos-engineering-as-a-service.md (#551)___Fri Mar 5 13:18:56 2021 +0800___dd75b1cbd32e805d7d8a302e1f1c201e6065f13e"
+"info": "f62c995___GitHub___typo: Germlin -> Gremlin (#550)___Fri Jun 25 22:33:21 2021 +0800___f62c9950a446b812ecd83b4a6e2aa65857931a20"
 },
 {
 "name": "content/blog-cn___chaos-mesh-1.0-ga.md",
@@ -733,7 +733,7 @@
 },
 {
 "name": "content/blog-cn___tidb-ecosystem-tools-3.md",
-"info": "46314ff___Yini Xu___correct names 20190925 (#307)___Wed Sep 25 15:09:37 2019 +0800___46314ff60f7f6acf9a107d5defc6252f634c4f48"
+"info": "dea10d8___GitHub___replace the wechat link with website blog link (#586)___Fri Jun 25 13:20:37 2021 +0800___dea10d81b67dcb12d3883115a8c42812753ea57c"
 },
 {
 "name": "content/blog-cn___tidb-financial-grade-backup-and-multi-center-disaster-recovery.md",
@@ -801,7 +801,11 @@
 },
 {
 "name": "content/blog-cn___tidb-operator-source-code-3.md",
-"info": "13a7b66___GitHub___update (#565)___Tue Apr 20 16:31:59 2021 +0800___13a7b66c05d89ffca11b47dd739f326589e18c76"
+"info": "61cf7c2___GitHub___Update tidb-operator-source-code-3.md (#568)___Fri Jun 25 13:16:15 2021 +0800___61cf7c277f7004dcf52ab97c5dbc9658fe6e138e"
+},
+{
+"name": "content/blog-cn___tidb-operator-source-code-4.md",
+"info": "5bd5246___GitHub___original (#589)___Tue Jun 29 15:58:08 2021 +0800___5bd5246afb271328735c16199717dadb5804a084"
 },
 {
 "name": "content/blog-cn___tidb-optimization-for-subquery.md",
@@ -889,7 +893,7 @@
 },
 {
 "name": "content/blog-cn___tidb-source-code-reading-5.md",
-"info": "bebcde4___GitHub___update parser introduction in source code reading (#448)___Thu Jun 4 10:35:25 2020 +0800___bebcde4ea281a1c3e8e86e3df1387f4a5180cb25"
+"info": "c5eabe1___GitHub___fix: url in blog (#588)___Sat Jun 26 10:26:32 2021 +0800___c5eabe1d0ce894374cd4e8b81d89bcdf87049760"
 },
 {
 "name": "content/blog-cn___tidb-source-code-reading-6.md",
@@ -1033,7 +1037,7 @@
 },
 {
 "name": "content/blog-cn___tikv-source-code-reading-19.md",
-"info": "ef663c7___GitHub___add a new blog (#491)___Wed Aug 26 17:29:09 2020 +0800___ef663c797862addb4d9555b94f4488d48a758591"
+"info": "7a5f9e9___GitHub___Fix typo (#541)___Fri Jun 25 13:07:02 2021 +0800___7a5f9e9765e2023aa276e337e01cbf75db903c21"
 },
 {
 "name": "content/blog-cn___tikv-source-code-reading-2.md",
