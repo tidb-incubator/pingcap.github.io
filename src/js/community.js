@@ -269,7 +269,6 @@ $(document).ready(function() {
     }
   })
 
-  console.log('test!!', window.matchMedia('(max-width: 414px)').matches)
   if (window.matchMedia('(max-width: 414px)').matches) {
     $('.j-thumbnailText-click').click(function() {
       if ($('.thumbnail-text').hasClass('thumbnail-text-click')) {
