@@ -371,7 +371,7 @@
     },
     {
       "title": "在线视频课程",
-      "desc": "PingCAP University 汇集 TiDB 架构、原理及最佳实践等多角度视频课程，致力于培养熟悉分布式系统、具备独立运维 TiDB 集群能力的一流人才。",
+      "desc": "PingCAP Education 汇集 TiDB 架构、原理及最佳实践等多角度视频课程，致力于培养熟悉分布式系统、具备独立运维 TiDB 集群能力的一流人才。",
       "link": "https://university.pingcap.com/",
       "thumbnail_pc": "https://download.pingcap.com/images/hackathon2019/pu-thumbnail-pc.jpg",
       "thumbnail_mobile": "https://download.pingcap.com/images/hackathon2019/pu-thumbnail-mobile.jpg"
