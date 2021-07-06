@@ -113,7 +113,7 @@
                     <a href="{{ $i.link }}">
                         <div class="picture">
                             <img class="lazy" height="65" src="/images/svgs/loader-spinner.svg"
-                                data-original="{{ $i.active_image_mobile }}" alt="Community activity" />
+                                data-original="{{ $i.active_image_mobile | absURL }}" alt="Community activity" />
                         </div>
                         <div class="name">{{ $i.name }}</div>
                         <div class="summary">
