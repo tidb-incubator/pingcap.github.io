@@ -1834,7 +1834,7 @@
           "company": "TiKV Maintainer",
           "talk_detail": [
             "I will introduce how I participate in the development of TiKV project, including the initial contact with the community, RawKV performance optimization, joining the Engine SIG and carrying out RocksDB / Rust-rocksdb related work and VerKV proposals and development, etc. I will also share various problems and solutions encountered in the online process of TiKV in the production environment. Finally, I will share the story behind becoming a TiKV maintainer."
-          ]
+           ]
         },
         {
           "time": "10:20 - 10:40",
