@@ -2960,32 +2960,69 @@
     "/images/community/devcon2020/sponsors/it168.png",
     "/images/community/devcon2020/sponsors/motianlun.png"
   ],
+  "support_meida2021_platinum": [
+    {
+      "img": "/images/community/devcon2021/logo-digitalchina.png",
+      "link": "http://www.digitalchina.com/",
+      "desc": "神州数码集团（股票代码 000034.SZ）,是国内领先的云及数字化服务商之一。深耕中国信息化二十年，神州数码始终坚持以卓越技术及服务推动产业升级。数字时代，神州数码以自主创新和生态体系为依托，着力打造全栈云服务能力，以及全线自有品牌产品及解决方案能力，为处在不同数字化转型阶段的政府、金融、零售、教育、制造、汽车、文旅、医疗等行业客户提供全生命周期的产品、方案和服务，持续赋能产业升级和数字经济发展。"
+    }
+  ],
+
   "support_meida2021_gold": [
     {
       "img": "/images/community/devcon2021/logo-action.png",
-      "link": "https://www.actionsky.com/"
+      "link": "https://www.actionsky.com/",
+      "desc": "爱可生是领先的开源数据库整体解决方案提供商，经过 10 余年在金融、新经济和工业领域等核心业务数据库管理的技术创新，公司已有 60 余项云树系列软件产品著作权和核心发明专利，提供多数据库管理平台（支持 TiDB、MySQL、MongoDB、Redis 等数据库）、分布式数据库、数据库容器云平台、跨云容灾等解决方案，以及数据库一站式服务。公司客户包括 400 多 家大型企业，其中含工商银行、交通银行、中国人寿、中国太保、国家电网、上汽集团、中国移动、华为等世界 500 强企业。"
     },
     {
       "img": "/images/community/devcon2021/logo-yunqi.png",
-      "link": "www.yunqi.vc"
+      "link": "http://www.yunqi.vc",
+      "desc": "云启资本成立于 2014 年，一直坚持专注于技术产业化和产业数字化系统投资布局，投资领域覆盖人工智能大数据、企业 SaaS 及服务、B2B 供应链平台、智能网联、先进制造等行业，投资组合包括 360 数科（NASDAQ: QFIN）、英科医疗（SZ: 300677）、一起写（被快手全资收购）、酷家乐、百布、PingCAP、冰鉴科技、擎朗智能、XTransfer、Zilliz、Jina、环世物流、找钢网、智齿科技、晓羊教育、德风科技、小胖熊、元戎启行、新石器、e换电等 100 多家优秀创业公司。"
     },
     {
       "img": "/images/community/devcon2021/logo-future-capital.png",
-      "link": "https://www.future-cap.com"
+      "link": "https://www.future-cap.com",
+      "desc": "明势资本是极少数自创立以来就专注于高科技领域投资的风险投资机构，由黄明明先生于 2014 年创立。明势资本愿意第一个相信创业者梦想，并成为科技创业者长期坚定的陪跑者。明势资本自创立坚持至今，已在企业服务、AI 大数据、智能物流供应链、智能出行、智能制造、智能硬件和家居等领域投资了诸如理想汽车（NASDAQ:LI）、小牛电动(NASDAQ:NIU)、赤子城(SEHK:09911)、PingCAP、神策数据、易快报、鸭嘴兽、必示科技、云鲸机器人、酷家乐、石墨文档、云麦、全应科技等 160+ 家创新企业。"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-gcp.png",
+      "link": "https://gcp.infoq.cn/",
+      "desc": "Google Cloud 在提供安全、开放、智能的变革性企业级云平台方面， 是全球公认的领导者。我们的技术依托 Google 的专用网络构建而成，是近 20 年来在安全、网络架构、协作、人工智能和开源软件方面不懈创新的产物。我们在 Google Cloud Platform 和 Google Workspace 中提供了一套设计简洁的工具和无可比拟的技术，帮助客户有效地融合人力、洞见和创意。来自 150 多个国家/地区的客户依靠 Google Cloud 来实现计算环境现代化，以满足当今数字世界的需求。"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-aws.png",
+      "link": "http://aws.amazon.com",
+      "desc": "15 年多以来，亚马逊云科技（Amazon Web Services）一直是世界上以服务丰富、应用广泛而著称的云平台。亚马逊云科技一直不断扩展其服务组合以支持几乎云上任意工作负载，目前提供了超过 200 项全功能的服务，涵盖计算、存储、数据库、联网、分析、机器人、机器学习与人工智能、物联网、移动、安全、混合云、虚拟现实与增强现实、媒体、以及应用开发、部署与管理等方面，遍及 25 个地理区域的 81 个可用区（AZ），并已公布计划在澳大利亚、印度、印度尼西亚、以色列、西班牙、瑞士和阿拉伯联合酋长国新建 7 个区域、21 个可用区。全球数百万客户，包括发展迅速的初创公司、大型企业和领先的政府机构都信赖亚马逊云科技，通过亚马逊云科技的服务强化其基础设施，提高敏捷性，降低成本。"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-intel.png",
+      "link": "http://www.intel.com.cn",
+      "desc": "英特尔是半导体行业和计算创新领域的全球领先厂商，创造改变世界的科技，造福地球上每一个人。英特尔创始于 1968 年，拥有 50 余年推动技术创新和耕耘产业生态的成功经验。如今，英特尔正转型为一家以数据为中心的公司，致力于做可信赖的性能领导者，释放数据无限潜能。英特尔与合作伙伴一起，推动人工智能、5G、智能边缘等转折性技术的创新和应用突破，驱动智能互联世界，帮助解决人类面临的重大挑战。英特尔扎根中国 36 年，与中国产业伙伴的合作久经考验、风雨同舟。作为在中国扎根最久的跨国公司之一，英特尔在中国的战略从未变过，始终如一，就是“做正确的事”，就是与中国同行远行。"
     }
   ],
   "support_meida2021_silver": [
     {
       "img": "/images/community/devcon2021/logo-ggv.png",
-      "link": "https://www.ggvchina.com"
+      "link": "https://www.ggvchina.com",
+      "desc": "GGV 纪源资本是一家专注于全球企业的风险投资公司，管理共 17 支基金，累计约 92 亿美元的资产，在硅谷、旧金山、上海、北京、新加坡设有办公室。GGV 纪源资本关注前沿科技、互联网服务、企业服务和云、消费及新零售等领域的创业公司，投资过包括阿里巴巴、滴滴出行、去哪儿、Airbnb、满帮集团、今日头条等 420 余家公司。GGV 纪源资本对全球市场长期专注，深入本地化耕耘，交融贯通，积累了独特的资源，鼎力支持创业者不断开拓创新。"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-dell.png",
+      "link": "https://www.dellemc-solution.com",
+      "desc": "戴尔科技集团致力于帮助政府、企业和个人构建数字化未来，改进他们的工作、生活和娱乐方式。集团为客户提供面向数据时代业界全面、创新的技术及服务组合。戴尔于 1998 年进入中国。目前，戴尔科技集团在大中华区拥有从设计研发、生产制造、供应链管理、销售到服务的全面体系，支持中国及全球业务的发展。"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-amd.png"
     },
     {
       "img": "/images/community/devcon2021/logo-suse.png",
-      "link": "https://www.suse.com"
+      "link": "https://www.suse.com",
+      "desc": "SUSE 是全球范围内创新且可靠的企业级开源解决方案领导者。SUSE 专注于企业级 Linux、Kubernetes 管理平台(Rancher)和边缘解决方案，通过与合作伙伴和社区合作，帮助客户随时随地在任意场景进行创新——无论是在数据中心、云端还是边缘环境。SUSE 让“开源”重新“开放”，使客户能够灵活地应对当今的创新挑战，并能够自由地在未来发展其 IT 战略和解决方案。"
     },
     {
       "img": "/images/community/devcon2021/logo-showmebug.png",
-      "link": "https://www.showmebug.com/"
+      "link": "https://www.showmebug.com/",
+      "desc": "ShowMeBug 是⾄简天成公司旗下一款数字化驱动的可记录、可分析、可复盘的技术评估和在线 Coding 面试平台，成立于 2019 年 6 ⽉，利⽤创造性的实时互动代码协同技术和 WebRTC ⾳视频技术，还原真实的 IDE 编程环境，让用户体验硅谷流行的像真正工作中一样的代码面试。通过在线笔试和在线面试两大场景，让企业规模化、自动化、智能化的进行技术招聘，助力企业快速精准招聘技术人才，目前注册⽤户超 10 倍高速增长，已覆盖 6000+ 大型和高成长型企业 。"
     }
   ],
   "support_meida2021_special": [

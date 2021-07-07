@@ -111,7 +111,8 @@ DevCon 2021
                     {{- end -}}
                 </div>
                 <div class="day2 hide-schedule">
-                    <p>大会前一天我们将举办为期半天的开发者嘉年华，活动将包括 TiDB 调优竞赛、Coding 动手实验、PingCAP Education 课程体验等丰富活动，现场更有吐槽大会与精美晚宴，大家千万不要错过！</p>
+                    <p>大会前一天我们将举办为期半天的开发者嘉年华，活动将包括 TiDB 调优竞赛、Coding 动手实验、PingCAP Education
+                        课程体验等丰富活动，现场更有吐槽大会与精美晚宴，大家千万不要错过！</p>
                 </div>
             </div>
 
@@ -151,22 +152,59 @@ DevCon 2021
     <section class="devcon2021-sponsors">
         <div class="container">
             <h2 id="sponsors" class="section-title">赞助合作</h2>
+            <h3>铂金赞助</h3>
+            <div class="medias">
+                {{- range $idx, $i := .Site.Data.devcon.support_meida2021_platinum -}}
+                <div class="media">
+                    <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
+                            data-original="{{ $i.img }}" /> </a>
+                    <div class="desc">
+                        <p>{{ $i.desc }}</p>
+                        <a href="{{ $i.link }}" target="_blank">{{ $i.link }}</a>
+                    </div>
+                </div>
+
+
+                {{- end -}}
+            </div>
             <h3>黄金赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_gold -}}
-                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
+                <div class="media">
+                    <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
+                            data-original="{{ $i.img }}" />
+                    </a>
+                    <div class="desc">
+                        <p>{{ $i.desc }}</p>
+                        <a href="{{ $i.link }}" target="_blank">{{ $i.link }}</a>
+                    </div>
+                </div>
                 {{- end -}}
             </div>
             <h3>白银赞助</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_silver -}}
-                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
+                {{- if $i.link -}}
+                <div class="media">
+                    <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
+                            data-original="{{ $i.img }}" />
+                    </a>
+                    <div class="desc">
+                        <p>{{ $i.desc }}</p>
+                        <a href="{{ $i.link }}" target="_blank">{{ $i.link }}</a>
+                    </div>
+                </div>
+                {{- else -}}
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" />
+                {{- end -}}
                 {{- end -}}
             </div>
             <h3>独家报名渠道</h3>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_special -}}
-                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
+                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
+                        data-original="{{ $i.img }}" />
+                </a>
                 {{- end -}}
             </div>
         </div>
@@ -177,7 +215,8 @@ DevCon 2021
             <h2 id="sponsors" class="section-title">支持媒体</h2>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021 -}}
-                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" /></a>
+                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
+                        data-original="{{ $i.img }}" /></a>
                 {{- end -}}
             </div>
         </div>
