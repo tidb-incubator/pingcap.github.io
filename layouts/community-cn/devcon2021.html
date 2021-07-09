@@ -136,7 +136,7 @@ DevCon 2021
                 {{- if not $i.noAvatar -}}
                 <div class="tutor">
                     <div class="tutor-avatar">
-                        <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.avatar }}"
+                        <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="/archived{{ $i.avatar }}"
                             alt="Tutor avator" />
                     </div>
                     <div class="name">{{ $i.name }}</div>
@@ -157,7 +157,7 @@ DevCon 2021
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_platinum -}}
                 <div class="media">
                     <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
-                            data-original="{{ $i.img }}" /> </a>
+                            data-original="/archived{{ $i.img }}" /> </a>
                     <div class="desc">
                         <p>{{ $i.desc }}</p>
                         <a href="{{ $i.link }}" target="_blank">{{ $i.link }}</a>
@@ -172,7 +172,7 @@ DevCon 2021
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_gold -}}
                 <div class="media">
                     <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
-                            data-original="{{ $i.img }}" />
+                            data-original="/archived{{ $i.img }}" />
                     </a>
                     <div class="desc">
                         <p>{{ $i.desc }}</p>
@@ -187,7 +187,7 @@ DevCon 2021
                 {{- if $i.link -}}
                 <div class="media">
                     <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
-                            data-original="{{ $i.img }}" />
+                            data-original="/archived{{ $i.img }}" />
                     </a>
                     <div class="desc">
                         <p>{{ $i.desc }}</p>
@@ -195,7 +195,7 @@ DevCon 2021
                     </div>
                 </div>
                 {{- else -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" />
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="/archived{{ $i.img }}" />
                 {{- end -}}
                 {{- end -}}
             </div>
@@ -203,7 +203,7 @@ DevCon 2021
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021_special -}}
                 <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
-                        data-original="{{ $i.img }}" />
+                        data-original="/archived{{ $i.img }}" />
                 </a>
                 {{- end -}}
             </div>
@@ -216,7 +216,7 @@ DevCon 2021
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021 -}}
                 <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
-                        data-original="{{ $i.img }}" /></a>
+                        data-original="/archived{{ $i.img }}" /></a>
                 {{- end -}}
             </div>
         </div>

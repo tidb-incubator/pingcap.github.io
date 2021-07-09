@@ -98,7 +98,7 @@ DevCon 2020
                 {{- if not $i.noAvatar -}}
                 <div class="tutor">
                     <div class="tutor-avatar">
-                        <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.avatar }}"
+                        <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="/archived{{ $i.avatar }}"
                             alt="Tutor avator" />
                     </div>
                     <div class="name">{{ $i.name }}</div>
@@ -114,7 +114,7 @@ DevCon 2020
         <h1 class="dc20-title">媒体/社区支持</h1>
         <div class="medias">
             {{- range $idx, $i := .Site.Data.devcon.support_meida2020 -}}
-            <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i }}" />
+            <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="/archived{{ $i }}" />
             {{- end -}}
         </div>
     </section>
@@ -132,7 +132,7 @@ DevCon 2020
                 所有现场资料都将在大会结束后，分享至群内～
             </p>
             <img class="lazy" src="/images/svgs/loader-spinner.svg"
-                data-original="/images/community/devcon2020/qrCode.jpg" />
+                data-original="/archived/images/community/devcon2020/qrCode.jpg" />
         </section>
     </div> -->
 
