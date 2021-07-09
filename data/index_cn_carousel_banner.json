@@ -1,7 +1,7 @@
 {
   "banners": [
     {
-      "link": "/community-cn/devcon2021",
+      "link": "/events/devcon2021",
       "gaTrackEventClass": "tidb-devcon-2021",
       "gaTrackEventLabel": "tidb-devcon-2021",
       "img": "/images/community/devcon2021/entry-banner-mobile.png",
@@ -9,7 +9,7 @@
       "newTab": false
     },
     {
-      "link": "/community-cn/hacking-camp-2021-season-2",
+      "link": "/events/hacking-camp-2021-season-2",
       "gaTrackEventClass": "tidb-hacking-camp-2021-s2_view",
       "gaTrackEventLabel": "tidb-hacking-camp-2021-s2",
       "img": "/images/community/hacking-camp-2021-s2/mobile-banner.svg",
