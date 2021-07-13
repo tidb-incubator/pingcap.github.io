@@ -50,7 +50,7 @@
         {{- end -}}
 
         {{- block "main" . -}}{{- end -}}
-        
+
         {{- if $data_i18_cn -}}
             {{- if not $no_footer -}}
                 {{- partial "layout/footer-cn" . -}}
@@ -74,27 +74,26 @@
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 
     <!-- Add sentry scripts to track website errors -->
-    <script src="https://browser.sentry-cdn.com/5.11.0/bundle.min.js" 
-        integrity="sha384-jbFinqIbKkHNg+QL+yxB4VrBC0EAPTuaLGeRT0T+NfEV89YC6u1bKxHLwoo+/xxY" 
+    <script src="https://browser.sentry-cdn.com/5.11.0/bundle.min.js"
+        integrity="sha384-jbFinqIbKkHNg+QL+yxB4VrBC0EAPTuaLGeRT0T+NfEV89YC6u1bKxHLwoo+/xxY"
         crossorigin="anonymous"></script>
     <script type="text/javascript">
-        Sentry.init({ 
-            dsn: 'https://3f28ed393c5545daa74496b3cdb2e9ba@sentry.io/1887163' 
+        Sentry.init({
+            dsn: 'https://3f28ed393c5545daa74496b3cdb2e9ba@sentry.io/1887163'
         });
     </script>
 
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-    <script type="text/javascript" src="https://tug.tidb.io/scripts/community-ui.js"></script>
+    <script crossorigin src="http://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-is@17.0.2/umd/react-is.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/styled-components@5.3.0/dist/styled-components.min.js"></script>
+    <link rel="stylesheet" href="https://tidb.io/scripts/header-footer.css" />
+    <script type="text/javascript" src="https://tidb.io/scripts/header-footer.js"></script>
     <script type="text/javascript">
         _tidb.sharedUI.initHeaderFooter({
-            locale: 'zh',
-            title: 'TiDB Community',
-            logoSrc: 'https://tidb.io/images/community/logo.svg',
             headerEl: document.querySelector('#header'),
             footerEl: document.querySelector('#footer'),
         });
     </script>
 </body>
-
 </html>
