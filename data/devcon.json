@@ -180,7 +180,7 @@
         {
           "time": "11:00-11:10",
           "talk_title": "开源社区成熟度白皮书发布",
-          "speaker": "何宝宏 中国信息通信研究院",
+          "speaker": "何宝宏 | 中国信息通信研究院",
           "talk_detail": []
         },
         {
@@ -200,61 +200,61 @@
         {
           "time": "14:45-15:00",
           "talk_title": "Chaos Engineering with Chaos Mesh® and Linkerd",
-          "speaker": "Sergio Méndez   University of San Carlos of Guatemala",
+          "speaker": "Sergio Méndez | University of San Carlos of Guatemala",
           "talk_detail": []
         },
         {
           "time": "15:00-15:15",
           "talk_title": "分布式数据库在保险核心场景的实践",
-          "speaker": "盛玉 中国人寿",
+          "speaker": "盛玉 | 中国人寿",
           "talk_detail": []
         },
         {
           "time": "15:15-15:45",
           "talk_title": "基础架构变革对业务敏捷性带来的全新可能",
-          "speaker": "黄东旭 PingCAP",
+          "speaker": "黄东旭 | PingCAP",
           "talk_detail": []
         },
         {
           "time": "15:45-16:05",
           "talk_title": "直挂“云”帆济沧海 —— TiDB On GCP 助力电商出海",
-          "speaker": "唐辉 谷歌",
+          "speaker": "唐辉 | 谷歌",
           "talk_detail": []
         },
         {
           "time": "16:05-16:20",
           "talk_title": "从混沌到秩序：Chaos Mesh® 生态构建之路",
-          "speaker": "殷成文  PingCAP",
+          "speaker": "殷成文 | PingCAP",
           "talk_detail": []
         },
         {
           "time": "16:20-16:35",
           "talk_title": "The Exploration of Distributed SQL at Pinterest",
-          "speaker": "Lianghong Xu Pinterest",
+          "speaker": "Lianghong Xu | Pinterest",
           "talk_detail": []
         },
         {
           "time": "16:35-16:50",
           "talk_title": "TiDB Cloud 云原生安全架构实践",
-          "speaker": "王鹏飞 PingCAP",
+          "speaker": "王鹏飞 | PingCAP",
           "talk_detail": []
         },
         {
           "time": "16:50-17:05",
           "talk_title": "TiDB 在 Classin 的应用",
-          "speaker": "韦彪 Classin",
+          "speaker": "韦彪 | Classin",
           "talk_detail": []
         },
         {
           "time": "17:05-17:20",
           "talk_title": "涂鸦智能选型 TiKV 的心路历程",
-          "speaker": "刘筠松 涂鸦",
+          "speaker": "刘筠松 | 涂鸦",
           "talk_detail": []
         },
         {
           "time": "17:20-17:35",
           "talk_title": "TiDB on Kubesphere",
-          "speaker": "曾常习 青云科技",
+          "speaker": "曾常习 | 青云科技",
           "talk_detail": []
         }
       ]
@@ -269,91 +269,91 @@
         {
           "time": "13:30-13:45",
           "talk_title": "TiDB HTAP，我们现在走到了哪里",
-          "speaker": "马晓宇 PingCAP",
+          "speaker": "马晓宇 | PingCAP",
           "talk_detail": []
         },
         {
           "time": "13:45-14:00",
           "talk_title": "TiDB 在中通的落地",
-          "speaker": "朱友志 中通快递",
+          "speaker": "朱友志 | 中通快递",
           "talk_detail": []
         },
         {
           "time": "14:00-14:15",
           "talk_title": "TiDB 在理想汽车的应用实践",
-          "speaker": "张攀 理想汽车",
+          "speaker": "张攀 | 理想汽车",
           "talk_detail": []
         },
         {
           "time": "14:15-14:30",
           "talk_title": "TiDB 在爱奇艺实时分析场景的应用实践",
-          "speaker": "路希 爱奇艺",
+          "speaker": "路希 | 爱奇艺",
           "talk_detail": []
         },
         {
           "time": "14:30-14:45",
           "talk_title": "Building a Data Platform for  Health Analytics at MOHT Singapore",
-          "speaker": "Julian Kuiyu CHANG 新加坡卫生局",
+          "speaker": "Julian Kuiyu CHANG | 新加坡卫生局",
           "talk_detail": []
         },
         {
           "time": "14:45-15:05",
           "talk_title": "云上数据分析",
-          "speaker": "费良宏 AWS",
+          "speaker": "费良宏 | AWS",
           "talk_detail": []
         },
         {
           "time": "15:05-15:20",
           "talk_title": "Power the future with TiDB on Kubernetes",
-          "speaker": "宫梦南 Ninja Van",
+          "speaker": "宫梦南 | Ninja Van",
           "talk_detail": []
         },
         {
           "time": "15:20-15:35",
           "talk_title": "浙商银行数据化转型实践",
-          "speaker": "富浩 浙商银行",
+          "speaker": "富浩 | 浙商银行",
           "talk_detail": []
         },
         {
           "time": "15:35-15:50",
           "talk_title": "TiDB 在汽车之家的应用实践",
-          "speaker": "陶会祥 汽车之家",
+          "speaker": "陶会祥 | 汽车之家",
           "talk_detail": []
         },
         {
           "time": "15:50-16:05",
           "talk_title": "TiDB 在茄子科技的应用实践及演进",
-          "speaker": "闫林林 茄子快传",
+          "speaker": "闫林林 | 茄子快传",
           "talk_detail": []
         },
         {
           "time": "16:05-16:20",
           "talk_title": "IGG 游戏数据分析",
-          "speaker": "柯君炎 IGG",
+          "speaker": "柯君炎 | IGG",
           "talk_detail": []
         },
         {
           "time": "16:20-16:35",
           "talk_title": "TiDB 在网易游戏实践之路",
-          "speaker": "田维繁 网易互娱",
+          "speaker": "田维繁 | 网易互娱",
           "talk_detail": []
         },
         {
           "time": "16:35-16:50",
           "talk_title": "TiDB 在智慧芽在线分析场景的应用探索",
-          "speaker": "金路 智慧芽",
+          "speaker": "金路 | 智慧芽",
           "talk_detail": []
         },
         {
           "time": "16:60-17:05",
           "talk_title": "TiDB HTAP 助力 360 业务升级",
-          "speaker": "代晓磊 360",
+          "speaker": "代晓磊 | 360",
           "talk_detail": []
         },
         {
           "time": "17:05-17:20",
           "talk_title": "58 同城 HTAP 之路",
-          "speaker": "刘春雷 58 同城",
+          "speaker": "刘春雷 | 58 同城",
           "talk_detail": []
         }
       ]
@@ -367,7 +367,7 @@
         {
           "time": "13:30-13:40",
           "talk_title": "共建跨界的数据技术生态",
-          "speaker": "范若晗 PingCAP",
+          "speaker": "范若晗 | PingCAP",
           "talk_detail": []
         },
         {
@@ -379,37 +379,37 @@
         {
           "time": "14:00-14:15",
           "talk_title": "从 MySQL 到 Cloud TiDB——京东物流在云数据库上的选择和实战",
-          "speaker": "杨牧 京东云",
+          "speaker": "杨牧 | 京东云",
           "talk_detail": []
         },
         {
           "time": "14:15-14:30",
           "talk_title": "TiDB for PostgreSQL",
-          "speaker": "沈旸 神州数码",
+          "speaker": "沈旸 | 神州数码",
           "talk_detail": []
         },
         {
           "time": "14:30-14:45",
           "talk_title": "开源构筑云原生基础架构",
-          "speaker": "刘秉伟 Intel",
+          "speaker": "刘秉伟 | Intel",
           "talk_detail": []
         },
         {
           "time": "14:45-15:00",
           "talk_title": "从 VC 视角看全球数据库行业创新及未来前景",
-          "speaker": "黄明明 明势资本",
+          "speaker": "黄明明 | 明势资本",
           "talk_detail": []
         },
         {
           "time": "15:00-15:20",
           "talk_title": "敏捷开源 自主可控——金融行业实践",
-          "speaker": "沈波 宇信科技",
+          "speaker": "沈波 | 宇信科技",
           "talk_detail": []
         },
         {
           "time": "15:20-15:35",
           "talk_title": "TiDB & Zetta 在知乎的应用",
-          "speaker": "白瑜庆 知乎",
+          "speaker": "白瑜庆 | 知乎",
           "talk_detail": []
         },
         {
@@ -421,49 +421,49 @@
         {
           "time": "16:05-16:20",
           "talk_title": "YiDB 的“前世今生”",
-          "speaker": "袁武 天翼数智科技",
+          "speaker": "袁武 | 天翼数智科技",
           "talk_detail": []
         },
         {
           "time": "16:20-16:35",
           "talk_title": "伴鱼数据库平台化建设的思考与实践：从 SQL 审核到 Weir 中间件",
-          "speaker": "刘江 伴鱼",
+          "speaker": "刘江 | 伴鱼",
           "talk_detail": []
         },
         {
           "time": "16:35-16:50",
           "talk_title": "多库选型和管理的新挑战和应对",
-          "speaker": "李恒 爱可生",
+          "speaker": "李恒 | 爱可生",
           "talk_detail": []
         },
         {
           "time": "16:50-17:05",
           "talk_title": "Stream is the new file —— 云原生流存储Pravega",
-          "speaker": "滕昱 戴尔科技集团",
+          "speaker": "滕昱 | 戴尔科技集团",
           "talk_detail": []
         },
         {
           "time": "17:05-17:20",
           "talk_title": "TiDB x Flink 原生实时计算",
-          "speaker": "孙晓光 知乎",
+          "speaker": "孙晓光 | 知乎",
           "talk_detail": []
         },
         {
           "time": "17:20-17:35",
           "talk_title": "移动云如何基于 TiDB 实现 ServerlessDB 服务",
-          "speaker": "薛港 中国移动",
+          "speaker": "薛港 | 中国移动",
           "talk_detail": []
         },
         {
           "time": "17:35-17:50",
           "talk_title": "How does Chaos Mesh® make a more resilience StarPay",
-          "speaker": "苗立尧 NetStars 株式会社",
+          "speaker": "苗立尧 | NetStars 株式会社",
           "talk_detail": []
         },
         {
           "time": "17:50-18:05",
           "talk_title": "Zabbix 5.4 新功能及 Zabbix 对 TiDB 开箱即用的监控模板说明",
-          "speaker": "米宏 Zabbix ",
+          "speaker": "米宏 | Zabbix",
           "talk_detail": []
         }
       ]
@@ -2666,6 +2666,66 @@
       "company": "PingCAP"
     },
     {
+      "name":"范若晗 ",
+      "avatar":"/images/community/devcon2021/fanruohan.png",
+      "title": "",
+      "company": "PingCAP"
+    },
+    {
+      "name": "何宝宏",
+      "avatar": "/images/community/devcon2021/hebaohong.png",
+      "title": "云计算与大数据研究所所长",
+      "company": "中国信息通信研究院"
+    },
+    {
+      "name": "刘湘明",
+      "avatar": "/images/community/devcon2021/liuxiangming.png",
+      "title": "联合创始人",
+      "company": "钛媒体"
+    },
+    {
+      "name":"Chris Aniszczyk",
+      "avatar":"/images/community/devcon2021/chris.png",
+      "title": "",
+      "company": "CNCF"
+    },
+    {
+      "name": "沈旸",
+      "avatar": "/images/community/devcon2021/shenyang.png",
+      "title": "CIO",
+      "company": "神州数码集团股份有限公司"
+    },
+    {
+      "name":"汪洋",
+      "avatar":"/images/community/devcon2021/wangyang.png",
+      "title": "数据库团队总工程师",
+      "company": "平安科技"
+    },
+    {
+      "name": "黄明明",
+      "avatar": "/images/community/devcon2021/huangmingming.png",
+      "title": "创始合伙人",
+      "company": "明势资本"
+    },
+    {
+      "name":"马晓宇",
+      "avatar":"/images/community/devcon2021/maxiaoyu.png",
+      "title": "HTAP 产品部负责人",
+      "company": "PingCAP"
+    },
+    {
+      "name":"王鹏飞",
+      "avatar":"/images/community/devcon2021/wangpengfei.png",
+      "title": "资深专家",
+      "company": "PingCAP"
+    },
+    {
+      "name":"殷成文",
+      "avatar":"/images/community/devcon2021/yinchengwen.png",
+      "title": "混沌工程负责人",
+      "company": "PingCAP"
+    },
+    {
       "name":"白瑜庆",
       "avatar":"/images/community/devcon2021/baiyuqing.png",
       "title": "基础研发在线架构组负责人",
@@ -2678,22 +2738,10 @@
       "company": "青云"
     },
     {
-      "name":"Chris Aniszczyk",
-      "avatar":"/images/community/devcon2021/chris.png",
-      "title": "",
-      "company": "CNCF"
-    },
-    {
       "name":"代晓磊",
       "avatar":"/images/community/devcon2021/daixiaolei.png",
       "title": "高级 DBA",
       "company": "360"
-    },
-    {
-      "name":"范若晗 ",
-      "avatar":"/images/community/devcon2021/fanruohan.png",
-      "title": "",
-      "company": "PingCAP"
     },
     {
       "name":"富浩",
@@ -2706,18 +2754,6 @@
       "avatar":"/images/community/devcon2021/gongmengnan.png",
       "title": "Senior Software Engineer",
       "company": "Ninja Van"
-    },
-    {
-      "name": "何宝宏",
-      "avatar": "/images/community/devcon2021/hebaohong.png",
-      "title": "云计算与大数据研究所所长",
-      "company": "中国信息通信研究院"
-    },
-    {
-      "name": "黄明明",
-      "avatar": "/images/community/devcon2021/huangmingming.png",
-      "title": "创始合伙人",
-      "company": "明势资本"
     },
     {
       "name":"胡盼盼",
@@ -2762,12 +2798,6 @@
       "company": "58 同城"
     },
     {
-      "name": "刘湘明",
-      "avatar": "/images/community/devcon2021/liuxiangming.png",
-      "title": "联合创始人",
-      "company": "钛媒体"
-    },
-    {
       "name":"刘筠松",
       "avatar":"/images/community/devcon2021/liuyunsong.png",
       "title": "DBA",
@@ -2792,12 +2822,6 @@
       "company": "Netstars株式会社"
     },
     {
-      "name":"马晓宇",
-      "avatar":"/images/community/devcon2021/maxiaoyu.png",
-      "title": "HTAP 产品部负责人",
-      "company": "PingCAP"
-    },
-    {
       "name":"米宏",
       "avatar":"/images/community/devcon2021/mihong.png",
       "title": "大中华区培训师",
@@ -2820,12 +2844,6 @@
       "avatar":"/images/community/devcon2021/shenbo.png",
       "title": "助理总裁、研发中心总经理、战略合作部总经理、宇信技术专家委员会主任委员",
       "company": "宇信科技"
-    },
-    {
-      "name": "沈旸",
-      "avatar": "/images/community/devcon2021/shenyang.png",
-      "title": "CIO",
-      "company": "神州数码集团股份有限公司"
     },
     {
       "name":"盛玉",
@@ -2858,22 +2876,10 @@
       "company": "中国光大银行"
     },
     {
-      "name":"王鹏飞",
-      "avatar":"/images/community/devcon2021/wangpengfei.png",
-      "title": "资深专家",
-      "company": "PingCAP"
-    },
-    {
       "name":"王维繁",
       "avatar":"/images/community/devcon2021/wangweifan.png",
       "title": "资深数据库工程师",
       "company": "网易游戏"
-    },
-    {
-      "name":"汪洋",
-      "avatar":"/images/community/devcon2021/wangyang.png",
-      "title": "数据库团队总工程师",
-      "company": "平安科技"
     },
     {
       "name": "王志广",
@@ -2904,12 +2910,6 @@
       "avatar":"/images/community/devcon2021/yanlinlin.png",
       "title": "存储组件负责人",
       "company": "茄子科技"
-    },
-    {
-      "name":"殷成文",
-      "avatar":"/images/community/devcon2021/yinchengwen.png",
-      "title": "混沌工程负责人",
-      "company": "PingCAP"
     },
     {
       "name":"袁武",
