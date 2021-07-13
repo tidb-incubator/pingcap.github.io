@@ -5,7 +5,7 @@
         "time": "9:00 - 12:00",
         "venues": [
           {
-            "name": "开放、连接、预见 主题演讲",
+            "name": "开放 x 连接 x 预见 主题演讲",
             "id": "day1-1",
             "icon": "/images/community/devcon2021/day1-icon1.svg",
             "main": true
@@ -160,14 +160,14 @@
   },
   "devcon2021_day1_schedule": [
     {
-      "name": "开放、连接、预见 主题演讲",
+      "name": "开放 x 连接 x 预见 主题演讲",
       "icon": "/images/community/devcon2021/day1-icon1.svg",
       "desc": "本次大会主论坛 PingCAP CEO 刘奇与 CTO 黄东旭将和众多外部嘉宾一起，分享他们对未来数据库产业发展的洞见，阐述开源生态的最新进展；同时，我们还将邀请开源领域的业内大咖、资深媒体人、知名投资人，共同探讨开源生态的多元思考。",
       "id": "day1-1",
       "schedules": [
         {
           "time": "9:00-10:30",
-          "talk_title": "开放、连接、预见",
+          "talk_title": "开放 x 连接 x 预见",
           "speaker": "刘奇",
           "talk_detail": []
         },
@@ -178,8 +178,14 @@
           "talk_detail": []
         },
         {
-          "time": "11:00-12:00",
-          "talk_title": "圆桌：开源成为企业服务新潮流",
+          "time": "11:00-11:10",
+          "talk_title": "开源社区成熟度白皮书发布",
+          "speaker": "何宝宏 | 中国信息通信研究院",
+          "talk_detail": []
+        },
+        {
+          "time": "11:10-12:00",
+          "talk_title": "圆桌讨论：开源成为企业服务新潮流",
           "speaker": "圆桌主持人：黄东旭",
           "talk_detail": []
         }
@@ -190,7 +196,68 @@
       "icon": "/images/community/devcon2021/day1-icon2.svg",
       "desc": "本场分论坛 TiDB 将邀请大量国际用户和中国用户，分享他们如何借助 TiDB 的规模化 OLTP 能力，应对随时触发的业务高峰，保证业务敏捷性；同时，本次论坛将邀请云原生应用的前瞻客户及合作伙伴分享实战经验，共话云原生技术的未来。",
       "id": "",
-      "schedules": []
+      "schedules": [
+        {
+          "time": "14:45-15:00",
+          "talk_title": "Chaos Engineering with Chaos Mesh® and Linkerd",
+          "speaker": "Sergio Méndez | University of San Carlos of Guatemala",
+          "talk_detail": []
+        },
+        {
+          "time": "15:00-15:15",
+          "talk_title": "分布式数据库在保险核心场景的实践",
+          "speaker": "盛玉 | 中国人寿",
+          "talk_detail": []
+        },
+        {
+          "time": "15:15-15:45",
+          "talk_title": "基础架构变革对业务敏捷性带来的全新可能",
+          "speaker": "黄东旭 | PingCAP",
+          "talk_detail": []
+        },
+        {
+          "time": "15:45-16:05",
+          "talk_title": "直挂“云”帆济沧海 —— TiDB On GCP 助力电商出海",
+          "speaker": "唐辉 | 谷歌",
+          "talk_detail": []
+        },
+        {
+          "time": "16:05-16:20",
+          "talk_title": "从混沌到秩序：Chaos Mesh® 生态构建之路",
+          "speaker": "殷成文 | PingCAP",
+          "talk_detail": []
+        },
+        {
+          "time": "16:20-16:35",
+          "talk_title": "The Exploration of Distributed SQL at Pinterest",
+          "speaker": "Lianghong Xu | Pinterest",
+          "talk_detail": []
+        },
+        {
+          "time": "16:35-16:50",
+          "talk_title": "TiDB Cloud 云原生安全架构实践",
+          "speaker": "王鹏飞 | PingCAP",
+          "talk_detail": []
+        },
+        {
+          "time": "16:50-17:05",
+          "talk_title": "TiDB 在 Classin 的应用",
+          "speaker": "韦彪 | Classin",
+          "talk_detail": []
+        },
+        {
+          "time": "17:05-17:20",
+          "talk_title": "涂鸦智能选型 TiKV 的心路历程",
+          "speaker": "刘筠松 | 涂鸦",
+          "talk_detail": []
+        },
+        {
+          "time": "17:20-17:35",
+          "talk_title": "TiDB on Kubesphere",
+          "speaker": "曾常习 | 青云科技",
+          "talk_detail": []
+        }
+      ]
     },
     {
       "name": "实时洞察 分论坛",
@@ -198,14 +265,208 @@
       "icon": "/images/community/devcon2021/day1-icon3.svg",
       "desc": "本场分论坛为 TiDB HTAP 舞台的一次集中展示，将有超过 10 个用户和合作伙伴分享他们在 HTAP 的实战经验和创新思考，是业界少有的 HTAP 实战观察窗。",
       "id": "",
-      "schedules": []
+      "schedules": [
+        {
+          "time": "13:30-13:45",
+          "talk_title": "TiDB HTAP，我们现在走到了哪里",
+          "speaker": "马晓宇 | PingCAP",
+          "talk_detail": []
+        },
+        {
+          "time": "13:45-14:00",
+          "talk_title": "TiDB 在中通的落地",
+          "speaker": "朱友志 | 中通快递",
+          "talk_detail": []
+        },
+        {
+          "time": "14:00-14:15",
+          "talk_title": "TiDB 在理想汽车的应用实践",
+          "speaker": "张攀 | 理想汽车",
+          "talk_detail": []
+        },
+        {
+          "time": "14:15-14:30",
+          "talk_title": "TiDB 在爱奇艺实时分析场景的应用实践",
+          "speaker": "路希 | 爱奇艺",
+          "talk_detail": []
+        },
+        {
+          "time": "14:30-14:45",
+          "talk_title": "Building a Data Platform for  Health Analytics at MOHT Singapore",
+          "speaker": "Julian Kuiyu CHANG | 新加坡卫生局",
+          "talk_detail": []
+        },
+        {
+          "time": "14:45-15:05",
+          "talk_title": "云上数据分析",
+          "speaker": "费良宏 | AWS",
+          "talk_detail": []
+        },
+        {
+          "time": "15:05-15:20",
+          "talk_title": "Power the future with TiDB on Kubernetes",
+          "speaker": "宫梦南 | Ninja Van",
+          "talk_detail": []
+        },
+        {
+          "time": "15:20-15:35",
+          "talk_title": "浙商银行数据化转型实践",
+          "speaker": "富浩 | 浙商银行",
+          "talk_detail": []
+        },
+        {
+          "time": "15:35-15:50",
+          "talk_title": "TiDB 在汽车之家的应用实践",
+          "speaker": "陶会祥 | 汽车之家",
+          "talk_detail": []
+        },
+        {
+          "time": "15:50-16:05",
+          "talk_title": "TiDB 在茄子科技的应用实践及演进",
+          "speaker": "闫林林 | 茄子快传",
+          "talk_detail": []
+        },
+        {
+          "time": "16:05-16:20",
+          "talk_title": "IGG 游戏数据分析",
+          "speaker": "柯君炎 | IGG",
+          "talk_detail": []
+        },
+        {
+          "time": "16:20-16:35",
+          "talk_title": "TiDB 在网易游戏实践之路",
+          "speaker": "田维繁 | 网易互娱",
+          "talk_detail": []
+        },
+        {
+          "time": "16:35-16:50",
+          "talk_title": "TiDB 在智慧芽在线分析场景的应用探索",
+          "speaker": "金路 | 智慧芽",
+          "talk_detail": []
+        },
+        {
+          "time": "16:60-17:05",
+          "talk_title": "TiDB HTAP 助力 360 业务升级",
+          "speaker": "代晓磊 | 360",
+          "talk_detail": []
+        },
+        {
+          "time": "17:05-17:20",
+          "talk_title": "58 同城 HTAP 之路",
+          "speaker": "刘春雷 | 58 同城",
+          "talk_detail": []
+        }
+      ]
     },
     {
       "name": "创新生态 分论坛",
       "icon": "/images/community/devcon2021/day1-icon4.svg",
       "desc": "本场分论坛将邀请两类 TiDB 的合作伙伴，一类为 “Built on TiDB” 的顶级 ISV 和超级用户，他们将分享 TiDB 在金融、电信、物流、互联网等行业解决方案中如何提供创新的性能，另外一类为 “TiDB+Anything” 的第三方技术厂商，他们将分享 TiDB 分布式数据库与大数据技术栈的融合数据处理的跨界方案，尤其是在异构的数据环境里数据集成、大数据融合处理、分布式数据监控等热门话题。",
       "id": "",
-      "schedules": []
+      "schedules": [
+        {
+          "time": "13:30-13:40",
+          "talk_title": "共建跨界的数据技术生态",
+          "speaker": "范若晗 | PingCAP",
+          "talk_detail": []
+        },
+        {
+          "time": "13:40-14:00",
+          "talk_title": "TiDB & Flink 实时数仓白皮书联合发布",
+          "speaker": "",
+          "talk_detail": []
+        },
+        {
+          "time": "14:00-14:15",
+          "talk_title": "从 MySQL 到 Cloud TiDB——京东物流在云数据库上的选择和实战",
+          "speaker": "杨牧 | 京东云",
+          "talk_detail": []
+        },
+        {
+          "time": "14:15-14:30",
+          "talk_title": "TiDB for PostgreSQL",
+          "speaker": "沈旸 | 神州数码",
+          "talk_detail": []
+        },
+        {
+          "time": "14:30-14:45",
+          "talk_title": "开源构筑云原生基础架构",
+          "speaker": "刘秉伟 | Intel",
+          "talk_detail": []
+        },
+        {
+          "time": "14:45-15:00",
+          "talk_title": "从 VC 视角看全球数据库行业创新及未来前景",
+          "speaker": "黄明明 | 明势资本",
+          "talk_detail": []
+        },
+        {
+          "time": "15:00-15:20",
+          "talk_title": "敏捷开源 自主可控——金融行业实践",
+          "speaker": "沈波 | 宇信科技",
+          "talk_detail": []
+        },
+        {
+          "time": "15:20-15:35",
+          "talk_title": "TiDB & Zetta 在知乎的应用",
+          "speaker": "白瑜庆 | 知乎",
+          "talk_detail": []
+        },
+        {
+          "time": "15:35-16:05",
+          "talk_title": "TiDB 社区共创圆桌讨论 ",
+          "speaker": "",
+          "talk_detail": []
+        },
+        {
+          "time": "16:05-16:20",
+          "talk_title": "YiDB 的“前世今生”",
+          "speaker": "袁武 | 天翼数智科技",
+          "talk_detail": []
+        },
+        {
+          "time": "16:20-16:35",
+          "talk_title": "伴鱼数据库平台化建设的思考与实践：从 SQL 审核到 Weir 中间件",
+          "speaker": "刘江 | 伴鱼",
+          "talk_detail": []
+        },
+        {
+          "time": "16:35-16:50",
+          "talk_title": "多库选型和管理的新挑战和应对",
+          "speaker": "李恒 | 爱可生",
+          "talk_detail": []
+        },
+        {
+          "time": "16:50-17:05",
+          "talk_title": "Stream is the new file —— 云原生流存储Pravega",
+          "speaker": "滕昱 | 戴尔科技集团",
+          "talk_detail": []
+        },
+        {
+          "time": "17:05-17:20",
+          "talk_title": "TiDB x Flink 原生实时计算",
+          "speaker": "孙晓光 | 知乎",
+          "talk_detail": []
+        },
+        {
+          "time": "17:20-17:35",
+          "talk_title": "移动云如何基于 TiDB 实现 ServerlessDB 服务",
+          "speaker": "薛港 | 中国移动",
+          "talk_detail": []
+        },
+        {
+          "time": "17:35-17:50",
+          "talk_title": "How does Chaos Mesh® make a more resilience StarPay",
+          "speaker": "苗立尧 | NetStars 株式会社",
+          "talk_detail": []
+        },
+        {
+          "time": "17:50-18:05",
+          "talk_title": "Zabbix 5.4 新功能及 Zabbix 对 TiDB 开箱即用的监控模板说明",
+          "speaker": "米宏 | Zabbix",
+          "talk_detail": []
+        }
+      ]
     }
   ],
   "devcon2021_day2_schedule": [
@@ -2405,16 +2666,16 @@
       "company": "PingCAP"
     },
     {
+      "name":"范若晗 ",
+      "avatar":"/images/community/devcon2021/fanruohan.png",
+      "title": "",
+      "company": "PingCAP"
+    },
+    {
       "name": "何宝宏",
       "avatar": "/images/community/devcon2021/hebaohong.png",
       "title": "云计算与大数据研究所所长",
       "company": "中国信息通信研究院"
-    },
-    {
-      "name": "黄明明",
-      "avatar": "/images/community/devcon2021/huangmingming.png",
-      "title": "创始合伙人",
-      "company": "明势资本"
     },
     {
       "name": "刘湘明",
@@ -2423,16 +2684,10 @@
       "company": "钛媒体"
     },
     {
-      "name": "刘春雷",
-      "avatar": "/images/community/devcon2021/liuchunlei.png",
-      "title": "TiDB 及 DorisDB 项目负责人",
-      "company": "58 同城"
-    },
-    {
-      "name": "Reynold Xin",
-      "avatar": "/images/community/devcon2021/reynoldxin.png",
-      "title": "Co-founder & Chief Architect",
-      "company": "Databricks"
+      "name":"Chris Aniszczyk",
+      "avatar":"/images/community/devcon2021/chris.png",
+      "title": "",
+      "company": "CNCF"
     },
     {
       "name": "沈旸",
@@ -2441,16 +2696,238 @@
       "company": "神州数码集团股份有限公司"
     },
     {
+      "name":"汪洋",
+      "avatar":"/images/community/devcon2021/wangyang.png",
+      "title": "数据库团队总工程师",
+      "company": "平安科技"
+    },
+    {
+      "name": "黄明明",
+      "avatar": "/images/community/devcon2021/huangmingming.png",
+      "title": "创始合伙人",
+      "company": "明势资本"
+    },
+    {
+      "name":"马晓宇",
+      "avatar":"/images/community/devcon2021/maxiaoyu.png",
+      "title": "HTAP 产品部负责人",
+      "company": "PingCAP"
+    },
+    {
+      "name":"王鹏飞",
+      "avatar":"/images/community/devcon2021/wangpengfei.png",
+      "title": "资深专家",
+      "company": "PingCAP"
+    },
+    {
+      "name":"殷成文",
+      "avatar":"/images/community/devcon2021/yinchengwen.png",
+      "title": "混沌工程负责人",
+      "company": "PingCAP"
+    },
+    {
+      "name":"白瑜庆",
+      "avatar":"/images/community/devcon2021/baiyuqing.png",
+      "title": "基础研发在线架构组负责人",
+      "company": "知乎"
+    },
+    {
+      "name":"曾常习",
+      "avatar":"/images/community/devcon2021/cengchangxi.png",
+      "title": "高级技术顾问",
+      "company": "青云"
+    },
+    {
+      "name":"代晓磊",
+      "avatar":"/images/community/devcon2021/daixiaolei.png",
+      "title": "高级 DBA",
+      "company": "360"
+    },
+    {
+      "name":"富浩",
+      "avatar":"/images/community/devcon2021/fuhao.png",
+      "title": "",
+      "company": "浙商银行"
+    },
+    {
+      "name":"宫梦南",
+      "avatar":"/images/community/devcon2021/gongmengnan.png",
+      "title": "Senior Software Engineer",
+      "company": "Ninja Van"
+    },
+    {
+      "name":"胡盼盼",
+      "avatar":"/images/community/devcon2021/hupanpan.png",
+      "title": "数据库平台负责人",
+      "company": "微众银行"
+    },
+    {
+      "name":"金路",
+      "avatar":"/images/community/devcon2021/jinlu.png",
+      "title": "团队负责人",
+      "company": "智慧芽数仓"
+    },
+    {
+      "name":"Dr. Julian Kuiyu",
+      "avatar":"/images/community/devcon2021/julian.png",
+      "title": "Principal Data Engineer",
+      "company": "CHANGMOHT"
+    },
+    {
+      "name":"柯君炎",
+      "avatar":"/images/community/devcon2021/kejunyan.png",
+      "title": "高级 DBA 主管",
+      "company": "IGG"
+    },
+    {
+      "name":"李恒",
+      "avatar":"/images/community/devcon2021/liheng.png",
+      "title": "CEO",
+      "company": "爱可生"
+    },
+    {
+      "name":"刘江",
+      "avatar":"/images/community/devcon2021/liujiang.png",
+      "title": "DBA 组负责人",
+      "company": "伴鱼"
+    },
+    {
+      "name": "刘春雷",
+      "avatar": "/images/community/devcon2021/liuchunlei.png",
+      "title": "TiDB 及 DorisDB 项目负责人",
+      "company": "58 同城"
+    },
+    {
+      "name":"刘筠松",
+      "avatar":"/images/community/devcon2021/liuyunsong.png",
+      "title": "DBA",
+      "company": "涂鸦"
+    },
+    {
+      "name":"刘子东",
+      "avatar":"/images/community/devcon2021/liuzidong.png",
+      "title": "数据库工程师",
+      "company": "小米"
+    },
+    {
+      "name":"路希",
+      "avatar":"/images/community/devcon2021/luxi.png",
+      "title": "数据库高级经理",
+      "company": "爱奇艺"
+    },
+    {
+      "name":"苗立尧",
+      "avatar":"/images/community/devcon2021/miaoliyao.png",
+      "title": "DevOps Lead",
+      "company": "Netstars株式会社"
+    },
+    {
+      "name":"米宏",
+      "avatar":"/images/community/devcon2021/mihong.png",
+      "title": "大中华区培训师",
+      "company": "Zabbix"
+    },
+    {
+      "name": "Reynold Xin",
+      "avatar": "/images/community/devcon2021/reynoldxin.png",
+      "title": "Co-founder & Chief Architect",
+      "company": "Databricks"
+    },
+    {
+      "name":"Sergio Méndez",
+      "avatar":"/images/community/devcon2021/sergio.png",
+      "title": "System Engineer and Professor of Operating Systems",
+      "company": "San Carlos University of Guatemala"
+    },
+    {
+      "name":"沈波",
+      "avatar":"/images/community/devcon2021/shenbo.png",
+      "title": "助理总裁、研发中心总经理、战略合作部总经理、宇信技术专家委员会主任委员",
+      "company": "宇信科技"
+    },
+    {
+      "name":"盛玉",
+      "avatar":"/images/community/devcon2021/shengyu.png",
+      "title": "数据库及中间件团队负责人",
+      "company": "中国人寿财产保险有限公司"
+    },
+    {
       "name": "孙晓光",
       "avatar": "/images/community/devcon2021/sunxiaoguang.png",
       "title": "知乎基础研发架构师，TiDB 社区 TOC 主席, TiKV Maintainer",
       "company": "知乎"
     },
     {
+      "name":"陶会祥",
+      "avatar":"/images/community/devcon2021/taohuixiang.png",
+      "title": "数据库负责人",
+      "company": "汽车之家"
+    },
+    {
+      "name":"滕昱",
+      "avatar":"/images/community/devcon2021/tengyu.png",
+      "title": "软件开发总监",
+      "company": "戴尔科技集团"
+    },
+    {
+      "name":"王莉莉",
+      "avatar":"/images/community/devcon2021/wanglili.png",
+      "title": "业务经理",
+      "company": "中国光大银行"
+    },
+    {
+      "name":"王维繁",
+      "avatar":"/images/community/devcon2021/wangweifan.png",
+      "title": "资深数据库工程师",
+      "company": "网易游戏"
+    },
+    {
       "name": "王志广",
       "avatar": "/images/community/devcon2021/wangzhiguang.png",
       "title": "Bilibili DBA，TUG 内容组 Co-leader",
       "company": "Bilibili"
+    },
+    {
+      "name":"韦彪",
+      "avatar":"/images/community/devcon2021/weibiao.png",
+      "title": "数据库组负责人",
+      "company": "ClassIn"
+    },
+    {
+      "name":"薛港",
+      "avatar":"/images/community/devcon2021/xuegang.png",
+      "title": "",
+      "company": "中国移动"
+    },
+    {
+      "name":"杨牧",
+      "avatar":"/images/community/devcon2021/yangmu.png",
+      "title": "资深产品经理",
+      "company": "京东云"
+    },
+    {
+      "name":"闫林林",
+      "avatar":"/images/community/devcon2021/yanlinlin.png",
+      "title": "存储组件负责人",
+      "company": "茄子科技"
+    },
+    {
+      "name":"袁武",
+      "avatar":"/images/community/devcon2021/yuanwu.png",
+      "title": "总经理助理",
+      "company": "天翼数智科技（北京）有限公司"
+    },
+    {
+      "name":"张攀",
+      "avatar":"/images/community/devcon2021/zhangpan.png",
+      "title": "资深数据库架构师",
+      "company": "理想汽车"
+    },
+    {
+      "name":"Min Zhou",
+      "avatar":"/images/community/devcon2021/zhoumin.png",
+      "title": "Staff Engineer",
+      "company": "Databricks"
     }
   ],
 
