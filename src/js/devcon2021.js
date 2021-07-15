@@ -93,4 +93,10 @@ $(document).ready(function() {
     $('.j-hotel-overlay').fadeIn()
     $('.j-hotel-overlay, .modal').addClass('active')
   })
+
+  $('.media img').click(function(event) {
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      event.preventDefault()
+    }
+  })
 })
