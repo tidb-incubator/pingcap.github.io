@@ -204,6 +204,24 @@
           "talk_detail": []
         },
         {
+          "time": "14:00-14:15",
+          "talk_title": "TiDB at Databricks",
+          "speaker": "Min Zhou | Databricks",
+          "talk_detail": []
+        },
+        {
+          "time": "14:15-14:30",
+          "talk_title": "B 站的 TiDB 服务治理",
+          "speaker": "王志广 | bilibili",
+          "talk_detail": []
+        },
+        {
+          "time": "14:30-14:45",
+          "talk_title": "光大银行混沌工程实践",
+          "speaker": "王莉莉 | 中国光大银行",
+          "talk_detail": []
+        },
+        {
           "time": "14:45-15:00",
           "talk_title": "Chaos Engineering with Chaos Mesh® and Linkerd",
           "speaker": "Sergio Méndez | University of San Carlos of Guatemala",
@@ -248,7 +266,7 @@
         {
           "time": "16:50-17:05",
           "talk_title": "TiDB 在 Classin 的应用",
-          "speaker": "韦彪 | Classin",
+          "speaker": "韦彪 | ClassIn",
           "talk_detail": []
         },
         {
@@ -259,7 +277,7 @@
         },
         {
           "time": "17:20-17:35",
-          "talk_title": "TiDB on Kubesphere",
+          "talk_title": "TiDB on KubeSphere",
           "speaker": "曾常习 | 青云科技",
           "talk_detail": []
         }
@@ -316,7 +334,7 @@
         },
         {
           "time": "15:20-15:35",
-          "talk_title": "浙商银行数据化转型实践",
+          "talk_title": "浙商银行数字化转型实践",
           "speaker": "富浩 | 浙商银行",
           "talk_detail": []
         },
@@ -351,7 +369,7 @@
           "talk_detail": []
         },
         {
-          "time": "16:60-17:05",
+          "time": "16:50-17:05",
           "talk_title": "TiDB HTAP 助力 360 业务升级",
           "speaker": "代晓磊 | 360",
           "talk_detail": []
@@ -2768,6 +2786,12 @@
       "company": "360"
     },
     {
+      "name":"费良宏",
+      "avatar":"/images/community/devcon2021/feilianghong.png",
+      "title": "首席云计算技术顾问",
+      "company": "AWS"
+    },
+    {
       "name":"富浩",
       "avatar":"/images/community/devcon2021/fuhao.png",
       "title": "金融科技部研究规划中心总经理",
@@ -2802,6 +2826,12 @@
       "avatar":"/images/community/devcon2021/kejunyan.png",
       "title": "高级 DBA 主管",
       "company": "IGG"
+    },
+    {
+      "name":"刘秉伟",
+      "avatar":"/images/community/devcon2021/liubinwei.png",
+      "title": "资深技术总监",
+      "company": "Intel"
     },
     {
       "name":"李恒",
@@ -2886,6 +2916,12 @@
       "avatar": "/images/community/devcon2021/sunxiaoguang.png",
       "title": "知乎基础研发架构师，TiDB 社区 TOC 主席, TiKV Maintainer",
       "company": "知乎"
+    },
+    {
+      "name":"唐辉",
+      "avatar":"/images/community/devcon2021/tanghui.png",
+      "title": "架构师",
+      "company": "Google Cloud"
     },
     {
       "name":"陶会祥",
