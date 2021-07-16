@@ -208,8 +208,12 @@ DevCon 2021
             <h2 id="sponsors" class="section-title">支持媒体及社区</h2>
             <div class="medias">
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021 -}}
-                <a href="{{ $i.link }}" target="_blank"><img class="lazy" src="/images/svgs/loader-spinner.svg"
+                {{- if $i.link -}}
+                <a href="{{ $i.link }}" target="_blank"><img class="lazy {{if $i.bigImg }}big-img{{end}}" src="/images/svgs/loader-spinner.svg"
                         data-original="{{ $i.img }}" /></a>
+                {{- else -}}
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" />
+                {{- end -}}
                 {{- end -}}
             </div>
         </div>

@@ -317,7 +317,7 @@
         {
           "time": "14:30-14:45",
           "talk_title": "Building a Data Platform for Health Analytics at MOHT Singapore",
-          "speaker": "Julian Kuiyu CHANG | 新加坡卫生局",
+          "speaker": "Julian Kuiyu CHANG | 新加坡卫生部",
           "talk_detail": []
         },
         {
@@ -3600,6 +3600,18 @@
     {
       "img": "/images/community/devcon2021/logo-grandage.png",
       "link": "https://www.zabbix.com/cn"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-cncf.svg",
+      "link": "https://www.cncf.io",
+      "bigImg": true
+    },
+    {
+      "img": "/images/community/devcon2021/logo-datafun.png"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-motianlun.png",
+      "link": "https://www.modb.pro/"
     }
   ],
   "instructors_2019": [
