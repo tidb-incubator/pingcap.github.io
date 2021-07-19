@@ -397,7 +397,7 @@
         {
           "time": "13:40-14:00",
           "talk_title": "TiDB & Flink 实时数仓白皮书联合发布",
-          "speaker": "",
+          "speaker": "杨克特 | 阿里云",
           "talk_detail": []
         },
         {
@@ -420,7 +420,7 @@
         },
         {
           "time": "14:50-15:05",
-          "talk_title": "从 VC 视角看全球数据库行业创新及未来前景",
+          "talk_title": "从 VC 视角看中国企业服务公司的创新及未来前景",
           "speaker": "黄明明 | 明势资本",
           "talk_detail": []
         },
@@ -2900,6 +2900,12 @@
       "company": "San Carlos University of Guatemala"
     },
     {
+      "name":"Shaun Chong",
+      "avatar":"/images/community/devcon2021/shaunchong.png",
+      "title": "Co-Founder & CTO",
+      "company": "Ninja Van"
+    },
+    {
       "name":"沈波",
       "avatar":"/images/community/devcon2021/shenbo.png",
       "title": "助理总裁、研发中心总经理、战略合作部总经理、宇信技术专家委员会主任委员",
@@ -2964,6 +2970,12 @@
       "avatar":"/images/community/devcon2021/xuegang.png",
       "title": "高级软件研发工程师",
       "company": "中国移动"
+    },
+    {
+      "name":"杨克特",
+      "avatar":"/images/community/devcon2021/yangkete.png",
+      "title": "阿里云智能资深技术专家，Apache Flink PMC",
+      "company": "阿里云"
     },
     {
       "name":"杨牧",
