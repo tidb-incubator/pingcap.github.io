@@ -210,9 +210,9 @@ DevCon 2021
                 {{- range $idx, $i := .Site.Data.devcon.support_meida2021 -}}
                 {{- if $i.link -}}
                 <a href="{{ $i.link }}" target="_blank"><img class="lazy {{if $i.bigImg }}big-img{{end}}" src="/images/svgs/loader-spinner.svg"
-                        data-original="{{ $i.img }}" /></a>
+                        data-original="/archived{{ $i.img }}" /></a>
                 {{- else -}}
-                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="{{ $i.img }}" />
+                <img class="lazy" src="/images/svgs/loader-spinner.svg" data-original="/archived{{ $i.img }}" />
                 {{- end -}}
                 {{- end -}}
             </div>

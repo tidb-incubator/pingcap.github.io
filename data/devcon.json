@@ -3624,6 +3624,24 @@
     {
       "img": "/images/community/devcon2021/logo-motianlun.png",
       "link": "https://www.modb.pro/"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-coderover.png",
+      "link": "https://www.koderover.com/"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-apisix.svg",
+      "link": "https://apisix.apache.org/"
+    },
+    {
+      "img": "/images/community/devcon2021/logo-simayi.svg",
+      "link": "https://www.merico.cn/",
+      "bigImg": true
+    },
+    {
+      "img": "/images/community/devcon2021/logo-shuliekeji.svg",
+      "link": "https://www.shulie.io/",
+      "bigImg": true
     }
   ],
   "instructors_2019": [
