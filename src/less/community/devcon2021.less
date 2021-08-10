@@ -650,6 +650,7 @@
     .medias {
       width: 100%;
       display: flex;
+      align-items: center;
       flex-flow: row wrap;
       justify-content: space-evenly;
 
@@ -657,6 +658,10 @@
         width: auto;
         height: 150px;
         padding: 1rem;
+
+        &.big-img {
+          height: 120px;
+        }
 
         @media @mobile {
           width: 200px;
