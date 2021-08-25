@@ -144,7 +144,7 @@
                             </div>
                             <div class="tags">
                             {{ range $idx2, $j := $i.tags }}
-                                <a class="tag {{ replace (lower $j.tag) " " "-" }}-tag" href="{{ $j.link }}" style="background-color: {{- $j.color -}}; border: 1px solid {{- $j.color -}};">{{ $j.tag }}</a>
+                                <a class="tag {{ replace (lower $j.tag) " " "-" }}-tag" target="_blank" href="{{ $j.link }}" style="background-color: {{- $j.color -}}; border: 1px solid {{- $j.color -}};">{{ $j.tag }}</a>
                             {{ end }}
                             </div>
                         </div>

@@ -157,27 +157,27 @@
         {
           "tag": "TiDB",
           "color": "#EB5757",
-          "link": "/blog-cn/#TiDB-源码阅读"
+          "link": "https://pingcap.com/zh/blog/?tag=TiDB%20%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB"
         },
         {
           "tag": "TiKV",
           "color": "#1477ED",
-          "link": "/blog-cn/#TiKV-源码解析"
+          "link": "https://pingcap.com/zh/blog/?tag=TiKV%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90"
         },
         {
           "tag": "TiDB Binlog",
           "color": "#E4B613",
-          "link": "/blog-cn/#TiDB-Binlog-源码阅读"
+          "link": "https://pingcap.com/zh/blog/?tag=TiDB%20Binlog%20%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB"
         },
         {
           "tag": "DM",
           "color": "#1EB5D7",
-          "link": "/blog-cn/#DM-源码阅读"
+          "link": "https://pingcap.com/zh/blog/?tag=DM%20%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB"
         },
         {
           "tag": "TiDB Ecosystem Tools",
           "color": "#9ECA22",
-          "link": "/blog-cn/#TiDB-Ecosystem-Tools"
+          "link": "https://pingcap.com/zh/blog/?tag=TiDB%20Ecosystem%20Tools"
         }
       ],
       "thumb_img": "https://download.pingcap.com/images/community/thumb-source-code.png",
@@ -187,7 +187,8 @@
     {
       "title": "新手指南",
       "brief": "加入 TiDB Contributor Club，无门槛参与开源项目，改变世界从这里开始吧。",
-      "link": "/blog-cn/#Contributor",
+      "link": "https://pingcap.com/zh/blog/?tag=Contributor",
+      "external_link": true,
       "thumb_img": "https://download.pingcap.com/images/community/thumb-guide.png",
       "bg_color": "#9ECA22"
     },
