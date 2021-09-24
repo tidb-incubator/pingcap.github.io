@@ -67,7 +67,7 @@ Community Organization
       {{ $posts := where (where (where (index .Site.Taxonomies.tags $communityTag).Pages "Section" "blog-cn") ".Params.title" "!=" nil) ".Params.category" "!=" "case" }}
       <div class="flex-lists">
         {{- range (first 3 $posts) }}
-        <a href="{{ .RelPermalink }}" class="dynamic-item">
+        <a href="https://pingcap.com/zh/blog/{{ replace .RelPermalink "/blog-cn/" ""}}" class="dynamic-item">
           {{- if .Params.image -}}
           <img class="lazy" data-original="{{ .Params.image }}" src="/images/svgs/loader-spinner.svg" alt="cover" />
           {{- else -}}
@@ -78,7 +78,7 @@ Community Organization
         </a>
         {{- end -}}
       </div>
-      {{- partial "archives/readMoreBtn.html" (dict "url" "/blog-cn/#社区动态" "btnText" "查看更多") }}
+      {{- partial "archives/readMoreBtn.html" (dict "url" "https://pingcap.com/zh/blog/" "btnText" "查看更多") }}
     </div>
   </div>
 
