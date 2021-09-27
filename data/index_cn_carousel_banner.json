@@ -73,7 +73,7 @@
       "newTab": true
     },
     {
-      "link": "https://tug.tidb.io/",
+      "link": "https://tidb.io/tug",
       "gaTrackEventClass": "asktug_view",
       "gaTrackEventLabel": "homepage-asktug-banner",
       "img": "https://download.pingcap.com/images/asktug-carousel-img.png",
